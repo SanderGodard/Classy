@@ -20,6 +20,9 @@ $Slow: al .5s ease
 $Shadow: 0px 3px 6px rgba(0,0,0,0.2)
 $BigShadow: 0px 3px 9px 3px rgba(0,0,0,0.3)
 
+//Mobile optimization
+$Mobile: "only screen and (max-width : 890px)"
+
 // ============ Mobile
 $MobileS: "only screen and (max-width : 334px)"
 $MobileM: "only screen and (max-width : 376px)"
@@ -63,10 +66,10 @@ body
   overflow-x: hidden !important
   font-size: 20px
 
-  @media #{$MobileXXL}
+  @media #{$Laptop}
     font-size: 18px
 
-  @media #{$MobileXM}
+  @media #{$MobileXXL}
     font-size: 16px
 
 
@@ -120,9 +123,10 @@ a
   vertical-align: sub
 
 nav
-  padding: 4vw 4vw
+  padding: 4vmax 4vmax
   width: 100%
   display: flex
+  flex-wrap: nowrap
   justify-content: space-between
   align-content: stretch
   text-transform: uppercase
@@ -131,9 +135,12 @@ nav
     text-transform: lowercase !important
     font-size: 1.8em
 
-  .Nav
-    display: block
+  .RightNav
     align-self: flex-end
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: flex-end
 
     a
       transition: $Fast
@@ -146,11 +153,30 @@ nav
         transition: $Fast
         color: $ThirdColor
 
+      @media #{$Mobile}
+        padding: 0 2.3vw
 
-  .MobileNav
-    display: none
-    align-self: flex-end
 
+
+    .Nav
+      display: inline-block
+
+
+      @media #{$Mobile}
+        display: none
+
+    .MobileNav
+      display: none
+
+      a
+        font-size: 2em
+        line-height: .98
+
+      @media #{$Mobile}
+        display: inline-block
+
+    .NavPart
+      display: inline-block
 main
   padding: 0 4vw
 
@@ -161,14 +187,38 @@ main
     justify-content: space-around
     align-content: center
     width: 100%
-    height: 100%
+    height: calc(100vh - 8vw - (1.5em * 1.25))
+
+    @media #{$Mobile}
+      height: auto
 
     img
+      //Image size: 862 x 1248
       //width: 40%
       bottom: 0
-      height: calc(100vh - 8vw - (1.5em * 1.25))
+      height: 100%
 
+      .New::before
+        display: none
 
+      @media #{$Mobile}
+        width: 60%
+        //height: calc((862px / 1248px) / 100 * 60)
+        height: auto
+        margin: -139px -49% 0 0
+        order: 2
+        bottom: auto
+        top: 0
+        align-self: flex-end
+
+      @media #{$TabletS}
+        margin: auto auto
+
+      @media #{$MobileXXL}
+        width: 90%
+
+      @media #{$MobileXM}
+        width: 100%
 
     .Info
       margin-top: calc((100vh - 8vw - (1.5em * 1.25)) / 2)
@@ -184,6 +234,17 @@ main
         color: black
         text-transform: capitalize
 
+      @media #{$Mobile}
+        width: 90%
+        order: 1
+        margin-top: 0
+        transform: none
+
+      @media #{$TabletS}
+        flex-grow: 1
+
+        .New::before
+          display: none
 
 
 .Button
@@ -196,9 +257,16 @@ main
   text-transform: uppercase
   margin: 2vh 0
   font-weight: bold
-  //text-align: center
-  max-width: 400px
+  text-align: center
+  //max-width: 400px
 
+  @media #{$TabletS}
+    display: block
+    font-size: 1.5em
+    padding: 1em 0
+
+img.New::before
+  transform: translate(0%, 0%)
 
 .New
   font-weight: bold
@@ -207,15 +275,34 @@ main
     content: "Ny"
     display: block
     position: absolute
-    top: 0
-    left: 0
-    font-size: 1em
     font-weight: normal
     font-size: 20px
     background-color: black
     color: $White
     padding: .25em 1em
-    transform: translate(0%, -100%)
+    transform: translate(0%, -70%)
+    text-transform: uppercase
+    line-height: 1
+
+    @media #{$MobileXXL}
+      font-size: 18px
+
+    @media #{$MobileXM}
+      font-size: 16px
+
+//
+  &::after
+    content: "Ny"
+    //display: inline is what it should say if you want it to show
+    display: none
+    position: static
+    font-weight: normal
+    font-size: 20px
+    background-color: black
+    color: $White
+    padding: .25em 1em
+    float: right
+    transform: translate(0%, 0%)
     text-transform: uppercase
     line-height: 1
 
