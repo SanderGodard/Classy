@@ -20,7 +20,7 @@ New page template:
 <html lang="NB" dir="ltr">
 
 <head>
-  <title>Hype</title>
+  <title>HypeIT</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
