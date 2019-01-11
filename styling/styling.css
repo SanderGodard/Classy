@@ -83,14 +83,14 @@ a {
 ::-webkit-scrollbar-thumb {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #999;
+  background: darkgrey;
   border-radius: 2.5px;
 }
 /* line 112, styling.sass */
 ::-webkit-scrollbar-thumb:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #666;
+  background: black;
 }
 
 /* line 117, styling.sass */
@@ -102,7 +102,7 @@ a {
 
 /* line 122, styling.sass */
 nav {
-  padding-top: 3vw;
+  padding: 4vw 4vw;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,27 +115,128 @@ nav {
   text-transform: uppercase;
 }
 /* line 130, styling.sass */
+nav .Material {
+  text-transform: lowercase !important;
+  font-size: 1.8em;
+}
+/* line 134, styling.sass */
 nav .Nav {
+  display: block;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-/* line 133, styling.sass */
+/* line 138, styling.sass */
 nav .Nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   color: #383838;
-  padding: 1em;
-  font-size: 1em;
+  padding: 0 1vw;
+  font-size: 1.5em;
+  font-weight: bold;
 }
-/* line 139, styling.sass */
+/* line 145, styling.sass */
 nav .Nav a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   color: #000;
 }
-/* line 143, styling.sass */
-nav .Nav .Material {
-  font-size: 1.5em;
+/* line 150, styling.sass */
+nav .MobileNav {
+  display: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+/* line 154, styling.sass */
+main {
+  padding: 0 4vw;
+}
+/* line 157, styling.sass */
+main .Showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 100%;
+}
+/* line 166, styling.sass */
+main .Showcase img {
+  bottom: 0;
+  height: calc(100vh - 8vw - (1.5em * 1.25));
+}
+/* line 173, styling.sass */
+main .Showcase .Info {
+  margin-top: calc((100vh - 8vw - (1.5em * 1.25)) / 2);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 45%;
+  text-align: left;
+}
+/* line 182, styling.sass */
+main .Showcase .Info h1 {
+  font-size: 3.75em;
+  color: black;
+  text-transform: capitalize;
+}
+
+/* line 189, styling.sass */
+.Button {
+  display: inline-block;
+  color: black;
+  border: 5px solid black;
+  font-size: 1.25em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  margin: 2vh 0;
+  font-weight: bold;
+  max-width: 400px;
+}
+
+/* line 203, styling.sass */
+.New {
+  font-weight: bold;
+}
+/* line 206, styling.sass */
+.New::before {
+  content: "Ny";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  font-weight: normal;
+  font-size: 20px;
+  background-color: black;
+  color: #FFF;
+  padding: 0.25em 1em;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  text-transform: uppercase;
+  line-height: 1;
+}
+@media only screen and (max-width: 575px) {
+  /* line 206, styling.sass */
+  .New::before {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 395px) {
+  /* line 206, styling.sass */
+  .New::before {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=styling.css.map */
