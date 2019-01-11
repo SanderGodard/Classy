@@ -1,4 +1,4 @@
-# Classy
+# HypeIT
 Markedsføring og Salg samarbeidsprosjekt.
 
 
