@@ -14,7 +14,7 @@ Dette er classy as :D
 
 
 
-New page template:
+Current new page template we use (Will be constantly updated):
 ```html
 <!Doctype HTML>
 <html lang="NB" dir="ltr">
@@ -27,20 +27,28 @@ New page template:
   <meta name="author" content="1IKT-SK 2019">
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styling/styling.css">
-  <!--
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  -->
   <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#144814">
+  <meta name="theme-color" content="#FFFFFF">
   <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#144814">
+  <meta name="msapplication-navbutton-color" content="#FFFFFF">
   <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#144814">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
 </head>
 
 <body>
   <nav>
+    <div class="Logo">
 
+    </div>
+    <div class="Nav">
+      <a href="produkter/">Produkter</a>
+      <a href="produkter/menn/">Menn</a>
+      <a href="produkter/damer/">Damer</a>
+      <a href="produkter/annet/">Annet</a>
+      <a href="store/cart/" class="Material">shopping_cart</a>
+      <span id="SearchIcon" class="Material">search</span>
+    </div>
   </nav>
   <main>
 
