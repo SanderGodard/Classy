@@ -1,14 +1,21 @@
 // ======================================= Variables
-// ============ Colors
 
-$MainColor: #000
-$SecondaryColor: #383838
-$ThirdColor: #7D7D7D
+//Colors
+
+$MainColor: #383838
+//000
+$SecondaryColor: #7D7D7D
+$ThirdColor: #000
 $White: #FFF
 $WhiteHover : #FBFBFB
 
-$ButtonColor: #7D7D7D
-$ButtonHover: #666666
+//Transitions
+$Fast: all .1s ease
+$Medium: all .25s ease
+$Slow: al .5s ease
+
+
+//Shadows
 
 $Shadow: 0px 3px 6px rgba(0,0,0,0.2)
 $BigShadow: 0px 3px 9px 3px rgba(0,0,0,0.3)
@@ -48,7 +55,7 @@ html
 body
   transition: all 0s ease
   background-color: $White
-  font-family: 'Roboto', sans-serif
+  font-family: 'Calibri', sans-serif
   min-width: 300px !important
   line-height: 1.25
   width: 100% !important
@@ -113,10 +120,25 @@ a
   vertical-align: sub
 
 nav
+  padding-top: 3vw
   width: 100%
   display: flex
   justify-content: space-between
   align-content: stretch
+  text-transform: uppercase
 
   .Nav
     align-self: flex-end
+
+    a
+      transition: $Fast
+      color: $MainColor
+      padding: 1em
+      font-size: 1em
+
+      &:hover
+        transition: $Fast
+        color: $ThirdColor
+
+    .Material
+      font-size: 1.5em
