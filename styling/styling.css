@@ -93,4 +93,29 @@ a {
   background: #666;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Classy\/styling\/styling\.sass}line{font-family:\00003110}}
+.Material {
+  font-family: "Material Icons", sans-serif;
+  font-size: 1.5em;
+  vertical-align: sub;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Classy\/styling\/styling\.sass}line{font-family:\00003115}}
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/Classy\/styling\/styling\.sass}line{font-family:\00003121}}
+nav .Nav {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 /*# sourceMappingURL=styling.css.map */
