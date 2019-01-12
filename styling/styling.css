@@ -139,7 +139,7 @@ nav .RightNav {
           justify-content: flex-end;
 }
 /* line 146, styling.sass */
-nav .RightNav a {
+nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   color: #383838;
@@ -148,7 +148,7 @@ nav .RightNav a {
   font-weight: bold;
 }
 /* line 153, styling.sass */
-nav .RightNav a:hover {
+nav a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   color: #000;
@@ -380,7 +380,6 @@ img.New::before {
   font-size: 1.5em;
   margin-top: -2em;
   border: 0px;
-  width: 0px;
   border-bottom: 3px solid #383838;
 }
 /* line 338, styling.sass */
