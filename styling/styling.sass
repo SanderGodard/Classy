@@ -158,31 +158,29 @@ nav
     display: none
     align-self: flex-end
 
+    @media #{$Mobile}
+      padding: 0 2.3vw
 
-      @media #{$Mobile}
-        padding: 0 2.3vw
+  .Nav
+    display: inline-block
 
-
-
-    .Nav
-      display: inline-block
-
-
-      @media #{$Mobile}
-        display: none
-
-    .MobileNav
+    @media #{$Mobile}
       display: none
 
-      a
-        font-size: 2em
-        line-height: .98
+  .MobileNav
+    display: none
 
-      @media #{$Mobile}
-        display: inline-block
+    a
+      font-size: 2em
+      line-height: .98
 
-    .NavPart
+    @media #{$Mobile}
       display: inline-block
+
+  .NavPart
+    display: inline-block
+
+
 main
   padding: 0 4vw
 
