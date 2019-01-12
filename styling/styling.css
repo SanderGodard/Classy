@@ -292,10 +292,6 @@ main .Showcase .Info h1 {
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
-  /* line 246, styling.sass */
-  main .Showcase .Info .New::before {
-    display: none;
-  }
 }
 
 /* line 250, styling.sass */
