@@ -380,21 +380,22 @@ img.New::before {
   font-size: 1.5em;
   margin-top: -2em;
   border: 0px;
+  max-width: 30vw;
   border-bottom: 3px solid #383838;
 }
-/* line 338, styling.sass */
+/* line 339, styling.sass */
 .searchDiv .search #searchField:focus, .searchDiv .search #searchField:active {
   outline: none;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
-/* line 343, styling.sass */
+/* line 344, styling.sass */
 .searchDiv .search #searchField:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border-color: #000;
 }
-/* line 348, styling.sass */
+/* line 349, styling.sass */
 .searchDiv .search .results {
   position: absolute;
   display: -webkit-box;
@@ -412,7 +413,7 @@ img.New::before {
   width: 100%;
   left: 0%;
 }
-/* line 362, styling.sass */
+/* line 363, styling.sass */
 .searchDiv .search .results .result {
   padding: 0.2em;
   display: none;
