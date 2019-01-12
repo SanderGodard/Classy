@@ -100,7 +100,7 @@ a {
   vertical-align: sub;
 }
 
-/* line 122, styling.sass */
+/* line 123, styling.sass */
 nav {
   padding: 4vw 4vw;
   width: 100%;
@@ -114,18 +114,18 @@ nav {
       align-content: stretch;
   text-transform: uppercase;
 }
-/* line 130, styling.sass */
+/* line 131, styling.sass */
 nav .Material {
   text-transform: lowercase !important;
   font-size: 1.8em;
 }
-/* line 134, styling.sass */
+/* line 135, styling.sass */
 nav .Nav {
   display: block;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-/* line 138, styling.sass */
+/* line 139, styling.sass */
 nav .Nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -134,7 +134,7 @@ nav .Nav a {
   font-size: 1.5em;
   font-weight: bold;
 }
-/* line 145, styling.sass */
+/* line 146, styling.sass */
 nav .Nav a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -147,11 +147,11 @@ nav .MobileNav {
       align-self: flex-end;
 }
 
-/* line 154, styling.sass */
+/* line 155, styling.sass */
 main {
   padding: 0 4vw;
 }
-/* line 157, styling.sass */
+/* line 158, styling.sass */
 main .Showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,12 +169,12 @@ main .Showcase {
   width: 100%;
   height: 100%;
 }
-/* line 166, styling.sass */
+/* line 167, styling.sass */
 main .Showcase img {
   bottom: 0;
   height: calc(100vh - 8vw - (1.5em * 1.25));
 }
-/* line 173, styling.sass */
+/* line 172, styling.sass */
 main .Showcase .Info {
   margin-top: calc((100vh - 8vw - (1.5em * 1.25)) / 2);
   -webkit-transform: translate(0, -50%);
@@ -182,14 +182,14 @@ main .Showcase .Info {
   width: 45%;
   text-align: left;
 }
-/* line 182, styling.sass */
+/* line 181, styling.sass */
 main .Showcase .Info h1 {
   font-size: 3.75em;
   color: black;
   text-transform: capitalize;
 }
 
-/* line 189, styling.sass */
+/* line 187, styling.sass */
 .Button {
   display: inline-block;
   color: black;
@@ -204,11 +204,11 @@ main .Showcase .Info h1 {
   max-width: 400px;
 }
 
-/* line 203, styling.sass */
+/* line 201, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 206, styling.sass */
+/* line 204, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -227,26 +227,54 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 206, styling.sass */
+  /* line 204, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 206, styling.sass */
+  /* line 204, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 228, styling.sass */
+/* line 226, styling.sass */
 .searchDiv {
   display: inline;
   position: relative;
 }
-
-/* line 231, styling.sass */
-.results {
+/* line 230, styling.sass */
+.searchDiv .search {
+  display: none;
+  position: relative;
+}
+/* line 234, styling.sass */
+.searchDiv .search #searchField {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  padding: 0 0.5em;
+  vertical-align: baseline;
+  font-size: 1.5em;
+  margin-top: -2em;
+  border: 0px;
+  width: 0px;
+  border-bottom: 3px solid #383838;
+}
+/* line 246, styling.sass */
+.searchDiv .search #searchField:focus, .searchDiv .search #searchField:active {
+  outline: none;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+/* line 251, styling.sass */
+.searchDiv .search #searchField:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  border-color: #000;
+}
+/* line 256, styling.sass */
+.searchDiv .search .results {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,20 +283,17 @@ main .Showcase .Info h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #7D7D7D;
-  font-size: 0.5em;
+  background: #FFF;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  color: #000;
+  font-size: 1em;
   width: 100%;
-  top: 100%;
   left: 0%;
 }
-
-/* line 240, styling.sass */
-.search {
-  display: none;
-  position: relative;
-}
-/* line 243, styling.sass */
-.search .result {
+/* line 270, styling.sass */
+.searchDiv .search .results .result {
+  padding: 0.2em;
   display: none;
 }
 

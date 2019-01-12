@@ -119,6 +119,7 @@ a
   font-size: 1.5em
   vertical-align: sub
 
+
 nav
   padding: 4vw 4vw
   width: 100%
@@ -146,10 +147,10 @@ nav
         transition: $Fast
         color: $ThirdColor
 
-
   .MobileNav
     display: none
     align-self: flex-end
+
 
 main
   padding: 0 4vw
@@ -168,8 +169,6 @@ main
       bottom: 0
       height: calc(100vh - 8vw - (1.5em * 1.25))
 
-
-
     .Info
       margin-top: calc((100vh - 8vw - (1.5em * 1.25)) / 2)
       transform: translate(0, -50%)
@@ -183,7 +182,6 @@ main
         font-size: 3.75em
         color: black
         text-transform: capitalize
-
 
 
 .Button
@@ -228,17 +226,47 @@ main
 .searchDiv
   display: inline
   position: relative
-.results
-  position: absolute
-  display: flex
-  flex-direction: column
-  background: $SecondaryColor
-  font-size: 0.5em
-  width: 100%
-  top: 100%
-  left: 0%
-.search
-  display: none
-  position: relative
-  .result
+
+  .search
     display: none
+    position: relative
+
+    #searchField
+      transition: $Fast
+      padding: 0 .5em
+      vertical-align: baseline
+      font-size: 1.5em
+      margin-top: -2em
+      border: 0px
+      width: 0px
+      //width: 350px
+      border-bottom: 3px solid $MainColor
+      //border-radius: 1em 1em 0 0
+
+      &:focus, &:active
+        outline: none
+        transition: $Fast
+        //border-color: $ThirdColor
+
+      &:hover
+        transition: $Fast
+        //transform: scale(1.07)
+        border-color: $ThirdColor
+
+    .results
+      position: absolute
+      display: flex
+      flex-direction: column
+      background: $White
+      box-shadow: $Shadow
+      color: $ThirdColor
+      font-size: 1em
+      //padding: .2em
+      //border-radius: 0 0 1em 1em
+      width: 100%
+      //top: 2.5em
+      left: 0%
+
+      .result
+        padding: .2em
+        display: none
