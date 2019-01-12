@@ -1,13 +1,18 @@
+/* line 45, styling.sass */
 html {
+  -webkit-transition: all 0s ease;
   transition: all 0s ease;
   scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
   -webkit-scroll-behaviour: smooth;
   -webkit-font-smoothing: antialiased;
   -webkit-locale: "nb" !important;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
+/* line 55, styling.sass */
 body {
+  -webkit-transition: all 0s ease;
   transition: all 0s ease;
   background-color: #FFF;
   font-family: "Calibri", sans-serif;
@@ -16,157 +21,255 @@ body {
   width: 100% !important;
   overflow-y: auto;
   overflow-x: hidden !important;
-  font-size: 20px; }
-  @media only screen and (max-width: 575px) {
-    body {
-      font-size: 18px; } }
-  @media only screen and (max-width: 395px) {
-    body {
-      font-size: 16px; } }
+  font-size: 20px;
+}
+@media only screen and (max-width: 575px) {
+  /* line 55, styling.sass */
+  body {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 395px) {
+  /* line 55, styling.sass */
+  body {
+    font-size: 16px;
+  }
+}
 
+/* line 73, styling.sass */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   /*border: 1px solid blue */
-  border-collapse: collapse; }
+  border-collapse: collapse;
+}
 
+/* line 83, styling.sass */
 a {
   text-decoration: none;
-  color: black; }
+  color: black;
+}
 
+/* line 88, styling.sass */
 ::-moz-selection {
   background: #383838;
   opacity: 0.7;
-  color: #FFF; }
+  color: #FFF;
+}
 
+/* line 94, styling.sass */
+::-moz-selection {
+  background: #383838;
+  color: #FFF;
+  opacity: 0.7;
+}
 ::selection {
   background: #383838;
   color: #FFF;
-  opacity: 0.7; }
+  opacity: 0.7;
+}
 
+/* line 100, styling.sass */
 ::-webkit-scrollbar {
   width: 5px;
   margin: 2px 2px 2px -7px;
   right: 0;
-  border-radius: 2.5px; }
+  border-radius: 2.5px;
+}
 
+/* line 107, styling.sass */
 ::-webkit-scrollbar-thumb {
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: darkgrey;
-  border-radius: 2.5px; }
-  ::-webkit-scrollbar-thumb:hover {
-    transition: all 0.3s ease-in-out;
-    background: black; }
+  border-radius: 2.5px;
+}
+/* line 112, styling.sass */
+::-webkit-scrollbar-thumb:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: black;
+}
 
+/* line 117, styling.sass */
 .Material {
   font-family: "Material Icons", sans-serif;
   font-size: 1.5em;
-  vertical-align: sub; }
+  vertical-align: sub;
+}
 
+/* line 122, styling.sass */
 nav {
   padding: 4vw 4vw;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-content: stretch;
-  text-transform: uppercase; }
-  nav .Material {
-    text-transform: lowercase !important;
-    font-size: 1.8em; }
-  nav .Nav {
-    display: block;
-    align-self: flex-end; }
-    nav .Nav a {
-      transition: all 0.1s ease;
-      color: #383838;
-      padding: 0 1vw;
-      font-size: 1.5em;
-      font-weight: bold; }
-      nav .Nav a:hover {
-        transition: all 0.1s ease;
-        color: #000; }
-  nav .MobileNav {
-    display: none;
-    align-self: flex-end; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  text-transform: uppercase;
+}
+/* line 130, styling.sass */
+nav .Material {
+  text-transform: lowercase !important;
+  font-size: 1.8em;
+}
+/* line 134, styling.sass */
+nav .Nav {
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/* line 138, styling.sass */
+nav .Nav a {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: #383838;
+  padding: 0 1vw;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* line 145, styling.sass */
+nav .Nav a:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: #000;
+}
+/* line 150, styling.sass */
+nav .MobileNav {
+  display: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
 
+/* line 154, styling.sass */
 main {
-  padding: 0 4vw; }
-  main .Showcase {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    width: 100%;
-    height: 100%; }
-    main .Showcase img {
-      bottom: 0;
-      height: calc(100vh - 8vw - (1.5em * 1.25)); }
-    main .Showcase .Info {
-      margin-top: calc((100vh - 8vw - (1.5em * 1.25)) / 2);
-      transform: translate(0, -50%);
-      width: 45%;
-      text-align: left; }
-      main .Showcase .Info h1 {
-        font-size: 3.75em;
-        color: black;
-        text-transform: capitalize; }
+  padding: 0 4vw;
+}
+/* line 157, styling.sass */
+main .Showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 100%;
+}
+/* line 166, styling.sass */
+main .Showcase img {
+  bottom: 0;
+  height: calc(100vh - 8vw - (1.5em * 1.25));
+}
+/* line 173, styling.sass */
+main .Showcase .Info {
+  margin-top: calc((100vh - 8vw - (1.5em * 1.25)) / 2);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 45%;
+  text-align: left;
+}
+/* line 182, styling.sass */
+main .Showcase .Info h1 {
+  font-size: 3.75em;
+  color: black;
+  text-transform: capitalize;
+}
 
+/* line 189, styling.sass */
 .Button {
   display: inline-block;
   color: black;
   border: 5px solid black;
   font-size: 1.25em;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   padding: 1em 2em;
   text-transform: uppercase;
   margin: 2vh 0;
   font-weight: bold;
-  max-width: 400px; }
+  max-width: 400px;
+}
 
+/* line 203, styling.sass */
 .New {
-  font-weight: bold; }
+  font-weight: bold;
+}
+/* line 206, styling.sass */
+.New::before {
+  content: "Ny";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  font-weight: normal;
+  font-size: 20px;
+  background-color: black;
+  color: #FFF;
+  padding: 0.25em 1em;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  text-transform: uppercase;
+  line-height: 1;
+}
+@media only screen and (max-width: 575px) {
+  /* line 206, styling.sass */
   .New::before {
-    content: "Ny";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 1em;
-    font-weight: normal;
-    font-size: 20px;
-    background-color: black;
-    color: #FFF;
-    padding: 0.25em 1em;
-    transform: translate(0%, -100%);
-    text-transform: uppercase;
-    line-height: 1; }
-    @media only screen and (max-width: 575px) {
-      .New::before {
-        font-size: 18px; } }
-    @media only screen and (max-width: 395px) {
-      .New::before {
-        font-size: 16px; } }
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 395px) {
+  /* line 206, styling.sass */
+  .New::before {
+    font-size: 16px;
+  }
+}
 
+/* line 228, styling.sass */
 .searchDiv {
   display: inline;
-  position: relative; }
+  position: relative;
+}
 
+/* line 231, styling.sass */
 .results {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #7D7D7D;
   font-size: 0.5em;
   width: 100%;
   top: 100%;
-  left: 0%; }
+  left: 0%;
+}
 
+/* line 240, styling.sass */
 .search {
   display: none;
-  position: relative; }
-  .search .result {
-    display: none; }
+  position: relative;
+}
+/* line 243, styling.sass */
+.search .result {
+  display: none;
+}
 
 /*# sourceMappingURL=styling.css.map */
