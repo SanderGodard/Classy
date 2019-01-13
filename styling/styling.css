@@ -121,7 +121,7 @@ nav {
 /* line 137, styling.sass */
 nav .Material {
   text-transform: lowercase !important;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 /* line 141, styling.sass */
 nav .RightNav {
@@ -233,10 +233,11 @@ main .Showcase {
 }
 /* line 206, styling.sass */
 main .Showcase img {
+  cursor: pointer;
   bottom: 0;
   height: 100%;
 }
-/* line 212, styling.sass */
+/* line 213, styling.sass */
 main .Showcase img .New::before {
   display: none;
 }
@@ -273,7 +274,7 @@ main .Showcase img .New::before {
     width: 100%;
   }
 }
-/* line 234, styling.sass */
+/* line 235, styling.sass */
 main .Showcase .Info {
   margin-top: calc((100vh - (8vmax + (1.5em * 1.25) + 5vh)) / 2);
   -webkit-transform: translate(0, -50%);
@@ -281,14 +282,14 @@ main .Showcase .Info {
   width: 45%;
   text-align: left;
 }
-/* line 243, styling.sass */
+/* line 244, styling.sass */
 main .Showcase .Info h1 {
   font-size: 3.75em;
   color: black;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 890px) {
-  /* line 234, styling.sass */
+  /* line 235, styling.sass */
   main .Showcase .Info {
     width: 90%;
     -webkit-box-ordinal-group: 2;
@@ -300,7 +301,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 234, styling.sass */
+  /* line 235, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -308,7 +309,7 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 260, styling.sass */
+/* line 261, styling.sass */
 .Button {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -325,14 +326,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
-/* line 275, styling.sass */
+/* line 276, styling.sass */
 .Button:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: black;
 }
-/* line 280, styling.sass */
+/* line 281, styling.sass */
 .Button:active {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -340,7 +341,7 @@ main .Showcase .Info h1 {
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 260, styling.sass */
+  /* line 261, styling.sass */
   .Button {
     display: block;
     font-size: 1.5em;
@@ -348,17 +349,17 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 289, styling.sass */
+/* line 290, styling.sass */
 img.New::before {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
 }
 
-/* line 292, styling.sass */
+/* line 293, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 295, styling.sass */
+/* line 296, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -374,29 +375,29 @@ img.New::before {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 295, styling.sass */
+  /* line 296, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 295, styling.sass */
+  /* line 296, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 337, styling.sass */
+/* line 338, styling.sass */
 .searchDiv {
   display: inline;
   position: relative;
 }
-/* line 341, styling.sass */
+/* line 342, styling.sass */
 .searchDiv .search {
   display: none;
   position: relative;
 }
-/* line 345, styling.sass */
+/* line 346, styling.sass */
 .searchDiv .search #searchField {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -410,20 +411,20 @@ img.New::before {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-/* line 360, styling.sass */
+/* line 361, styling.sass */
 .searchDiv .search #searchField:focus, .searchDiv .search #searchField:active {
   outline: none;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border-color: #000;
 }
-/* line 365, styling.sass */
+/* line 366, styling.sass */
 .searchDiv .search #searchField:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border-color: #000;
 }
-/* line 370, styling.sass */
+/* line 371, styling.sass */
 .searchDiv .search .results {
   position: absolute;
   display: -webkit-box;
@@ -441,7 +442,7 @@ img.New::before {
   width: 100%;
   left: 0%;
 }
-/* line 384, styling.sass */
+/* line 385, styling.sass */
 .searchDiv .search .results .result {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -451,7 +452,7 @@ img.New::before {
   text-transform: capitalize;
   font-weight: 300;
 }
-/* line 392, styling.sass */
+/* line 393, styling.sass */
 .searchDiv .search .results .result:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -459,7 +460,7 @@ img.New::before {
   font-weight: 400;
 }
 @media only screen and (max-width: 890px) {
-  /* line 337, styling.sass */
+  /* line 338, styling.sass */
   .searchDiv {
     display: none;
   }
