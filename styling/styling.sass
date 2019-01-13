@@ -120,17 +120,19 @@ a
 .Material
   font-family: 'Material Icons', sans-serif
   font-size: 1.5em
-  vertical-align: sub
+  vertical-align: top
 
 
 nav
   padding: 4vmax 4vmax
   width: 100%
+  height: calc(8vmax + (1.5em * 1.25))
   display: flex
   flex-wrap: nowrap
   justify-content: space-between
   align-content: stretch
   text-transform: uppercase
+  margin: 0 0 5vh
 
   .Material
     text-transform: lowercase !important
@@ -187,13 +189,14 @@ main
   .Showcase
     display: flex
     flex-direction: row
-    flex-wrap: wrap
+    flex-wrap: nowrap
     justify-content: space-around
     align-content: center
     width: 100%
-    height: calc(100vh - 8vw - (1.5em * 1.25))
+    height: calc(100vh - (8vmax + (1.5em * 1.25) + 5vh))
 
     @media #{$Mobile}
+      flex-wrap: wrap
       height: auto
 
     img
@@ -225,7 +228,7 @@ main
         width: 100%
 
     .Info
-      margin-top: calc((100vh - 8vw - (1.5em * 1.25)) / 2)
+      margin-top: calc((100vh - (8vmax + (1.5em * 1.25) + 5vh)) / 2)
       transform: translate(0, -50%)
       //flex-grow: 1
       width: 45%
@@ -328,13 +331,14 @@ img.New::before
       padding: 0 .5em
       vertical-align: baseline
       font-size: 1.5em
-      margin-top: -2em
+      //margin-top: -2em
       border: 0px
-      max-width: 30vw
+      max-width: 15vw
       //width: 0px
       //width: 350px
       border-bottom: 3px solid $MainColor
       //border-radius: 1em 1em 0 0
+      box-sizing: content-box
 
       &:focus, &:active
         outline: none
@@ -361,5 +365,9 @@ img.New::before
       left: 0%
 
       .result
-        padding: .2em
+        padding: .1em .5em
+        font-weight: lighter
         display: none
+
+  @media #{$Mobile}
+    display: none
