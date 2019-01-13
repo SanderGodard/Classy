@@ -12,7 +12,7 @@ $WhiteHover : #FBFBFB
 //Transitions
 $Fast: all .1s ease
 $Medium: all .25s ease
-$Slow: al .5s ease
+$Slow: all .5s ease
 
 
 //Shadows
@@ -148,7 +148,7 @@ nav
   a
     transition: $Fast
     color: $MainColor
-    padding: 0 1vw
+    margin: 0 1vw
     font-size: 1.5em
     font-weight: bold
     border-bottom: 0px solid $MainColor
@@ -158,7 +158,7 @@ nav
       transition: $Fast
       border-bottom: 3px solid $ThirdColor
       color: $ThirdColor
-      padding-bottom: 3px
+      padding-bottom: 2px
 
   .MobileNav
     display: none
@@ -258,8 +258,10 @@ main
           display: none
 
 .Button
+  transition: $Medium
   display: inline-block
   color: black
+  background-color: $White
   border: 5px solid black
   font-size: 1.25em
   box-sizing: content-box
@@ -269,6 +271,15 @@ main
   font-weight: bold
   text-align: center
   //max-width: 400px
+
+  &:hover
+    transition: $Medium
+    color: $White
+    background-color: black
+
+  &:active
+    transition: $Medium
+    transform: scale(.97)
 
   @media #{$TabletS}
     display: block
@@ -332,12 +343,13 @@ img.New::before
 
     #searchField
       transition: $Fast
-      padding: 0 .5em
+      padding: 6px .5em 2px
       vertical-align: baseline
       font-size: 1.5em
       //margin-top: -2em
       border: 0px
       max-width: 15vw
+      position: relative
       //width: 0px
       //width: 350px
       border-bottom: 3px solid $MainColor
@@ -347,7 +359,7 @@ img.New::before
       &:focus, &:active
         outline: none
         transition: $Fast
-        //border-color: $ThirdColor
+        border-color: $ThirdColor
 
       &:hover
         transition: $Fast

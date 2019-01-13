@@ -145,7 +145,7 @@ nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   color: #383838;
-  padding: 0 1vw;
+  margin: 0 1vw;
   font-size: 1.5em;
   font-weight: bold;
   border-bottom: 0px solid #383838;
@@ -157,7 +157,7 @@ nav a:hover {
   transition: all 0.1s ease;
   border-bottom: 3px solid #000;
   color: #000;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 /* line 163, styling.sass */
 nav .MobileNav {
@@ -310,8 +310,11 @@ main .Showcase .Info h1 {
 
 /* line 260, styling.sass */
 .Button {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   display: inline-block;
   color: black;
+  background-color: #FFF;
   border: 5px solid black;
   font-size: 1.25em;
   -webkit-box-sizing: content-box;
@@ -322,6 +325,20 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
+/* line 275, styling.sass */
+.Button:hover {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #FFF;
+  background-color: black;
+}
+/* line 280, styling.sass */
+.Button:active {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
 @media only screen and (max-width: 650px) {
   /* line 260, styling.sass */
   .Button {
@@ -331,17 +348,17 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 278, styling.sass */
+/* line 289, styling.sass */
 img.New::before {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
 }
 
-/* line 281, styling.sass */
+/* line 292, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 284, styling.sass */
+/* line 295, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -357,54 +374,56 @@ img.New::before {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 284, styling.sass */
+  /* line 295, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 284, styling.sass */
+  /* line 295, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 325, styling.sass */
+/* line 336, styling.sass */
 .searchDiv {
   display: inline;
   position: relative;
 }
-/* line 329, styling.sass */
+/* line 340, styling.sass */
 .searchDiv .search {
   display: none;
   position: relative;
 }
-/* line 333, styling.sass */
+/* line 344, styling.sass */
 .searchDiv .search #searchField {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  padding: 0 0.5em;
+  padding: 6px 0.5em 2px;
   vertical-align: baseline;
   font-size: 1.5em;
   border: 0px;
   max-width: 15vw;
+  position: relative;
   border-bottom: 3px solid #383838;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-/* line 347, styling.sass */
+/* line 359, styling.sass */
 .searchDiv .search #searchField:focus, .searchDiv .search #searchField:active {
   outline: none;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
+  border-color: #000;
 }
-/* line 352, styling.sass */
+/* line 364, styling.sass */
 .searchDiv .search #searchField:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border-color: #000;
 }
-/* line 357, styling.sass */
+/* line 369, styling.sass */
 .searchDiv .search .results {
   position: absolute;
   display: -webkit-box;
@@ -422,14 +441,14 @@ img.New::before {
   width: 100%;
   left: 0%;
 }
-/* line 371, styling.sass */
+/* line 383, styling.sass */
 .searchDiv .search .results .result {
   padding: 0.1em 0.5em;
   font-weight: lighter;
   display: none;
 }
 @media only screen and (max-width: 890px) {
-  /* line 325, styling.sass */
+  /* line 336, styling.sass */
   .searchDiv {
     display: none;
   }
