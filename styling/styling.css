@@ -386,17 +386,17 @@ img.New::before {
   }
 }
 
-/* line 336, styling.sass */
+/* line 337, styling.sass */
 .searchDiv {
   display: inline;
   position: relative;
 }
-/* line 340, styling.sass */
+/* line 341, styling.sass */
 .searchDiv .search {
   display: none;
   position: relative;
 }
-/* line 344, styling.sass */
+/* line 345, styling.sass */
 .searchDiv .search #searchField {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -410,20 +410,20 @@ img.New::before {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-/* line 359, styling.sass */
+/* line 360, styling.sass */
 .searchDiv .search #searchField:focus, .searchDiv .search #searchField:active {
   outline: none;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border-color: #000;
 }
-/* line 364, styling.sass */
+/* line 365, styling.sass */
 .searchDiv .search #searchField:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border-color: #000;
 }
-/* line 369, styling.sass */
+/* line 370, styling.sass */
 .searchDiv .search .results {
   position: absolute;
   display: -webkit-box;
@@ -441,14 +441,25 @@ img.New::before {
   width: 100%;
   left: 0%;
 }
-/* line 383, styling.sass */
+/* line 384, styling.sass */
 .searchDiv .search .results .result {
-  padding: 0.1em 0.5em;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  margin: 0.1em 0.5em;
   font-weight: lighter;
   display: none;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+/* line 392, styling.sass */
+.searchDiv .search .results .result:hover {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  border: 0px;
+  font-weight: 400;
 }
 @media only screen and (max-width: 890px) {
-  /* line 336, styling.sass */
+  /* line 337, styling.sass */
   .searchDiv {
     display: none;
   }
