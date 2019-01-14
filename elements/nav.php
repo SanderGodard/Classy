@@ -11,7 +11,7 @@
   </div>
   <div class="NavPart">
     <div class="searchDiv">
-      <a href="javascript:void(0)" id="SearchIcon" class="Material" onclick="/scripts/searchField.js">search</a>
+      <a href="javascript:void(0)" id="SearchIcon" class="Material" onclick="/HypeIT/scripts/searchField.js">search</a>
 
       <div class="search">
         <input autofocus type="text" id="searchField" placeholder="Search..." tabindex="1">
@@ -35,4 +35,13 @@
   <div class="MobileNav">
     <a href="javascript:void(0)" class="Material">menu</a>
   </div>
+</div>
+
+
+<div id="Cookies">
+  <span onclick="/HypeIT/scripts/cookies.js">x</span>
+  <p>
+    Hei, vi bruker 'Cookies', også kjent som informasjonskapsler. Ved å fortsette antar vi at du er enig i bruken
+    <a href="/HypeIT/kontakt/Cookies" target="_blank">Finn ut mer om informasjonskapsler og hvordan du kan avvise dem.</a>
+  </p>
 </div>

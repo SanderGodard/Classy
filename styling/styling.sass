@@ -412,6 +412,62 @@ img.New::before
       color: $MainColor
 
 
+#Cookies
+  z-index: 9999
+  background-color: $MainColor
+  position: fixed
+  bottom: 0
+  left: 0
+  width: 70%
+  border-radius: 50px 50px 0 0
+  height: 100px
+  padding: 10px 3vw
+  color: $WhiteHover
+  margin: 0 50%
+  transform: translate(-50%,0)
+  //min-width: 500px
+
+  a
+    margin: 0
+    display: inline
+    transition: $Fast
+    border-bottom: 0px
+    padding: 0
+    color: $WhiteHover
+    font-size: 1em
+    //pointer-events: none
+
+    &:hover
+      border-bottom: 0px
+      padding: 0
+      color: $WhiteHover
+      transition: $Fast
+      text-decoration: underline
+
+  span
+    cursor: pointer
+    position: relative
+    font-size: 1.3em
+    //padding: 1vw 0
+    margin: 0 -1vw 1vw 0
+    text-transform: lowercase
+    float: right
+
+  @media #{$Mobile}
+    width: 100vw
+    border-radius: 5px 5px 0 0
+    height: 90px
+
+    span
+      margin: 0 5px 50px 0
+
+  @media #{$MobileXXL}
+    height: 120px
+
+    span
+      margin: 0 5px 80px 0
+
+
 // ====================================Eduard sin del
 
 
