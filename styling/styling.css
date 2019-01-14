@@ -466,4 +466,20 @@ img.New::before {
   }
 }
 
+/* line 402, styling.sass */
+.LinkToHost {
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+  margin-top: 20vh;
+}
+/* line 408, styling.sass */
+.LinkToHost #LinkToHost {
+  text-decoration: underline;
+}
+/* line 411, styling.sass */
+.LinkToHost #LinkToHost:hover {
+  color: #383838;
+}
+
 /*# sourceMappingURL=styling.css.map */
