@@ -1,4 +1,10 @@
 # HypeIT
+
+<!--ts-->
+   - [Om HypeIt](#hypeit)
+   - [Template for nye sider](#template)
+   - [To do list](#to-do)
+<!--te-->
 Markedsføring og Salg samarbeidsprosjekt.
 
 
@@ -50,7 +56,7 @@ Current new page template we use (Will be constantly updated):
 
 ```
 
-# Liste over ting vi må gjøre
+# To do
 
  - Bestemme Logo
  - Forbedre søkefunksjon
