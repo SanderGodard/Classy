@@ -15,4 +15,4 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
 <script async src="/HypeIT/scripts/searchField.js"></script>
 <script async src="/HypeIT/scripts/search.js"></script>
-<script async src="/HypeIT/scripts/cookies.js"></script>
+<script async defer src="/HypeIT/scripts/cookies.js"></script>
