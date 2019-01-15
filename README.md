@@ -13,6 +13,7 @@ Vi skal lage en fullstendig online bedrift bortett bra at vi ikke egentlig skal 
 Dette er HypeIt :D
 
 
+# Template
 
 Current new page template we use (Will be constantly updated):
 ```php
@@ -49,7 +50,7 @@ Current new page template we use (Will be constantly updated):
 
 ```
 
-#Liste over ting vi må gjøre
+# Liste over ting vi må gjøre
 
  - Bestemme Logo
  - Forbedre søkefunksjon
