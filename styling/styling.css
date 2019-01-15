@@ -484,6 +484,8 @@ img.New::before {
 
 /* line 415, styling.sass */
 #Cookies {
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
   z-index: 9999;
   background-color: #383838;
   position: fixed;
@@ -491,8 +493,7 @@ img.New::before {
   left: 0;
   width: 70%;
   border-radius: 50px 50px 0 0;
-  height: 100px;
-  padding: 10px 3vw;
+  padding: 10px 3vw 8px;
   color: #FBFBFB;
   margin: 0 50%;
   -webkit-transform: translate(-50%, 0);
@@ -532,21 +533,10 @@ img.New::before {
   #Cookies {
     width: 100vw;
     border-radius: 5px 5px 0 0;
-    height: 90px;
   }
-  /* line 461, styling.sass */
+  /* line 460, styling.sass */
   #Cookies span {
     margin: 0 5px 50px 0;
-  }
-}
-@media only screen and (max-width: 575px) {
-  /* line 415, styling.sass */
-  #Cookies {
-    height: 120px;
-  }
-  /* line 467, styling.sass */
-  #Cookies span {
-    margin: 0 5px 80px 0;
   }
 }
 
