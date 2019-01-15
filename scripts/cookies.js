@@ -1,6 +1,6 @@
-x document.getElementById('Cookies');
+x = document.getElementById('Cookies');
+x.addEventListener("click", hideCookies);
 
 function hideCookies() {
-  console.log(x);
   x.style.display = 'none';
 }

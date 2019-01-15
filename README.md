@@ -48,3 +48,13 @@ Current new page template we use (Will be constantly updated):
 </html>
 
 ```
+
+#Liste over ting vi må gjøre
+
+ - Bestemme Logo
+ - Forbedre søkefunksjon
+ - Bygge slider for anbefalte produkter
+ - Cookie popup
+ - Handlekurv
+ - Sexy animation på search lista
+ - Gjøre så man ikke får markert kryss ut knappen på cookies
