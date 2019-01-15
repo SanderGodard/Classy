@@ -1,4 +1,10 @@
 # HypeIT
+
+<!--ts-->
+   - [Om HypeIt](#hypeit)
+   - [Template for nye sider](#template)
+   - [To do list](#to-do)
+<!--te-->
 Markedsføring og Salg samarbeidsprosjekt.
 
 
@@ -13,6 +19,7 @@ Vi skal lage en fullstendig online bedrift bortett bra at vi ikke egentlig skal 
 Dette er HypeIt :D
 
 
+# Template
 
 Current new page template we use (Will be constantly updated):
 ```php
@@ -49,7 +56,7 @@ Current new page template we use (Will be constantly updated):
 
 ```
 
-#Liste over ting vi må gjøre
+# To do
 
  - Bestemme Logo
  - Forbedre søkefunksjon
