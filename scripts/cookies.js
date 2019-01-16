@@ -1,5 +1,5 @@
 x = document.getElementById('Cookies');
-x.addEventListener("click", hideCookies);
+x.children[0].addEventListener("click", hideCookies);
 
 
 
