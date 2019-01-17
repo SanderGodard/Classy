@@ -1,5 +1,7 @@
 <div class="Logo">
-
+  <a href="/HypeIT/">
+    <img src="/HypeIT/images/Logo.png" alt="Logo">
+  </a>
 </div>
 <div class="RightNav">
   <div class="Nav">
@@ -44,4 +46,6 @@
     Hei, vi bruker 'Cookies', også kjent som informasjonskapsler. Ved å fortsette antar vi at du er enig i bruken
     <a href="/HypeIT/kontakt/Cookies" target="_blank">Finn ut mer om informasjonskapsler og hvordan du kan avvise dem.</a>
   </p>
+</div>
+<div id="alertBox">
 </div>
