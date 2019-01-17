@@ -310,7 +310,7 @@ main .Showcase .Info h1 {
 }
 
 /* line 261, styling.sass */
-.Button {
+.shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   display: inline-block;
@@ -327,14 +327,14 @@ main .Showcase .Info h1 {
   text-align: center;
 }
 /* line 276, styling.sass */
-.Button:hover {
+.shopBtn:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: black;
 }
 /* line 281, styling.sass */
-.Button:active {
+.shopBtn:active {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   -webkit-transform: scale(0.97);
@@ -342,7 +342,7 @@ main .Showcase .Info h1 {
 }
 @media only screen and (max-width: 650px) {
   /* line 261, styling.sass */
-  .Button {
+  .shopBtn {
     display: block;
     font-size: 1.5em;
     padding: 1em 0;
