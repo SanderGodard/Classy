@@ -177,6 +177,7 @@ nav
     align-self: flex-end
 
     a
+      font-weight: 100
       font-size: 3em
       line-height: .5
       vertical-align: text-bottom
@@ -198,6 +199,18 @@ nav
 
 main
   padding: 0 4vw
+
+  div.Showcase.New::before
+    display: none
+
+    @media #{$TabletS}
+      display: block
+      font-size: 2em
+      left: 4vmax
+      transform: translate(0%, 50%)
+
+    @media #{$MobileXL}
+      font-size: 1.3em
 
   .Showcase
     display: flex
@@ -234,9 +247,11 @@ main
 
       @media #{$TabletS}
         margin: auto auto
+        order: 1
 
       @media #{$MobileXXL}
         width: 90%
+        margin-left: 15%
 
       @media #{$MobileXM}
         width: 100%
@@ -255,6 +270,14 @@ main
         color: black
         text-transform: capitalize
 
+        @media #{$TabletS}
+          font-size: 3em
+          text-align: center
+          margin: auto
+
+        @media #{$MobileXXL}
+          font-size: 2.75em
+
       @media #{$Mobile}
         width: 90%
         order: 1
@@ -262,10 +285,19 @@ main
         transform: none
 
       @media #{$TabletS}
-        flex-grow: 1
-      //
+        order: 2
+
         .New::before
           display: none
+
+      @media #{$MobileXXL}
+        flex-grow: 0
+        width: 70%
+
+      @media #{$MobileL}
+        flex-grow: 1
+
+
 
 .shopBtn
   transition: $Medium
@@ -296,7 +328,7 @@ main
     font-size: 1.5em
     padding: 1em 0
 
-img.New::before
+//img.New::before
   transform: translate(0%, 0%)
 
 .New
