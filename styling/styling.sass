@@ -134,6 +134,12 @@ nav
   text-transform: uppercase
   margin: 0 0 5vh
 
+  .Logo
+    a
+      img
+        width: 200px
+        margin: -4px 0 0
+
   .Material
     text-transform: lowercase !important
     font-size: 1.6em
@@ -147,7 +153,7 @@ nav
 
   a
     transition: $Fast
-    color: $MainColor
+    color: $ThirdColor
     margin: 0 1vw
     font-size: 1.5em
     font-weight: bold
@@ -160,13 +166,6 @@ nav
       color: $ThirdColor
       padding-bottom: 2px
 
-  .MobileNav
-    display: none
-    align-self: flex-end
-
-    @media #{$Mobile}
-      padding: 0 2.3vw
-
   .Nav
     display: inline-block
 
@@ -175,16 +174,26 @@ nav
 
   .MobileNav
     display: none
+    align-self: flex-end
 
     a
-      font-size: 2em
-      line-height: .98
+      font-size: 3em
+      line-height: .5
+      vertical-align: text-bottom
+
 
     @media #{$Mobile}
       display: inline-block
+      //padding: 0 2.3vw
 
   .NavPart
     display: inline-block
+
+  @media #{$MobileXL}
+    padding: 4vmax 2vmax
+
+  @media #{$MobileM}
+    padding: 4vmax 1vmax
 
 
 main

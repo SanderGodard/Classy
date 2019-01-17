@@ -1,5 +1,7 @@
 <div class="Logo">
-
+  <a href="/HypeIT/index.php">
+    <img src="/HypeIT/images/Logo.png" alt="Logo">
+  </a>
 </div>
 <div class="RightNav">
   <div class="Nav">

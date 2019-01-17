@@ -118,12 +118,17 @@ nav {
   text-transform: uppercase;
   margin: 0 0 5vh;
 }
-/* line 137, styling.sass */
+/* line 139, styling.sass */
+nav .Logo a img {
+  width: 200px;
+  margin: -4px 0 0;
+}
+/* line 143, styling.sass */
 nav .Material {
   text-transform: lowercase !important;
   font-size: 1.6em;
 }
-/* line 141, styling.sass */
+/* line 147, styling.sass */
 nav .RightNav {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -140,18 +145,18 @@ nav .RightNav {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 148, styling.sass */
+/* line 154, styling.sass */
 nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  color: #383838;
+  color: #000;
   margin: 0 1vw;
   font-size: 1.5em;
   font-weight: bold;
   border-bottom: 0px solid #383838;
   position: relative;
 }
-/* line 157, styling.sass */
+/* line 163, styling.sass */
 nav a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -159,53 +164,56 @@ nav a:hover {
   color: #000;
   padding-bottom: 2px;
 }
-/* line 163, styling.sass */
+/* line 169, styling.sass */
+nav .Nav {
+  display: inline-block;
+}
+@media only screen and (max-width: 890px) {
+  /* line 169, styling.sass */
+  nav .Nav {
+    display: none;
+  }
+}
+/* line 175, styling.sass */
 nav .MobileNav {
   display: none;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-@media only screen and (max-width: 890px) {
-  /* line 163, styling.sass */
-  nav .MobileNav {
-    padding: 0 2.3vw;
-  }
-}
-/* line 170, styling.sass */
-nav .Nav {
-  display: inline-block;
-}
-@media only screen and (max-width: 890px) {
-  /* line 170, styling.sass */
-  nav .Nav {
-    display: none;
-  }
-}
-/* line 176, styling.sass */
-nav .MobileNav {
-  display: none;
-}
 /* line 179, styling.sass */
 nav .MobileNav a {
-  font-size: 2em;
-  line-height: 0.98;
+  font-size: 3em;
+  line-height: 0.5;
+  vertical-align: text-bottom;
 }
 @media only screen and (max-width: 890px) {
-  /* line 176, styling.sass */
+  /* line 175, styling.sass */
   nav .MobileNav {
     display: inline-block;
   }
 }
-/* line 186, styling.sass */
+/* line 189, styling.sass */
 nav .NavPart {
   display: inline-block;
 }
+@media only screen and (max-width: 500px) {
+  /* line 126, styling.sass */
+  nav {
+    padding: 4vmax 2vmax;
+  }
+}
+@media only screen and (max-width: 376px) {
+  /* line 126, styling.sass */
+  nav {
+    padding: 4vmax 1vmax;
+  }
+}
 
-/* line 190, styling.sass */
+/* line 199, styling.sass */
 main {
   padding: 0 4vw;
 }
-/* line 193, styling.sass */
+/* line 202, styling.sass */
 main .Showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,25 +232,25 @@ main .Showcase {
   height: calc(100vh - (8vmax + (1.5em * 1.25) + 5vh));
 }
 @media only screen and (max-width: 890px) {
-  /* line 193, styling.sass */
+  /* line 202, styling.sass */
   main .Showcase {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: auto;
   }
 }
-/* line 206, styling.sass */
+/* line 215, styling.sass */
 main .Showcase img {
   cursor: pointer;
   bottom: 0;
   height: 100%;
 }
-/* line 213, styling.sass */
+/* line 222, styling.sass */
 main .Showcase img .New::before {
   display: none;
 }
 @media only screen and (max-width: 890px) {
-  /* line 206, styling.sass */
+  /* line 215, styling.sass */
   main .Showcase img {
     width: 60%;
     height: auto;
@@ -257,24 +265,24 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 206, styling.sass */
+  /* line 215, styling.sass */
   main .Showcase img {
     margin: auto auto;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 206, styling.sass */
+  /* line 215, styling.sass */
   main .Showcase img {
     width: 90%;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 206, styling.sass */
+  /* line 215, styling.sass */
   main .Showcase img {
     width: 100%;
   }
 }
-/* line 235, styling.sass */
+/* line 244, styling.sass */
 main .Showcase .Info {
   margin-top: calc((100vh - (8vmax + (1.5em * 1.25) + 5vh)) / 2);
   -webkit-transform: translate(0, -50%);
@@ -282,14 +290,14 @@ main .Showcase .Info {
   width: 45%;
   text-align: left;
 }
-/* line 244, styling.sass */
+/* line 253, styling.sass */
 main .Showcase .Info h1 {
   font-size: 3.75em;
   color: black;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 890px) {
-  /* line 235, styling.sass */
+  /* line 244, styling.sass */
   main .Showcase .Info {
     width: 90%;
     -webkit-box-ordinal-group: 2;
@@ -301,7 +309,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 235, styling.sass */
+  /* line 244, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -309,7 +317,7 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 261, styling.sass */
+/* line 270, styling.sass */
 .shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -326,14 +334,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
-/* line 276, styling.sass */
+/* line 285, styling.sass */
 .shopBtn:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: black;
 }
-/* line 281, styling.sass */
+/* line 290, styling.sass */
 .shopBtn:active {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -341,7 +349,7 @@ main .Showcase .Info h1 {
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 261, styling.sass */
+  /* line 270, styling.sass */
   .shopBtn {
     display: block;
     font-size: 1.5em;
@@ -349,17 +357,17 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 290, styling.sass */
+/* line 299, styling.sass */
 img.New::before {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
 }
 
-/* line 293, styling.sass */
+/* line 302, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 296, styling.sass */
+/* line 305, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -375,29 +383,29 @@ img.New::before {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 296, styling.sass */
+  /* line 305, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 296, styling.sass */
+  /* line 305, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 338, styling.sass */
+/* line 347, styling.sass */
 .searchDiv {
   display: inline;
   position: relative;
 }
-/* line 342, styling.sass */
+/* line 351, styling.sass */
 .searchDiv .search {
   display: none;
   position: relative;
 }
-/* line 346, styling.sass */
+/* line 355, styling.sass */
 .searchDiv .search #searchField {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -411,20 +419,20 @@ img.New::before {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-/* line 361, styling.sass */
+/* line 370, styling.sass */
 .searchDiv .search #searchField:focus, .searchDiv .search #searchField:active {
   outline: none;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border-color: #000;
 }
-/* line 366, styling.sass */
+/* line 375, styling.sass */
 .searchDiv .search #searchField:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border-color: #000;
 }
-/* line 371, styling.sass */
+/* line 380, styling.sass */
 .searchDiv .search .results {
   position: absolute;
   display: -webkit-box;
@@ -442,7 +450,7 @@ img.New::before {
   width: 100%;
   left: 0%;
 }
-/* line 385, styling.sass */
+/* line 394, styling.sass */
 .searchDiv .search .results .result {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -452,7 +460,7 @@ img.New::before {
   text-transform: capitalize;
   font-weight: 300;
 }
-/* line 393, styling.sass */
+/* line 402, styling.sass */
 .searchDiv .search .results .result:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -460,29 +468,29 @@ img.New::before {
   font-weight: 400;
 }
 @media only screen and (max-width: 890px) {
-  /* line 338, styling.sass */
+  /* line 347, styling.sass */
   .searchDiv {
     display: none;
   }
 }
 
-/* line 402, styling.sass */
+/* line 411, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 408, styling.sass */
+/* line 417, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 411, styling.sass */
+/* line 420, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
 
-/* line 415, styling.sass */
+/* line 424, styling.sass */
 #Cookies {
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
@@ -499,7 +507,7 @@ img.New::before {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
-/* line 431, styling.sass */
+/* line 440, styling.sass */
 #Cookies a {
   margin: 0;
   display: inline;
@@ -510,7 +518,7 @@ img.New::before {
   color: #FBFBFB;
   font-size: 1em;
 }
-/* line 441, styling.sass */
+/* line 450, styling.sass */
 #Cookies a::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -521,7 +529,7 @@ img.New::before {
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 446, styling.sass */
+/* line 455, styling.sass */
 #Cookies a:hover {
   border-bottom: 0px;
   padding: 0;
@@ -530,7 +538,7 @@ img.New::before {
   transition: all 0.1s ease;
   text-decoration: underline;
 }
-/* line 454, styling.sass */
+/* line 463, styling.sass */
 #Cookies p::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -541,7 +549,7 @@ img.New::before {
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 459, styling.sass */
+/* line 468, styling.sass */
 #Cookies span {
   cursor: pointer;
   position: relative;
@@ -550,7 +558,7 @@ img.New::before {
   text-transform: lowercase;
   float: right;
 }
-/* line 468, styling.sass */
+/* line 477, styling.sass */
 #Cookies span::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -562,12 +570,12 @@ img.New::before {
   opacity: 1;
 }
 @media only screen and (max-width: 890px) {
-  /* line 415, styling.sass */
+  /* line 424, styling.sass */
   #Cookies {
     width: 100vw;
     border-radius: 5px 5px 0 0;
   }
-  /* line 477, styling.sass */
+  /* line 486, styling.sass */
   #Cookies span {
     margin: 0 5px 50px 0;
   }
