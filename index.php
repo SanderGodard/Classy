@@ -15,7 +15,7 @@
   <main>
 
 
-    <div class="Showcase">
+    <div class="Showcase New">
       <img src="/HypeIT/images/showcase.png" alt="Supreme Dog Taped Seam Jakke" class="New" onclick="window.location.href='javascript:void(0)'">
       <div class="Info">
         <h1 class="New">Supreme dog taped seam jakke</h1>
