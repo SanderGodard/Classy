@@ -47,3 +47,5 @@
     <a href="/HypeIT/kontakt/Cookies" target="_blank">Finn ut mer om informasjonskapsler og hvordan du kan avvise dem.</a>
   </p>
 </div>
+<div id="alertBox">
+</div>
