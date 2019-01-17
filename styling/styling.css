@@ -399,32 +399,34 @@ img.New::before {
 }
 /* line 346, styling.sass */
 .searchDiv .search #searchField {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   padding: 6px 0.5em 2px;
   vertical-align: baseline;
   font-size: 1.5em;
   border: 0px;
-  max-width: 15vw;
+  max-width: 5vw;
+  -webkit-animation: 0.5s linear expand forwards;
+          animation: 0.5s linear expand forwards;
   position: relative;
   border-bottom: 3px solid #383838;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-/* line 361, styling.sass */
+/* line 362, styling.sass */
 .searchDiv .search #searchField:focus, .searchDiv .search #searchField:active {
   outline: none;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   border-color: #000;
 }
-/* line 366, styling.sass */
+/* line 367, styling.sass */
 .searchDiv .search #searchField:hover {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   border-color: #000;
 }
-/* line 371, styling.sass */
+/* line 372, styling.sass */
 .searchDiv .search .results {
   position: absolute;
   display: -webkit-box;
@@ -442,7 +444,7 @@ img.New::before {
   width: 100%;
   left: 0%;
 }
-/* line 385, styling.sass */
+/* line 386, styling.sass */
 .searchDiv .search .results .result {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -452,7 +454,7 @@ img.New::before {
   text-transform: capitalize;
   font-weight: 300;
 }
-/* line 393, styling.sass */
+/* line 394, styling.sass */
 .searchDiv .search .results .result:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -466,23 +468,23 @@ img.New::before {
   }
 }
 
-/* line 402, styling.sass */
+/* line 403, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 408, styling.sass */
+/* line 409, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 411, styling.sass */
+/* line 412, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
 
-/* line 415, styling.sass */
+/* line 416, styling.sass */
 #Cookies {
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
@@ -499,7 +501,7 @@ img.New::before {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
-/* line 430, styling.sass */
+/* line 431, styling.sass */
 #Cookies a {
   margin: 0;
   display: inline;
@@ -510,7 +512,7 @@ img.New::before {
   color: #FBFBFB;
   font-size: 1em;
 }
-/* line 440, styling.sass */
+/* line 441, styling.sass */
 #Cookies a:hover {
   border-bottom: 0px;
   padding: 0;
@@ -519,7 +521,7 @@ img.New::before {
   transition: all 0.1s ease;
   text-decoration: underline;
 }
-/* line 447, styling.sass */
+/* line 448, styling.sass */
 #Cookies span {
   cursor: pointer;
   position: relative;
@@ -529,14 +531,32 @@ img.New::before {
   float: right;
 }
 @media only screen and (max-width: 890px) {
-  /* line 415, styling.sass */
+  /* line 416, styling.sass */
   #Cookies {
     width: 100vw;
     border-radius: 5px 5px 0 0;
   }
-  /* line 460, styling.sass */
+  /* line 461, styling.sass */
   #Cookies span {
     margin: 0 5px 50px 0;
+  }
+}
+
+@-webkit-keyframes expand {
+  0% {
+    max-width: 5vw;
+  }
+  100% {
+    max-width: 15vw;
+  }
+}
+
+@keyframes expand {
+  0% {
+    max-width: 5vw;
+  }
+  100% {
+    max-width: 15vw;
   }
 }
 
