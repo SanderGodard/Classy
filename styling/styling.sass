@@ -344,13 +344,14 @@ img.New::before
     position: relative
 
     #searchField
-      transition: $Fast
+      transition: $Slow
       padding: 6px .5em 2px
       vertical-align: baseline
       font-size: 1.5em
       //margin-top: -2em
       border: 0px
-      max-width: 15vw
+      max-width: 5vw
+      animation: 0.4s ease expand forwards
       position: relative
       //width: 0px
       //width: 350px
@@ -360,11 +361,11 @@ img.New::before
 
       &:focus, &:active
         outline: none
-        transition: $Fast
+        transition: $Slow
         border-color: $ThirdColor
 
       &:hover
-        transition: $Fast
+        transition: $Slow
         //transform: scale(1.07)
         border-color: $ThirdColor
 
@@ -427,6 +428,7 @@ img.New::before
   transform: translate(-50%,0)
   //min-width: 500px
 
+
   a
     margin: 0
     display: inline
@@ -437,12 +439,23 @@ img.New::before
     font-size: 1em
     //pointer-events: none
 
+    &::selection
+      color: $WhiteHover !important
+      background-color: rgba(0,0,0,0) !important
+      opacity: 1
+
     &:hover
       border-bottom: 0px
       padding: 0
       color: $WhiteHover
       transition: $Fast
       text-decoration: underline
+
+  p
+    &::selection
+      color: $WhiteHover !important
+      background-color: rgba(0,0,0,0) !important
+      opacity: 1
 
   span
     cursor: pointer
@@ -453,12 +466,23 @@ img.New::before
     text-transform: lowercase
     float: right
 
+    &::selection
+      color: $WhiteHover !important
+      background-color: rgba(0,0,0,0) !important
+      opacity: 1
+
   @media #{$Mobile}
     width: 100vw
     border-radius: 5px 5px 0 0
 
     span
       margin: 0 5px 50px 0
+
+@keyframes expand
+  0%
+    max-width: 5vw
+  100%
+    max-width: 15vw
 
 
 // ====================================Eduard sin del
