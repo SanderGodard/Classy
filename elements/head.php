@@ -16,3 +16,4 @@
 <script async src="/HypeIT/scripts/searchField.js"></script>
 <script async src="/HypeIT/scripts/search.js"></script>
 <script async defer src="/HypeIT/scripts/cookies.js"></script>
+<script async defer src="/HypeIT/scripts/shop.js"></script>
