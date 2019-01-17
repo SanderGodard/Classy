@@ -21,7 +21,7 @@
   </div>
 
   <div class="høyreside">
-    <a class="nametekst">Cat In The Hat Hettegenser</a>
+    <a class="nametekst Supreme">Cat In The Hat Hettegenser</a>
   </div>
 
 </div>
