@@ -10,6 +10,7 @@
     <a href="/HypeIT/produkter/damer/">Damer</a>
     <a href="/HypeIT/produkter/annet/">Annet</a>
     <a href="/HypeIT/store/cart/" class="Material">shopping_cart</a>
+    <span id="cartCounter">10</span>
   </div>
   <div class="NavPart">
     <div class="searchDiv">

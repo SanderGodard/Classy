@@ -27,14 +27,14 @@ Current new page template we use (Will be constantly updated):
 <html lang="NB" dir="ltr">
 <head>
   <?php
-    $title = "HypeIT - Hjem"
-    include = "../elements/head.php"
+    $title = "HypeIT - Hjem";
+    include "../elements/head.php";
    ?>
 </head>
 <body>
   <nav>
     <?php
-      include = "../elements/nav.php"
+      include "../elements/nav.php";
      ?>
   </nav>
   <main>
@@ -48,7 +48,7 @@ Current new page template we use (Will be constantly updated):
   </main>
   <footer>
     <?php
-      include = "../elements/footer.php";
+      include "../elements/footer.php";
      ?>
   </footer>
 </body>
@@ -66,3 +66,6 @@ Current new page template we use (Will be constantly updated):
  - Sexy animation på search lista
  - Gjøre så man ikke får markert kryss ut knappen på cookies
  - Mouseover zoom på produktbilder
+ - "Om oss" side??
+ - Når du høyreklikker på "søk" ikonet så åpner den seg fortsatt. "Feature or bug"?
+ - Gjøre så #cartCounter endrer seg riktig
