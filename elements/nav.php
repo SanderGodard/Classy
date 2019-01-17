@@ -1,5 +1,5 @@
 <div class="Logo">
-  <a href="/HypeIT/index.php">
+  <a href="/HypeIT/">
     <img src="/HypeIT/images/Logo.png" alt="Logo">
   </a>
 </div>
