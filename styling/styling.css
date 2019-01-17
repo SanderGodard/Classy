@@ -335,7 +335,7 @@ main .Showcase .Info h1 {
   text-align: center;
 }
 /* line 285, styling.sass */
-.shopBtn:hover {
+.shopBtn:hover, .shopBtn:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
