@@ -501,7 +501,7 @@ img.New::before {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
-/* line 431, styling.sass */
+/* line 432, styling.sass */
 #Cookies a {
   margin: 0;
   display: inline;
@@ -512,7 +512,18 @@ img.New::before {
   color: #FBFBFB;
   font-size: 1em;
 }
-/* line 441, styling.sass */
+/* line 442, styling.sass */
+#Cookies a::-moz-selection {
+  color: #FBFBFB !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  opacity: 1;
+}
+#Cookies a::selection {
+  color: #FBFBFB !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  opacity: 1;
+}
+/* line 447, styling.sass */
 #Cookies a:hover {
   border-bottom: 0px;
   padding: 0;
@@ -521,7 +532,18 @@ img.New::before {
   transition: all 0.1s ease;
   text-decoration: underline;
 }
-/* line 448, styling.sass */
+/* line 455, styling.sass */
+#Cookies p::-moz-selection {
+  color: #FBFBFB !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  opacity: 1;
+}
+#Cookies p::selection {
+  color: #FBFBFB !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  opacity: 1;
+}
+/* line 460, styling.sass */
 #Cookies span {
   cursor: pointer;
   position: relative;
@@ -530,13 +552,24 @@ img.New::before {
   text-transform: lowercase;
   float: right;
 }
+/* line 469, styling.sass */
+#Cookies span::-moz-selection {
+  color: #FBFBFB !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  opacity: 1;
+}
+#Cookies span::selection {
+  color: #FBFBFB !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  opacity: 1;
+}
 @media only screen and (max-width: 890px) {
   /* line 416, styling.sass */
   #Cookies {
     width: 100vw;
     border-radius: 5px 5px 0 0;
   }
-  /* line 461, styling.sass */
+  /* line 478, styling.sass */
   #Cookies span {
     margin: 0 5px 50px 0;
   }
