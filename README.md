@@ -65,3 +65,4 @@ Current new page template we use (Will be constantly updated):
  - Handlekurv
  - Sexy animation på search lista
  - Gjøre så man ikke får markert kryss ut knappen på cookies
+ - Mouseover zoom på produktbilder
