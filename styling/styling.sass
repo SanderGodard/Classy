@@ -427,6 +427,7 @@ img.New::before
   transform: translate(-50%,0)
   //min-width: 500px
 
+
   a
     margin: 0
     display: inline
@@ -437,12 +438,23 @@ img.New::before
     font-size: 1em
     //pointer-events: none
 
+    &::selection
+      color: $WhiteHover !important
+      background-color: rgba(0,0,0,0) !important
+      opacity: 1
+
     &:hover
       border-bottom: 0px
       padding: 0
       color: $WhiteHover
       transition: $Fast
       text-decoration: underline
+
+  p
+    &::selection
+      color: $WhiteHover !important
+      background-color: rgba(0,0,0,0) !important
+      opacity: 1
 
   span
     cursor: pointer
@@ -452,6 +464,11 @@ img.New::before
     margin: 0 -1vw 1vw 0
     text-transform: lowercase
     float: right
+
+    &::selection
+      color: $WhiteHover !important
+      background-color: rgba(0,0,0,0) !important
+      opacity: 1
 
   @media #{$Mobile}
     width: 100vw
