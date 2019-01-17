@@ -14,9 +14,17 @@
   </nav>
   <main>
 
+<div class="produktside">
 
+  <div class="venstreside">
+    <img src="../../../images/SupremeCatInAHat.jpg" class="StortBilde">
+  </div>
 
+  <div class="høyreside">
+    <a class="nametekst">Cat In The Hat Hettegenser</a>
+  </div>
 
+</div>
 
   </main>
   <footer>

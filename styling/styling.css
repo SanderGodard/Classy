@@ -540,4 +540,26 @@ img.New::before {
   }
 }
 
+/* line 470, styling.sass */
+.produktside {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 476, styling.sass */
+.StortBilde {
+  width: 32%;
+  border: 3px solid #707070;
+  padding: 6vh 0vh 3vh 0vh;
+}
+
 /*# sourceMappingURL=styling.css.map */
