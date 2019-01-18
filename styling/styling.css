@@ -182,7 +182,7 @@ nav .Nav span {
   font-size: 0.6em;
   display: inline-block;
   text-align: center;
-  padding: 0.29em;
+  padding: 0.28em 0em;
 }
 @media only screen and (max-width: 890px) {
   /* line 171, styling.sass */
@@ -798,7 +798,7 @@ main .Showcase .Info h1 {
   display: none;
   position: relative;
   color: white;
-  font-size: 4em;
+  font-size: 3em;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -808,7 +808,7 @@ main .Showcase .Info h1 {
   z-index: 1;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
   pointer-events: none;
 }
 /* line 656, styling.sass */
@@ -835,11 +835,17 @@ main .Showcase .Info h1 {
 }
 /* line 672, styling.sass */
 .kategori_wrapper .kategori_box .kategori_box_wrapper img {
-  width: 362px;
-  height: 429px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 17vw;
+  height: 19vw;
 }
 
-/* line 685, styling.sass */
+/* line 690, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -852,7 +858,7 @@ main .Showcase .Info h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-/* line 692, styling.sass */
+/* line 697, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -865,7 +871,7 @@ main .Showcase .Info h1 {
   -ms-flex-line-pack: end;
       align-content: flex-end;
 }
-/* line 699, styling.sass */
+/* line 704, styling.sass */
 .produktside .venstreside .StortBilde {
   width: 55%;
   border: 3px solid #707070;
@@ -873,7 +879,7 @@ main .Showcase .Info h1 {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-/* line 706, styling.sass */
+/* line 711, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -887,7 +893,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 713, styling.sass */
+/* line 718, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
