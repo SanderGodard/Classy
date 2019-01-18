@@ -1,3 +1,5 @@
+![HypeIT](images/logo.png)
+
 # HypeIT
 
 <!--ts-->
@@ -9,19 +11,19 @@ Markedsføring og Salg samarbeidsprosjekt.
 
 
 Et samarbeidsprosjekt med hele klassa, vi har 4 grupper:
- - Front-end
- - Back-end
- - Design
  - Markedsføring
+ - Design
+ - Back-end
+ - Front-end
 
-Vi skal lage en fullstendig online bedrift bortett bra at vi ikke egentlig skal selge noe.
+Vi skal lage en fullstendig online bedrift bortsett fra at vi ikke egentlig skal selge noe.
 
 Dette er HypeIt :D
 
 
 # Template
 
-Current new page template we use (Will be constantly updated):
+Templaten vi bruker for nye sider:
 ```php
 <!Doctype HTML>
 <html lang="NB" dir="ltr">
@@ -58,14 +60,25 @@ Current new page template we use (Will be constantly updated):
 
 # To do
 
- - Bestemme Logo
- - Forbedre søkefunksjon
- - Bygge slider for anbefalte produkter
- &#10004; Cookie popup
- - Handlekurv
- - Sexy animation på search lista
- - Gjøre så man ikke får markert kryss ut knappen på cookies
- - Mouseover zoom på produktbilder
- - "Om oss" side??
- - Når du høyreklikker på "søk" ikonet så åpner den seg fortsatt. "Feature or bug"?
- - Gjøre så #cartCounter endrer seg riktig
+ - Markedsføring:
+  - "Om oss" side??
+  - Finne produkter og informasjon til "databasen"
+
+ - Design:
+   - Gjøre så designet blir nøyaktig som de vil ha det, for frontend bare lager nøyaktig det de ser.
+   &#10004; Bestemme Logo
+
+ - Backend:
+   - Forbedre søkefunksjon
+   - Handlekurv
+   - Når du høyreklikker på "søk" ikonet så åpner den seg fortsatt. "Feature or bug"?
+   - Gjøre så #cartCounter endrer seg riktig
+   &#10004; Cookie popup
+   &#10004; Sexy animation på search lista
+   &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies
+
+ - Frontend:
+   - Jobbe på handlekurv popupen
+   - Gjøre så når du trykker på småbildene i produkter sidene så bytter den bilde
+   - Mouseover zoom på produktbilder
+   - Bygge slider for anbefalte produkter?

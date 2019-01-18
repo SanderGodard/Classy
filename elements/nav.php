@@ -49,4 +49,11 @@
   </p>
 </div>
 <div id="alertBox">
+  <span onclick="document.getElementById('alertBox').style.display = 'none';">x</span>
+  <p>
+    Du har lagt dette produkter i handlekurven din.<br>
+    Vil du betale nå?
+  </p>
+  <a href="javascript:void(0)">Betal nå</a>
+
 </div>
