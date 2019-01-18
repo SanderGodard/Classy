@@ -1,8 +1,8 @@
 <p align="center">
-  <a target="_blank" __ href="http://klasserom.net/204/elev20416/Prosjekter/HypeIT/">
+  <a href="http://klasserom.net/204/elev20416/Prosjekter/HypeIT/">
     <img src="images/Logo.png" width="300px">
   </a>
-  <h1 align="center">HypeIT</h1>
+  <h1 align="center"></h1>
 </p>
 
 
