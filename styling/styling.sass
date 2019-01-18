@@ -580,11 +580,32 @@ main
   width: 100%
   display: flex
   flex-direction: row
-  justify-content: center
+  justify-content: space-around
+  //align-items: center
 
-.StortBilde
-  width: 32%
-  border: 3px solid #707070
-  padding: 6vh 0vh 3vh 0vh
+  .venstreside
+    display: flex
+    flex-direction: column
+    width: 45%
+    align-content: flex-end
+    //flex-grow: 1
 
-.nametekst
+    .StortBilde
+      //margin: 3%
+      width: 55%
+      border: 3px solid #707070
+      padding: 6vh 0vh 3vh 0vh
+      align-self: flex-end
+
+  .hoyreside
+    display: flex
+    flex-direction: column
+    width: 45%
+    align-items: flex-start
+    //flex-grow: 1
+
+    h2
+      font-size: 2.75em
+      color: black
+      text-transform: capitalize
+      font-family: inherit

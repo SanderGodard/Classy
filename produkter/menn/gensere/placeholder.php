@@ -20,8 +20,8 @@
     <img src="../../../images/SupremeCatInAHat.jpg" class="StortBilde">
   </div>
 
-  <div class="høyreside">
-    <a class="Supreme">Cat In The Hat Hettegenser</a>
+  <div class="hoyreside">
+    <h2><a class="Supreme">Cat In The Hat Hettegenser</a></h2>
   </div>
 
 </div>

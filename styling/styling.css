@@ -722,16 +722,50 @@ main .Showcase .Info h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-
-/* line 585, styling.sass */
-.StortBilde {
-  width: 32%;
+/* line 586, styling.sass */
+.produktside .venstreside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+/* line 593, styling.sass */
+.produktside .venstreside .StortBilde {
+  width: 55%;
   border: 3px solid #707070;
   padding: 6vh 0vh 3vh 0vh;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/* line 600, styling.sass */
+.produktside .hoyreside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/* line 607, styling.sass */
+.produktside .hoyreside h2 {
+  font-size: 2.75em;
+  color: black;
+  text-transform: capitalize;
+  font-family: inherit;
 }
 
 /*# sourceMappingURL=styling.css.map */

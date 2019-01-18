@@ -74,6 +74,7 @@ Templaten vi bruker for nye sider:
 
  - Design:
    - Gjøre så designet blir nøyaktig som de vil ha det, for frontend bare lager nøyaktig det de ser.
+   - Dropdown på "Produkter"?
    - &#10004; Bestemme Logo
 --
 
@@ -92,3 +93,4 @@ Templaten vi bruker for nye sider:
    - Gjøre så når du trykker på småbildene i produkter sidene så bytter den bilde
    - Mouseover zoom på produktbilder
    - Bygge slider for anbefalte produkter?
+   - Dropdown på "Produkter"?
