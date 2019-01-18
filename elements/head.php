@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="1IKT-SK 2019 - Gjøvik Videregående">
-<link rel="shortcut icon" href="/HypeIT/images/favicon.ico">
+<link rel="shortcut icon" href="/HypeIT/images/favicon.png">
 <link rel="stylesheet" href="/HypeIT/styling/styling.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:700i" rel="stylesheet">

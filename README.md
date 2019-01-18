@@ -80,6 +80,7 @@ Templaten vi bruker for nye sider:
    - Gjøre så designet blir nøyaktig som de vil ha det, for frontend bare lager nøyaktig det de ser.
    - Dropdown på "Produkter"?
    - Lage reklamen (Coming soon ad)
+   - Redesigne cookie popup og "lagt til i handlekurv" popup hvis det trengs
    - Favicon
    - Hva skal "Annet" knappen på navbar? Evt dropdown og UX
    - &#10004; Bestemme Logo
