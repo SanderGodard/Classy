@@ -5,7 +5,8 @@
 $MainColor: #FF0000
 //000
 $SecondaryColor: #383838
-$ThirdColor: #000
+$ThirdColor: #999999
+$Black: #000
 $White: #FFF
 $WhiteHover : #FBFBFB
 
@@ -18,7 +19,7 @@ $Slow: all .5s ease
 //Shadows
 
 $Shadow: 0px 3px 6px rgba(0,0,0,0.2)
-$BigShadow: 0px 3px 9px 3px rgba(0,0,0,0.3)
+$BigShadow: 0px 3px 9px 3px rgba(0,0,0,0.1)
 
 //Mobile optimization
 $Mobile: "only screen and (max-width : 890px)"
@@ -85,7 +86,7 @@ body
 
 a
   text-decoration: none
-  color: black
+  color: $Black
 
 
 ::-moz-selection
@@ -109,12 +110,12 @@ a
 
 ::-webkit-scrollbar-thumb
   transition: all 0.3s ease-in-out
-  background: darkgrey
+  background: $ThirdColor
   border-radius: 2.5px
 
   &:hover
     transition: all 0.3s ease-in-out
-    background: black
+    background: $Black
 
 
 .Material
@@ -154,7 +155,7 @@ nav
 
   a
     transition: $Fast
-    color: $ThirdColor
+    color: $Black
     margin: 0 1vw
     font-size: 1.5em
     font-weight: bold
@@ -163,8 +164,8 @@ nav
 
     &:hover
       transition: $Fast
-      border-bottom: 3px solid $ThirdColor
-      color: $ThirdColor
+      border-bottom: 3px solid $Black
+      color: $Black
       padding-bottom: 2px
 
   .Nav
@@ -179,7 +180,7 @@ nav
       color: $WhiteHover
       position: relative
       margin: 1em 0 0 calc(-1vw - 1.8em)
-      font-size: .5em
+      font-size: .6em
       display: inline-block
       text-align: center
       padding: .29em
@@ -286,7 +287,7 @@ main
 
       h1
         font-size: 3.75em
-        color: black
+        color: $Black
         text-transform: capitalize
 
         @media #{$TabletS}
@@ -321,9 +322,9 @@ main
 .shopBtn
   transition: $Medium
   display: inline-block
-  color: black
+  color: $Black
   background-color: $White
-  border: 5px solid black
+  border: 5px solid $Black
   font-size: 1.25em
   box-sizing: content-box
   padding: 1em 2em
@@ -336,7 +337,7 @@ main
   &:hover, &:focus
     transition: $Medium
     color: $White
-    background-color: black
+    background-color: $Black
 
   &:active
     transition: $Medium
@@ -359,7 +360,7 @@ main
     position: absolute
     font-weight: normal
     font-size: 20px
-    background-color: black
+    background-color: $Black
     color: $White
     padding: .25em 1em
     transform: translate(0%, -70%)
@@ -422,12 +423,12 @@ main
       &:focus, &:active
         outline: none
         transition: $Slow
-        border-color: $ThirdColor
+        border-color: $Black
 
       &:hover
         transition: $Slow
         //transform: scale(1.07)
-        border-color: $ThirdColor
+        border-color: $Black
 
     .results
       position: absolute
@@ -435,7 +436,7 @@ main
       flex-direction: column
       background: $White
       box-shadow: $Shadow
-      color: $ThirdColor
+      color: $Black
       font-size: 1em
       //padding: .2em
       //border-radius: 0 0 1em 1em
@@ -474,6 +475,53 @@ main
 
 #alertBox
   display: none
+  width: 300px
+  height: 250px
+  background-color: $White
+  box-shadow: $BigShadow
+  border-radius: .2em
+  position: absolute
+  margin-left: calc(50vw - 150px)
+  font-weight: normal
+  padding: 1em
+  z-index: 5
+  right: 4vmax
+  top: 8vmax
+  font-size: 1.1em
+
+  a
+    transition: $Fast
+    box-shadow: $Shadow
+    display: block
+    background-color: $MainColor
+    margin: auto 3% .7em
+    width: 80%
+    height: 2em
+    padding: 10px
+    position: absolute
+    bottom: 0
+    color: $White
+    border-radius: .2em
+    text-align: center
+
+    &:hover, &:active
+      transition: $Fast
+      transform: scale(1.07)
+      border: 0px
+
+  span
+    cursor: pointer
+    position: relative
+    font-size: 1.3em
+    line-height: .6
+    //padding: 1vw 0
+    //margin: 0 1em 1em 0
+    float: right
+    color: $ThirdColor !important
+    text-transform: lowercase !important
+
+    &:hover
+      color: $Black
 
 
 #Cookies
@@ -592,7 +640,7 @@ main
     .kategori_box_innhold
       display: none
       position: relative
-      color: $Black
+      color: black
       font-size: 4em
       text-transform: uppercase
       font-weight: bold
@@ -657,6 +705,6 @@ main
 
     h2
       font-size: 2.75em
-      color: black
+      color: $Black
       text-transform: capitalize
       font-family: inherit
