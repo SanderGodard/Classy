@@ -18,8 +18,8 @@
     <div class="Showcase">
       <img src="/HypeIT/images/showcase.png" alt="Supreme Dog Taped Seam Jakke" class="New" onclick="window.location.href='#'">
       <div class="Info">
-        <h1 class="New">Supreme dog taped seam jakke</h1>
-        <a href="#" class="shopBtn" tabindex="2" onclick="addToBasket();">Legg i handlekurv</a>
+        <h1 class="New product">Supreme dog taped seam jakke</h1>
+        <a href="#" class="shopBtn" tabindex="2" onclick="addToBasket(this);">Legg i handlekurv</a>
       </div>
     </div>
 
