@@ -1,9 +1,12 @@
-![HypeIT](images/logo.png)
-
-# HypeIT
+<a href="http://klasserom.net/204/elev20416/Prosjekter/HypeIT/">
+  <img src="images/Logo.png" width="200px">
+</a>
+<h1 align="center">HypeIT</h1>
 
 <!--ts-->
+<!--
    - [Om HypeIt](#hypeit)
+-->
    - [Template for nye sider](#template)
    - [To do list](#to-do)
 <!--te-->
@@ -66,16 +69,16 @@ Templaten vi bruker for nye sider:
 
  - Design:
    - Gjøre så designet blir nøyaktig som de vil ha det, for frontend bare lager nøyaktig det de ser.
-   &#10004; Bestemme Logo
+   - &#10004; Bestemme Logo
 
  - Backend:
    - Forbedre søkefunksjon
    - Handlekurv
    - Når du høyreklikker på "søk" ikonet så åpner den seg fortsatt. "Feature or bug"?
-   - Gjøre så #cartCounter endrer seg riktig <br>
-   &#10004; Cookie popup /N
-   &#10004; Sexy animation på search lista /n
-   &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies
+   - Gjøre så #cartCounter endrer seg riktig
+   - &#10004; Cookie popup
+   - &#10004; Sexy animation på search lista
+   - &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies
 
  - Frontend:
    - Jobbe på handlekurv popupen
