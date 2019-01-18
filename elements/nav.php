@@ -1,5 +1,7 @@
 <div class="Logo">
-
+  <a href="/HypeIT/">
+    <img src="/HypeIT/images/Logo.png" alt="Logo">
+  </a>
 </div>
 <div class="RightNav">
   <div class="Nav">
@@ -8,6 +10,7 @@
     <a href="/HypeIT/produkter/damer/">Damer</a>
     <a href="/HypeIT/produkter/annet/">Annet</a>
     <a href="/HypeIT/store/cart/" class="Material">shopping_cart</a>
+    <span id="cartCounter">10</span>
   </div>
   <div class="NavPart">
     <div class="searchDiv">
@@ -46,4 +49,11 @@
   </p>
 </div>
 <div id="alertBox">
+  <span onclick="document.getElementById('alertBox').style.display = 'none';">x</span>
+  <p>
+    Du har lagt dette produkter i handlekurven din.<br>
+    Vil du betale nå?
+  </p>
+  <a href="javascript:void(0)">Betal nå</a>
+
 </div>

@@ -14,9 +14,17 @@
   </nav>
   <main>
 
+<div class="produktside">
 
+  <div class="venstreside">
+    <img src="../../../images/SupremeCatInAHat.jpg" class="StortBilde">
+  </div>
 
+  <div class="hoyreside">
+    <h2><a class="Supreme">Cat In The Hat Hettegenser</a></h2>
+  </div>
 
+</div>
 
   </main>
   <footer>

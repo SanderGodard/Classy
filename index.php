@@ -6,7 +6,7 @@
     include 'elements/head.php';
    ?>
 </head>
-<body id="body">
+<body>
   <nav>
     <?php
       include "elements/nav.php";
@@ -15,11 +15,11 @@
   <main>
 
 
-    <div class="Showcase">
-      <img src="/HypeIT/images/showcase.png" alt="Supreme Dog Taped Seam Jakke" class="New" onclick="window.location.href='#'">
+    <div class="Showcase New">
+      <img src="/HypeIT/images/showcase.png" alt="Supreme Dog Taped Seam Jakke" class="New" onclick="window.location.href='javascript:void(0)'">
       <div class="Info">
-        <h1 class="New product">Supreme dog taped seam jakke</h1>
-        <a href="#" class="shopBtn" tabindex="2" onclick="addToBasket(this);">Legg i handlekurv</a>
+        <h1 class="New"><a href="javascript:void(0)">Supreme dog taped seam jakke</a></h1>
+        <a href="javascript:void(0)" class="shopBtn" tabindex="2" onclick="addToBasket(this);">Legg i handlekurv</a>
       </div>
     </div>
 

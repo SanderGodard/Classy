@@ -2,9 +2,9 @@
 
 //Colors
 
-$MainColor: #383838
+$MainColor: #FF0000
 //000
-$SecondaryColor: #7D7D7D
+$SecondaryColor: #383838
 $ThirdColor: #000
 $White: #FFF
 $WhiteHover : #FBFBFB
@@ -89,13 +89,13 @@ a
 
 
 ::-moz-selection
-  background: $MainColor
+  background: $SecondaryColor
   opacity: 0.7
   color: $White
 
 
 ::selection
-  background: $MainColor
+  background: $SecondaryColor
   color: $White
   opacity: 0.7
 
@@ -121,6 +121,7 @@ a
   font-family: 'Material Icons', sans-serif
   font-size: 1.5em
   vertical-align: top
+  font-weight: 100
 
 
 nav
@@ -133,6 +134,12 @@ nav
   align-content: stretch
   text-transform: uppercase
   margin: 0 0 5vh
+
+  .Logo
+    a
+      img
+        width: 200px
+        margin: -4px 0 0
 
   .Material
     text-transform: lowercase !important
@@ -147,11 +154,11 @@ nav
 
   a
     transition: $Fast
-    color: $MainColor
+    color: $ThirdColor
     margin: 0 1vw
     font-size: 1.5em
     font-weight: bold
-    border-bottom: 0px solid $MainColor
+    border-bottom: 0px solid $SecondaryColor
     position: relative
 
     &:hover
@@ -160,35 +167,69 @@ nav
       color: $ThirdColor
       padding-bottom: 2px
 
-  .MobileNav
-    display: none
-    align-self: flex-end
-
-    @media #{$Mobile}
-      padding: 0 2.3vw
-
   .Nav
     display: inline-block
+
+    span
+      pointer-events: none
+      background-color: $MainColor
+      height: 1.8em
+      width: 1.8em
+      border-radius: .9em
+      color: $WhiteHover
+      position: relative
+      margin: 1em 0 0 calc(-1vw - 1.8em)
+      font-size: .5em
+      display: inline-block
+      text-align: center
+      padding: .29em
 
     @media #{$Mobile}
       display: none
 
   .MobileNav
     display: none
+    align-self: flex-end
 
     a
-      font-size: 2em
-      line-height: .98
+      font-weight: 100
+      font-size: 3em
+      line-height: .5
+      vertical-align: text-bottom
+
 
     @media #{$Mobile}
       display: inline-block
+      //padding: 0 2.3vw
 
   .NavPart
     display: inline-block
 
+  @media #{$MobileXXL}
+    padding: 6vmax 3vmax
+    height: calc(12vmax + (1.6em * 1.25))
+
+  @media #{$MobileXL}
+    padding: 6vmax 2vmax
+
+  @media #{$MobileM}
+    padding: 6vmax 1vmax
+
 
 main
   padding: 0 4vw
+
+  div.Showcase.New::before
+    display: none
+
+    @media #{$TabletS}
+      display: block
+      font-size: 2em
+      left: 6vmax
+      transform: translate(0%, 50%)
+
+    @media #{$MobileXL}
+      font-size: 1.3em
 
   .Showcase
     display: flex
@@ -225,9 +266,11 @@ main
 
       @media #{$TabletS}
         margin: auto auto
+        order: 1
 
       @media #{$MobileXXL}
         width: 90%
+        margin-left: 15%
 
       @media #{$MobileXM}
         width: 100%
@@ -246,6 +289,14 @@ main
         color: black
         text-transform: capitalize
 
+        @media #{$TabletS}
+          font-size: 3em
+          text-align: center
+          margin: auto
+
+        @media #{$MobileXXL}
+          font-size: 2.75em
+
       @media #{$Mobile}
         width: 90%
         order: 1
@@ -253,10 +304,19 @@ main
         transform: none
 
       @media #{$TabletS}
-        flex-grow: 1
-      //
+        order: 2
+
         .New::before
           display: none
+
+      @media #{$MobileXXL}
+        flex-grow: 0
+        width: 70%
+
+      @media #{$MobileL}
+        flex-grow: 1
+
+
 
 .shopBtn
   transition: $Medium
@@ -273,7 +333,7 @@ main
   text-align: center
   //max-width: 400px
 
-  &:hover
+  &:hover, &:focus
     transition: $Medium
     color: $White
     background-color: black
@@ -287,7 +347,7 @@ main
     font-size: 1.5em
     padding: 1em 0
 
-img.New::before
+//img.New::before
   transform: translate(0%, 0%)
 
 .New
@@ -345,8 +405,8 @@ img.New::before
 
     #searchField
       transition: $Slow
-      padding: 6px .5em 2px
-      vertical-align: baseline
+      padding: 3px .5em 0px
+      vertical-align: middle
       font-size: 1.5em
       //margin-top: -2em
       border: 0px
@@ -355,7 +415,7 @@ img.New::before
       position: relative
       //width: 0px
       //width: 350px
-      border-bottom: 3px solid $MainColor
+      border-bottom: 3px solid $SecondaryColor
       //border-radius: 1em 1em 0 0
       box-sizing: content-box
 
@@ -410,13 +470,16 @@ img.New::before
     text-decoration: underline
 
     &:hover
-      color: $MainColor
+      color: $SecondaryColor
+
+#alertBox
+  display: none
 
 
 #Cookies
   box-shadow: $BigShadow
   z-index: 9999
-  background-color: $MainColor
+  background-color: $SecondaryColor
   position: fixed
   bottom: 0
   left: 0
@@ -484,6 +547,28 @@ img.New::before
   100%
     max-width: 15vw
 
+.Supreme::before
+  content: "Supreme"
+  text-transform: capitalize
+  font-style: italic
+  font-weight: 700
+  font-family: 'Roboto', sans-serif
+  background-color: #DA2727
+  display: block
+  position: absolute
+  font-size: 20px
+  color: $White
+  padding: .25em .25em
+  transform: translate(0%, -70%)
+  line-height: 1
+
+  @media #{$MobileXXL}
+    font-size: 18px
+
+  @media #{$MobileXM}
+    font-size: 16px
+
+
 
 // ====================================Eduard sin del
 
@@ -491,3 +576,36 @@ img.New::before
 
 
 // ====================================Fredrik sin del
+.produktside
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  //align-items: center
+
+  .venstreside
+    display: flex
+    flex-direction: column
+    width: 45%
+    align-content: flex-end
+    //flex-grow: 1
+
+    .StortBilde
+      //margin: 3%
+      width: 55%
+      border: 3px solid #707070
+      padding: 6vh 0vh 3vh 0vh
+      align-self: flex-end
+
+  .hoyreside
+    display: flex
+    flex-direction: column
+    width: 45%
+    align-items: flex-start
+    //flex-grow: 1
+
+    h2
+      font-size: 2.75em
+      color: black
+      text-transform: capitalize
+      font-family: inherit
