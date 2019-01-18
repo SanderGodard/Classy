@@ -797,7 +797,7 @@ main .Showcase .Info h1 {
 .kategori_wrapper .kategori_box .kategori_box_innhold {
   display: none;
   position: relative;
-  color: black;
+  color: white;
   font-size: 4em;
   text-transform: uppercase;
   font-weight: bold;
@@ -808,29 +808,37 @@ main .Showcase .Info h1 {
   z-index: 1;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  text-shadow: 2px 2px black;
 }
-/* line 654, styling.sass */
+/* line 655, styling.sass */
+.kategori_wrapper .kategori_box .kategori_box_innhold:hover .kategori_box_wrapper {
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+  background-color: white;
+}
+/* line 659, styling.sass */
 .kategori_wrapper .kategori_box:hover .kategori_box_innhold {
   display: block;
 }
-/* line 657, styling.sass */
+/* line 662, styling.sass */
 .kategori_wrapper .kategori_box .kategori_box_wrapper {
-  padding: 0.8em;
+  padding: 0.6em;
   z-index: 1;
+  margin: 0.2em;
 }
-/* line 661, styling.sass */
+/* line 667, styling.sass */
 .kategori_wrapper .kategori_box .kategori_box_wrapper:hover {
   -webkit-filter: blur(6px);
           filter: blur(6px);
   background-color: white;
 }
-/* line 665, styling.sass */
+/* line 671, styling.sass */
 .kategori_wrapper .kategori_box .kategori_box_wrapper img {
   width: 362px;
   height: 429px;
 }
 
-/* line 678, styling.sass */
+/* line 684, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -843,7 +851,7 @@ main .Showcase .Info h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-/* line 685, styling.sass */
+/* line 691, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -856,7 +864,7 @@ main .Showcase .Info h1 {
   -ms-flex-line-pack: end;
       align-content: flex-end;
 }
-/* line 692, styling.sass */
+/* line 698, styling.sass */
 .produktside .venstreside .StortBilde {
   width: 55%;
   border: 3px solid #707070;
@@ -864,7 +872,7 @@ main .Showcase .Info h1 {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-/* line 699, styling.sass */
+/* line 705, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -878,7 +886,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 706, styling.sass */
+/* line 712, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;

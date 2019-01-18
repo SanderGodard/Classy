@@ -640,7 +640,7 @@ main
     .kategori_box_innhold
       display: none
       position: relative
-      color: black
+      color: white
       font-size: 4em
       text-transform: uppercase
       font-weight: bold
@@ -650,13 +650,19 @@ main
       height: 0px
       z-index: 1
       transition: $Medium
+      text-shadow: 2px 2px black
+
+      &:hover .kategori_box_wrapper
+        filter: blur(6px)
+        background-color: rgba(255, 255, 255, 1)
 
     &:hover .kategori_box_innhold
       display: block
 
     .kategori_box_wrapper
-      padding: 0.8em
+      padding: 0.6em
       z-index: 1
+      margin: 0.2em
 
       &:hover
         filter: blur(6px)
