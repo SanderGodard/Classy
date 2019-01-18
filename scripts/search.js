@@ -1,49 +1,42 @@
-searchField = document.getElementById('searchField');
-searchField.addEventListener("keyup", search);
-//document.getElementsByClassName('results')[0].style.display = "none";
-//searchField.addEventListener("click", function(){document.getElementsByClassName('results')[0].style.display = "flex";});
-validSearches = [];
-results = document.getElementsByClassName('results')[0].childElementCount;
+validSearches = ["Supreme", "Gucci", "Headset", "Skjermer", "Telefoner", "Genser", "Bukser", "Sokker", "Sko", "Armbånd", "Klokker"];
+vS = validSearches;
+vSL = validSearches.length;
+search = document.getElementById('searchField');
+search.addEventListener("keydown", searchCheck);
+search.addEventListener("keyup", searchCheck);
 
+p = 0;
+results = document.getElementsByClassName('results')[0];
 
-for(i=0; i<results; i++) {
-  result = document.getElementsByClassName('result')[i].innerHTML.toUpperCase();
-  validSearches[i] = result;
-}
-console.log(validSearches);
-function search() {
-//Making elements that were once filtered out visible again
-for(i=0; i<results; i++) {
-  document.getElementsByClassName('results')[0].children[i].children[0].style.display = "none";
-}
-//Ending previous comment
-  search = searchField.value.toUpperCase();
-    for(i=0; i<validSearches.length; i++) {
-      valid = validSearches[i];
-        for(o=0; o<search.length; o++) {
-          validArray = [];
-          searchArray = [];
-          for(m=0; m<valid.length; m++) {
-            validArray.push(valid[m])
-          }
-          for(m=0; m<search.length; m++) {
-            searchArray.push(search[m])
-          }
+function searchCheck() {
 
-          if(validArray[o] == searchArray[o]) {
-            //alert("Equal");
-
-                document.getElementsByClassName('results')[0].children[i].children[0].style.display = "flex";
-
-
-          }
-          else {
-            document.getElementsByClassName('results')[0].children[i].children[0].style.display = "none";
-          }
-
+  sValue = search.value.toUpperCase();
+  results.innerHTML = "";
+  //alert("hello");
+  for(i=0; i<vSL; i++) {
+    v = vS[i].toUpperCase();
+    p = 0;
+    //console.log(v);
+      for(a=0; a<sValue.length; a++) {
+        if(v[a]==sValue[a]) {
+          p++;
         }
 
-    }
-  console.log(search);
+      }
+    //console.log(p);
+    if(p==sValue.length) {
+        if(sValue!=0) {
+          btn = document.createElement("DIV");
+          link = document.createElement("A");
 
+
+          link.innerHTML = vS[i];
+          link.setAttribute('href', "/HypeIT/produkter/" + vS[i].toLowerCase())
+          link.className = "result";
+          btn.appendChild(link);
+          results.appendChild(btn);
+        }
+    }
+
+  }
 }

@@ -535,7 +535,6 @@ main .Showcase .Info h1 {
   transition: all 0.1s ease;
   margin: 0.1em 0.5em;
   font-weight: lighter;
-  display: none;
   text-transform: capitalize;
   font-weight: 300;
 }
