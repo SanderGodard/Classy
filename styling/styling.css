@@ -179,7 +179,7 @@ nav .Nav span {
   color: #FBFBFB;
   position: relative;
   margin: 1em 0 0 calc(-1vw - 1.8em);
-  font-size: 0.5em;
+  font-size: 0.6em;
   display: inline-block;
   text-align: center;
   padding: 0.29em;
@@ -575,9 +575,9 @@ main .Showcase .Info h1 {
   width: 300px;
   height: 250px;
   background-color: #FFF;
-  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 0.2em;
   position: absolute;
   margin-left: calc(50vw - 150px);
   font-weight: normal;
@@ -585,8 +585,9 @@ main .Showcase .Info h1 {
   z-index: 5;
   right: 4vmax;
   top: 8vmax;
+  font-size: 1.1em;
 }
-/* line 491, styling.sass */
+/* line 492, styling.sass */
 #alertBox a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -601,10 +602,10 @@ main .Showcase .Info h1 {
   position: absolute;
   bottom: 0;
   color: #FFF;
-  border-radius: 1em;
+  border-radius: 0.2em;
   text-align: center;
 }
-/* line 506, styling.sass */
+/* line 507, styling.sass */
 #alertBox a:hover, #alertBox a:active {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -612,7 +613,7 @@ main .Showcase .Info h1 {
           transform: scale(1.07);
   border: 0px;
 }
-/* line 511, styling.sass */
+/* line 512, styling.sass */
 #alertBox span {
   cursor: pointer;
   position: relative;
@@ -622,15 +623,15 @@ main .Showcase .Info h1 {
   color: #999999 !important;
   text-transform: lowercase !important;
 }
-/* line 522, styling.sass */
+/* line 523, styling.sass */
 #alertBox span:hover {
   color: #000;
 }
 
-/* line 526, styling.sass */
+/* line 527, styling.sass */
 #Cookies {
-  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   background-color: #383838;
   position: fixed;
@@ -644,7 +645,7 @@ main .Showcase .Info h1 {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
-/* line 542, styling.sass */
+/* line 543, styling.sass */
 #Cookies a {
   margin: 0;
   display: inline;
@@ -655,7 +656,7 @@ main .Showcase .Info h1 {
   color: #FBFBFB;
   font-size: 1em;
 }
-/* line 552, styling.sass */
+/* line 553, styling.sass */
 #Cookies a::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -666,7 +667,7 @@ main .Showcase .Info h1 {
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 557, styling.sass */
+/* line 558, styling.sass */
 #Cookies a:hover {
   border-bottom: 0px;
   padding: 0;
@@ -675,7 +676,7 @@ main .Showcase .Info h1 {
   transition: all 0.1s ease;
   text-decoration: underline;
 }
-/* line 565, styling.sass */
+/* line 566, styling.sass */
 #Cookies p::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -686,7 +687,7 @@ main .Showcase .Info h1 {
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 570, styling.sass */
+/* line 571, styling.sass */
 #Cookies span {
   cursor: pointer;
   position: relative;
@@ -695,7 +696,7 @@ main .Showcase .Info h1 {
   text-transform: lowercase;
   float: right;
 }
-/* line 579, styling.sass */
+/* line 580, styling.sass */
 #Cookies span::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -707,12 +708,12 @@ main .Showcase .Info h1 {
   opacity: 1;
 }
 @media only screen and (max-width: 890px) {
-  /* line 526, styling.sass */
+  /* line 527, styling.sass */
   #Cookies {
     width: 100vw;
     border-radius: 5px 5px 0 0;
   }
-  /* line 588, styling.sass */
+  /* line 589, styling.sass */
   #Cookies span {
     margin: 0 5px 50px 0;
   }
@@ -735,7 +736,7 @@ main .Showcase .Info h1 {
     max-width: 15vw;
   }
 }
-/* line 597, styling.sass */
+/* line 598, styling.sass */
 .Supreme::before {
   content: "Supreme";
   text-transform: capitalize;
@@ -753,19 +754,19 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 597, styling.sass */
+  /* line 598, styling.sass */
   .Supreme::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 597, styling.sass */
+  /* line 598, styling.sass */
   .Supreme::before {
     font-size: 16px;
   }
 }
 
-/* line 626, styling.sass */
+/* line 627, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -778,7 +779,7 @@ main .Showcase .Info h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-/* line 633, styling.sass */
+/* line 634, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,7 +792,7 @@ main .Showcase .Info h1 {
   -ms-flex-line-pack: end;
       align-content: flex-end;
 }
-/* line 640, styling.sass */
+/* line 641, styling.sass */
 .produktside .venstreside .StortBilde {
   width: 55%;
   border: 3px solid #707070;
@@ -799,7 +800,7 @@ main .Showcase .Info h1 {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-/* line 647, styling.sass */
+/* line 648, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -813,7 +814,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 654, styling.sass */
+/* line 655, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;

@@ -19,7 +19,7 @@ $Slow: all .5s ease
 //Shadows
 
 $Shadow: 0px 3px 6px rgba(0,0,0,0.2)
-$BigShadow: 0px 3px 9px 3px rgba(0,0,0,0.3)
+$BigShadow: 0px 3px 9px 3px rgba(0,0,0,0.1)
 
 //Mobile optimization
 $Mobile: "only screen and (max-width : 890px)"
@@ -180,7 +180,7 @@ nav
       color: $WhiteHover
       position: relative
       margin: 1em 0 0 calc(-1vw - 1.8em)
-      font-size: .5em
+      font-size: .6em
       display: inline-block
       text-align: center
       padding: .29em
@@ -479,7 +479,7 @@ main
   height: 250px
   background-color: $White
   box-shadow: $BigShadow
-  border-radius: 30px
+  border-radius: .2em
   position: absolute
   margin-left: calc(50vw - 150px)
   font-weight: normal
@@ -487,6 +487,7 @@ main
   z-index: 5
   right: 4vmax
   top: 8vmax
+  font-size: 1.1em
 
   a
     transition: $Fast
@@ -500,7 +501,7 @@ main
     position: absolute
     bottom: 0
     color: $White
-    border-radius: 1em
+    border-radius: .2em
     text-align: center
 
     &:hover, &:active
