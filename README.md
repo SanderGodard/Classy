@@ -72,10 +72,10 @@ Templaten vi bruker for nye sider:
    - Forbedre søkefunksjon
    - Handlekurv
    - Når du høyreklikker på "søk" ikonet så åpner den seg fortsatt. "Feature or bug"?
-   - Gjøre så #cartCounter endrer seg riktig /n
-   &#10004; Cookie popup /n
+   - Gjøre så #cartCounter endrer seg riktig <br>
+   &#10004; Cookie popup /N
    &#10004; Sexy animation på search lista /n
-   &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies /n
+   &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies
 
  - Frontend:
    - Jobbe på handlekurv popupen
