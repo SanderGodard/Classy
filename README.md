@@ -1,5 +1,5 @@
-<a href="http://klasserom.net/204/elev20416/Prosjekter/HypeIT/">
-  <img style="margin: auto; display: block;" src="images/Logo.png" width="200px">
+<a style="margin: auto; display: block;" href="http://klasserom.net/204/elev20416/Prosjekter/HypeIT/">
+  <img src="images/Logo.png" width="200px">
 </a>
 <h1 align="center">HypeIT</h1>
 
