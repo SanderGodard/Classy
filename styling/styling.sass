@@ -571,6 +571,57 @@ main
 
 
 // ====================================Eduard sin del
+.kategori_wrapper
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+  margin-top: 7%
+  background-color: inherit
+
+  .kategori_box
+    background-color: inherit
+    width: auto
+    height: auto
+    margin: 1.3vw
+    border: 3px solid #707070
+    z-index: 0
+    transition: $Medium
+
+
+    .kategori_box_innhold
+      display: none
+      position: relative
+      color: $Black
+      font-size: 4em
+      text-transform: uppercase
+      font-weight: bold
+      text-align: center
+      z-index: 2
+      top: 37%
+      height: 0px
+      z-index: 1
+      transition: $Medium
+
+    &:hover .kategori_box_innhold
+      display: block
+
+    .kategori_box_wrapper
+      padding: 0.8em
+      z-index: 1
+
+      &:hover
+        filter: blur(6px)
+        background-color: rgba(255, 255, 255, 1)
+
+      img
+        width: 362px
+        height: 429px
+
+
+
+
+
 
 
 
