@@ -1,7 +1,9 @@
-<a style="margin: auto; display: block;" href="http://klasserom.net/204/elev20416/Prosjekter/HypeIT/">
-  <img src="images/Logo.png" width="200px">
-</a>
-<h1 align="center">HypeIT</h1>
+<p align="center">
+  <a target="_blank" __ href="http://klasserom.net/204/elev20416/Prosjekter/HypeIT/">
+    <img src="images/Logo.png" width="300px">
+  </a>
+  <h1 align="center">HypeIT</h1>
+</p>
 
 
 **Innhold**
