@@ -68,12 +68,14 @@ Templaten vi bruker for nye sider:
 # To do
 
  - Markedsføring:
-  - "Om oss" side??
-  - Finne produkter og informasjon til "databasen"
+   - "Om oss" side??
+   - Finne produkter og informasjon til "databasen"
+--
 
  - Design:
    - Gjøre så designet blir nøyaktig som de vil ha det, for frontend bare lager nøyaktig det de ser.
    - &#10004; Bestemme Logo
+--
 
  - Backend:
    - Forbedre søkefunksjon
@@ -83,6 +85,7 @@ Templaten vi bruker for nye sider:
    - &#10004; Cookie popup
    - &#10004; Sexy animation på search lista
    - &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies
+--
 
  - Frontend:
    - Jobbe på handlekurv popupen
