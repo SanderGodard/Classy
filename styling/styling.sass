@@ -580,7 +580,8 @@ main
   width: 100%
   display: flex
   flex-direction: row
-  justify-content: space-around
+  justify-content: flex-end
+
   //align-items: center
 
   .venstreside
@@ -588,14 +589,47 @@ main
     flex-direction: column
     width: 45%
     align-content: flex-end
+    position: absolute
+    left: 22%
+
     //flex-grow: 1
 
-    .StortBilde
-      //margin: 3%
-      width: 55%
-      border: 3px solid #707070
-      padding: 6vh 0vh 3vh 0vh
+    .Bilder
       align-self: flex-end
+      box-sizing: content-box
+      justify-content: flex-end
+      display: flex
+      flex-direction: column
+
+
+      .StortBilde
+        //margin: 3%
+        width: 55%
+        border: 3px solid #707070
+        padding: 6vh 0vh 3vh 0vh
+        display: block
+
+      .smaBilder
+        height: auto
+        align-content: flex-start
+        align-items: flex-start
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        width: 55%
+
+        img
+          width: 30%
+          object-fit: cover
+          bottom: 0
+          top: 0
+          left: 0
+          right: 0
+          height: auto
+          border: 3px solid #707070
+          margin-top: 2%
+          padding: 1.7vh 0vh 1vh 0
+
 
   .hoyreside
     display: flex
