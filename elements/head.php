@@ -14,6 +14,7 @@
 <meta name="msapplication-navbutton-color" content="#FFFFFF">
 <!-- iOS Safari -->
 <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+<script async defer src="/HypeIT/scripts/searchNavigation.js"></script>
 <script async defer src="/HypeIT/scripts/searchField.js"></script>
 <script async defer src="/HypeIT/scripts/search.js"></script>
 <script async defer src="/HypeIT/scripts/cookies.js"></script>

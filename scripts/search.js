@@ -2,20 +2,25 @@ validSearches = ["Supreme", "Gucci", "Headset", "Skjermer", "Telefoner", "Genser
 vS = validSearches;
 vSL = validSearches.length;
 search = document.getElementById('searchField');
-search.addEventListener("keydown", searchCheck);
-search.addEventListener("keyup", searchCheck);
+search.addEventListener("keydown", searchCheck, event);
+search.addEventListener("keyup", searchCheck, event);
 
-p = 0;
+
 results = document.getElementsByClassName('results')[0];
 
-function searchCheck() {
+function searchCheck(x) {
+
+if(x.keyCode !== 38 && x.keyCode !== 40 && x.keyCode !== 13) {
+
+
+
 
   sValue = search.value.toUpperCase();
   results.innerHTML = "";
   //alert("hello");
   for(i=0; i<vSL; i++) {
     v = vS[i].toUpperCase();
-    p = 0;
+    var p = 0;
     //console.log(v);
       for(a=0; a<sValue.length; a++) {
         if(v[a]==sValue[a]) {
@@ -39,4 +44,10 @@ function searchCheck() {
     }
 
   }
+
+
+
+
+}
+
 }
