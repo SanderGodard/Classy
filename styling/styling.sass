@@ -446,6 +446,7 @@ main
 
       .activeResult
         background: blue
+
       div
         a
           display: block
@@ -661,21 +662,23 @@ main
       //height: 100%
       //width: 100%
 
-      &:hover .kategori_box_wrapper
-        filter: blur(6px)
-        background-color: rgba(255, 255, 255, 1)
+    &:hover
+      .kategori_box_innhold
+        display: block
 
-    &:hover .kategori_box_innhold
-      display: block
+      .kategori_box_wrapper
+        filter: blur(6px)
+
+
 
     .kategori_box_wrapper
       padding: 0.6em
       z-index: 1
-      margin: 0.2em
-
+      //margin: 0.2em
+    
       &:hover
         filter: blur(6px)
-        background-color: rgba(255, 255, 255, 1)
+        //background-color: rgba(255, 255, 255, 1)
 
       img
         object-fit: cover
