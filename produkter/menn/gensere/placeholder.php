@@ -17,7 +17,14 @@
 <div class="produktside">
 
   <div class="venstreside">
-    <img src="../../../images/SupremeCatInAHat.jpg" class="StortBilde">
+    <div class="Bilder">
+      <img src="../../../images/SupremeCatInAHat.jpg" class="StortBilde" id="storBilde">
+      <div class="smaBilder">
+        <img src="../../../images/SupremeCatInAHat.jpg" alt="Rack" id="img1">
+        <img src="../../../images/SupremeCatInAHatGreen.jpg" alt="Green" id="img2">
+        <img src="../../../images/SupremeCatInAHatMustard.jpg" alt="Mustard" id="img3">
+      </div>
+    </div>
   </div>
 
   <div class="hoyreside">
