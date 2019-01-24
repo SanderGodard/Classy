@@ -718,18 +718,19 @@ main
   margin-top: 7%
   background-color: inherit
 
-  .kategori_box
+  .k_b
     background-color: inherit
     width: auto
     height: auto
     margin: 1.3vw
+    display: block
     border: 3px solid #707070
     z-index: 0
     transition: $Medium
     //overflow: hidden
 
 
-    .kategori_box_innhold
+    .k_b_innhold
       display: none
       position: relative
       color: white
@@ -749,15 +750,15 @@ main
       //width: 100%
 
     &:hover
-      .kategori_box_innhold
+      .k_b_innhold
         display: block
 
-      .kategori_box_wrapper
+      .k_b_wrapper
         filter: blur(6px)
 
 
 
-    .kategori_box_wrapper
+    .k_b_wrapper
       padding: 0.6em
       z-index: 1
       //margin: 0.2em
