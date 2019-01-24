@@ -25,8 +25,14 @@
     </div>
   </div>
   <div class="MobileNav">
-    <a href="javascript:void(0)" class="Material">menu</a>
+    <a href="javascript:void(0)" onclick="menuToggle()" id="mobileMenu" class="Material">menu</a>
   </div>
+</div>
+<div id="mobileNav">
+<a href="#">1</a>
+<a href="#">2</a>
+<a href="#">3</a>
+<a href="#">4</a>
 </div>
 
 

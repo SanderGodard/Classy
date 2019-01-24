@@ -98,6 +98,8 @@ Templaten vi bruker for nye sider:
    - Gjøre så når du trykker på småbildene i produkter sidene så bytter den bilde
    - Mouseover zoom på produktbilder
    - Bygge anbefalte produkter section?
+   - MobileNav
+   - Handlekurv side
    - Legg til livechat
    - Dropdown på "Produkter"?
    - &#10004; Jobbe på handlekurv popupen
