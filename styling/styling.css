@@ -841,17 +841,17 @@ main .Showcase .Info h1 {
 }
 /* line 669, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
-  width: 30%;
+  width: 8vw;
   -o-object-fit: cover;
      object-fit: cover;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  height: auto;
+  height: 8vw;
   border: 3px solid #707070;
   margin-top: 2%;
-  padding: 1.7vh 0vh 1vh 0;
+  padding: 0.9em 0 0.3em 0;
 }
 /* line 682, styling.sass */
 .produktside .hoyreside {
@@ -862,7 +862,7 @@ main .Showcase .Info h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 45%;
+  width: 50%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
