@@ -1,4 +1,5 @@
 counter = document.getElementById('cartCounter');
+lStorage = localStorage;
 
 
 if(lStorage.getItem("counted") != undefined) {
