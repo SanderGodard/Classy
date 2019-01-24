@@ -102,16 +102,16 @@ a
 
 
 ::-webkit-scrollbar
-  width: 5px
-  margin: 2px 2px 2px -7px
+  width: 8px
+  margin: 2px 2px 2px -10px
   right: 0
-  border-radius: 2.5px
+
 
 
 ::-webkit-scrollbar-thumb
   transition: all 0.3s ease-in-out
   background: $ThirdColor
-  border-radius: 2.5px
+  border-radius: 4px
 
   &:hover
     transition: all 0.3s ease-in-out
@@ -126,49 +126,7 @@ a
 
 
 nav
-  padding: 4vmax 4vmax
-  width: 100%
-  height: calc(8vmax + (1.5em * 1.25))
-  display: flex
-  flex-wrap: nowrap
-  justify-content: space-between
-  align-content: stretch
-  text-transform: uppercase
-  margin: 0 0 5vh
-
-  #mobileNav
-    width: 100%
-    height: 0px
-    overflow: hidden
-    background-color: $White
-    box-shadow: $Shadow
-    display: none
-
-    a
-      font-size: 1.5em
-      text-align: left
-      width: 100%
-      display: block
-      height: 50px
-      padding-top: 10px
-
-
-  .Logo
-    a
-      img
-        width: 200px
-        margin: -4px 0 0
-
-  .Material
-    text-transform: lowercase !important
-    font-size: 1.6em
-
-  .RightNav
-    align-self: flex-end
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    justify-content: flex-end
+  margin: 0 0 5vh 0
 
   a
     transition: $Fast
@@ -179,59 +137,324 @@ nav
     border-bottom: 0px solid $SecondaryColor
     position: relative
 
-    &:hover
-      transition: $Fast
-      border-bottom: 3px solid $Black
-      color: $Black
-      padding-bottom: 2px
+  .searchDiv
+    display: inline
+    position: relative
 
-  .Nav
-    display: inline-block
-
-    span
-      pointer-events: none
-      background-color: $MainColor
-      height: 1.8em
-      width: 1.8em
-      border-radius: .9em
-      color: $WhiteHover
+    .search
+      display: none
       position: relative
-      margin: 1em 0 0 calc(-1vw - 1.8em)
-      font-size: .6em
-      display: inline-block
-      text-align: center
-      padding: .28em .0em
+
+      #searchField
+        transition: $Slow
+        padding: 3px .5em 0px
+        vertical-align: middle
+        font-size: 1.5em
+        //margin-top: -2em
+        border: 0px
+        max-width: 5vw
+        animation: 0.4s ease expand forwards
+        position: relative
+        //width: 0px
+        //width: 350px
+        border-bottom: 3px solid $SecondaryColor
+        //border-radius: 1em 1em 0 0
+        box-sizing: content-box
+
+        &:focus, &:active
+          outline: none
+          transition: $Slow
+          border-color: $Black
+
+        &:hover
+          transition: $Slow
+          //transform: scale(1.07)
+          border-color: $Black
+
+      .results
+        position: absolute
+        display: flex
+        flex-direction: column
+        background: $White
+        box-shadow: $Shadow
+        color: $Black
+        font-size: 1em
+        //padding: .2em
+        //border-radius: 0 0 1em 1em
+        width: 100%
+        //top: 2.5em
+        left: 0%
+
+        .activeResult
+          background: blue
+
+        div
+          a
+            display: block
+            transition: $Fast
+            margin: .1em .5em
+            font-weight: lighter
+            //display: none
+            text-transform: capitalize
+            font-weight: 300
+
+            &:hover
+              transition: $Fast
+              border: 0px
+              font-weight: 400
 
     @media #{$Mobile}
       display: none
 
-  .MobileNav
+
+  #alertBox
     display: none
-    align-self: flex-end
+    width: 300px
+    height: 250px
+    background-color: $White
+    box-shadow: $BigShadow
+    border-radius: .2em
+    position: absolute
+    margin-left: calc(50vw - 150px)
+    font-weight: normal
+    padding: 1em
+    z-index: 5
+    right: 4vmax
+    top: 8vmax
+    font-size: 1.1em
 
     a
-      font-weight: 100
-      font-size: 3em
-      line-height: .5
-      vertical-align: text-bottom
+      transition: $Fast
+      box-shadow: $Shadow
+      display: block
+      background-color: $MainColor
+      margin: auto 3% .7em
+      width: 80%
+      height: 2em
+      padding: 10px
+      position: absolute
+      bottom: 0
+      color: $White
+      border-radius: .2em
+      text-align: center
 
+      &:hover, &:active
+        transition: $Fast
+        transform: scale(1.07)
+        border: 0px
+
+    span
+      cursor: pointer
+      position: relative
+      font-size: 1.3em
+      line-height: .6
+      //padding: 1vw 0
+      //margin: 0 1em 1em 0
+      float: right
+      color: $ThirdColor !important
+      text-transform: lowercase !important
+
+      &:hover
+        color: $Black
+
+
+  #Cookies
+    box-shadow: $BigShadow
+    z-index: 9999
+    background-color: $SecondaryColor
+    position: fixed
+    bottom: 0
+    left: 0
+    width: 70%
+    border-radius: 50px 50px 0 0
+    padding: 10px 3vw 8px
+    color: $WhiteHover
+    margin: 0 50%
+    transform: translate(-50%,0)
+    //min-width: 500px
+
+
+    a
+      margin: 0
+      display: inline
+      transition: $Fast
+      border-bottom: 0px
+      padding: 0
+      color: $WhiteHover
+      font-size: 1em
+      //pointer-events: none
+
+      &::selection
+        color: $WhiteHover !important
+        background-color: rgba(0,0,0,0) !important
+        opacity: 1
+
+      &:hover
+        border-bottom: 0px
+        padding: 0
+        color: $WhiteHover
+        transition: $Fast
+        text-decoration: underline
+
+    p
+      &::selection
+        color: $WhiteHover !important
+        background-color: rgba(0,0,0,0) !important
+        opacity: 1
+
+    span
+      cursor: pointer
+      position: relative
+      font-size: 1.3em
+      //padding: 1vw 0
+      margin: 0 -1vw 1vw 0
+      text-transform: lowercase
+      float: right
+
+      &::selection
+        color: $WhiteHover !important
+        background-color: rgba(0,0,0,0) !important
+        opacity: 1
 
     @media #{$Mobile}
+      width: 100vw
+      border-radius: 5px 5px 0 0
+
+      span
+        margin: 0 5px 50px 0
+
+
+  #mobileNav
+    transition: $Slow
+    width: 100%
+    height: 0px
+    overflow: hidden
+    background-color: $White
+    //box-shadow: $Shadow
+    //display: none
+    position: absolute
+    //bottom: 0
+    top: 15vh
+    left: 0
+    right: 0
+    z-index: 9999999
+
+    a
+      transition: $Medium
+      font-size: 3em !important
+      text-align: left
+      width: 100%
+      display: block
+      //height: 50px
+      padding: 10px 3vmax
+
+      &:active, &:hover, &:focus
+        transition: $Medium
+        border: 0px !important
+        color: grey !important
+
+  #Nav
+    padding: 4vmax 4vmax
+    width: 100%
+    height: calc(8vmax + (1.5em * 1.25))
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-content: stretch
+    text-transform: uppercase
+
+    .Logo
+      a
+        img
+          width: 200px
+          margin: -4px 0 0
+
+          @media #{$MobileXXL}
+            margin: 0px 0 0
+            width: 180px
+
+          @media #{$MobileM}
+            margin: 3px 0 0
+            width: 160px
+
+    .Material
+      text-transform: lowercase !important
+      font-size: 1.6em
+
+    .RightNav
+      align-self: flex-end
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: flex-end
+
+    a
+      transition: $Fast
+      color: $Black
+      margin: 0 1vw
+      font-size: 1.5em
+      font-weight: bold
+      border-bottom: 0px solid $SecondaryColor
+      position: relative
+
+      &:hover
+        transition: $Fast
+        border-bottom: 3px solid $Black
+        color: $Black
+        padding-bottom: 2px
+
+    .Nav
       display: inline-block
-      //padding: 0 2.3vw
 
-  .NavPart
-    display: inline-block
+      span
+        pointer-events: none
+        background-color: $MainColor
+        height: 1.8em
+        width: 1.8em
+        border-radius: .9em
+        color: $WhiteHover
+        position: relative
+        margin: 1em 0 0 calc(-1vw - 1.8em)
+        font-size: .6em
+        display: inline-block
+        text-align: center
+        padding: .28em .0em
 
-  @media #{$MobileXXL}
-    padding: 6vmax 3vmax
-    height: calc(12vmax + (1.6em * 1.25))
+      @media #{$Mobile}
+        display: none
 
-  @media #{$MobileXL}
-    padding: 6vmax 2vmax
+    .MobileNav
+      display: none
+      align-self: flex-end
 
-  @media #{$MobileM}
-    padding: 6vmax 1vmax
+
+      a
+        font-weight: 100
+        font-size: 3em
+        line-height: .5
+        vertical-align: text-bottom
+        position: relative
+
+        &:hover, &:focus, &:active
+          border: 0px
+
+
+      @media #{$Mobile}
+        display: inline-block
+        //padding: 0 2.3vw
+
+    .NavPart
+      display: inline-block
+
+    @media #{$MobileXXL}
+      padding: 6vmax 3vmax
+      height: calc(12vmax + (1.6em * 1.25))
+
+    @media #{$MobileXL}
+      padding: 6vmax 3vmax
+
+    @media #{$MobileM}
+      padding: 6vmax 3vmax
 
 
 main
@@ -413,76 +636,6 @@ main
       font-size: 16px
 
 
-.searchDiv
-  display: inline
-  position: relative
-
-  .search
-    display: none
-    position: relative
-
-    #searchField
-      transition: $Slow
-      padding: 3px .5em 0px
-      vertical-align: middle
-      font-size: 1.5em
-      //margin-top: -2em
-      border: 0px
-      max-width: 5vw
-      animation: 0.4s ease expand forwards
-      position: relative
-      //width: 0px
-      //width: 350px
-      border-bottom: 3px solid $SecondaryColor
-      //border-radius: 1em 1em 0 0
-      box-sizing: content-box
-
-      &:focus, &:active
-        outline: none
-        transition: $Slow
-        border-color: $Black
-
-      &:hover
-        transition: $Slow
-        //transform: scale(1.07)
-        border-color: $Black
-
-    .results
-      position: absolute
-      display: flex
-      flex-direction: column
-      background: $White
-      box-shadow: $Shadow
-      color: $Black
-      font-size: 1em
-      //padding: .2em
-      //border-radius: 0 0 1em 1em
-      width: 100%
-      //top: 2.5em
-      left: 0%
-
-      .activeResult
-        background: blue
-
-      div
-        a
-          display: block
-          transition: $Fast
-          margin: .1em .5em
-          font-weight: lighter
-          //display: none
-          text-transform: capitalize
-          font-weight: 300
-
-          &:hover
-            transition: $Fast
-            border: 0px
-            font-weight: 400
-
-  @media #{$Mobile}
-    display: none
-
-
 .LinkToHost
   text-align: center
   width: 100%
@@ -494,122 +647,6 @@ main
 
     &:hover
       color: $SecondaryColor
-
-#alertBox
-  display: none
-  width: 300px
-  height: 250px
-  background-color: $White
-  box-shadow: $BigShadow
-  border-radius: .2em
-  position: absolute
-  margin-left: calc(50vw - 150px)
-  font-weight: normal
-  padding: 1em
-  z-index: 5
-  right: 4vmax
-  top: 8vmax
-  font-size: 1.1em
-
-  a
-    transition: $Fast
-    box-shadow: $Shadow
-    display: block
-    background-color: $MainColor
-    margin: auto 3% .7em
-    width: 80%
-    height: 2em
-    padding: 10px
-    position: absolute
-    bottom: 0
-    color: $White
-    border-radius: .2em
-    text-align: center
-
-    &:hover, &:active
-      transition: $Fast
-      transform: scale(1.07)
-      border: 0px
-
-  span
-    cursor: pointer
-    position: relative
-    font-size: 1.3em
-    line-height: .6
-    //padding: 1vw 0
-    //margin: 0 1em 1em 0
-    float: right
-    color: $ThirdColor !important
-    text-transform: lowercase !important
-
-    &:hover
-      color: $Black
-
-
-#Cookies
-  box-shadow: $BigShadow
-  z-index: 9999
-  background-color: $SecondaryColor
-  position: fixed
-  bottom: 0
-  left: 0
-  width: 70%
-  border-radius: 50px 50px 0 0
-  padding: 10px 3vw 8px
-  color: $WhiteHover
-  margin: 0 50%
-  transform: translate(-50%,0)
-  //min-width: 500px
-
-
-  a
-    margin: 0
-    display: inline
-    transition: $Fast
-    border-bottom: 0px
-    padding: 0
-    color: $WhiteHover
-    font-size: 1em
-    //pointer-events: none
-
-    &::selection
-      color: $WhiteHover !important
-      background-color: rgba(0,0,0,0) !important
-      opacity: 1
-
-    &:hover
-      border-bottom: 0px
-      padding: 0
-      color: $WhiteHover
-      transition: $Fast
-      text-decoration: underline
-
-  p
-    &::selection
-      color: $WhiteHover !important
-      background-color: rgba(0,0,0,0) !important
-      opacity: 1
-
-  span
-    cursor: pointer
-    position: relative
-    font-size: 1.3em
-    //padding: 1vw 0
-    margin: 0 -1vw 1vw 0
-    text-transform: lowercase
-    float: right
-
-    &::selection
-      color: $WhiteHover !important
-      background-color: rgba(0,0,0,0) !important
-      opacity: 1
-
-  @media #{$Mobile}
-    width: 100vw
-    border-radius: 5px 5px 0 0
-
-    span
-      margin: 0 5px 50px 0
 
 @keyframes expand
   0%
