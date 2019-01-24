@@ -73,6 +73,10 @@ body
   @media #{$MobileXXL}
     font-size: 16px
 
+  @media #{$Mobile}
+    iframe
+      display: none
+
 
 *
   box-sizing: border-box
@@ -85,6 +89,7 @@ body
     //outline: none
 
 a
+  cursor: pointer
   text-decoration: none
   color: $Black
 
@@ -143,6 +148,8 @@ nav
     background-color: $White
     box-shadow: $Shadow
     display: none
+    position: absolute
+    top: 0px
 
     a
       font-size: 1.5em

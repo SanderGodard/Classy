@@ -104,6 +104,7 @@ Templaten vi bruker for nye sider:
    - Mouseover zoom på produktbilder
    - Bygge anbefalte produkter section?
    - MobileNav
+   - Updated cookies
    - Handlekurv side
    - Legg til livechat
    - Dropdown på "Produkter"?
