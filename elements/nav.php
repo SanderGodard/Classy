@@ -39,11 +39,14 @@
 
 
 <div id="Cookies">
-  <span onclick="/HypeIT/scripts/cookies.js">x</span>
+  <h1>Cookies & Personvern</h1>
   <p>
-    Hei, vi bruker 'Cookies', også kjent som informasjonskapsler. Ved å fortsette antar vi at du er enig i bruken
-    <a href="/HypeIT/kontakt/Cookies" target="_blank">Finn ut mer om informasjonskapsler og hvordan du kan avvise dem.</a>
+    Hei, vi bruker 'Cookies', også kjent som informasjonskapsler for at du skal få den beste brukeropplevelsen som mulig. Ved å fortsette godkjenner du at du er enig i bruken.
   </p>
+  <div>
+    <a target="_blank" href="/HypeIT/kontakt/Cookies">Mer informasjon</a>
+    <span onclick="/HypeIT/scripts/cookies.js">Godta</span>
+  </div>
 </div>
 
 <div id="alertBox">

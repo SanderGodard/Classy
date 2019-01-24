@@ -261,40 +261,83 @@ nav
   #Cookies
     box-shadow: $BigShadow
     z-index: 9999
-    background-color: $SecondaryColor
+    background-color: $Black
     position: fixed
-    bottom: 0
-    left: 0
-    width: 70%
-    border-radius: 50px 50px 0 0
-    padding: 10px 3vw 8px
+    bottom: 30px
+    right: 30px
+    width: 560px
+    border-radius: 10px
+    padding: 20px
     color: $WhiteHover
-    margin: 0 50%
-    transform: translate(-50%,0)
     //min-width: 500px
 
+    @media #{$Mobile}
+      width: 100%
+      bottom: 0
+      right: 0
+      left: 0
 
-    a
-      margin: 0
-      display: inline
-      transition: $Fast
-      border-bottom: 0px
-      padding: 0
-      color: $WhiteHover
-      font-size: 1em
-      //pointer-events: none
+      h1
+        display: none
 
-      &::selection
-        color: $WhiteHover !important
-        background-color: rgba(0,0,0,0) !important
-        opacity: 1
+    div
+      display: flex
+      align-items: flex-end
+      justify-content: flex-end
 
-      &:hover
-        border-bottom: 0px
-        padding: 0
+      @media #{$Mobile}
+        align-items: flex-start
+        justify-content: space-between
+
+      span
+        transition: $Medium
+        cursor: pointer
+        display: inline-block
         color: $WhiteHover
+        background-color: $Black
+        border: 5px solid $WhiteHover
+        font-size: 1.25em
+        box-sizing: content-box
+        padding: .6em 2em
+        text-transform: uppercase
+        margin: 2vh 0
+        font-weight: bold
+        text-align: center
+        //max-width: 400px
+
+        &:hover
+          transition: $Medium
+          color: $Black
+          background-color: $WhiteHover
+
+        &:active, &:focus
+          transition: $Medium
+          transform: scale(.97)
+
+
+      a
+        margin: 0
+        display: inline-block
         transition: $Fast
-        text-decoration: underline
+        border-bottom: 1px dotted $WhiteHover
+        padding: 0
+        align-self: center
+        margin-right: 5%
+        color: $WhiteHover
+        font-size: 1em
+        //pointer-events: none
+
+        &::selection
+          color: $WhiteHover !important
+          background-color: rgba(0,0,0,0) !important
+          opacity: 1
+
+        &:hover
+          border-bottom: 0px
+          border-bottom: 1px solid $WhiteHover
+          color: $WhiteHover
+          transition: $Fast
+          text-decoration: none
 
     p
       &::selection
@@ -302,19 +345,6 @@ nav
         background-color: rgba(0,0,0,0) !important
         opacity: 1
 
-    span
-      cursor: pointer
-      position: relative
-      font-size: 1.3em
-      //padding: 1vw 0
-      margin: 0 -1vw 1vw 0
-      text-transform: lowercase
-      float: right
-
-      &::selection
-        color: $WhiteHover !important
-        background-color: rgba(0,0,0,0) !important
-        opacity: 1
 
     @media #{$Mobile}
       width: 100vw
@@ -338,6 +368,7 @@ nav
     left: 0
     right: 0
     z-index: 9999999
+    padding-top: 2vh
 
     a
       transition: $Medium
@@ -347,6 +378,7 @@ nav
       display: block
       //height: 50px
       padding: 10px 3vmax
+      font-weight: 200 !important
 
       &:active, &:hover, &:focus
         transition: $Medium

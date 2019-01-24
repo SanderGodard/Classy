@@ -262,50 +262,118 @@ nav #Cookies {
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
   z-index: 9999;
-  background-color: #383838;
+  background-color: #000;
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 70%;
-  border-radius: 50px 50px 0 0;
-  padding: 10px 3vw 8px;
+  bottom: 30px;
+  right: 30px;
+  width: 560px;
+  border-radius: 10px;
+  padding: 20px;
   color: #FBFBFB;
-  margin: 0 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
 }
-/* line 277, styling.sass */
-nav #Cookies a {
+@media only screen and (max-width: 890px) {
+  /* line 261, styling.sass */
+  nav #Cookies {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  /* line 280, styling.sass */
+  nav #Cookies h1 {
+    display: none;
+  }
+}
+/* line 283, styling.sass */
+nav #Cookies div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media only screen and (max-width: 890px) {
+  /* line 283, styling.sass */
+  nav #Cookies div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/* line 292, styling.sass */
+nav #Cookies div span {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  display: inline-block;
+  color: #FBFBFB;
+  background-color: #000;
+  border: 5px solid #FBFBFB;
+  font-size: 1.25em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0.6em 2em;
+  text-transform: uppercase;
+  margin: 2vh 0;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 308, styling.sass */
+nav #Cookies div span:hover {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #000;
+  background-color: #FBFBFB;
+}
+/* line 313, styling.sass */
+nav #Cookies div span:active, nav #Cookies div span:focus {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+/* line 318, styling.sass */
+nav #Cookies div a {
   margin: 0;
-  display: inline;
+  display: inline-block;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  border-bottom: 0px;
+  border-bottom: 1px dotted #FBFBFB;
   padding: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 5%;
   color: #FBFBFB;
   font-size: 1em;
 }
-/* line 287, styling.sass */
-nav #Cookies a::-moz-selection {
+/* line 330, styling.sass */
+nav #Cookies div a::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-nav #Cookies a::selection {
+nav #Cookies div a::selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 292, styling.sass */
-nav #Cookies a:hover {
+/* line 335, styling.sass */
+nav #Cookies div a:hover {
   border-bottom: 0px;
-  padding: 0;
+  border-bottom: 1px solid #FBFBFB;
   color: #FBFBFB;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  text-decoration: underline;
+  text-decoration: none;
 }
-/* line 300, styling.sass */
+/* line 343, styling.sass */
 nav #Cookies p::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -316,38 +384,18 @@ nav #Cookies p::selection {
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 305, styling.sass */
-nav #Cookies span {
-  cursor: pointer;
-  position: relative;
-  font-size: 1.3em;
-  margin: 0 -1vw 1vw 0;
-  text-transform: lowercase;
-  float: right;
-}
-/* line 314, styling.sass */
-nav #Cookies span::-moz-selection {
-  color: #FBFBFB !important;
-  background-color: rgba(0, 0, 0, 0) !important;
-  opacity: 1;
-}
-nav #Cookies span::selection {
-  color: #FBFBFB !important;
-  background-color: rgba(0, 0, 0, 0) !important;
-  opacity: 1;
-}
 @media only screen and (max-width: 890px) {
   /* line 261, styling.sass */
   nav #Cookies {
     width: 100vw;
     border-radius: 5px 5px 0 0;
   }
-  /* line 323, styling.sass */
+  /* line 353, styling.sass */
   nav #Cookies span {
     margin: 0 5px 50px 0;
   }
 }
-/* line 327, styling.sass */
+/* line 357, styling.sass */
 nav #mobileNav {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -360,8 +408,9 @@ nav #mobileNav {
   left: 0;
   right: 0;
   z-index: 9999999;
+  padding-top: 2vh;
 }
-/* line 342, styling.sass */
+/* line 373, styling.sass */
 nav #mobileNav a {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -370,15 +419,16 @@ nav #mobileNav a {
   width: 100%;
   display: block;
   padding: 10px 3vmax;
+  font-weight: 200 !important;
 }
-/* line 351, styling.sass */
+/* line 383, styling.sass */
 nav #mobileNav a:active, nav #mobileNav a:hover, nav #mobileNav a:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   border: 0px !important;
   color: grey !important;
 }
-/* line 356, styling.sass */
+/* line 388, styling.sass */
 nav #Nav {
   padding: 4vmax 4vmax;
   width: 100%;
@@ -395,31 +445,31 @@ nav #Nav {
       align-content: stretch;
   text-transform: uppercase;
 }
-/* line 368, styling.sass */
+/* line 400, styling.sass */
 nav #Nav .Logo a img {
   width: 200px;
   margin: -4px 0 0;
 }
 @media only screen and (max-width: 575px) {
-  /* line 368, styling.sass */
+  /* line 400, styling.sass */
   nav #Nav .Logo a img {
     margin: 0px 0 0;
     width: 180px;
   }
 }
 @media only screen and (max-width: 376px) {
-  /* line 368, styling.sass */
+  /* line 400, styling.sass */
   nav #Nav .Logo a img {
     margin: 3px 0 0;
     width: 160px;
   }
 }
-/* line 380, styling.sass */
+/* line 412, styling.sass */
 nav #Nav .Material {
   text-transform: lowercase !important;
   font-size: 1.6em;
 }
-/* line 384, styling.sass */
+/* line 416, styling.sass */
 nav #Nav .RightNav {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -436,7 +486,7 @@ nav #Nav .RightNav {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 391, styling.sass */
+/* line 423, styling.sass */
 nav #Nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -447,7 +497,7 @@ nav #Nav a {
   border-bottom: 0px solid #383838;
   position: relative;
 }
-/* line 400, styling.sass */
+/* line 432, styling.sass */
 nav #Nav a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -455,11 +505,11 @@ nav #Nav a:hover {
   color: #000;
   padding-bottom: 2px;
 }
-/* line 406, styling.sass */
+/* line 438, styling.sass */
 nav #Nav .Nav {
   display: inline-block;
 }
-/* line 409, styling.sass */
+/* line 441, styling.sass */
 nav #Nav .Nav span {
   pointer-events: none;
   background-color: #FF0000;
@@ -475,18 +525,18 @@ nav #Nav .Nav span {
   padding: 0.28em 0em;
 }
 @media only screen and (max-width: 890px) {
-  /* line 406, styling.sass */
+  /* line 438, styling.sass */
   nav #Nav .Nav {
     display: none;
   }
 }
-/* line 426, styling.sass */
+/* line 458, styling.sass */
 nav #Nav .MobileNav {
   display: none;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-/* line 431, styling.sass */
+/* line 463, styling.sass */
 nav #Nav .MobileNav a {
   font-weight: 100;
   font-size: 3em;
@@ -494,50 +544,50 @@ nav #Nav .MobileNav a {
   vertical-align: text-bottom;
   position: relative;
 }
-/* line 438, styling.sass */
+/* line 470, styling.sass */
 nav #Nav .MobileNav a:hover, nav #Nav .MobileNav a:focus, nav #Nav .MobileNav a:active {
   border: 0px;
 }
 @media only screen and (max-width: 890px) {
-  /* line 426, styling.sass */
+  /* line 458, styling.sass */
   nav #Nav .MobileNav {
     display: inline-block;
   }
 }
-/* line 446, styling.sass */
+/* line 478, styling.sass */
 nav #Nav .NavPart {
   display: inline-block;
 }
 @media only screen and (max-width: 575px) {
-  /* line 356, styling.sass */
+  /* line 388, styling.sass */
   nav #Nav {
     padding: 6vmax 3vmax;
     height: calc(12vmax + (1.6em * 1.25));
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 356, styling.sass */
+  /* line 388, styling.sass */
   nav #Nav {
     padding: 6vmax 3vmax;
   }
 }
 @media only screen and (max-width: 376px) {
-  /* line 356, styling.sass */
+  /* line 388, styling.sass */
   nav #Nav {
     padding: 6vmax 3vmax;
   }
 }
 
-/* line 460, styling.sass */
+/* line 492, styling.sass */
 main {
   padding: 0 4vw;
 }
-/* line 463, styling.sass */
+/* line 495, styling.sass */
 main div.Showcase.New::before {
   display: none;
 }
 @media only screen and (max-width: 650px) {
-  /* line 463, styling.sass */
+  /* line 495, styling.sass */
   main div.Showcase.New::before {
     display: block;
     font-size: 2em;
@@ -547,12 +597,12 @@ main div.Showcase.New::before {
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 463, styling.sass */
+  /* line 495, styling.sass */
   main div.Showcase.New::before {
     font-size: 1.3em;
   }
 }
-/* line 475, styling.sass */
+/* line 507, styling.sass */
 main .Showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,25 +621,25 @@ main .Showcase {
   height: calc(100vh - (8vmax + (1.5em * 1.25) + 5vh));
 }
 @media only screen and (max-width: 890px) {
-  /* line 475, styling.sass */
+  /* line 507, styling.sass */
   main .Showcase {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: auto;
   }
 }
-/* line 488, styling.sass */
+/* line 520, styling.sass */
 main .Showcase img {
   cursor: pointer;
   bottom: 0;
   height: 100%;
 }
-/* line 495, styling.sass */
+/* line 527, styling.sass */
 main .Showcase img .New::before {
   display: none;
 }
 @media only screen and (max-width: 890px) {
-  /* line 488, styling.sass */
+  /* line 520, styling.sass */
   main .Showcase img {
     width: 60%;
     height: auto;
@@ -604,7 +654,7 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 488, styling.sass */
+  /* line 520, styling.sass */
   main .Showcase img {
     margin: auto auto;
     -webkit-box-ordinal-group: 2;
@@ -613,19 +663,19 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 488, styling.sass */
+  /* line 520, styling.sass */
   main .Showcase img {
     width: 90%;
     margin-left: 15%;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 488, styling.sass */
+  /* line 520, styling.sass */
   main .Showcase img {
     width: 100%;
   }
 }
-/* line 519, styling.sass */
+/* line 551, styling.sass */
 main .Showcase .Info {
   margin-top: calc((100vh - (8vmax + (1.5em * 1.25) + 5vh)) / 2);
   -webkit-transform: translate(0, -50%);
@@ -633,14 +683,14 @@ main .Showcase .Info {
   width: 45%;
   text-align: left;
 }
-/* line 528, styling.sass */
+/* line 560, styling.sass */
 main .Showcase .Info h1 {
   font-size: 3.75em;
   color: #000;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 650px) {
-  /* line 528, styling.sass */
+  /* line 560, styling.sass */
   main .Showcase .Info h1 {
     font-size: 3em;
     text-align: center;
@@ -648,13 +698,13 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 528, styling.sass */
+  /* line 560, styling.sass */
   main .Showcase .Info h1 {
     font-size: 2.75em;
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 519, styling.sass */
+  /* line 551, styling.sass */
   main .Showcase .Info {
     width: 90%;
     -webkit-box-ordinal-group: 2;
@@ -666,19 +716,19 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 519, styling.sass */
+  /* line 551, styling.sass */
   main .Showcase .Info {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 550, styling.sass */
+  /* line 582, styling.sass */
   main .Showcase .Info .New::before {
     display: none;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 519, styling.sass */
+  /* line 551, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -687,7 +737,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 426px) {
-  /* line 519, styling.sass */
+  /* line 551, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -695,7 +745,7 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 562, styling.sass */
+/* line 594, styling.sass */
 .shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -712,14 +762,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
-/* line 577, styling.sass */
+/* line 609, styling.sass */
 .shopBtn:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 582, styling.sass */
+/* line 614, styling.sass */
 .shopBtn:active, .shopBtn:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -727,7 +777,7 @@ main .Showcase .Info h1 {
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 562, styling.sass */
+  /* line 594, styling.sass */
   .shopBtn {
     display: block;
     font-size: 1.5em;
@@ -735,11 +785,11 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 594, styling.sass */
+/* line 626, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 597, styling.sass */
+/* line 629, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -755,30 +805,30 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 597, styling.sass */
+  /* line 629, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 597, styling.sass */
+  /* line 629, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 639, styling.sass */
+/* line 671, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 645, styling.sass */
+/* line 677, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 648, styling.sass */
+/* line 680, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
@@ -800,7 +850,7 @@ main .Showcase .Info h1 {
     max-width: 15vw;
   }
 }
-/* line 657, styling.sass */
+/* line 689, styling.sass */
 .Supreme::before {
   content: "Supreme";
   text-transform: capitalize;
@@ -818,19 +868,19 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 657, styling.sass */
+  /* line 689, styling.sass */
   .Supreme::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 657, styling.sass */
+  /* line 689, styling.sass */
   .Supreme::before {
     font-size: 16px;
   }
 }
 
-/* line 681, styling.sass */
+/* line 713, styling.sass */
 .kategori_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -846,7 +896,7 @@ main .Showcase .Info h1 {
   margin-top: 7%;
   background-color: inherit;
 }
-/* line 689, styling.sass */
+/* line 721, styling.sass */
 .kategori_wrapper .kategori_box {
   background-color: inherit;
   width: auto;
@@ -857,7 +907,7 @@ main .Showcase .Info h1 {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-/* line 700, styling.sass */
+/* line 732, styling.sass */
 .kategori_wrapper .kategori_box .kategori_box_innhold {
   display: none;
   position: relative;
@@ -875,26 +925,26 @@ main .Showcase .Info h1 {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
   pointer-events: none;
 }
-/* line 720, styling.sass */
+/* line 752, styling.sass */
 .kategori_wrapper .kategori_box:hover .kategori_box_innhold {
   display: block;
 }
-/* line 723, styling.sass */
+/* line 755, styling.sass */
 .kategori_wrapper .kategori_box:hover .kategori_box_wrapper {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 728, styling.sass */
+/* line 760, styling.sass */
 .kategori_wrapper .kategori_box .kategori_box_wrapper {
   padding: 0.6em;
   z-index: 1;
 }
-/* line 733, styling.sass */
+/* line 765, styling.sass */
 .kategori_wrapper .kategori_box .kategori_box_wrapper:hover {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 737, styling.sass */
+/* line 769, styling.sass */
 .kategori_wrapper .kategori_box .kategori_box_wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -906,7 +956,7 @@ main .Showcase .Info h1 {
   height: 19vw;
 }
 
-/* line 755, styling.sass */
+/* line 787, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -920,7 +970,7 @@ main .Showcase .Info h1 {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 763, styling.sass */
+/* line 795, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,7 +985,7 @@ main .Showcase .Info h1 {
   position: absolute;
   left: 22%;
 }
-/* line 773, styling.sass */
+/* line 805, styling.sass */
 .produktside .venstreside .Bilder {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -952,14 +1002,14 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 781, styling.sass */
+/* line 813, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
   width: 55%;
   border: 3px solid #707070;
   padding: 6vh 0vh 3vh 0vh;
   display: block;
 }
-/* line 788, styling.sass */
+/* line 820, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   -ms-flex-line-pack: start;
@@ -979,7 +1029,7 @@ main .Showcase .Info h1 {
           justify-content: space-between;
   width: 55%;
 }
-/* line 797, styling.sass */
+/* line 829, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   width: 8vw;
   -o-object-fit: cover;
@@ -993,7 +1043,7 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0.9em 0 0.3em 0;
 }
-/* line 810, styling.sass */
+/* line 842, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1007,7 +1057,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 817, styling.sass */
+/* line 849, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
