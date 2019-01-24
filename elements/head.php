@@ -20,6 +20,7 @@
 <script async defer src="/HypeIT/scripts/cookies.js"></script>
 <script async defer src="/HypeIT/scripts/shop.js"></script>
 <script async defer src="/HypeIT/scripts/cartCounter.js"></script>
+<script async defer src="/HypeIT/scripts/mobileNav.js"></script>
 
 <!--Tawk.to Script-->
 <script type="text/javascript">
