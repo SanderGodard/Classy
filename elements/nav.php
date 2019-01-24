@@ -38,7 +38,6 @@
 </div>
 
 
-
 <div id="Cookies">
   <span onclick="/HypeIT/scripts/cookies.js">x</span>
   <p>
