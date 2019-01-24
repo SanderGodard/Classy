@@ -884,10 +884,11 @@ main .Showcase .Info h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-/* line 732, styling.sass */
+/* line 733, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,16 +900,68 @@ main .Showcase .Info h1 {
   width: 45%;
   -ms-flex-line-pack: end;
       align-content: flex-end;
+  position: absolute;
+  left: 22%;
 }
-/* line 739, styling.sass */
-.produktside .venstreside .StortBilde {
+/* line 743, styling.sass */
+.produktside .venstreside .Bilder {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 751, styling.sass */
+.produktside .venstreside .Bilder .StortBilde {
   width: 55%;
   border: 3px solid #707070;
   padding: 6vh 0vh 3vh 0vh;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  display: block;
 }
-/* line 746, styling.sass */
+/* line 758, styling.sass */
+.produktside .venstreside .Bilder .smaBilder {
+  height: auto;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55%;
+}
+/* line 767, styling.sass */
+.produktside .venstreside .Bilder .smaBilder img {
+  width: 8vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8vw;
+  border: 3px solid #707070;
+  margin-top: 2%;
+  padding: 0.9em 0 0.3em 0;
+}
+/* line 780, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -917,12 +970,12 @@ main .Showcase .Info h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 45%;
+  width: 50%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 753, styling.sass */
+/* line 787, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
