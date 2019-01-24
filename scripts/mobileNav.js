@@ -4,7 +4,7 @@ mobileNav.addEventListener("click", menuToggle);
 navHeight = document.getElementById("Nav").style.heigth;
 mobileNav.style.top = navHeigth;
 
-/*
+
 function menuToggle() {
   var x = document.getElementById("mobileNav");
   if (x.style.height == dropDownH) {
@@ -21,9 +21,4 @@ function menuToggle() {
   } else {
     a.innerHTML = "menu";
   }
-}
-*/
-
-function menuToggle() {
-  var x =
 }

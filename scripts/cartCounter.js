@@ -1,7 +1,6 @@
 counter = document.getElementById('cartCounter');
 lStorage = localStorage;
 
-
 if(lStorage.getItem("counted") != undefined) {
   countedItems = lStorage.getItem("counted");
   countedItems = parseInt(countedItems, 10);

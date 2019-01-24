@@ -19,4 +19,3 @@
 <script async defer src="/HypeIT/scripts/cookies.js"></script>
 <script async defer src="/HypeIT/scripts/shop.js"></script>
 <script async defer src="/HypeIT/scripts/cartCounter.js"></script>
-<script async defer src="/HypeIT/scripts/pictureSwap.js"></script>
