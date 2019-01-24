@@ -12,16 +12,16 @@ function hideBoxBool2() {
   boxHiding = false;
 }
 function addToBasket(x) {
-  var p=0;
+  p=0;
   storedArray = [];
   storedArray2= [];
 
   if(lStorage.getItem("basket") != undefined) {
     stored = lStorage.getItem("basket");
-    for(var i=0; i<stored.length; i++) {
+    for(i=0; i<stored.length; i++) {
       storedArray[i] = stored[i];
     }
-    for(var i=0; i<storedArray.length; i++) {
+    for(i=0; i<storedArray.length; i++) {
       switch (storedArray[i]) {
           case ",":
           p++;

@@ -119,36 +119,17 @@ nav {
   text-transform: uppercase;
   margin: 0 0 5vh;
 }
-/* line 139, styling.sass */
-nav #mobileNav {
-  width: 100%;
-  height: 0px;
-  overflow: hidden;
-  background-color: #FFF;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-  display: none;
-}
-/* line 147, styling.sass */
-nav #mobileNav a {
-  font-size: 1.5em;
-  text-align: left;
-  width: 100%;
-  display: block;
-  height: 50px;
-  padding-top: 10px;
-}
-/* line 158, styling.sass */
+/* line 141, styling.sass */
 nav .Logo a img {
   width: 200px;
   margin: -4px 0 0;
 }
-/* line 162, styling.sass */
+/* line 145, styling.sass */
 nav .Material {
   text-transform: lowercase !important;
   font-size: 1.6em;
 }
-/* line 166, styling.sass */
+/* line 149, styling.sass */
 nav .RightNav {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -165,7 +146,7 @@ nav .RightNav {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 173, styling.sass */
+/* line 156, styling.sass */
 nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -176,7 +157,7 @@ nav a {
   border-bottom: 0px solid #383838;
   position: relative;
 }
-/* line 182, styling.sass */
+/* line 165, styling.sass */
 nav a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -184,11 +165,11 @@ nav a:hover {
   color: #000;
   padding-bottom: 2px;
 }
-/* line 188, styling.sass */
+/* line 171, styling.sass */
 nav .Nav {
   display: inline-block;
 }
-/* line 191, styling.sass */
+/* line 174, styling.sass */
 nav .Nav span {
   pointer-events: none;
   background-color: #FF0000;
@@ -201,21 +182,21 @@ nav .Nav span {
   font-size: 0.6em;
   display: inline-block;
   text-align: center;
-  padding: 0.28em 0em;
+  padding: 0.29em;
 }
 @media only screen and (max-width: 890px) {
-  /* line 188, styling.sass */
+  /* line 171, styling.sass */
   nav .Nav {
     display: none;
   }
 }
-/* line 208, styling.sass */
+/* line 191, styling.sass */
 nav .MobileNav {
   display: none;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-/* line 212, styling.sass */
+/* line 195, styling.sass */
 nav .MobileNav a {
   font-weight: 100;
   font-size: 3em;
@@ -223,12 +204,12 @@ nav .MobileNav a {
   vertical-align: text-bottom;
 }
 @media only screen and (max-width: 890px) {
-  /* line 208, styling.sass */
+  /* line 191, styling.sass */
   nav .MobileNav {
     display: inline-block;
   }
 }
-/* line 223, styling.sass */
+/* line 206, styling.sass */
 nav .NavPart {
   display: inline-block;
 }
@@ -252,16 +233,16 @@ nav .NavPart {
   }
 }
 
-/* line 237, styling.sass */
+/* line 220, styling.sass */
 main {
   padding: 0 4vw;
 }
-/* line 240, styling.sass */
+/* line 223, styling.sass */
 main div.Showcase.New::before {
   display: none;
 }
 @media only screen and (max-width: 650px) {
-  /* line 240, styling.sass */
+  /* line 223, styling.sass */
   main div.Showcase.New::before {
     display: block;
     font-size: 2em;
@@ -271,12 +252,12 @@ main div.Showcase.New::before {
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 240, styling.sass */
+  /* line 223, styling.sass */
   main div.Showcase.New::before {
     font-size: 1.3em;
   }
 }
-/* line 252, styling.sass */
+/* line 235, styling.sass */
 main .Showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,25 +276,25 @@ main .Showcase {
   height: calc(100vh - (8vmax + (1.5em * 1.25) + 5vh));
 }
 @media only screen and (max-width: 890px) {
-  /* line 252, styling.sass */
+  /* line 235, styling.sass */
   main .Showcase {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: auto;
   }
 }
-/* line 265, styling.sass */
+/* line 248, styling.sass */
 main .Showcase img {
   cursor: pointer;
   bottom: 0;
   height: 100%;
 }
-/* line 272, styling.sass */
+/* line 255, styling.sass */
 main .Showcase img .New::before {
   display: none;
 }
 @media only screen and (max-width: 890px) {
-  /* line 265, styling.sass */
+  /* line 248, styling.sass */
   main .Showcase img {
     width: 60%;
     height: auto;
@@ -328,7 +309,7 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 265, styling.sass */
+  /* line 248, styling.sass */
   main .Showcase img {
     margin: auto auto;
     -webkit-box-ordinal-group: 2;
@@ -337,19 +318,19 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 265, styling.sass */
+  /* line 248, styling.sass */
   main .Showcase img {
     width: 90%;
     margin-left: 15%;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 265, styling.sass */
+  /* line 248, styling.sass */
   main .Showcase img {
     width: 100%;
   }
 }
-/* line 296, styling.sass */
+/* line 279, styling.sass */
 main .Showcase .Info {
   margin-top: calc((100vh - (8vmax + (1.5em * 1.25) + 5vh)) / 2);
   -webkit-transform: translate(0, -50%);
@@ -357,14 +338,14 @@ main .Showcase .Info {
   width: 45%;
   text-align: left;
 }
-/* line 305, styling.sass */
+/* line 288, styling.sass */
 main .Showcase .Info h1 {
   font-size: 3.75em;
   color: #000;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 650px) {
-  /* line 305, styling.sass */
+  /* line 288, styling.sass */
   main .Showcase .Info h1 {
     font-size: 3em;
     text-align: center;
@@ -372,13 +353,13 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 305, styling.sass */
+  /* line 288, styling.sass */
   main .Showcase .Info h1 {
     font-size: 2.75em;
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 296, styling.sass */
+  /* line 279, styling.sass */
   main .Showcase .Info {
     width: 90%;
     -webkit-box-ordinal-group: 2;
@@ -390,19 +371,19 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 296, styling.sass */
+  /* line 279, styling.sass */
   main .Showcase .Info {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 327, styling.sass */
+  /* line 310, styling.sass */
   main .Showcase .Info .New::before {
     display: none;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 296, styling.sass */
+  /* line 279, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -411,7 +392,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 426px) {
-  /* line 296, styling.sass */
+  /* line 279, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -419,7 +400,7 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 339, styling.sass */
+/* line 322, styling.sass */
 .shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -436,22 +417,22 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
-/* line 354, styling.sass */
-.shopBtn:hover {
+/* line 337, styling.sass */
+.shopBtn:hover, .shopBtn:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 359, styling.sass */
-.shopBtn:active, .shopBtn:focus {
+/* line 342, styling.sass */
+.shopBtn:active {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 339, styling.sass */
+  /* line 322, styling.sass */
   .shopBtn {
     display: block;
     font-size: 1.5em;
@@ -459,11 +440,11 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 371, styling.sass */
+/* line 354, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 374, styling.sass */
+/* line 357, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -479,29 +460,29 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 374, styling.sass */
+  /* line 357, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 374, styling.sass */
+  /* line 357, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 416, styling.sass */
+/* line 399, styling.sass */
 .searchDiv {
   display: inline;
   position: relative;
 }
-/* line 420, styling.sass */
+/* line 403, styling.sass */
 .searchDiv .search {
   display: none;
   position: relative;
 }
-/* line 424, styling.sass */
+/* line 407, styling.sass */
 .searchDiv .search #searchField {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -517,20 +498,20 @@ main .Showcase .Info h1 {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-/* line 440, styling.sass */
+/* line 423, styling.sass */
 .searchDiv .search #searchField:focus, .searchDiv .search #searchField:active {
   outline: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-color: #000;
 }
-/* line 445, styling.sass */
+/* line 428, styling.sass */
 .searchDiv .search #searchField:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-color: #000;
 }
-/* line 450, styling.sass */
+/* line 433, styling.sass */
 .searchDiv .search .results {
   position: absolute;
   display: -webkit-box;
@@ -548,51 +529,47 @@ main .Showcase .Info h1 {
   width: 100%;
   left: 0%;
 }
-/* line 464, styling.sass */
-.searchDiv .search .results .activeResult {
-  background: blue;
-}
-/* line 468, styling.sass */
-.searchDiv .search .results div a {
-  display: block;
+/* line 447, styling.sass */
+.searchDiv .search .results .result {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   margin: 0.1em 0.5em;
   font-weight: lighter;
+  display: none;
   text-transform: capitalize;
   font-weight: 300;
 }
-/* line 477, styling.sass */
-.searchDiv .search .results div a:hover {
+/* line 455, styling.sass */
+.searchDiv .search .results .result:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border: 0px;
   font-weight: 400;
 }
 @media only screen and (max-width: 890px) {
-  /* line 416, styling.sass */
+  /* line 399, styling.sass */
   .searchDiv {
     display: none;
   }
 }
 
-/* line 486, styling.sass */
+/* line 464, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 492, styling.sass */
+/* line 470, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 495, styling.sass */
+/* line 473, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
 
-/* line 498, styling.sass */
+/* line 476, styling.sass */
 #alertBox {
   display: none;
   width: 300px;
@@ -610,7 +587,7 @@ main .Showcase .Info h1 {
   top: 8vmax;
   font-size: 1.1em;
 }
-/* line 514, styling.sass */
+/* line 492, styling.sass */
 #alertBox a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -628,7 +605,7 @@ main .Showcase .Info h1 {
   border-radius: 0.2em;
   text-align: center;
 }
-/* line 529, styling.sass */
+/* line 507, styling.sass */
 #alertBox a:hover, #alertBox a:active {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -636,7 +613,7 @@ main .Showcase .Info h1 {
           transform: scale(1.07);
   border: 0px;
 }
-/* line 534, styling.sass */
+/* line 512, styling.sass */
 #alertBox span {
   cursor: pointer;
   position: relative;
@@ -646,12 +623,12 @@ main .Showcase .Info h1 {
   color: #999999 !important;
   text-transform: lowercase !important;
 }
-/* line 545, styling.sass */
+/* line 523, styling.sass */
 #alertBox span:hover {
   color: #000;
 }
 
-/* line 549, styling.sass */
+/* line 527, styling.sass */
 #Cookies {
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
@@ -668,7 +645,7 @@ main .Showcase .Info h1 {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
-/* line 565, styling.sass */
+/* line 543, styling.sass */
 #Cookies a {
   margin: 0;
   display: inline;
@@ -679,7 +656,7 @@ main .Showcase .Info h1 {
   color: #FBFBFB;
   font-size: 1em;
 }
-/* line 575, styling.sass */
+/* line 553, styling.sass */
 #Cookies a::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -690,7 +667,7 @@ main .Showcase .Info h1 {
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 580, styling.sass */
+/* line 558, styling.sass */
 #Cookies a:hover {
   border-bottom: 0px;
   padding: 0;
@@ -699,7 +676,7 @@ main .Showcase .Info h1 {
   transition: all 0.1s ease;
   text-decoration: underline;
 }
-/* line 588, styling.sass */
+/* line 566, styling.sass */
 #Cookies p::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -710,7 +687,7 @@ main .Showcase .Info h1 {
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 593, styling.sass */
+/* line 571, styling.sass */
 #Cookies span {
   cursor: pointer;
   position: relative;
@@ -719,7 +696,7 @@ main .Showcase .Info h1 {
   text-transform: lowercase;
   float: right;
 }
-/* line 602, styling.sass */
+/* line 580, styling.sass */
 #Cookies span::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -731,12 +708,12 @@ main .Showcase .Info h1 {
   opacity: 1;
 }
 @media only screen and (max-width: 890px) {
-  /* line 549, styling.sass */
+  /* line 527, styling.sass */
   #Cookies {
     width: 100vw;
     border-radius: 5px 5px 0 0;
   }
-  /* line 611, styling.sass */
+  /* line 589, styling.sass */
   #Cookies span {
     margin: 0 5px 50px 0;
   }
@@ -759,7 +736,7 @@ main .Showcase .Info h1 {
     max-width: 15vw;
   }
 }
-/* line 620, styling.sass */
+/* line 598, styling.sass */
 .Supreme::before {
   content: "Supreme";
   text-transform: capitalize;
@@ -777,95 +754,19 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 620, styling.sass */
+  /* line 598, styling.sass */
   .Supreme::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 620, styling.sass */
+  /* line 598, styling.sass */
   .Supreme::before {
     font-size: 16px;
   }
 }
 
-/* line 644, styling.sass */
-.kategori_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 7%;
-  background-color: inherit;
-}
-/* line 652, styling.sass */
-.kategori_wrapper .kategori_box {
-  background-color: inherit;
-  width: auto;
-  height: auto;
-  margin: 1.3vw;
-  border: 3px solid #707070;
-  z-index: 0;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-/* line 663, styling.sass */
-.kategori_wrapper .kategori_box .kategori_box_innhold {
-  display: none;
-  position: relative;
-  color: white;
-  font-size: 3em;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  z-index: 2;
-  top: 37%;
-  height: 0px;
-  z-index: 1;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
-  pointer-events: none;
-}
-/* line 683, styling.sass */
-.kategori_wrapper .kategori_box:hover .kategori_box_innhold {
-  display: block;
-}
-/* line 686, styling.sass */
-.kategori_wrapper .kategori_box:hover .kategori_box_wrapper {
-  -webkit-filter: blur(6px);
-          filter: blur(6px);
-}
-/* line 691, styling.sass */
-.kategori_wrapper .kategori_box .kategori_box_wrapper {
-  padding: 0.6em;
-  z-index: 1;
-}
-/* line 696, styling.sass */
-.kategori_wrapper .kategori_box .kategori_box_wrapper:hover {
-  -webkit-filter: blur(6px);
-          filter: blur(6px);
-}
-/* line 700, styling.sass */
-.kategori_wrapper .kategori_box .kategori_box_wrapper img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 17vw;
-  height: 19vw;
-}
-
-/* line 718, styling.sass */
+/* line 627, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -875,11 +776,10 @@ main .Showcase .Info h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-/* line 726, styling.sass */
+/* line 634, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,68 +791,16 @@ main .Showcase .Info h1 {
   width: 45%;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  position: absolute;
-  left: 22%;
 }
-/* line 736, styling.sass */
-.produktside .venstreside .Bilder {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-/* line 744, styling.sass */
-.produktside .venstreside .Bilder .StortBilde {
+/* line 641, styling.sass */
+.produktside .venstreside .StortBilde {
   width: 55%;
   border: 3px solid #707070;
   padding: 6vh 0vh 3vh 0vh;
-  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
-/* line 751, styling.sass */
-.produktside .venstreside .Bilder .smaBilder {
-  height: auto;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 55%;
-}
-/* line 760, styling.sass */
-.produktside .venstreside .Bilder .smaBilder img {
-  width: 8vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 8vw;
-  border: 3px solid #707070;
-  margin-top: 2%;
-  padding: 0.9em 0 0.3em 0;
-}
-/* line 773, styling.sass */
+/* line 648, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -961,12 +809,12 @@ main .Showcase .Info h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 45%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 780, styling.sass */
+/* line 655, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
