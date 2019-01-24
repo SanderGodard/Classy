@@ -68,46 +68,36 @@ Templaten vi bruker for nye sider:
 # To do
 
  - Markedsføring:
-   - &#10004; "Om oss" side??
+   - "Om oss" side??
    - Finne produkter og informasjon til "databasen"
-   - &#10004; Lage mail (Med autoreply)
-   - &#10004; Sjekke opp eget domenenavn
+   - Lage mail (Med autoreply)
+   - Eget domenenavn
    - Reklame
    - &#10004; Sosiale medier
-   - Samarbeide med Design om å lage ad hvis noen har et produkt.
  - -
 
  - Design:
    - Gjøre så designet blir nøyaktig som de vil ha det, for frontend bare lager nøyaktig det de ser.
    - Dropdown på "Produkter"?
-   - _Lage reklamen_ (Coming soon ad)
-   - Evt dropdown og UX
-   - Footer
-   - Om oss side
-   - &#10004; Favicon
+   - Lage reklamen (Coming soon ad)
+   - Favicon
+   - Hva skal "Annet" knappen på navbar? Evt dropdown og UX
    - &#10004; Bestemme Logo
  - -
 
  - Backend:
-   - &#10004; Forbedre søkefunksjon
+   - Forbedre søkefunksjon
    - Handlekurv
-   - Custom url
-   - Style mediabuttons
-   - &#10004; Gjøre så #cartCounter endrer seg riktig
+   - Gjøre så #cartCounter endrer seg riktig
    - &#10004; Cookie popup
    - &#10004; Sexy animation på search lista
    - &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies
  - -
 
  - Frontend:
+   - Jobbe på handlekurv popupen
    - Gjøre så når du trykker på småbildene i produkter sidene så bytter den bilde
    - Mouseover zoom på produktbilder
    - Bygge anbefalte produkter section?
-   - MobileNav
-   - Updated cookies
-   - Handlekurv side
    - Legg til livechat
    - Dropdown på "Produkter"?
-   - &#10004; Jobbe på handlekurv popupen
-
-   3
