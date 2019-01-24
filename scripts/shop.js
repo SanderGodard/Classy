@@ -1,19 +1,27 @@
 basket = [];
 storedArray = [];
 storedArray2 = [];
+boxHiding = false;
 lStorage = sessionStorage;
-
+document.getElementById('alertBox').addEventListener("mouseover", hideBoxBool);
+document.getElementById('alertBox').addEventListener("mouseout", hideBoxBool2);
+function hideBoxBool() {
+  boxHiding = true;
+}
+function hideBoxBool2() {
+  boxHiding = false;
+}
 function addToBasket(x) {
-  p=0;
+  var p=0;
   storedArray = [];
   storedArray2= [];
 
   if(lStorage.getItem("basket") != undefined) {
     stored = lStorage.getItem("basket");
-    for(i=0; i<stored.length; i++) {
+    for(var i=0; i<stored.length; i++) {
       storedArray[i] = stored[i];
     }
-    for(i=0; i<storedArray.length; i++) {
+    for(var i=0; i<storedArray.length; i++) {
       switch (storedArray[i]) {
           case ",":
           p++;
@@ -33,7 +41,7 @@ function addToBasket(x) {
   }
   console.log(storedArray2);
   //basket = lStorage.getItem("basket");
-  value = x.previousElementSibling.innerHTML.toUpperCase();
+  value = x.previousElementSibling.children[0].innerHTML.toUpperCase();
   console.log(value);
   basket.push(value);
   lStorage.setItem("basket", basket);
@@ -43,8 +51,9 @@ function addToBasket(x) {
 
 function alertBox() {
   document.getElementById('alertBox').style.display = "block";
-  setTimeout(hideBox, 2000);
-
+  if(boxHiding == false) {
+    setTimeout(hideBox, 5000);
+  }
 }
 function hideBox() {
   document.getElementById('alertBox').style.display = "none";
