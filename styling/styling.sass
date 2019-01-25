@@ -491,8 +491,60 @@ nav
   .produkterDD
     display: inline-block
 
+    &:hover
+      .Hoved
+        display: flex
+
     .Hoved
+      transition: $Fast
+      position: absolute
       display: none
+      flex-direction: column
+      flex-wrap: nowrap
+      width: 200px
+      border: 3px solid $Black
+      background-color: $Black
+      z-index: 99
+      box-shadow: $Shadow
+
+      a
+        margin: 0 !important
+        background-color: $White
+        width: 100%
+        min-height: 70px
+        height: 9vh
+        display: block
+        margin-top: 1px !important
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 30px 0px
+        font-size: 1em !important
+
+        &:hover
+          font-size: 1.2em !important
+          padding: 30px 0px !important
+          border-bottom: 0 !important
+          padding-bottom: 30px !important
+
+          img
+            transition: $Fast
+            width: 63px
+
+        img
+          transition: $Fast
+          margin: 0 10px
+          width: 60px
+
+      .Menn
+        //display: none
+
+      @media #{$Laptop}
+        width: 184px
+
+      @media #{$MobileXXL}
+        width: 164px
+
 
 
 
