@@ -2,7 +2,7 @@ basket = [];
 storedArray = [];
 storedArray2 = [];
 boxHiding = false;
-lStorage = sessionStorage;
+lStorage = localStorage;
 document.getElementById('alertBox').addEventListener("mouseover", hideBoxBool);
 document.getElementById('alertBox').addEventListener("mouseout", hideBoxBool2);
 document.getElementById('alertBox').addEventListener("mouseout", alertBox);
