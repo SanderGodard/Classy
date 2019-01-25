@@ -488,11 +488,127 @@ nav
     @media #{$MobileM}
       padding: 6vmax 3vmax
 
+
   .produkterDD
     display: inline-block
 
+    &:hover
+      .Hoved
+        display: flex
+
     .Hoved
+      transition: $Fast
+      position: absolute
       display: none
+      flex-direction: column
+      flex-wrap: nowrap
+      width: 200px
+      border: 3px solid $Black
+      border-bottom: 2px solid $Black
+      //background-color: $Black
+      z-index: 99
+      box-shadow: $Shadow
+
+      .NavKategori1:hover ~ .Menn
+        display: flex !important
+
+      .Menn:hover
+        display: flex !important
+
+      .NavKategori2:hover ~ .Damer
+        display: flex !important
+
+      .Damer:hover
+        display: flex !important
+
+      .NavKategori3:hover ~ .Brands
+        display: flex !important
+
+      .Brands:hover
+        display: flex !important
+
+      a
+        margin: 0 !important
+        background-color: $White
+        width: 100%
+        min-height: 70px
+        height: 9vh
+        display: block
+        border-bottom: 1px solid $Black !important
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 30px 0px
+        font-size: 1em !important
+
+        &:hover
+          font-size: 1.2em !important
+          padding: 30px 0px !important
+          padding-bottom: 30px !important
+
+          img
+            transition: $Fast
+            width: 63px
+
+        img
+          transition: $Fast
+          margin: 0 10px
+          width: 60px
+
+      .Menn
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: -3px 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+      .Damer
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: calc(9vh - 3px) 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+      .Brands
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: calc(18vh - 3px) 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+        a
+          text-align: center
+          padding: 30px 20px
+
+          &:hover
+            padding: 30px 20px !important
+
+      @media #{$Laptop}
+        width: 184px
+
+      @media #{$MobileXXL}
+        width: 164px
 
 
 
