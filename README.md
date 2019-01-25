@@ -75,6 +75,7 @@ Templaten vi bruker for nye sider:
    - Reklame
    - &#10004; Sosiale medier
    - Samarbeide med Design om å lage ad hvis noen har et produkt.
+   - HypeTV (Filme Scott)
  - -
 
  - Design:
@@ -83,6 +84,7 @@ Templaten vi bruker for nye sider:
    - _Lage reklamen_ (Coming soon ad)
    - Evt dropdown og UX
    - Footer
+   - Lag HypeTV intro og watermark.
    - Om oss side
    - &#10004; Favicon
    - &#10004; Bestemme Logo

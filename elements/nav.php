@@ -6,7 +6,20 @@
   </div>
   <div class="RightNav">
     <div class="Nav">
-      <a href="/HypeIT/produkter/">Produkter</a>
+      <div class="produkterDD">
+        <a href="/HypeIT/produkter/">Produkter</a>
+        <div class="Hoved">
+
+
+          <div class="Menn">
+            <a href="/HypeIT/produkter/menn/gensere/"><img src="/HypeIT/images/gensere.png" alt="gensere">gensere</a>
+            <a href="/HypeIT/produkter/menn/bukser/">bukser</a>
+            <a href="/HypeIT/produkter/menn/tskjorter/">t-skjorte</a>
+            <a href="/HypeIT/produkter/menn/sko/">sko</a>
+            <a href="/HypeIT/produkter/menn/jakker/">Jakker</a>
+          </div>
+        </div>
+      </div>
       <a href="/HypeIT/produkter/menn/">Menn</a>
       <a href="/HypeIT/produkter/damer/">Damer</a>
       <a href="/HypeIT/kontakt/">Om oss</a>
@@ -29,7 +42,7 @@
       <a href="javascript:void(0)" onclick="menuToggle()" id="mobileMenu" class="Material">menu</a>
     </div>
     <div id="mobileNav">
-      <a href="/HypeIT/produkter/">Produkter</a>
+      <a href="/HypeIT/produkter/">produkter</a>
       <a href="/HypeIT/produkter/menn/">Menn</a>
       <a href="/HypeIT/produkter/damer/">Damer</a>
       <a href="/HypeIT/kontakt/">Om oss</a>
