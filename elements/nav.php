@@ -1,54 +1,59 @@
-<div class="Logo">
-  <a href="/HypeIT/">
-    <img src="/HypeIT/images/Logo.png" alt="Logo">
-  </a>
-</div>
-<div class="RightNav">
-  <div class="Nav">
-    <a href="/HypeIT/produkter/">Produkter</a>
-    <a href="/HypeIT/produkter/menn/">Menn</a>
-    <a href="/HypeIT/produkter/damer/">Damer</a>
-    <a href="/HypeIT/produkter/annet/">Annet</a>
-    <a href="/HypeIT/store/cart/" class="Material">shopping_cart</a>
-    <span id="cartCounter">0</span>
+<div id="Nav">
+  <div class="Logo">
+    <a href="/HypeIT/">
+      <img src="/HypeIT/images/Logo.png" alt="Logo">
+    </a>
   </div>
-  <div class="NavPart">
-    <div class="searchDiv">
-      <a href="javascript:void(0)" id="SearchIcon" class="Material" onclick="/HypeIT/scripts/searchField.js">search</a>
+  <div class="RightNav">
+    <div class="Nav">
+      <a href="/HypeIT/produkter/">Produkter</a>
+      <a href="/HypeIT/produkter/menn/">Menn</a>
+      <a href="/HypeIT/produkter/damer/">Damer</a>
+      <a href="/HypeIT/kontakt/">Om oss</a>
+      <a href="/HypeIT/store/cart/" class="Material">shopping_cart</a>
+      <span id="cartCounter">0</span>
+    </div>
+    <div class="NavPart">
+      <div class="searchDiv">
+        <a href="javascript:void(0)" id="SearchIcon" class="Material" onclick="/HypeIT/scripts/searchField.js">search</a>
 
-      <div class="search">
-        <input autofocus type="text" id="searchField" placeholder="Search..." tabindex="1">
-        <div class="results">
+        <div class="search">
+          <input autofocus type="text" id="searchField" placeholder="Search..." tabindex="1">
+          <div class="results">
+          </div>
         </div>
-      </div>
 
+      </div>
+    </div>
+    <div class="MobileNav">
+      <a href="javascript:void(0)" onclick="menuToggle()" id="mobileMenu" class="Material">menu</a>
+    </div>
+    <div id="mobileNav">
+      <a href="/HypeIT/produkter/">Produkter</a>
+      <a href="/HypeIT/produkter/menn/">Menn</a>
+      <a href="/HypeIT/produkter/damer/">Damer</a>
+      <a href="/HypeIT/kontakt/">Om oss</a>
     </div>
   </div>
-  <div class="MobileNav">
-    <a href="javascript:void(0)" onclick="menuToggle()" id="mobileMenu" class="Material">menu</a>
-  </div>
-</div>
-<div id="mobileNav">
-<a href="#">1</a>
-<a href="#">2</a>
-<a href="#">3</a>
-<a href="#">4</a>
 </div>
 
 
 <div id="Cookies">
-  <span onclick="/HypeIT/scripts/cookies.js">x</span>
+  <h1>Cookies & Personvern</h1>
   <p>
-    Hei, vi bruker 'Cookies', også kjent som informasjonskapsler. Ved å fortsette antar vi at du er enig i bruken
-    <a href="/HypeIT/kontakt/Cookies" target="_blank">Finn ut mer om informasjonskapsler og hvordan du kan avvise dem.</a>
+    Hei, vi bruker 'Cookies', også kjent som informasjonskapsler for at du skal få den beste brukeropplevelsen som mulig. Ved å fortsette godkjenner du at du er enig i bruken.
   </p>
+  <div>
+    <a target="_blank" href="/HypeIT/kontakt/Cookies">Mer informasjon</a>
+    <span onclick="/HypeIT/scripts/cookies.js">Godta</span>
+  </div>
 </div>
+
 <div id="alertBox">
   <span onclick="document.getElementById('alertBox').style.display = 'none';">x</span>
   <p>
     Du har lagt dette produkter i handlekurven din.<br>
     Vil du betale nå?
   </p>
-  <a href="javascript:void(0)">Betal nå</a>
-
+  <a href="/HypeIT/store/cart/">Betal nå</a>
 </div>

@@ -1,14 +1,12 @@
-var dropDownH = 200;
+var dropDownH = "90vh";
 
 function menuToggle() {
   var x = document.getElementById("mobileNav");
-  if (x.style.height === dropDownH + "px") {
+  if (x.style.height === dropDownH) {
     x.style.height = "0px";
-    x.style.display = "none";
 
   } else {
-    x.style.height = dropDownH + "px";
-    x.style.display = "block";
+    x.style.height = dropDownH;
   }
   var a = document.getElementById("mobileMenu");
   if (a.innerHTML === "menu") {
@@ -16,4 +14,5 @@ function menuToggle() {
   } else {
     a.innerHTML = "menu";
   }
+  document.body.style.overflow = "hidden";
 }
