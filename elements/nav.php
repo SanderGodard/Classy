@@ -12,11 +12,11 @@
 
 
           <div class="Menn">
-            <a href="/HypeIT/produkter/menn/gensere/"><img src="/HypeIT/images/gensere.png" alt="gensere">gensere</a>
-            <a href="/HypeIT/produkter/menn/bukser/">bukser</a>
-            <a href="/HypeIT/produkter/menn/tskjorter/">t-skjorte</a>
-            <a href="/HypeIT/produkter/menn/sko/">sko</a>
-            <a href="/HypeIT/produkter/menn/jakker/">Jakker</a>
+            <a href="/HypeIT/produkter/menn/gensere/"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
+            <a href="/HypeIT/produkter/menn/bukser/"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
+            <a href="/HypeIT/produkter/menn/tskjorter/"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
+            <a href="/HypeIT/produkter/menn/sko/"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
+            <a href="/HypeIT/produkter/menn/jakker/"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
           </div>
         </div>
       </div>
