@@ -1,11 +1,24 @@
 var p = -1;
 document.getElementsByClassName('search')[0].addEventListener("keydown", navigation, event);
-
+document.getElementsByClassName('results')[0].addEventListener("mouseover", mouseHover, event);
 
 setInterval(updateList, 100);
 
 function updateList() {
   result = document.getElementsByClassName('results')[0];
+}
+
+
+function mouseHover(x) {
+  r = document.getElementsByClassName('result');
+  for(var i=0; i< result.children-1; i++) {
+    if(x.target == r[i]) {
+      p = i;
+      r[i].classList.add('activeResult');
+      r[i-1].classList.remove('activeResult');
+      r[i+1].classList.remove('activeResult');
+    }
+  }
 }
 
   function navigation(x) {
