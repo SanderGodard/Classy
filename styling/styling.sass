@@ -715,9 +715,10 @@ main
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  justify-content: space-around
+  justify-content: center
   margin-top: 7%
   background-color: inherit
+
 
   .k_b
     background-color: inherit
@@ -729,6 +730,9 @@ main
     z-index: 0
     transition: $Medium
     //overflow: hidden
+
+    @media only screen and (max-width: 890px)
+      margin: 3vw
 
 
     .k_b_innhold
@@ -749,6 +753,19 @@ main
       //overflow: hidden
       //height: 100%
       //width: 100%
+
+      @media only screen and (max-width: 890px)
+        font-size: 6em !important
+        top: 45% !important
+
+      @media only screen and (max-width: 626px)
+        font-size: 4em !important
+        top: 45% !important
+
+      @media only screen and (max-width: 1200px)
+        font-size: 4em
+        top: 40%
+
 
     &:hover
       .k_b_innhold
@@ -776,6 +793,15 @@ main
         right: 0
         width: 17vw
         height: 19vw
+
+        @media only screen and (max-width: 1200px)
+          width: 40vw
+          height: 47vw
+
+        @media only screen and (max-width: 890px)
+          width: 80vw
+          height: 95vw
+
 
 
 
