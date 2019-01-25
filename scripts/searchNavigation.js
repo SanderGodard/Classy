@@ -8,6 +8,7 @@ function updateList() {
   result = document.getElementsByClassName('results')[0];
 }
 
+
   function navigation(x) {
 
 if(result.childElementCount != 0) {
