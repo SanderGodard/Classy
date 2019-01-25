@@ -9,7 +9,9 @@
       <div class="produkterDD">
         <a href="/HypeIT/produkter/">Produkter</a>
         <div class="Hoved">
-
+          <a class="NavKategori1"><img src="/HypeIT/images/herreicon.png" alt="">Herre</a>
+          <a class="NavKategori2"><img src="/HypeIT/images/dameicon.png" alt="">Damer</a>
+          <a class="NavKategori3"><img src="/HypeIT/images/brandsicon.png" alt="">Brands</a>
 
           <div class="Menn">
             <a href="/HypeIT/produkter/menn/gensere/"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
@@ -18,6 +20,23 @@
             <a href="/HypeIT/produkter/menn/sko/"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
             <a href="/HypeIT/produkter/menn/jakker/"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
           </div>
+
+          <div class="Damer">
+            <a href="/HypeIT/produkter/damer/gensere/"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
+            <a href="/HypeIT/produkter/damer/bukser/"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
+            <a href="/HypeIT/produkter/damer/tskjorter/"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
+            <a href="/HypeIT/produkter/damer/sko/"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
+            <a href="/HypeIT/produkter/damer/jakker/"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
+          </div>
+
+          <div class="Brands">
+            <a href="/HypeIT/produkter/brands/gensere/">gensere</a>
+            <a href="/HypeIT/produkter/brands/bukser/">bukser</a>
+            <a href="/HypeIT/produkter/brands/tskjorter/">t-skjorte</a>
+            <a href="/HypeIT/produkter/brands/sko/">sko</a>
+            <a href="/HypeIT/produkter/brands/jakker/">jakker</a>
+          </div>
+
         </div>
       </div>
       <a href="/HypeIT/produkter/menn/">Menn</a>

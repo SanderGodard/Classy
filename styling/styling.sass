@@ -488,11 +488,127 @@ nav
     @media #{$MobileM}
       padding: 6vmax 3vmax
 
+
   .produkterDD
     display: inline-block
 
+    &:hover
+      .Hoved
+        display: flex
+
     .Hoved
+      transition: $Fast
+      position: absolute
       display: none
+      flex-direction: column
+      flex-wrap: nowrap
+      width: 200px
+      border: 3px solid $Black
+      border-bottom: 2px solid $Black
+      //background-color: $Black
+      z-index: 99
+      box-shadow: $Shadow
+
+      .NavKategori1:hover ~ .Menn
+        display: flex !important
+
+      .Menn:hover
+        display: flex !important
+
+      .NavKategori2:hover ~ .Damer
+        display: flex !important
+
+      .Damer:hover
+        display: flex !important
+
+      .NavKategori3:hover ~ .Brands
+        display: flex !important
+
+      .Brands:hover
+        display: flex !important
+
+      a
+        margin: 0 !important
+        background-color: $White
+        width: 100%
+        min-height: 70px
+        height: 9vh
+        display: block
+        border-bottom: 1px solid $Black !important
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 30px 0px
+        font-size: 1em !important
+
+        &:hover
+          font-size: 1.2em !important
+          padding: 30px 0px !important
+          padding-bottom: 30px !important
+
+          img
+            transition: $Fast
+            width: 63px
+
+        img
+          transition: $Fast
+          margin: 0 10px
+          width: 60px
+
+      .Menn
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: -3px 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+      .Damer
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: calc(9vh - 3px) 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+      .Brands
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: calc(18vh - 3px) 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+        a
+          text-align: center
+          padding: 30px 20px
+
+          &:hover
+            padding: 30px 20px !important
+
+      @media #{$Laptop}
+        width: 184px
+
+      @media #{$MobileXXL}
+        width: 164px
 
 
 
@@ -598,22 +714,25 @@ main
 
 //Anders sitt stuff
 
-footer
+.footer
   width: 100%
   height: 50vh
-  background: #FFFFFF
+  box-shadow: $BigShadow
   border-top: 3px solid #000000
-  border-bottom: 3px solid #000000
+
   .topFooter
     height: 20%
+
   .centerFooter
     color: #FFFFFF
     background: #C01C1C
     height: 70%
+
     #HypeIT
       padding-bottom: 2px
       border-bottom: 3px solid #FFFFFF
       display: inline
+
   .bottomFooter
     height: 10%
 
@@ -743,9 +862,10 @@ footer
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  justify-content: space-around
+  justify-content: center
   margin-top: 7%
   background-color: inherit
+
 
   .k_b
     background-color: inherit
@@ -757,6 +877,9 @@ footer
     z-index: 0
     transition: $Medium
     //overflow: hidden
+
+    @media only screen and (max-width: 890px)
+      margin: 3vw
 
 
     .k_b_innhold
@@ -777,6 +900,19 @@ footer
       //overflow: hidden
       //height: 100%
       //width: 100%
+
+      @media only screen and (max-width: 890px)
+        font-size: 6em !important
+        top: 45% !important
+
+      @media only screen and (max-width: 626px)
+        font-size: 4em !important
+        top: 45% !important
+
+      @media only screen and (max-width: 1200px)
+        font-size: 4em
+        top: 40%
+
 
     &:hover
       .k_b_innhold
@@ -804,6 +940,15 @@ footer
         right: 0
         width: 17vw
         height: 19vw
+
+        @media only screen and (max-width: 1200px)
+          width: 40vw
+          height: 47vw
+
+        @media only screen and (max-width: 890px)
+          width: 80vw
+          height: 95vw
+
 
 
 
