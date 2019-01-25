@@ -9,7 +9,8 @@
     <div id="HypeIT">HypeIT</div>
   </div>
   <div class="bottomFooter">
-    <img src="/HypeIT/images/copyright-symbol.png" alt="">
+    <img src="/HypeIT/images/copyright-symbol.png" alt="c">
+    Copyright HypeIT AS
   </div>
   </div>
 </footer>
