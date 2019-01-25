@@ -579,17 +579,17 @@ nav #Nav .NavPart {
     padding: 6vmax 3vmax;
   }
 }
-/* line 491, styling.sass */
+/* line 492, styling.sass */
 nav .produkterDD {
   display: inline-block;
 }
-/* line 495, styling.sass */
+/* line 496, styling.sass */
 nav .produkterDD:hover .Hoved {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 498, styling.sass */
+/* line 499, styling.sass */
 nav .produkterDD .Hoved {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -603,12 +603,48 @@ nav .produkterDD .Hoved {
       flex-wrap: nowrap;
   width: 200px;
   border: 3px solid #000;
-  background-color: #000;
+  border-bottom: 2px solid #000;
   z-index: 99;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
-/* line 510, styling.sass */
+/* line 512, styling.sass */
+nav .produkterDD .Hoved .NavKategori1:hover ~ .Menn {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/* line 515, styling.sass */
+nav .produkterDD .Hoved .Menn:hover {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/* line 518, styling.sass */
+nav .produkterDD .Hoved .NavKategori2:hover ~ .Damer {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/* line 521, styling.sass */
+nav .produkterDD .Hoved .Damer:hover {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/* line 524, styling.sass */
+nav .produkterDD .Hoved .NavKategori3:hover ~ .Brands {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/* line 527, styling.sass */
+nav .produkterDD .Hoved .Brands:hover {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/* line 530, styling.sass */
 nav .produkterDD .Hoved a {
   margin: 0 !important;
   background-color: #FFF;
@@ -616,7 +652,7 @@ nav .produkterDD .Hoved a {
   min-height: 70px;
   height: 9vh;
   display: block;
-  margin-top: 1px !important;
+  border-bottom: 1px solid #000 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,49 +665,120 @@ nav .produkterDD .Hoved a {
   padding: 30px 0px;
   font-size: 1em !important;
 }
-/* line 524, styling.sass */
+/* line 544, styling.sass */
 nav .produkterDD .Hoved a:hover {
   font-size: 1.2em !important;
   padding: 30px 0px !important;
-  border-bottom: 0 !important;
   padding-bottom: 30px !important;
 }
-/* line 530, styling.sass */
+/* line 549, styling.sass */
 nav .produkterDD .Hoved a:hover img {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   width: 63px;
 }
-/* line 534, styling.sass */
+/* line 553, styling.sass */
 nav .produkterDD .Hoved a img {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   margin: 0 10px;
   width: 60px;
 }
+/* line 558, styling.sass */
+nav .produkterDD .Hoved .Menn {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  position: absolute;
+  left: 200px;
+  margin: -3px 0 0 -6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 200px;
+  border: 3px solid #000;
+  background-color: #000;
+  z-index: 99;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+/* line 572, styling.sass */
+nav .produkterDD .Hoved .Damer {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  position: absolute;
+  left: 200px;
+  margin: calc(9vh - 3px) 0 0 -6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 200px;
+  border: 3px solid #000;
+  background-color: #000;
+  z-index: 99;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+/* line 586, styling.sass */
+nav .produkterDD .Hoved .Brands {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  position: absolute;
+  left: 200px;
+  margin: calc(18vh - 3px) 0 0 -6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 200px;
+  border: 3px solid #000;
+  background-color: #000;
+  z-index: 99;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+/* line 600, styling.sass */
+nav .produkterDD .Hoved .Brands a {
+  text-align: center;
+  padding: 30px 20px;
+}
+/* line 604, styling.sass */
+nav .produkterDD .Hoved .Brands a:hover {
+  padding: 30px 20px !important;
+}
 @media only screen and (max-width: 1023px) {
-  /* line 498, styling.sass */
+  /* line 499, styling.sass */
   nav .produkterDD .Hoved {
     width: 184px;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 498, styling.sass */
+  /* line 499, styling.sass */
   nav .produkterDD .Hoved {
     width: 164px;
   }
 }
 
-/* line 551, styling.sass */
+/* line 615, styling.sass */
 main {
   padding: 0 4vw;
 }
-/* line 554, styling.sass */
+/* line 618, styling.sass */
 main div.Showcase.New::before {
   display: none;
 }
 @media only screen and (max-width: 650px) {
-  /* line 554, styling.sass */
+  /* line 618, styling.sass */
   main div.Showcase.New::before {
     display: block;
     font-size: 2em;
@@ -681,12 +788,12 @@ main div.Showcase.New::before {
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 554, styling.sass */
+  /* line 618, styling.sass */
   main div.Showcase.New::before {
     font-size: 1.3em;
   }
 }
-/* line 566, styling.sass */
+/* line 630, styling.sass */
 main .Showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,25 +812,25 @@ main .Showcase {
   height: calc(100vh - (8vmax + (1.5em * 1.25) + 5vh));
 }
 @media only screen and (max-width: 890px) {
-  /* line 566, styling.sass */
+  /* line 630, styling.sass */
   main .Showcase {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: auto;
   }
 }
-/* line 579, styling.sass */
+/* line 643, styling.sass */
 main .Showcase img {
   cursor: pointer;
   bottom: 0;
   height: 100%;
 }
-/* line 586, styling.sass */
+/* line 650, styling.sass */
 main .Showcase img .New::before {
   display: none;
 }
 @media only screen and (max-width: 890px) {
-  /* line 579, styling.sass */
+  /* line 643, styling.sass */
   main .Showcase img {
     width: 60%;
     height: auto;
@@ -738,7 +845,7 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 579, styling.sass */
+  /* line 643, styling.sass */
   main .Showcase img {
     margin: auto auto;
     -webkit-box-ordinal-group: 2;
@@ -747,19 +854,19 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 579, styling.sass */
+  /* line 643, styling.sass */
   main .Showcase img {
     width: 90%;
     margin-left: 15%;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 579, styling.sass */
+  /* line 643, styling.sass */
   main .Showcase img {
     width: 100%;
   }
 }
-/* line 610, styling.sass */
+/* line 674, styling.sass */
 main .Showcase .Info {
   margin-top: calc((100vh - (8vmax + (1.5em * 1.25) + 5vh)) / 2);
   -webkit-transform: translate(0, -50%);
@@ -767,14 +874,14 @@ main .Showcase .Info {
   width: 45%;
   text-align: left;
 }
-/* line 619, styling.sass */
+/* line 683, styling.sass */
 main .Showcase .Info h1 {
   font-size: 3.75em;
   color: #000;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 650px) {
-  /* line 619, styling.sass */
+  /* line 683, styling.sass */
   main .Showcase .Info h1 {
     font-size: 3em;
     text-align: center;
@@ -782,13 +889,13 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 619, styling.sass */
+  /* line 683, styling.sass */
   main .Showcase .Info h1 {
     font-size: 2.75em;
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 610, styling.sass */
+  /* line 674, styling.sass */
   main .Showcase .Info {
     width: 90%;
     -webkit-box-ordinal-group: 2;
@@ -800,19 +907,19 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 610, styling.sass */
+  /* line 674, styling.sass */
   main .Showcase .Info {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 641, styling.sass */
+  /* line 705, styling.sass */
   main .Showcase .Info .New::before {
     display: none;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 610, styling.sass */
+  /* line 674, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -821,7 +928,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 426px) {
-  /* line 610, styling.sass */
+  /* line 674, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -829,7 +936,7 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 653, styling.sass */
+/* line 717, styling.sass */
 .shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -846,14 +953,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
-/* line 668, styling.sass */
+/* line 732, styling.sass */
 .shopBtn:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 673, styling.sass */
+/* line 737, styling.sass */
 .shopBtn:active, .shopBtn:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -861,7 +968,7 @@ main .Showcase .Info h1 {
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 653, styling.sass */
+  /* line 717, styling.sass */
   .shopBtn {
     display: block;
     font-size: 1.5em;
@@ -869,11 +976,11 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 685, styling.sass */
+/* line 749, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 688, styling.sass */
+/* line 752, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -890,30 +997,30 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 688, styling.sass */
+  /* line 752, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 688, styling.sass */
+  /* line 752, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 731, styling.sass */
+/* line 795, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 737, styling.sass */
+/* line 801, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 740, styling.sass */
+/* line 804, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
@@ -935,7 +1042,7 @@ main .Showcase .Info h1 {
     max-width: 15vw;
   }
 }
-/* line 749, styling.sass */
+/* line 813, styling.sass */
 .Supreme::before {
   content: "Supreme";
   text-transform: capitalize;
@@ -953,19 +1060,19 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 749, styling.sass */
+  /* line 813, styling.sass */
   .Supreme::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 749, styling.sass */
+  /* line 813, styling.sass */
   .Supreme::before {
     font-size: 16px;
   }
 }
 
-/* line 773, styling.sass */
+/* line 837, styling.sass */
 .kategori_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -981,7 +1088,7 @@ main .Showcase .Info h1 {
   margin-top: 7%;
   background-color: inherit;
 }
-/* line 781, styling.sass */
+/* line 845, styling.sass */
 .kategori_wrapper .k_b {
   background-color: inherit;
   width: auto;
@@ -993,7 +1100,7 @@ main .Showcase .Info h1 {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-/* line 793, styling.sass */
+/* line 857, styling.sass */
 .kategori_wrapper .k_b .k_b_innhold {
   display: none;
   position: relative;
@@ -1011,26 +1118,26 @@ main .Showcase .Info h1 {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
   pointer-events: none;
 }
-/* line 813, styling.sass */
+/* line 877, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_innhold {
   display: block;
 }
-/* line 816, styling.sass */
+/* line 880, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_wrapper {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 821, styling.sass */
+/* line 885, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper {
   padding: 0.6em;
   z-index: 1;
 }
-/* line 826, styling.sass */
+/* line 890, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper:hover {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 830, styling.sass */
+/* line 894, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1042,7 +1149,7 @@ main .Showcase .Info h1 {
   height: 19vw;
 }
 
-/* line 848, styling.sass */
+/* line 912, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -1056,7 +1163,7 @@ main .Showcase .Info h1 {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 856, styling.sass */
+/* line 920, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,7 +1178,7 @@ main .Showcase .Info h1 {
   position: absolute;
   left: 22%;
 }
-/* line 866, styling.sass */
+/* line 930, styling.sass */
 .produktside .venstreside .Bilder {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1088,14 +1195,14 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 874, styling.sass */
+/* line 938, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
   width: 55%;
   border: 3px solid #707070;
   padding: 3vh 0vh 0.5vh 0vh;
   display: block;
 }
-/* line 881, styling.sass */
+/* line 945, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   -ms-flex-line-pack: start;
@@ -1115,7 +1222,7 @@ main .Showcase .Info h1 {
           justify-content: space-between;
   width: 55%;
 }
-/* line 890, styling.sass */
+/* line 954, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   width: 8vw;
   -o-object-fit: cover;
@@ -1129,7 +1236,7 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0.9em 0 0.3em 0;
 }
-/* line 903, styling.sass */
+/* line 967, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1144,7 +1251,7 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 911, styling.sass */
+/* line 975, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
@@ -1152,20 +1259,20 @@ main .Showcase .Info h1 {
   font-family: inherit;
 }
 
-/* line 917, styling.sass */
+/* line 981, styling.sass */
 .rate {
   float: left;
   height: 46px;
   padding: 0 10px;
 }
 
-/* line 922, styling.sass */
+/* line 986, styling.sass */
 .rate:not(:checked) > input {
   position: absolute;
   top: -9999px;
 }
 
-/* line 926, styling.sass */
+/* line 990, styling.sass */
 .rate:not(:checked) > label {
   float: right;
   width: 1em;
@@ -1176,22 +1283,22 @@ main .Showcase .Info h1 {
   color: #ccc;
 }
 
-/* line 935, styling.sass */
+/* line 999, styling.sass */
 .rate:not(:checked) > label:before {
   content: "★ ";
 }
 
-/* line 938, styling.sass */
+/* line 1002, styling.sass */
 .rate > input:checked ~ label {
   color: #ffc700;
 }
 
-/* line 941, styling.sass */
+/* line 1005, styling.sass */
 .rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label {
   color: #deb217;
 }
 
-/* line 944, styling.sass */
+/* line 1008, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
