@@ -937,6 +937,35 @@ main .Showcase .Info h1 {
 }
 
 /* line 717, styling.sass */
+footer {
+  width: 100%;
+  height: 50vh;
+  background: #FFFFFF;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+}
+/* line 723, styling.sass */
+footer .topFooter {
+  height: 20%;
+}
+/* line 725, styling.sass */
+footer .centerFooter {
+  color: #FFFFFF;
+  background: #C01C1C;
+  height: 70%;
+}
+/* line 729, styling.sass */
+footer .centerFooter #HypeIT {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #FFFFFF;
+  display: inline;
+}
+/* line 733, styling.sass */
+footer .bottomFooter {
+  height: 10%;
+}
+
+/* line 738, styling.sass */
 .shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -953,14 +982,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
-/* line 732, styling.sass */
+/* line 753, styling.sass */
 .shopBtn:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 737, styling.sass */
+/* line 758, styling.sass */
 .shopBtn:active, .shopBtn:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -968,7 +997,7 @@ main .Showcase .Info h1 {
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 717, styling.sass */
+  /* line 738, styling.sass */
   .shopBtn {
     display: block;
     font-size: 1.5em;
@@ -976,11 +1005,11 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 749, styling.sass */
+/* line 770, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 752, styling.sass */
+/* line 773, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -997,30 +1026,30 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 752, styling.sass */
+  /* line 773, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 752, styling.sass */
+  /* line 773, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 795, styling.sass */
+/* line 816, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 801, styling.sass */
+/* line 822, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 804, styling.sass */
+/* line 825, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
@@ -1042,7 +1071,7 @@ main .Showcase .Info h1 {
     max-width: 15vw;
   }
 }
-/* line 813, styling.sass */
+/* line 834, styling.sass */
 .Supreme::before {
   content: "Supreme";
   text-transform: capitalize;
@@ -1060,19 +1089,19 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 813, styling.sass */
+  /* line 834, styling.sass */
   .Supreme::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 813, styling.sass */
+  /* line 834, styling.sass */
   .Supreme::before {
     font-size: 16px;
   }
 }
 
-/* line 837, styling.sass */
+/* line 858, styling.sass */
 .kategori_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1088,7 +1117,7 @@ main .Showcase .Info h1 {
   margin-top: 7%;
   background-color: inherit;
 }
-/* line 845, styling.sass */
+/* line 866, styling.sass */
 .kategori_wrapper .k_b {
   background-color: inherit;
   width: auto;
@@ -1100,7 +1129,7 @@ main .Showcase .Info h1 {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-/* line 857, styling.sass */
+/* line 878, styling.sass */
 .kategori_wrapper .k_b .k_b_innhold {
   display: none;
   position: relative;
@@ -1118,26 +1147,26 @@ main .Showcase .Info h1 {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
   pointer-events: none;
 }
-/* line 877, styling.sass */
+/* line 898, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_innhold {
   display: block;
 }
-/* line 880, styling.sass */
+/* line 901, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_wrapper {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 885, styling.sass */
+/* line 906, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper {
   padding: 0.6em;
   z-index: 1;
 }
-/* line 890, styling.sass */
+/* line 911, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper:hover {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 894, styling.sass */
+/* line 915, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1149,7 +1178,7 @@ main .Showcase .Info h1 {
   height: 19vw;
 }
 
-/* line 912, styling.sass */
+/* line 933, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -1163,7 +1192,7 @@ main .Showcase .Info h1 {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 920, styling.sass */
+/* line 941, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1178,7 +1207,7 @@ main .Showcase .Info h1 {
   position: absolute;
   left: 22%;
 }
-/* line 930, styling.sass */
+/* line 951, styling.sass */
 .produktside .venstreside .Bilder {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1195,14 +1224,14 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 938, styling.sass */
+/* line 959, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
   width: 55%;
   border: 3px solid #707070;
   padding: 3vh 0vh 0.5vh 0vh;
   display: block;
 }
-/* line 945, styling.sass */
+/* line 966, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   -ms-flex-line-pack: start;
@@ -1222,7 +1251,7 @@ main .Showcase .Info h1 {
           justify-content: space-between;
   width: 55%;
 }
-/* line 954, styling.sass */
+/* line 975, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   width: 8vw;
   -o-object-fit: cover;
@@ -1236,7 +1265,7 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0.9em 0 0.3em 0;
 }
-/* line 967, styling.sass */
+/* line 988, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1251,7 +1280,7 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 975, styling.sass */
+/* line 996, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
@@ -1259,20 +1288,20 @@ main .Showcase .Info h1 {
   font-family: inherit;
 }
 
-/* line 981, styling.sass */
+/* line 1002, styling.sass */
 .rate {
   float: left;
   height: 46px;
   padding: 0 10px;
 }
 
-/* line 986, styling.sass */
+/* line 1007, styling.sass */
 .rate:not(:checked) > input {
   position: absolute;
   top: -9999px;
 }
 
-/* line 990, styling.sass */
+/* line 1011, styling.sass */
 .rate:not(:checked) > label {
   float: right;
   width: 1em;
@@ -1283,22 +1312,22 @@ main .Showcase .Info h1 {
   color: #ccc;
 }
 
-/* line 999, styling.sass */
+/* line 1020, styling.sass */
 .rate:not(:checked) > label:before {
   content: "★ ";
 }
 
-/* line 1002, styling.sass */
+/* line 1023, styling.sass */
 .rate > input:checked ~ label {
   color: #ffc700;
 }
 
-/* line 1005, styling.sass */
+/* line 1026, styling.sass */
 .rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label {
   color: #deb217;
 }
 
-/* line 1008, styling.sass */
+/* line 1029, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
