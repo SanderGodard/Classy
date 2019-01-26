@@ -82,7 +82,7 @@
   </p>
   <div>
     <a target="_blank" href="/HypeIT/kontakt/Cookies">Mer informasjon</a>
-    <span onclick="/HypeIT/scripts/cookies.js">Godta</span>
+    <span>Godta</span>
   </div>
 </div>
 
