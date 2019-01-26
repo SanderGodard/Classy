@@ -2,64 +2,147 @@
 <html lang="NB" dir="ltr">
 
 <head>
-  <title>HypeIT</title>
-
+  <title>
+    HypeIT
+  </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="1IKT-SK 2019">
-  <link rel="shortcut icon" href="/HypeIT/images/favicon.ico">
+  <meta name="author" content="1IKT-SK 2019 - Gjøvik Videregående">
+  <link rel="shortcut icon" href="/HypeIT/images/favicon.png">
   <link rel="stylesheet" href="/HypeIT/styling/styling.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700i" rel="stylesheet">
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#FFFFFF">
   <!-- Windows Phone -->
   <meta name="msapplication-navbutton-color" content="#FFFFFF">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
-  <script async src="/HypeIT/scripts/searchField.js"></script>
-  <script async src="/HypeIT/scripts/search.js"></script>
+  <script async defer src="/HypeIT/scripts/searchNavigation.js"></script>
+  <script async defer src="/HypeIT/scripts/searchField.js"></script>
+  <script async defer src="/HypeIT/scripts/search.js"></script>
+  <script async defer src="/HypeIT/scripts/cookies.js"></script>
+  <script async defer src="/HypeIT/scripts/shop.js"></script>
+  <script async defer src="/HypeIT/scripts/cartCounter.js"></script>
+  <script async defer src="/HypeIT/scripts/pictureSwap.js"></script>
+  <script async defer src="/HypeIT/scripts/mobileNav.js"></script>
+  <script defer src="/HypeIT/scripts/frontSwitch.js"></script>
+
+  <!-- Live chat
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5c4969a3ab5284048d0e55db/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  -->
+
 </head>
 
 <body>
   <nav>
-    <div class="Logo">
-
-    </div>
-    <div class="RightNav">
-      <div class="Nav">
-        <a href="javascript:void(0)">Produkter</a>
-        <a href="javascript:void(0)">Menn</a>
-        <a href="javascript:void(0)">Damer</a>
-        <a href="javascript:void(0)">Annet</a>
-        <a href="javascript:void(0)" class="Material">shopping_cart</a>
+    <div id="Nav">
+      <div class="Logo">
+        <a href="/HypeIT/">
+          <img src="/HypeIT/images/Logo.png" alt="Logo">
+        </a>
       </div>
-      <div class="NavPart">
-        <div class="searchDiv">
-          <a href="javascript:void(0)" id="SearchIcon" class="Material" onclick="/scripts/searchField.js">search</a>
+      <div class="RightNav">
+        <div class="Nav">
+          <div class="produkterDD">
+            <a href="/HypeIT/produkter/">Produkter</a>
+            <div class="Hoved">
+              <a class="NavKategori1"><img src="/HypeIT/images/herreicon.png" alt="">Herre</a>
+              <a class="NavKategori2"><img src="/HypeIT/images/dameicon.png" alt="">Damer</a>
+              <a class="NavKategori3"><img src="/HypeIT/images/brandsicon.png" alt="">Brands</a>
 
-          <div class="search">
-            <input autofocus type="text" id="searchField" placeholder="Search..." tabindex="1">
-            <div class="results">
-              <div><a href="javascript:void(0)" class="result">PC</a></div>
-              <div><a href="javascript:void(0)" class="result">Telefon</a></div>
-              <div><a href="javascript:void(0)" class="result">Skjermer</a></div>
-              <div><a href="javascript:void(0)" class="result">Sajermer</a></div>
-              <div><a href="javascript:void(0)" class="result">Headset</a></div>
-              <div><a href="javascript:void(0)" class="result">Genser</a></div>
-              <div><a href="javascript:void(0)" class="result">Bukser</a></div>
-              <div><a href="javascript:void(0)" class="result">Sko</a></div>
-              <div><a href="javascript:void(0)" class="result">Klokker</a></div>
-              <div><a href="javascript:void(0)" class="result">Armbånd</a></div>
-              <div><a href="javascript:void(0)" class="result">Ringer</a></div>
+              <div class="Menn">
+                <a href="/HypeIT/produkter/menn/gensere/"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
+                <a href="/HypeIT/produkter/menn/bukser/"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
+                <a href="/HypeIT/produkter/menn/tskjorter/"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
+                <a href="/HypeIT/produkter/menn/sko/"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
+                <a href="/HypeIT/produkter/menn/jakker/"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
+              </div>
+
+              <div class="Damer">
+                <a href="/HypeIT/produkter/damer/gensere/"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
+                <a href="/HypeIT/produkter/damer/bukser/"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
+                <a href="/HypeIT/produkter/damer/tskjorter/"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
+                <a href="/HypeIT/produkter/damer/sko/"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
+                <a href="/HypeIT/produkter/damer/jakker/"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
+              </div>
+
+              <div class="Brands">
+                <a href="/HypeIT/produkter/brands/supreme/">supreme</a>
+                <a href="/HypeIT/produkter/brands/loiusvuitton/">loius vuitton</a>
+                <a href="/HypeIT/produkter/brands/gucci/">gucci</a>
+                <a href="/HypeIT/produkter/brands/balenciaga/">balenciaga</a>
+                <a href="/HypeIT/produkter/brands/stoneisland/">stone island</a>
+                <a href="/HypeIT/produkter/brands/offwhite/">off white</a>
+                <a href="/HypeIT/produkter/brands/bape/">bape</a>
+                <a href="/HypeIT/produkter/brands/kith/">kith</a>
+                <a href="/HypeIT/produkter/brands/nike/">nike</a>
+                <a href="/HypeIT/produkter/brands/adidas/">adidas</a>
+              </div>
+
             </div>
           </div>
+          <a href="/HypeIT/produkter/menn/">Menn</a>
+          <a href="/HypeIT/produkter/damer/">Damer</a>
+          <a href="/HypeIT/kontakt/">Om oss</a>
+          <a href="/HypeIT/store/cart/" class="Material">shopping_cart</a>
+          <span id="cartCounter">0</span>
+        </div>
+        <div class="NavPart">
+          <div class="searchDiv">
+            <a href="javascript:void(0)" id="SearchIcon" class="Material" onclick="/HypeIT/scripts/searchField.js">search</a>
 
+            <div class="search">
+              <input autofocus type="text" id="searchField" placeholder="Search..." tabindex="1">
+              <div class="results">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="MobileNav">
+          <a href="javascript:void(0)" onclick="menuToggle()" id="mobileMenu" class="Material">menu</a>
+        </div>
+        <div id="mobileNav">
+          <a href="/HypeIT/produkter/">produkter</a>
+          <a href="/HypeIT/produkter/menn/">Menn</a>
+          <a href="/HypeIT/produkter/damer/">Damer</a>
+          <a href="/HypeIT/kontakt/">Om oss</a>
         </div>
       </div>
-      <div class="MobileNav">
-        <a href="javascript:void(0)" class="Material">menu</a>
+    </div>
+
+
+    <div id="Cookies">
+      <h1>Cookies & Personvern</h1>
+      <p>
+        Hei, vi bruker 'Cookies', også kjent som informasjonskapsler for at du skal få den beste brukeropplevelsen som mulig. Ved å fortsette godkjenner du at du er enig i bruken.
+      </p>
+      <div>
+        <a target="_blank" href="/HypeIT/kontakt/Cookies">Mer informasjon</a>
+        <span onclick="/HypeIT/scripts/cookies.js">Godta</span>
       </div>
     </div>
+
+    <div id="alertBox">
+      <span onclick="document.getElementById('alertBox').style.display = 'none';">x</span>
+      <p>
+        Du har lagt dette produkter i handlekurven din.<br>
+        Vil du betale nå?
+      </p>
+      <a href="/HypeIT/store/cart/">Betal nå</a>
+    </div>
+
   </nav>
   <main>
 
