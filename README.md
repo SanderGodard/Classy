@@ -76,39 +76,45 @@ Templaten vi bruker for nye sider:
    - &#10004; Sosiale medier
    - Samarbeide med Design om å lage ad hvis noen har et produkt.
    - HypeTV (Filme Scott)
+   - Redigere HypeTV
+   - Lanseringsreklame
+   - Testing av sidene.
  - -
 
  - Design:
-   - Gjøre så designet blir nøyaktig som de vil ha det, for frontend bare lager nøyaktig det de ser.
-   - Dropdown på "Produkter"?
-   - _Lage reklamen_ (Coming soon ad)
+   - &#10004; Gjøre så designet blir nøyaktig som de vil ha det, for frontend bare lager nøyaktig det de ser.
+   - &#10004; Dropdown på "Produkter"?
+   - &#10004; Lage reklamen (Coming soon ad)
    - Evt dropdown og UX
-   - Footer
-   - Lag HypeTV intro og watermark.
-   - Om oss side
+   - Mobile løsning for produkter dropdown
+   - &#10004; Footer
+   - Lag HypeTV intro
+   - Lanseringsreklame
+   - &#10004; watermark.
+   - &#10004; Om oss side
    - &#10004; Favicon
    - &#10004; Bestemme Logo
+   - Bearbeide hvordan sidene henger sammen, hva kundene forventer av sidene. Tenk gjennom alt, og hvorfor sidene henger sammen som de gjør.
+   -
  - -
 
  - Backend:
    - &#10004; Forbedre søkefunksjon
    - Handlekurv
-   - Custom url
-   - Style mediabuttons
+   - Slidere
    - &#10004; Gjøre så #cartCounter endrer seg riktig
    - &#10004; Cookie popup
    - &#10004; Sexy animation på search lista
    - &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies
+   - &#10004; Gjøre så når du trykker på småbildene i produkter sidene så bytter den bilde
  - -
 
  - Frontend:
-   - Gjøre så når du trykker på småbildene i produkter sidene så bytter den bilde
    - Mouseover zoom på produktbilder
    - Bygge anbefalte produkter section?
-   - MobileNav
+   - &#10004; MobileNav
    - Handlekurv side
-   - Legg til livechat
-   - Dropdown på "Produkter"?
+   - &#10004; Legg til livechat
+   - Om oss side - Eline
+   - &#10004; Dropdown på "Produkter"?
    - &#10004; Jobbe på handlekurv popupen
-
-   3
