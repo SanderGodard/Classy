@@ -53,5 +53,24 @@ function magnify(imgID, zoom) {
   }
 }
 
+var pic = document.getElementById('storBilde');
+var magn = document.getElementsByClassName("img-magnifier-glass")[0];
 
-magnify("storBilde", 2)
+document.addEventListener("mouseover", zoomFunc, event);
+function zoomFunc(x) {
+  if(x.target != pic && x.target != magn){
+    magn.parentNode.removeChild(magn);
+
+  }
+  else {
+    magnify("storBilde", 2);
+    magn.parentNode.removeChild(magn);
+  }
+}
+//document.addEventListener("mouseover", zoomRemove, event);
+
+//function zoomRemove() {
+//  if(x.target != pic && x.target != magn){
+//    magn.parentNode.removeChild(magn);
+//  }
+//}
