@@ -5,10 +5,12 @@ function menuToggle() {
   if (x.style.height === dropDownH) {
     x.style.height = "0px";
     x.style.display = "none";
+    document.body.style.overflowY = "auto";
 
   } else {
     x.style.height = dropDownH;
     x.style.display = "block";
+    document.body.style.overflowY = "hidden";
 
   }
   var a = document.getElementById("mobileMenu");
@@ -17,5 +19,5 @@ function menuToggle() {
   } else {
     a.innerHTML = "menu";
   }
-  document.body.style.overflow = "hidden";
+  //document.body.style.overflow = "hidden";
 }

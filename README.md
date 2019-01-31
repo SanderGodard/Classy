@@ -81,9 +81,9 @@ Templaten vi bruker for nye sider:
  - Design:
    - Gjøre så designet blir nøyaktig som de vil ha det, for frontend bare lager nøyaktig det de ser.
    - Dropdown på "Produkter"?
-   - _Lage reklamen_ (Coming soon ad)
+   - &#10004;_Lage reklamen_ (Coming soon ad)
    - Evt dropdown og UX
-   - Footer
+   - &#10004; Footer
    - Lag HypeTV intro og watermark.
    - Om oss side
    - &#10004; Favicon
