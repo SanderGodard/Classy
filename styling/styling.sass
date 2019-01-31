@@ -102,16 +102,16 @@ a
 
 
 ::-webkit-scrollbar
-  width: 8px
-  margin: 2px 2px 2px -10px
+  width: 5px
+  //margin: 2px 2px 2px -10px
   right: 0
 
 
 
 ::-webkit-scrollbar-thumb
   transition: all 0.3s ease-in-out
-  background: $ThirdColor
-  border-radius: 4px
+  background: $MainColor
+  border-radius: 2.5px
 
   &:hover
     transition: all 0.3s ease-in-out
@@ -505,9 +505,14 @@ nav
       width: 200px
       border: 3px solid $Black
       border-bottom: 2px solid $Black
-      //background-color: $Black
+      background-color: $White
       z-index: 99
       box-shadow: $Shadow
+
+      div
+        max-height: 410px
+        overflow-y: auto
+
 
       .NavKategori1:hover ~ .Menn
         display: flex !important
@@ -528,11 +533,12 @@ nav
         display: flex !important
 
       a
+        transition: $Medium
+        text-transform: capitalize
         margin: 0 !important
         background-color: $White
         width: 100%
-        min-height: 70px
-        height: 9vh
+        height: 80px
         display: block
         border-bottom: 1px solid $Black !important
         display: flex
@@ -542,16 +548,18 @@ nav
         font-size: 1em !important
 
         &:hover
-          font-size: 1.2em !important
+          transition: $Medium
+          font-size: 1.1em !important
           padding: 30px 0px !important
           padding-bottom: 30px !important
+          text-decoration: underline
 
           img
-            transition: $Fast
-            width: 63px
+            transition: $Medium
+            width: 62px
 
         img
-          transition: $Fast
+          transition: $Medium
           margin: 0 10px
           width: 60px
 
@@ -573,7 +581,7 @@ nav
         transition: $Fast
         position: absolute
         left: 200px
-        margin: calc(9vh - 3px) 0 0 -6px
+        margin: 77px 0 0 -6px
         flex-direction: column
         flex-wrap: nowrap
         width: 200px
@@ -587,7 +595,7 @@ nav
         transition: $Fast
         position: absolute
         left: 200px
-        margin: calc(18vh - 3px) 0 0 -6px
+        margin: 157px 0 0 -6px
         flex-direction: column
         flex-wrap: nowrap
         width: 200px
@@ -596,6 +604,7 @@ nav
         z-index: 99
         box-shadow: $Shadow
         display: none
+        border-right: 1px solid $Black
 
         a
           text-align: center

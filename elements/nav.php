@@ -30,11 +30,16 @@
           </div>
 
           <div class="Brands">
-            <a href="/HypeIT/produkter/brands/gensere/">gensere</a>
-            <a href="/HypeIT/produkter/brands/bukser/">bukser</a>
-            <a href="/HypeIT/produkter/brands/tskjorter/">t-skjorte</a>
-            <a href="/HypeIT/produkter/brands/sko/">sko</a>
-            <a href="/HypeIT/produkter/brands/jakker/">jakker</a>
+            <a href="/HypeIT/produkter/brands/supreme/">supreme</a>
+            <a href="/HypeIT/produkter/brands/loiusvuitton/">loius vuitton</a>
+            <a href="/HypeIT/produkter/brands/gucci/">gucci</a>
+            <a href="/HypeIT/produkter/brands/balenciaga/">balenciaga</a>
+            <a href="/HypeIT/produkter/brands/stoneisland/">stone island</a>
+	          <a href="/HypeIT/produkter/brands/offwhite/">off white</a>
+            <a href="/HypeIT/produkter/brands/bape/">bape</a>
+            <a href="/HypeIT/produkter/brands/kith/">kith</a>
+            <a href="/HypeIT/produkter/brands/nike/">nike</a>
+            <a href="/HypeIT/produkter/brands/adidas/">adidas</a>
           </div>
 
         </div>
@@ -77,7 +82,7 @@
   </p>
   <div>
     <a target="_blank" href="/HypeIT/kontakt/Cookies">Mer informasjon</a>
-    <span onclick="/HypeIT/scripts/cookies.js">Godta</span>
+    <span>Godta</span>
   </div>
 </div>
 
