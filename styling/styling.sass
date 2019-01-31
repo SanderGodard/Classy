@@ -799,7 +799,7 @@ main
     width: 45%
     align-content: flex-end
     position: absolute
-    left: 22%
+    left: 26%
 
     //flex-grow: 1
 
@@ -813,7 +813,7 @@ main
 
       .StortBilde
         //margin: 3%
-        width: 55%
+        width: 50%
         border: 3px solid #707070
         padding: 3vh 0vh 0.5vh 0vh
         display: block
@@ -825,10 +825,10 @@ main
         display: flex
         flex-direction: row
         justify-content: space-between
-        width: 55%
+        width: 50%
 
         img
-          width: 8vw
+          width: 7vw
           object-fit: cover
           bottom: 0
           top: 0
@@ -837,7 +837,7 @@ main
           height: 8vw
           border: 3px solid #707070
           margin-top: 2%
-          padding: .9em 0 .3em 0
+          padding: 0 0 0 0
 
 
   .hoyreside
@@ -854,32 +854,53 @@ main
       text-transform: capitalize
       font-family: inherit
 
-.rate
-  float: left
-  height: 46px
-  padding: 0 10px
+    .str
+      display: flex
+      padding: 1em 0em 2em 0
 
-.rate:not(:checked) > input
-  position: absolute
-  top: -9999px
+      a
+        margin-left: 2px
+        display: block
+        flex-direction: row
+        border: 2px solid #000000
+        background: #ffffff
+        width: 4vh
+        height: 4vh
+        border-radius: 50%
+        text-align: center
+        font-size: 2vh
+        font-weight: bold
+        padding: 0.25em 0 0 0
 
-.rate:not(:checked) > label
-  float: right
-  width: 1em
-  overflow: hidden
-  white-space: nowrap
-  cursor: pointer
-  font-size: 30px
-  color: #ccc
+    .farge
+      display: flex
 
-.rate:not(:checked) > label:before
-  content: '★ '
+    .fargeknapp
+      display: block
+      flex-direction: row
+      border: 2px solid #000000
+      background: #ffffff
+      width: 4vh
+      height: 4vh
+      border-radius: 50%
+      text-align: center
+      font-size: 2vh
+      font-weight: bold
 
-.rate > input:checked ~ label
-  color: #ffc700
+    #farge1
+      background-color: #E0AA1A
 
-.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label
-  color: #deb217
+    #farge2
+      background-color: #0097C8
 
-.rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label
-  color: #c59b08
+    #farge3
+      background-color: #992319
+
+    #farge4
+      background-color: #004130
+
+    #farge5
+      background-color: #CBCBCB
+
+    #farge6
+      background-color: #171717

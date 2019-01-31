@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 49, styling.sass */
 html {
   -webkit-transition: all 0s ease;
@@ -985,7 +984,7 @@ main .Showcase .Info h1 {
   -ms-flex-line-pack: end;
       align-content: flex-end;
   position: absolute;
-  left: 22%;
+  left: 26%;
 }
 /* line 806, styling.sass */
 .produktside .venstreside .Bilder {
@@ -1006,7 +1005,7 @@ main .Showcase .Info h1 {
 }
 /* line 814, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
-  width: 55%;
+  width: 50%;
   border: 3px solid #707070;
   padding: 3vh 0vh 0.5vh 0vh;
   display: block;
@@ -1029,11 +1028,11 @@ main .Showcase .Info h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 55%;
+  width: 50%;
 }
 /* line 830, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
-  width: 8vw;
+  width: 7vw;
   -o-object-fit: cover;
      object-fit: cover;
   bottom: 0;
@@ -1043,7 +1042,7 @@ main .Showcase .Info h1 {
   height: 8vw;
   border: 3px solid #707070;
   margin-top: 2%;
-  padding: 0.9em 0 0.3em 0;
+  padding: 0 0 0 0;
 }
 /* line 843, styling.sass */
 .produktside .hoyreside {
@@ -1067,49 +1066,76 @@ main .Showcase .Info h1 {
   text-transform: capitalize;
   font-family: inherit;
 }
-
 /* line 857, styling.sass */
-.rate {
-  float: left;
-  height: 46px;
-  padding: 0 10px;
+.produktside .hoyreside .str {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 0em 2em 0;
 }
-
-/* line 862, styling.sass */
-.rate:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
+/* line 861, styling.sass */
+.produktside .hoyreside .str a {
+  margin-left: 2px;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid #000000;
+  background: #ffffff;
+  width: 4vh;
+  height: 4vh;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
+  padding: 0.25em 0 0 0;
 }
-
-/* line 866, styling.sass */
-.rate:not(:checked) > label {
-  float: right;
-  width: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 30px;
-  color: #ccc;
-}
-
 /* line 875, styling.sass */
-.rate:not(:checked) > label:before {
-  content: "★ ";
+.produktside .hoyreside .farge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-
 /* line 878, styling.sass */
-.rate > input:checked ~ label {
-  color: #ffc700;
+.produktside .hoyreside .fargeknapp {
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid #000000;
+  background: #ffffff;
+  width: 4vh;
+  height: 4vh;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
 }
-
-/* line 881, styling.sass */
-.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label {
-  color: #deb217;
+/* line 890, styling.sass */
+.produktside .hoyreside #farge1 {
+  background-color: #E0AA1A;
 }
-
-/* line 884, styling.sass */
-.rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
-  color: #c59b08;
+/* line 893, styling.sass */
+.produktside .hoyreside #farge2 {
+  background-color: #0097C8;
+}
+/* line 896, styling.sass */
+.produktside .hoyreside #farge3 {
+  background-color: #992319;
+}
+/* line 899, styling.sass */
+.produktside .hoyreside #farge4 {
+  background-color: #004130;
+}
+/* line 902, styling.sass */
+.produktside .hoyreside #farge5 {
+  background-color: #CBCBCB;
+}
+/* line 905, styling.sass */
+.produktside .hoyreside #farge6 {
+  background-color: #171717;
 }
 
 /*# sourceMappingURL=styling.css.map */
