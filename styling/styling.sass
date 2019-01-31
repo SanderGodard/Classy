@@ -102,16 +102,16 @@ a
 
 
 ::-webkit-scrollbar
-  width: 8px
-  margin: 2px 2px 2px -10px
+  width: 5px
+  //margin: 2px 2px 2px -10px
   right: 0
 
 
 
 ::-webkit-scrollbar-thumb
   transition: all 0.3s ease-in-out
-  background: $ThirdColor
-  border-radius: 4px
+  background: $MainColor
+  border-radius: 2.5px
 
   &:hover
     transition: all 0.3s ease-in-out
@@ -361,7 +361,7 @@ nav
     overflow: hidden
     background-color: $White
     //box-shadow: $Shadow
-    //display: none
+    display: none
     position: absolute
     //bottom: 0
     top: 15vh
@@ -489,6 +489,138 @@ nav
       padding: 6vmax 3vmax
 
 
+  .produkterDD
+    display: inline-block
+
+    &:hover
+      .Hoved
+        display: flex
+
+    .Hoved
+      transition: $Fast
+      position: absolute
+      display: none
+      flex-direction: column
+      flex-wrap: nowrap
+      width: 200px
+      border: 3px solid $Black
+      border-bottom: 2px solid $Black
+      background-color: $White
+      z-index: 99
+      box-shadow: $Shadow
+
+      div
+        max-height: 410px
+        overflow-y: auto
+
+
+      .NavKategori1:hover ~ .Menn
+        display: flex !important
+
+      .Menn:hover
+        display: flex !important
+
+      .NavKategori2:hover ~ .Damer
+        display: flex !important
+
+      .Damer:hover
+        display: flex !important
+
+      .NavKategori3:hover ~ .Brands
+        display: flex !important
+
+      .Brands:hover
+        display: flex !important
+
+      a
+        transition: $Medium
+        text-transform: capitalize
+        margin: 0 !important
+        background-color: $White
+        width: 100%
+        height: 80px
+        display: block
+        border-bottom: 1px solid $Black !important
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 30px 0px
+        font-size: 1em !important
+
+        &:hover
+          transition: $Medium
+          font-size: 1.1em !important
+          padding: 30px 0px !important
+          padding-bottom: 30px !important
+          text-decoration: underline
+
+          img
+            transition: $Medium
+            width: 62px
+
+        img
+          transition: $Medium
+          margin: 0 10px
+          width: 60px
+
+      .Menn
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: -3px 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+      .Damer
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: 77px 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+      .Brands
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: 157px 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+        border-right: 1px solid $Black
+
+        a
+          text-align: center
+          padding: 30px 20px
+
+          &:hover
+            padding: 30px 20px !important
+
+      @media #{$Laptop}
+        width: 184px
+
+      @media #{$MobileXXL}
+        width: 164px
+
+
+
 main
   padding: 0 4vw
 
@@ -589,7 +721,31 @@ main
       @media #{$MobileL}
         flex-grow: 1
 
+//Anders sitt stuff
 
+.footer
+  width: 100%
+  height: 50vh
+  box-shadow: $BigShadow
+  border-top: 3px solid #000000
+
+  .topFooter
+    height: 20%
+
+  .centerFooter
+    color: #FFFFFF
+    background: #C01C1C
+    height: 70%
+
+    #HypeIT
+      padding-bottom: 2px
+      border-bottom: 3px solid #FFFFFF
+      display: inline
+
+  .bottomFooter
+    height: 10%
+
+//Slutt på Anders sitt stuff
 
 .shopBtn
   transition: $Medium
@@ -637,6 +793,7 @@ main
     padding: .25em 1em
     transform: translate(0%, -70%)
     text-transform: uppercase
+    z-index: 3
     line-height: 1
 
     @media #{$MobileXXL}
@@ -714,9 +871,10 @@ main
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  justify-content: space-around
+  justify-content: center
   margin-top: 7%
   background-color: inherit
+
 
   .k_b
     background-color: inherit
@@ -728,6 +886,9 @@ main
     z-index: 0
     transition: $Medium
     //overflow: hidden
+
+    @media only screen and (max-width: 890px)
+      margin: 3vw
 
 
     .k_b_innhold
@@ -748,6 +909,19 @@ main
       //overflow: hidden
       //height: 100%
       //width: 100%
+
+      @media only screen and (max-width: 890px)
+        font-size: 6em !important
+        top: 45% !important
+
+      @media only screen and (max-width: 626px)
+        font-size: 4em !important
+        top: 45% !important
+
+      @media only screen and (max-width: 1200px)
+        font-size: 4em
+        top: 40%
+
 
     &:hover
       .k_b_innhold
@@ -775,6 +949,15 @@ main
         right: 0
         width: 17vw
         height: 19vw
+
+        @media only screen and (max-width: 1200px)
+          width: 40vw
+          height: 47vw
+
+        @media only screen and (max-width: 890px)
+          width: 80vw
+          height: 95vw
+
 
 
 

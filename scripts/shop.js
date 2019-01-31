@@ -2,9 +2,10 @@ basket = [];
 storedArray = [];
 storedArray2 = [];
 boxHiding = false;
-lStorage = sessionStorage;
+lStorage = localStorage;
 document.getElementById('alertBox').addEventListener("mouseover", hideBoxBool);
 document.getElementById('alertBox').addEventListener("mouseout", hideBoxBool2);
+document.getElementById('alertBox').addEventListener("mouseout", alertBox);
 function hideBoxBool() {
   boxHiding = true;
 }
@@ -51,10 +52,10 @@ function addToBasket(x) {
 
 function alertBox() {
   document.getElementById('alertBox').style.display = "block";
-  if(boxHiding == false) {
     setTimeout(hideBox, 5000);
-  }
 }
 function hideBox() {
-  document.getElementById('alertBox').style.display = "none";
+  if(boxHiding == false) {
+    document.getElementById('alertBox').style.display = "none";
+  }
 }

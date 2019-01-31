@@ -6,7 +6,44 @@
   </div>
   <div class="RightNav">
     <div class="Nav">
-      <a href="/HypeIT/produkter/">Produkter</a>
+      <div class="produkterDD">
+        <a href="/HypeIT/produkter/">Produkter</a>
+        <div class="Hoved">
+          <a class="NavKategori1"><img src="/HypeIT/images/herreicon.png" alt="">Herre</a>
+          <a class="NavKategori2"><img src="/HypeIT/images/dameicon.png" alt="">Damer</a>
+          <a class="NavKategori3"><img src="/HypeIT/images/brandsicon.png" alt="">Brands</a>
+
+          <div class="Menn">
+            <a href="/HypeIT/produkter/menn/gensere/"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
+            <a href="/HypeIT/produkter/menn/bukser/"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
+            <a href="/HypeIT/produkter/menn/tskjorter/"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
+            <a href="/HypeIT/produkter/menn/sko/"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
+            <a href="/HypeIT/produkter/menn/jakker/"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
+          </div>
+
+          <div class="Damer">
+            <a href="/HypeIT/produkter/damer/gensere/"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
+            <a href="/HypeIT/produkter/damer/bukser/"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
+            <a href="/HypeIT/produkter/damer/tskjorter/"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
+            <a href="/HypeIT/produkter/damer/sko/"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
+            <a href="/HypeIT/produkter/damer/jakker/"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
+          </div>
+
+          <div class="Brands">
+            <a href="/HypeIT/produkter/brands/supreme/">supreme</a>
+            <a href="/HypeIT/produkter/brands/loiusvuitton/">loius vuitton</a>
+            <a href="/HypeIT/produkter/brands/gucci/">gucci</a>
+            <a href="/HypeIT/produkter/brands/balenciaga/">balenciaga</a>
+            <a href="/HypeIT/produkter/brands/stoneisland/">stone island</a>
+	          <a href="/HypeIT/produkter/brands/offwhite/">off white</a>
+            <a href="/HypeIT/produkter/brands/bape/">bape</a>
+            <a href="/HypeIT/produkter/brands/kith/">kith</a>
+            <a href="/HypeIT/produkter/brands/nike/">nike</a>
+            <a href="/HypeIT/produkter/brands/adidas/">adidas</a>
+          </div>
+
+        </div>
+      </div>
       <a href="/HypeIT/produkter/menn/">Menn</a>
       <a href="/HypeIT/produkter/damer/">Damer</a>
       <a href="/HypeIT/kontakt/">Om oss</a>
@@ -29,7 +66,7 @@
       <a href="javascript:void(0)" onclick="menuToggle()" id="mobileMenu" class="Material">menu</a>
     </div>
     <div id="mobileNav">
-      <a href="/HypeIT/produkter/">Produkter</a>
+      <a href="/HypeIT/produkter/">produkter</a>
       <a href="/HypeIT/produkter/menn/">Menn</a>
       <a href="/HypeIT/produkter/damer/">Damer</a>
       <a href="/HypeIT/kontakt/">Om oss</a>
@@ -45,7 +82,7 @@
   </p>
   <div>
     <a target="_blank" href="/HypeIT/kontakt/Cookies">Mer informasjon</a>
-    <span onclick="/HypeIT/scripts/cookies.js">Godta</span>
+    <span>Godta</span>
   </div>
 </div>
 
