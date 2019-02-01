@@ -2,21 +2,31 @@ var img = document.getElementById('storBilde');
 
 var bigImg = document.createElement('img');
 bigImg.src = img.src;
+bigImg.id = "bigImg";
 
 var style = bigImg.style;
 
 style.position = "fixed";
-style.height = "30%";
-style.width = "30%";
-style.top = "35%";
-style.bottom = "35%";
-style.left = "35%";
-style.right = "35%";
+style.height = "100%";
+//style.width = "30%";
+style.top = "0";
+style.bottom = "0";
+style.left = "20%";
+style.right = "20%";
 
 img.addEventListener("click", zoom);
-document.addEventListener("click", zoom, event);
+
 
 function zoom() {
   document.body.appendChild(bigImg);
-  document.addEventListener("click", zoom, event);
+  document.addEventListener("click", unZoom, event);
+  console.log("hello");
+}
+
+function unZoom(x) {
+  if(x.target != document.getElementById('bigImg')) {
+    bigImg.parentNode.removeChild(document.getElementById('bigImg'));
+    document.removeEventListener("click", unZoom);
+  }
+
 }
