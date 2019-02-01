@@ -19,7 +19,7 @@
   <div class="venstreside">
     <div class="Bilder">
       <img src="../../../images/racks.jpg" class="StortBilde" id="storBilde">
-      <div class="smaBilder">
+      <div class="smaBilder" id="Gliscor">
         <img src="../../../images/racks.jpg" alt="Rack" id="img1">
         <img src="../../../images/gul.jpg" alt="Green" id="img2">
         <img src="../../../images/grønn.jpg" alt="Mustard" id="img3">
