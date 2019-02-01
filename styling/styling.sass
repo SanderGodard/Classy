@@ -724,3 +724,67 @@ main
       color: $Black
       text-transform: capitalize
       font-family: inherit
+
+// &&&&&&&&&&&&&&&&&&&&&&&   V I D A R   S I N   D E L   &&&&&&&&&&&&&&&&&&&&&&&&
+
+.cartProducts
+  margin-left: 15vw
+  margin-bottom: 2vh
+  padding: 20px
+  width: 45vw
+  height: 35vh
+  border: 3px solid #707070
+  display: flex
+  flex-direction: row
+
+  img
+    height: 100%
+    align-self: flex-start
+  
+  .cartText
+    flex-direction: column
+
+    .cartProductRow
+      display: flex
+      flex-direction: row
+  
+    #cartProductName
+      font-weight: bold
+      font-size: 25px
+
+    #cartProductPrice
+      font-weight: bold
+
+    #cartProductColor
+      padding-top: 30px
+      padding-bottom: 5px
+
+    #cartProductSize2
+      padding-bottom: 30px
+
+    #cartProductNumber
+      font-weight: bold
+      line-height: 1.6
+      font-size: 15px
+      border-top: none
+      border-left: none
+      border-right: none
+      border-bottom: 3px solid #707070
+
+.cartConfirmation
+  display: flex
+  border: 3px solid #707070
+  width: 20vw
+  height: 75vh
+
+  .cartConfDiscount
+    padding-top: 5vh
+    padding-left: 1vw
+
+    .cartConfDiscountText
+      text-transform: uppercase
+      font-weight: bold
+      font-size: 18px
+
+    #cartConfDiscountInput
+      border: 3px solid #707070
