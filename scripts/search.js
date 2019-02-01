@@ -36,7 +36,7 @@ if(x.keyCode !== 38 && x.keyCode !== 40 && x.keyCode !== 13) {
 
 
           link.innerHTML = vS[i];
-          link.setAttribute('href', "/HypeIT/produkter/" + "#" + vS[i].toLowerCase())
+          link.setAttribute('href', "/HypeIT/produkter/" + vS[i].toLowerCase())
           link.className = "result";
           btn.appendChild(link);
           results.appendChild(btn);

@@ -721,6 +721,19 @@ main
       @media #{$MobileL}
         flex-grow: 1
 
+.img-magnifier-glass
+  position: absolute
+  border: 1px solid $ThirdColor
+  border-radius: 50%
+  cursor: none
+  width: 400px
+  height: 400px
+  z-index: 5
+
+.Bilder
+  overflow: none
+  position: relative
+
 //Anders sitt stuff
 
 .footer
@@ -730,20 +743,64 @@ main
   border-top: 3px solid #000000
 
   .topFooter
-    height: 20%
+    height: 30%
+    color: #C01C1C
+    display: flex
+    flex-direction: row
+    align-items: center
+    font-size: 1.8em
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+
+    .tf_tekst
+      padding-bottom: 2px
+      border-bottom: 2px solid #C01C1C
+      display: inline
+      margin-bottom: 1vw
+      margin-left: 7vw
+      font-weight: bold
+
+    .icon_wrapper
+      float: right
+      margin-right: 2vw
+
+      .footer_icon
+        float: right
+
+        img
+          width: 5.5vw
 
   .centerFooter
     color: #FFFFFF
     background: #C01C1C
-    height: 70%
+    height: 90%
 
-    #HypeIT
-      padding-bottom: 2px
-      border-bottom: 3px solid #FFFFFF
-      display: inline
+    .cf_wrapper
+      margin-left: 7vw
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: center
+
+
+      .cf_kolonne
+        margin-right: 0vw
+        width: 25vw
+        margin-top: 4.5vw
+        font-weight: 500
+
+        h1
+          padding-bottom: 4px
+          border-bottom: 5px solid #FFFFFF
+          display: inline
+          font-size: 2em
+
 
   .bottomFooter
     height: 10%
+    color: #C01C1C
+    text-align: center
 
 //Slutt på Anders sitt stuff
 
@@ -1066,3 +1123,32 @@ main
 
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label
   color: #c59b08
+
+
+
+
+// ====================Eline sin del
+.Kontakt
+  display: flex
+  justify-content: space-around
+  align-items: flex-start
+
+
+  h1
+    display: inline-block
+    font-size: 2em
+    text-transform: uppercase
+    border-bottom: 1px solid #707070
+    padding: 0vh 0vw 3vh
+    width: 100%
+    margin-bottom: 4vh
+    text-align: center
+    font-weight: bold
+
+  div
+    width: 32%
+    min-width: 215px
+    max-width: 550px
+    font-size: 1,25em
+    display: inline-block
+    font-weight: bold
