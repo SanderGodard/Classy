@@ -42,20 +42,26 @@
   </div>
 
   <div class="farge">
-    <a class="fargeknapp" id="farge1"></a>
-    <a class="fargeknapp" id="farge2"></a>
-    <a class="fargeknapp" id="farge3"></a>
-    <a class="fargeknapp" id="farge4"></a>
-    <a class="fargeknapp" id="farge5"></a>
-    <a class="fargeknapp" id="farge6"></a>
+    <a id="farge1"></a>
+    <a id="farge2"></a>
+    <a id="farge3"></a>
+    <a id="farge4"></a>
+    <a id="farge5"></a>
+    <a id="farge6"></a>
   </div>
 
+
+  <a href="javascript:void(0)" class="shopBtn" tabindex="2" onclick="addToBasket(this);cartCounter(this);" id="frontBtn">Legg i handlekurv</a>
+
+
 </div>
+
+
 
   </main>
   <footer>
     <?php
-      include "../../../elements/footer.php";
+      //include "../../../elements/footer.php";
      ?>
   </footer>
 </body>

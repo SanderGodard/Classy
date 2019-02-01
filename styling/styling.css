@@ -1091,7 +1091,7 @@ main .Showcase .Info h1 {
   background-color: #DA2727;
   display: block;
   position: absolute;
-  font-size: 20px;
+  font-size: 26px;
   color: #FFF;
   padding: 0.25em 0.25em;
   -webkit-transform: translate(0%, -70%);
@@ -1302,8 +1302,9 @@ main .Showcase .Info h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 50%;
+  padding: 0 0 1px 0;
 }
-/* line 1013, styling.sass */
+/* line 1014, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   width: 7vw;
   -o-object-fit: cover;
@@ -1317,7 +1318,7 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0 0 0 0;
 }
-/* line 1026, styling.sass */
+/* line 1027, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1332,23 +1333,23 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 1034, styling.sass */
+/* line 1035, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
   text-transform: capitalize;
   font-family: inherit;
 }
-/* line 1040, styling.sass */
+/* line 1041, styling.sass */
 .produktside .hoyreside .str {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1em 0em 2em 0;
 }
-/* line 1044, styling.sass */
+/* line 1045, styling.sass */
 .produktside .hoyreside .str a {
-  margin-left: 2px;
+  margin-left: 5px;
   display: block;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1356,22 +1357,24 @@ main .Showcase .Info h1 {
           flex-direction: row;
   border: 2px solid #000000;
   background: #ffffff;
-  width: 4vh;
-  height: 4vh;
+  width: 4.7vh;
+  height: 4.7vh;
   border-radius: 50%;
   text-align: center;
-  font-size: 2vh;
+  font-size: 2.3vh;
   font-weight: bold;
   padding: 0.25em 0 0 0;
 }
-/* line 1058, styling.sass */
+/* line 1059, styling.sass */
 .produktside .hoyreside .farge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 0 2em 0;
 }
-/* line 1061, styling.sass */
-.produktside .hoyreside .fargeknapp {
+/* line 1063, styling.sass */
+.produktside .hoyreside .farge a {
+  margin-left: 5px;
   display: block;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1379,34 +1382,34 @@ main .Showcase .Info h1 {
           flex-direction: row;
   border: 2px solid #000000;
   background: #ffffff;
-  width: 4vh;
-  height: 4vh;
+  width: 4.7vh;
+  height: 4.7vh;
   border-radius: 50%;
   text-align: center;
   font-size: 2vh;
   font-weight: bold;
 }
-/* line 1073, styling.sass */
+/* line 1076, styling.sass */
 .produktside .hoyreside #farge1 {
   background-color: #E0AA1A;
 }
-/* line 1076, styling.sass */
+/* line 1079, styling.sass */
 .produktside .hoyreside #farge2 {
   background-color: #0097C8;
 }
-/* line 1079, styling.sass */
+/* line 1082, styling.sass */
 .produktside .hoyreside #farge3 {
   background-color: #992319;
 }
-/* line 1082, styling.sass */
+/* line 1085, styling.sass */
 .produktside .hoyreside #farge4 {
   background-color: #004130;
 }
-/* line 1085, styling.sass */
+/* line 1088, styling.sass */
 .produktside .hoyreside #farge5 {
   background-color: #CBCBCB;
 }
-/* line 1088, styling.sass */
+/* line 1091, styling.sass */
 .produktside .hoyreside #farge6 {
   background-color: #171717;
 }
