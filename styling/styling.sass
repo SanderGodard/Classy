@@ -1049,7 +1049,7 @@ main
       justify-content: flex-end
       display: flex
       flex-direction: column
-      
+
 
 
       .StortBilde
@@ -1186,6 +1186,14 @@ main
     display: inline-block
     font-weight: bold
     margin-bottom: 4vh
+
+    a
+      border-bottom: 1px dotted $Black
+      padding-bottom: 0px
+      position: relative
+
+      &:hover
+        border-bottom: 1px solid $Black
 
     @media #{$Mobile}
       width: 90%
