@@ -115,6 +115,6 @@ Templaten vi bruker for nye sider:
    - &#10004; MobileNav
    - Handlekurv side
    - &#10004; Legg til livechat
-   - Om oss side - Eline
+   - &#10004; Om oss side - Eline
    - &#10004; Dropdown på "Produkter"?
    - &#10004; Jobbe på handlekurv popupen
