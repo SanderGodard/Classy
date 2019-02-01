@@ -624,6 +624,18 @@ nav
 main
   padding: 0 4vw
 
+  .mobsquad
+    display: none
+    color: $ThirdColor
+    font-size: 2em
+    border-bottom: 1px solid $ThirdColor
+    padding-bottom: 1px
+    margin-left: 2vmax
+
+    @media #{$Mobile}
+      display: inline-block
+
+
   div.Showcase.New::before
     display: none
 
@@ -945,7 +957,7 @@ main
   background-color: #DA2727
   display: block
   position: absolute
-  font-size: 20px
+  font-size: 26px
   color: $White
   padding: .25em .25em
   transform: translate(0%, -70%)
@@ -1075,7 +1087,7 @@ main
     width: 45%
     align-content: flex-end
     position: absolute
-    left: 22%
+    left: 26%
 
     //flex-grow: 1
 
@@ -1087,9 +1099,10 @@ main
       flex-direction: column
 
 
+
       .StortBilde
         //margin: 3%
-        width: 55%
+        width: 50%
         border: 3px solid #707070
         padding: 3vh 0vh 0.5vh 0vh
         display: block
@@ -1101,10 +1114,11 @@ main
         display: flex
         flex-direction: row
         justify-content: space-between
-        width: 55%
+        width: 50%
+        padding: 0 0 1px 0
 
         img
-          width: 8vw
+          width: 7vw
           object-fit: cover
           bottom: 0
           top: 0
@@ -1113,7 +1127,7 @@ main
           height: 8vw
           border: 3px solid #707070
           margin-top: 2%
-          padding: .9em 0 .3em 0
+          padding: 0 0 0 0
 
 
   .hoyreside
@@ -1130,32 +1144,58 @@ main
       text-transform: capitalize
       font-family: inherit
 
-.rate
-  float: left
-  height: 46px
-  padding: 0 10px
+    .str
+      display: flex
+      padding: 1em 0em 2em 0
 
-.rate:not(:checked) > input
-  position: absolute
-  top: -9999px
+      a
+        margin-left: 5px
+        display: block
+        flex-direction: row
+        border: 2px solid #000000
+        background: #ffffff
+        width: 4.7vh
+        height: 4.7vh
+        border-radius: 50%
+        text-align: center
+        font-size: 2.3vh
+        font-weight: bold
+        padding: 0.25em 0 0 0
 
-.rate:not(:checked) > label
-  float: right
-  width: 1em
-  overflow: hidden
-  white-space: nowrap
-  cursor: pointer
-  font-size: 30px
-  color: #ccc
+    .farge
+      display: flex
+      padding: 0 0 2em 0
 
-.rate:not(:checked) > label:before
-  content: '★ '
+      a
+        margin-left: 5px
+        display: block
+        flex-direction: row
+        border: 2px solid #000000
+        background: #ffffff
+        width: 4.7vh
+        height: 4.7vh
+        border-radius: 50%
+        text-align: center
+        font-size: 2vh
+        font-weight: bold
 
-.rate > input:checked ~ label
-  color: #ffc700
+    #farge1
+      background-color: #E0AA1A
 
-.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label
-  color: #deb217
+    #farge2
+      background-color: #0097C8
+
+    #farge3
+      background-color: #992319
+
+    #farge4
+      background-color: #004130
+
+    #farge5
+      background-color: #CBCBCB
+
+    #farge6
+      background-color: #171717
 
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label
   color: #c59b08
@@ -1181,10 +1221,45 @@ main
     text-align: center
     font-weight: bold
 
+    @media #{$Mobile}
+      font-size: 1.5em
+      padding-bottom: 1.5vh
+      margin-bottom: 1.5vh
+
+
   div
     width: 32%
     min-width: 215px
     max-width: 550px
-    font-size: 1,25em
+    font-size: 1.25em
     display: inline-block
     font-weight: bold
+    margin-bottom: 4vh
+
+    a
+      border-bottom: 1px dotted $Black
+      padding-bottom: 0px
+      position: relative
+
+      &:hover
+        border-bottom: 1px solid $Black
+
+    @media #{$Mobile}
+      width: 90%
+      display: block
+      font-size: 1em
+      margin: 4vh auto 7vh
+
+  @media #{$Mobile}
+    flex-direction: column
+    justify-content: center
+
+
+
+.anbefalte
+  margin-top: 30vh
+
+  h1
+    text-transform: uppercase
+    text-align: center
+    font-size: 2.5em

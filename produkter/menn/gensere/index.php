@@ -14,45 +14,57 @@
   </nav>
   <main>
 
-<div class="produktside">
+    <div class="produktside">
 
   <div class="venstreside">
     <div class="Bilder">
       <img src="../../../images/racks.jpg" class="StortBilde" id="storBilde">
-      <div class="smaBilder">
+      <div class="smaBilder" id="Gliscor">
         <img src="../../../images/racks.jpg" alt="Rack" id="img1">
         <img src="../../../images/gul.jpg" alt="Green" id="img2">
         <img src="../../../images/grønn.jpg" alt="Mustard" id="img3">
       </div>
-    </div>
-  </div>
 
-  <div class="hoyreside">
-    <h2><a class="Supreme">Cat In The Hat Hettegenser</a></h2>
+      <div class="hoyreside">
+        <h2><a class="Supreme">Cat In The Hat Hettegenser</a></h2>
 
-    <div class="rate">
-        <input type="radio" id="star5" name="rate" value="5" />
-        <label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" />
-        <label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" />
-        <label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" />
-        <label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" />
-        <label for="star1" title="text">1 star</label>
+        <h2><a class="pris"> 3000,-</a></h2>
+
+        <div class="str">
+          <a>S</a>
+          <a>M</a>
+          <a>L</a>
+          <a>XL</a>
+        </div>
+
+        <div class="farge">
+          <a id="farge1"></a>
+          <a id="farge2"></a>
+          <a id="farge3"></a>
+          <a id="farge4"></a>
+          <a id="farge5"></a>
+          <a id="farge6"></a>
+        </div>
+
+        <a href="javascript:void(0)" class="shopBtn" tabindex="2" onclick="addToBasket(this);cartCounter(this);" id="frontBtn">Legg i handlekurv</a>
+
       </div>
-
-    <h2><a> 3000,-</a></h2>
-
+    </div>
 
 
-</div>
+    <!-- Eline koder under her -->
+
+    <div class="anbefalte">
+      <h1>Andre har også kjøpt</h1>
+      <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
+
+
+    </div>
 
   </main>
   <footer>
     <?php
-      include "../../../elements/footer.php";
+      //include "../../../elements/footer.php";
      ?>
   </footer>
   <script>
