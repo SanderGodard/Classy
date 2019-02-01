@@ -1359,14 +1359,14 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1054, styling.sass */
+/* line 1055, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
   width: 50%;
   border: 3px solid #707070;
   padding: 3vh 0vh 0.5vh 0vh;
   display: block;
 }
-/* line 1061, styling.sass */
+/* line 1062, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   -ms-flex-line-pack: start;
@@ -1387,11 +1387,7 @@ main .Showcase .Info h1 {
   width: 50%;
   padding: 0 0 1px 0;
 }
-<<<<<<< HEAD
-/* line 1014, styling.sass */
-=======
-/* line 1070, styling.sass */
->>>>>>> ef14f254e4a02510f04c8c34a564892ad489bc6b
+/* line 1072, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   width: 7vw;
   -o-object-fit: cover;
@@ -1405,11 +1401,7 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0 0 0 0;
 }
-<<<<<<< HEAD
-/* line 1027, styling.sass */
-=======
-/* line 1083, styling.sass */
->>>>>>> ef14f254e4a02510f04c8c34a564892ad489bc6b
+/* line 1085, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1424,26 +1416,21 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-<<<<<<< HEAD
-/* line 1035, styling.sass */
-=======
-/* line 1091, styling.sass */
->>>>>>> ef14f254e4a02510f04c8c34a564892ad489bc6b
+/* line 1093, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
   text-transform: capitalize;
   font-family: inherit;
 }
-<<<<<<< HEAD
-/* line 1041, styling.sass */
+/* line 1099, styling.sass */
 .produktside .hoyreside .str {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1em 0em 2em 0;
 }
-/* line 1045, styling.sass */
+/* line 1103, styling.sass */
 .produktside .hoyreside .str a {
   margin-left: 5px;
   display: block;
@@ -1461,14 +1448,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   padding: 0.25em 0 0 0;
 }
-/* line 1059, styling.sass */
+/* line 1117, styling.sass */
 .produktside .hoyreside .farge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 0 2em 0;
 }
-/* line 1063, styling.sass */
+/* line 1121, styling.sass */
 .produktside .hoyreside .farge a {
   margin-left: 5px;
   display: block;
@@ -1485,77 +1472,37 @@ main .Showcase .Info h1 {
   font-size: 2vh;
   font-weight: bold;
 }
-/* line 1076, styling.sass */
+/* line 1134, styling.sass */
 .produktside .hoyreside #farge1 {
   background-color: #E0AA1A;
 }
-/* line 1079, styling.sass */
+/* line 1137, styling.sass */
 .produktside .hoyreside #farge2 {
   background-color: #0097C8;
 }
-/* line 1082, styling.sass */
+/* line 1140, styling.sass */
 .produktside .hoyreside #farge3 {
   background-color: #992319;
 }
-/* line 1085, styling.sass */
+/* line 1143, styling.sass */
 .produktside .hoyreside #farge4 {
   background-color: #004130;
 }
-/* line 1088, styling.sass */
+/* line 1146, styling.sass */
 .produktside .hoyreside #farge5 {
   background-color: #CBCBCB;
 }
-/* line 1091, styling.sass */
+/* line 1149, styling.sass */
 .produktside .hoyreside #farge6 {
   background-color: #171717;
-=======
-
-/* line 1097, styling.sass */
-.rate {
-  float: left;
-  height: 46px;
-  padding: 0 10px;
 }
 
-/* line 1102, styling.sass */
-.rate:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
-}
-
-/* line 1106, styling.sass */
-.rate:not(:checked) > label {
-  float: right;
-  width: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 30px;
-  color: #ccc;
-}
-
-/* line 1115, styling.sass */
-.rate:not(:checked) > label:before {
-  content: "★ ";
-}
-
-/* line 1118, styling.sass */
-.rate > input:checked ~ label {
-  color: #ffc700;
-}
-
-/* line 1121, styling.sass */
-.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label {
-  color: #deb217;
-}
-
-/* line 1124, styling.sass */
+/* line 1151, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
->>>>>>> ef14f254e4a02510f04c8c34a564892ad489bc6b
 }
 
-/* line 1131, styling.sass */
+/* line 1158, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1566,7 +1513,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1137, styling.sass */
+/* line 1164, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -1578,7 +1525,7 @@ main .Showcase .Info h1 {
   text-align: center;
   font-weight: bold;
 }
-/* line 1148, styling.sass */
+/* line 1175, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
@@ -1587,5 +1534,4 @@ main .Showcase .Info h1 {
   display: inline-block;
   font-weight: bold;
 }
-
 /*# sourceMappingURL=styling.css.map */
