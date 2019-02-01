@@ -1491,14 +1491,44 @@ main .Showcase .Info h1 {
   text-align: center;
   font-weight: bold;
 }
-/* line 1148, styling.sass */
+@media only screen and (max-width: 890px) {
+  /* line 1137, styling.sass */
+  .Kontakt h1 {
+    font-size: 1.5em;
+    padding-bottom: 1.5vh;
+    margin-bottom: 1.5vh;
+  }
+}
+/* line 1154, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
   max-width: 550px;
-  font-size: 1, 25em;
+  font-size: 1.25em;
   display: inline-block;
   font-weight: bold;
+  margin-bottom: 4vh;
+}
+@media only screen and (max-width: 890px) {
+  /* line 1154, styling.sass */
+  .Kontakt div {
+    width: 90%;
+    display: block;
+    font-size: 1em;
+    margin: 4vh auto 7vh;
+  }
+}
+@media only screen and (max-width: 890px) {
+  /* line 1131, styling.sass */
+  .Kontakt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styling.css.map */
