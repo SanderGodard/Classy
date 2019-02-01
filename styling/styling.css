@@ -988,7 +988,7 @@ main .Showcase .Info h1 {
 /* line 757, styling.sass */
 .footer .topFooter {
   height: 30%;
-  color: #FF0000;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1009,12 +1009,12 @@ main .Showcase .Info h1 {
 }
 /* line 768, styling.sass */
 .footer .topFooter a {
-  color: #FF0000;
+  color: #000;
 }
 /* line 771, styling.sass */
 .footer .topFooter .tf_tekst {
   padding-bottom: 2px;
-  border-bottom: 2px solid #FF0000;
+  border-bottom: 2px solid #000;
   display: inline;
   margin-bottom: 1vw;
   margin-left: 7vw;
@@ -1036,7 +1036,7 @@ main .Showcase .Info h1 {
 /* line 790, styling.sass */
 .footer .centerFooter {
   color: #FFFFFF;
-  background: #FF0000;
+  background: #000;
   height: 90%;
 }
 /* line 795, styling.sass */
@@ -1110,7 +1110,7 @@ main .Showcase .Info h1 {
 /* line 843, styling.sass */
 .footer .bottomFooter {
   height: 10%;
-  color: #FF0000;
+  color: #000;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
