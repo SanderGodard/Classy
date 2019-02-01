@@ -624,6 +624,18 @@ nav
 main
   padding: 0 4vw
 
+  .mobsquad
+    display: none
+    color: $ThirdColor
+    font-size: 2em
+    border-bottom: 1px solid $ThirdColor
+    padding-bottom: 1px
+    margin-left: 2vmax
+
+    @media #{$Mobile}
+      display: inline-block
+
+
   div.Showcase.New::before
     display: none
 
@@ -1148,6 +1160,7 @@ main
 
     #farge6
       background-color: #171717
+
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label
   color: #c59b08
 
@@ -1204,3 +1217,13 @@ main
   @media #{$Mobile}
     flex-direction: column
     justify-content: center
+
+
+
+.anbefalte
+  margin-top: 30vh
+
+  h1
+    text-transform: uppercase
+    text-align: center
+    font-size: 2.5em
