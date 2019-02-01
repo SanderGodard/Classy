@@ -38,7 +38,7 @@ function cartCounter(x) {
     counter.style.height = "1.9em";
     counter.style.width = "1.9em";
     counter.style.padding = "0.34em 0em";
-    if(countedItems>1000) {
+    if(countedItems>100) {
       counter.style.height = "2em";
       counter.style.width = "2em";
       counter.style.padding = "0.4em 0em";

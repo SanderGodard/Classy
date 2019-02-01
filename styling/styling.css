@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 49, styling.sass */
 html {
   -webkit-transition: all 0s ease;
@@ -1175,7 +1174,7 @@ main .Showcase .Info h1 {
   background-color: #DA2727;
   display: block;
   position: absolute;
-  font-size: 20px;
+  font-size: 26px;
   color: #FFF;
   padding: 0.25em 0.25em;
   -webkit-transform: translate(0%, -70%);
@@ -1341,7 +1340,7 @@ main .Showcase .Info h1 {
   -ms-flex-line-pack: end;
       align-content: flex-end;
   position: absolute;
-  left: 22%;
+  left: 26%;
 }
 /* line 1046, styling.sass */
 .produktside .venstreside .Bilder {
@@ -1360,14 +1359,14 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1054, styling.sass */
+/* line 1055, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
-  width: 55%;
+  width: 50%;
   border: 3px solid #707070;
   padding: 3vh 0vh 0.5vh 0vh;
   display: block;
 }
-/* line 1061, styling.sass */
+/* line 1062, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   -ms-flex-line-pack: start;
@@ -1385,11 +1384,12 @@ main .Showcase .Info h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 55%;
+  width: 50%;
+  padding: 0 0 1px 0;
 }
-/* line 1070, styling.sass */
+/* line 1072, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
-  width: 8vw;
+  width: 7vw;
   -o-object-fit: cover;
      object-fit: cover;
   bottom: 0;
@@ -1399,9 +1399,9 @@ main .Showcase .Info h1 {
   height: 8vw;
   border: 3px solid #707070;
   margin-top: 2%;
-  padding: 0.9em 0 0.3em 0;
+  padding: 0 0 0 0;
 }
-/* line 1083, styling.sass */
+/* line 1085, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1416,59 +1416,93 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 1091, styling.sass */
+/* line 1093, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
   text-transform: capitalize;
   font-family: inherit;
 }
-
-/* line 1097, styling.sass */
-.rate {
-  float: left;
-  height: 46px;
-  padding: 0 10px;
+/* line 1099, styling.sass */
+.produktside .hoyreside .str {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 0em 2em 0;
 }
-
-/* line 1102, styling.sass */
-.rate:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
+/* line 1103, styling.sass */
+.produktside .hoyreside .str a {
+  margin-left: 5px;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid #000000;
+  background: #ffffff;
+  width: 4.7vh;
+  height: 4.7vh;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2.3vh;
+  font-weight: bold;
+  padding: 0.25em 0 0 0;
 }
-
-/* line 1106, styling.sass */
-.rate:not(:checked) > label {
-  float: right;
-  width: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 30px;
-  color: #ccc;
+/* line 1117, styling.sass */
+.produktside .hoyreside .farge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 2em 0;
 }
-
-/* line 1115, styling.sass */
-.rate:not(:checked) > label:before {
-  content: "★ ";
-}
-
-/* line 1118, styling.sass */
-.rate > input:checked ~ label {
-  color: #ffc700;
-}
-
 /* line 1121, styling.sass */
-.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label {
-  color: #deb217;
+.produktside .hoyreside .farge a {
+  margin-left: 5px;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid #000000;
+  background: #ffffff;
+  width: 4.7vh;
+  height: 4.7vh;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
+}
+/* line 1134, styling.sass */
+.produktside .hoyreside #farge1 {
+  background-color: #E0AA1A;
+}
+/* line 1137, styling.sass */
+.produktside .hoyreside #farge2 {
+  background-color: #0097C8;
+}
+/* line 1140, styling.sass */
+.produktside .hoyreside #farge3 {
+  background-color: #992319;
+}
+/* line 1143, styling.sass */
+.produktside .hoyreside #farge4 {
+  background-color: #004130;
+}
+/* line 1146, styling.sass */
+.produktside .hoyreside #farge5 {
+  background-color: #CBCBCB;
+}
+/* line 1149, styling.sass */
+.produktside .hoyreside #farge6 {
+  background-color: #171717;
 }
 
-/* line 1124, styling.sass */
+/* line 1151, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
 
-/* line 1131, styling.sass */
+/* line 1158, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1479,7 +1513,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1137, styling.sass */
+/* line 1164, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -1492,14 +1526,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1137, styling.sass */
+  /* line 1164, styling.sass */
   .Kontakt h1 {
     font-size: 1.5em;
     padding-bottom: 1.5vh;
     margin-bottom: 1.5vh;
   }
 }
-/* line 1154, styling.sass */
+/* line 1181, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
@@ -1510,7 +1544,7 @@ main .Showcase .Info h1 {
   margin-bottom: 4vh;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1154, styling.sass */
+  /* line 1181, styling.sass */
   .Kontakt div {
     width: 90%;
     display: block;
@@ -1519,7 +1553,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 1131, styling.sass */
+  /* line 1158, styling.sass */
   .Kontakt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

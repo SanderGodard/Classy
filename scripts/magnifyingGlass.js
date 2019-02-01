@@ -56,9 +56,9 @@ function magnify(imgID, zoom) {
 var pic = document.getElementById('storBilde');
 var magn = document.getElementsByClassName("img-magnifier-glass")[0];
 
-document.addEventListener("mouseover", zoomFunc, event);
+pic.addEventListener("mouseout", zoomFunc, event);
 function zoomFunc(x) {
-  if(x.target != pic && x.target != magn){
+  if(x.target == pic && x.target == magn){
     magn.parentNode.removeChild(magn);
 
   }
