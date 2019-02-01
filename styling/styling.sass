@@ -1049,7 +1049,7 @@ main
       justify-content: flex-end
       display: flex
       flex-direction: column
-      
+
 
 
       .StortBilde
@@ -1172,10 +1172,35 @@ main
     text-align: center
     font-weight: bold
 
+    @media #{$Mobile}
+      font-size: 1.5em
+      padding-bottom: 1.5vh
+      margin-bottom: 1.5vh
+
+
   div
     width: 32%
     min-width: 215px
     max-width: 550px
-    font-size: 1,25em
+    font-size: 1.25em
     display: inline-block
     font-weight: bold
+    margin-bottom: 4vh
+
+    a
+      border-bottom: 1px dotted $Black
+      padding-bottom: 0px
+      position: relative
+
+      &:hover
+        border-bottom: 1px solid $Black
+
+    @media #{$Mobile}
+      width: 90%
+      display: block
+      font-size: 1em
+      margin: 4vh auto 7vh
+
+  @media #{$Mobile}
+    flex-direction: column
+    justify-content: center
