@@ -23,7 +23,8 @@
 <script async defer src="/HypeIT/scripts/pictureSwap.js"></script>
 <script async defer src="/HypeIT/scripts/mobileNav.js"></script>
 <script async defer src="/HypeIT/scripts/frontSwitch.js"></script>
-<script async defer src="/HypeIT/scripts/magnifyingGlass.js"></script>
+<script async defer src="/HypeIT/scripts/zoom.js"></script>
+<!--<script async defer src="/HypeIT/scripts/magnifyingGlass.js"></script>-->
 
 <!-- Live chat
 <script type="text/javascript">
