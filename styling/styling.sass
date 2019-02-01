@@ -754,12 +754,12 @@ main
 .footer
   width: 100%
   height: 50vh
-  box-shadow: $BigShadow
-  border-top: 3px solid #000000
+  border-top: 3px solid #707070
+  margin-top: 15%
 
   .topFooter
     height: 30%
-    color: #C01C1C
+    color: $Black
     display: flex
     flex-direction: row
     align-items: center
@@ -768,13 +768,17 @@ main
     flex-wrap: nowrap
     justify-content: space-between
 
+    a
+      color: $Black
+
     .tf_tekst
       padding-bottom: 2px
-      border-bottom: 2px solid #C01C1C
+      border-bottom: 2px solid $Black
       display: inline
       margin-bottom: 1vw
       margin-left: 7vw
       font-weight: bold
+
 
     .icon_wrapper
       float: right
@@ -788,7 +792,7 @@ main
 
   .centerFooter
     color: #FFFFFF
-    background: #C01C1C
+    background: $Black
     height: 90%
 
     .cf_wrapper
@@ -811,11 +815,43 @@ main
           display: inline
           font-size: 2em
 
+          a
+            color: #FFFFFF
+
+        .kolonne_txt
+          margin-top: 1.5vw
+
+
+          ul
+            list-style: none
+            text-decoration: none
+            margin-left: -3vw
+            font-size: 1.5em
+
+            li
+              padding-bottom: 10px
+              display: flex
+              flex-direction: row
+              align-items: center
+
+              div
+                color: white
+
+
+          img
+            width: 2.5vw
+            margin-right: 0.5vw
+
 
   .bottomFooter
     height: 10%
-    color: #C01C1C
+    color: $Black
     text-align: center
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
 
 //Slutt på Anders sitt stuff
 
@@ -1220,3 +1256,18 @@ main
   @media #{$Mobile}
     flex-direction: column
     justify-content: center
+
+
+
+.anbefalte
+  margin-top: 30vh
+
+  h1
+    text-transform: uppercase
+    text-align: center
+    font-size: 2.5em
+  div
+
+    img
+      margin-top: 5vh
+      width: 20%
