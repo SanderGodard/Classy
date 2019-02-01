@@ -9,9 +9,9 @@
       <div class="produkterDD">
         <a href="/HypeIT/produkter/">Produkter</a>
         <div class="Hoved">
-          <a class="NavKategori1"><img src="/HypeIT/images/herreicon.png" alt="">Herre</a>
-          <a class="NavKategori2"><img src="/HypeIT/images/dameicon.png" alt="">Damer</a>
-          <a class="NavKategori3"><img src="/HypeIT/images/brandsicon.png" alt="">Brands</a>
+          <a class="NavKategori1" href="/HypeIT/produkter/menn/"><img src="/HypeIT/images/herreicon.png" alt="">Herre</a>
+          <a class="NavKategori2" href="/HypeIT/produkter/damer/"><img src="/HypeIT/images/dameicon.png" alt="">Damer</a>
+          <a class="NavKategori3" href="/HypeIT/produkter/brands/"><img src="/HypeIT/images/brandsicon.png" alt="">Brands</a>
 
           <div class="Menn">
             <a href="/HypeIT/produkter/menn/gensere/"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
@@ -66,7 +66,7 @@
       <a href="javascript:void(0)" onclick="menuToggle()" id="mobileMenu" class="Material">menu</a>
     </div>
     <div id="mobileNav">
-      <a href="/HypeIT/produkter/">produkter</a>
+      <a href="/HypeIT/produkter/brands/">Brands</a>
       <a href="/HypeIT/produkter/menn/">Menn</a>
       <a href="/HypeIT/produkter/damer/">Damer</a>
       <a href="/HypeIT/kontakt/">Om oss</a>
