@@ -1349,27 +1349,30 @@ main .Showcase .Info h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: rgba(50, 50, 50, 0.2);
 }
-/* line 1041, styling.sass */
+/* line 1045, styling.sass */
 .kategori_wrapper .k_b img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
   -o-object-fit: cover;
      object-fit: cover;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  bottom: -3px;
+  top: -3px;
+  left: -3px;
+  right: -3px;
   width: 100%;
   height: 100%;
   position: relative;
   display: block;
 }
-/* line 1052, styling.sass */
-.kategori_wrapper .k_b img:hover {
+/* line 1058, styling.sass */
+.kategori_wrapper .k_b:hover img {
   -webkit-filter: blur(3px);
           filter: blur(3px);
 }
 
-/* line 1061, styling.sass */
+/* line 1067, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -1384,7 +1387,7 @@ main .Showcase .Info h1 {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-/* line 1069, styling.sass */
+/* line 1075, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1398,7 +1401,7 @@ main .Showcase .Info h1 {
       align-content: flex-end;
   margin-left: 20%;
 }
-/* line 1079, styling.sass */
+/* line 1085, styling.sass */
 .produktside .venstreside .Bilder {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1415,14 +1418,14 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1088, styling.sass */
+/* line 1094, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
   width: 100%;
   border: 3px solid #707070;
   padding: 3vh 0vh 0.5vh 0vh;
   display: block;
 }
-/* line 1095, styling.sass */
+/* line 1101, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   -ms-flex-line-pack: start;
@@ -1443,7 +1446,7 @@ main .Showcase .Info h1 {
   width: 100%;
   padding: 0 0 1px 0;
 }
-/* line 1105, styling.sass */
+/* line 1111, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   cursor: pointer;
   width: 30%;
@@ -1458,7 +1461,7 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0 0 0 0;
 }
-/* line 1119, styling.sass */
+/* line 1125, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1473,21 +1476,21 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 1127, styling.sass */
+/* line 1133, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
   text-transform: capitalize;
   font-family: inherit;
 }
-/* line 1133, styling.sass */
+/* line 1139, styling.sass */
 .produktside .hoyreside .str {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1em 0em 2em 0;
 }
-/* line 1137, styling.sass */
+/* line 1143, styling.sass */
 .produktside .hoyreside .str a {
   cursor: pointer;
   margin-left: 5px;
@@ -1506,14 +1509,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   padding: 0.25em 0 0 0;
 }
-/* line 1152, styling.sass */
+/* line 1158, styling.sass */
 .produktside .hoyreside .farge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 0 2em 0;
 }
-/* line 1156, styling.sass */
+/* line 1162, styling.sass */
 .produktside .hoyreside .farge a {
   cursor: pointer;
   margin-left: 5px;
@@ -1531,37 +1534,37 @@ main .Showcase .Info h1 {
   font-size: 2vh;
   font-weight: bold;
 }
-/* line 1170, styling.sass */
+/* line 1176, styling.sass */
 .produktside .hoyreside #farge1 {
   background-color: #E0AA1A;
 }
-/* line 1173, styling.sass */
+/* line 1179, styling.sass */
 .produktside .hoyreside #farge2 {
   background-color: #0097C8;
 }
-/* line 1176, styling.sass */
+/* line 1182, styling.sass */
 .produktside .hoyreside #farge3 {
   background-color: #992319;
 }
-/* line 1179, styling.sass */
+/* line 1185, styling.sass */
 .produktside .hoyreside #farge4 {
   background-color: #004130;
 }
-/* line 1182, styling.sass */
+/* line 1188, styling.sass */
 .produktside .hoyreside #farge5 {
   background-color: #CBCBCB;
 }
-/* line 1185, styling.sass */
+/* line 1191, styling.sass */
 .produktside .hoyreside #farge6 {
   background-color: #171717;
 }
 
-/* line 1188, styling.sass */
+/* line 1194, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
 
-/* line 1195, styling.sass */
+/* line 1201, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1572,7 +1575,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1201, styling.sass */
+/* line 1207, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -1585,14 +1588,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1201, styling.sass */
+  /* line 1207, styling.sass */
   .Kontakt h1 {
     font-size: 1.5em;
     padding-bottom: 1.5vh;
     margin-bottom: 1.5vh;
   }
 }
-/* line 1218, styling.sass */
+/* line 1224, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
@@ -1602,18 +1605,18 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 4vh;
 }
-/* line 1227, styling.sass */
+/* line 1233, styling.sass */
 .Kontakt div a {
   border-bottom: 1px dotted #000;
   padding-bottom: 0px;
   position: relative;
 }
-/* line 1232, styling.sass */
+/* line 1238, styling.sass */
 .Kontakt div a:hover {
   border-bottom: 1px solid #000;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1218, styling.sass */
+  /* line 1224, styling.sass */
   .Kontakt div {
     width: 90%;
     display: block;
@@ -1622,7 +1625,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 1195, styling.sass */
+  /* line 1201, styling.sass */
   .Kontakt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1634,17 +1637,17 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 1247, styling.sass */
+/* line 1253, styling.sass */
 .anbefalte {
   margin-top: 30vh;
 }
-/* line 1250, styling.sass */
+/* line 1256, styling.sass */
 .anbefalte h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5em;
 }
-/* line 1256, styling.sass */
+/* line 1262, styling.sass */
 .anbefalte div img {
   margin-top: 5vh;
   width: 20%;
