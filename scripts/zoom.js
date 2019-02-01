@@ -12,3 +12,11 @@ style.top = "35%";
 style.bottom = "35%";
 style.left = "35%";
 style.right = "35%";
+
+img.addEventListener("click", zoom);
+document.addEventListener("click", zoom, event);
+
+function zoom() {
+  document.body.appendChild(bigImg);
+  document.addEventListener("click", zoom, event);
+}
