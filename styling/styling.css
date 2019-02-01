@@ -1592,11 +1592,13 @@ main .Showcase .Info h1 {
 
 /* line 1223, styling.sass */
 .anbefalte {
-  margin-top: 10vh;
+  margin-top: 30vh;
 }
 /* line 1226, styling.sass */
-.anbefalte div {
+.anbefalte h1 {
   text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5em;
 }
 
 /*# sourceMappingURL=styling.css.map */
