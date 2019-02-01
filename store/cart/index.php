@@ -2,7 +2,7 @@
 <html lang="NB" dir="ltr">
 <head>
   <?php
-    $title = "HypeIT - Handlekurv";
+    $title = "HypeIT | Handlekurv";
     include "../../elements/head.php";
    ?>
 </head>

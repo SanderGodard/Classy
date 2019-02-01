@@ -21,38 +21,30 @@
 
       <a href="#" class="k_b">
         <div class="k_b_innhold">
-          Sko
+          Louis Vuitton
         </div>
-        <div class="k_b_wrapper">
-          <img src="../../images/lv.jpg" alt="">
-        </div>
+        <img src="../../images/lv.jpg" alt="">
       </a>
 
       <a href="#" class="k_b">
         <div class="k_b_innhold">
-          Bukse
+          Stone Island
         </div>
-        <div class="k_b_wrapper">
-          <img src="../../images/stoneisland.jpg" alt="">
-        </div>
+        <img src="../../images/stoneisland.jpg" alt="">
       </a>
 
       <a href="#" class="k_b">
         <div class="k_b_innhold">
-          Gensere
+          Supreme
         </div>
-        <div class="k_b_wrapper">
-          <img src="../../images/supreme.jpg" alt="">
-        </div>
+        <img src="../../images/supreme.jpg" alt="">
       </a>
 
       <a href="#" class="k_b">
         <div class="k_b_innhold">
-          T-Skjorter
+          Gucci
         </div>
-        <div class="k_b_wrapper">
-          <img src="../../images/gucci.jpg" alt="">
-        </div>
+        <img src="../../images/gucci.jpg" alt="">
       </a>
 
     </div>
