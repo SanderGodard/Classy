@@ -1558,6 +1558,16 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 4vh;
 }
+/* line 1203, styling.sass */
+.Kontakt div a {
+  border-bottom: 1px dotted #000;
+  padding-bottom: 0px;
+  position: relative;
+}
+/* line 1208, styling.sass */
+.Kontakt div a:hover {
+  border-bottom: 1px solid #000;
+}
 @media only screen and (max-width: 890px) {
   /* line 1194, styling.sass */
   .Kontakt div {

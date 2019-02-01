@@ -30,8 +30,6 @@
   <div class="hoyreside">
     <h2><a class="Supreme">Cat In The Hat Hettegenser</a></h2>
 
-
-
     <h2><a class="pris"> 3000,-</a></h2>
 
   <div class="str">

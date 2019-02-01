@@ -18,10 +18,10 @@
   <div class="KontaktOss">
     <h1>Kontakt Oss</h1><br>
     <p>
-      Telefon 941 388 89 <br>
-      Epost hypeit-kundreservice@hotmail.com <br>
-      Instagram @hypeit_ <br>
-      Facebook "REPLACE ME"
+      Telefon <a href="callto:941 388 89">941 388 89 </a><br>
+      Epost <a href="mailto:hypeit-kundreservice@hotmail.com">hypeit-kundreservice@hotmail.com</a> <br>
+      Instagram <a href="https://www.instagram.com/HypeIT_/"> @HypeIT_ </a> <br>
+      Facebook <a href="https://www.facebook.com/groups/hypeit/?ref=nf_target&fref=nf"> HypeIT </a>
 
     </p>
   </div>
