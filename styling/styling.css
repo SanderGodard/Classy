@@ -1600,5 +1600,10 @@ main .Showcase .Info h1 {
   text-align: center;
   font-size: 2.5em;
 }
+/* line 1232, styling.sass */
+.anbefalte div img {
+  margin-top: 5vh;
+  width: 20%;
+}
 
 /*# sourceMappingURL=styling.css.map */

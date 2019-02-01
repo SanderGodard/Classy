@@ -58,8 +58,12 @@
 
     <div class="anbefalte">
       <h1>Andre har også kjøpt</h1>
-      <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal"> 
-
+      <div>
+        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
+        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
+        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
+        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
+      </div>
 
     </div>
 
