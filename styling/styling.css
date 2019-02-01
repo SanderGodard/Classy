@@ -968,14 +968,13 @@ main .Showcase .Info h1 {
 .footer {
   width: 100%;
   height: 50vh;
-  -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
-  border-top: 3px solid #000000;
+  border-top: 3px solid #707070;
+  margin-top: 15%;
 }
 /* line 745, styling.sass */
 .footer .topFooter {
   height: 30%;
-  color: #C01C1C;
+  color: #FF0000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -995,34 +994,38 @@ main .Showcase .Info h1 {
           justify-content: space-between;
 }
 /* line 756, styling.sass */
+.footer .topFooter a {
+  color: #FF0000;
+}
+/* line 759, styling.sass */
 .footer .topFooter .tf_tekst {
   padding-bottom: 2px;
-  border-bottom: 2px solid #C01C1C;
+  border-bottom: 2px solid #FF0000;
   display: inline;
   margin-bottom: 1vw;
   margin-left: 7vw;
   font-weight: bold;
 }
-/* line 764, styling.sass */
+/* line 768, styling.sass */
 .footer .topFooter .icon_wrapper {
   float: right;
   margin-right: 2vw;
 }
-/* line 768, styling.sass */
+/* line 772, styling.sass */
 .footer .topFooter .icon_wrapper .footer_icon {
   float: right;
 }
-/* line 771, styling.sass */
+/* line 775, styling.sass */
 .footer .topFooter .icon_wrapper .footer_icon img {
   width: 5.5vw;
 }
-/* line 774, styling.sass */
+/* line 778, styling.sass */
 .footer .centerFooter {
   color: #FFFFFF;
-  background: #C01C1C;
+  background: #FF0000;
   height: 90%;
 }
-/* line 779, styling.sass */
+/* line 783, styling.sass */
 .footer .centerFooter .cf_wrapper {
   margin-left: 7vw;
   display: -webkit-box;
@@ -1038,28 +1041,79 @@ main .Showcase .Info h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 787, styling.sass */
+/* line 791, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne {
   margin-right: 0vw;
   width: 25vw;
   margin-top: 4.5vw;
   font-weight: 500;
 }
-/* line 793, styling.sass */
+/* line 797, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne h1 {
   padding-bottom: 4px;
   border-bottom: 5px solid #FFFFFF;
   display: inline;
   font-size: 2em;
 }
-/* line 800, styling.sass */
+/* line 803, styling.sass */
+.footer .centerFooter .cf_wrapper .cf_kolonne h1 a {
+  color: #FFFFFF;
+}
+/* line 806, styling.sass */
+.footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt {
+  margin-top: 1.5vw;
+}
+/* line 810, styling.sass */
+.footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul {
+  list-style: none;
+  text-decoration: none;
+  margin-left: -3vw;
+  font-size: 1.5em;
+}
+/* line 816, styling.sass */
+.footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li {
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 822, styling.sass */
+.footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li div {
+  color: white;
+}
+/* line 826, styling.sass */
+.footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt img {
+  width: 2.5vw;
+  margin-right: 0.5vw;
+}
+/* line 831, styling.sass */
 .footer .bottomFooter {
   height: 10%;
-  color: #C01C1C;
+  color: #FF0000;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-/* line 807, styling.sass */
+/* line 843, styling.sass */
 .shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1076,14 +1130,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
-/* line 822, styling.sass */
+/* line 858, styling.sass */
 .shopBtn:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 827, styling.sass */
+/* line 863, styling.sass */
 .shopBtn:active, .shopBtn:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1091,7 +1145,7 @@ main .Showcase .Info h1 {
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 807, styling.sass */
+  /* line 843, styling.sass */
   .shopBtn {
     display: block;
     font-size: 1.5em;
@@ -1099,11 +1153,11 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 839, styling.sass */
+/* line 875, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 842, styling.sass */
+/* line 878, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -1120,30 +1174,30 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 842, styling.sass */
+  /* line 878, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 842, styling.sass */
+  /* line 878, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 885, styling.sass */
+/* line 921, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 891, styling.sass */
+/* line 927, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 894, styling.sass */
+/* line 930, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
@@ -1165,7 +1219,7 @@ main .Showcase .Info h1 {
     max-width: 15vw;
   }
 }
-/* line 903, styling.sass */
+/* line 939, styling.sass */
 .Supreme::before {
   content: "Supreme";
   text-transform: capitalize;
@@ -1183,19 +1237,19 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 903, styling.sass */
+  /* line 939, styling.sass */
   .Supreme::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 903, styling.sass */
+  /* line 939, styling.sass */
   .Supreme::before {
     font-size: 16px;
   }
 }
 
-/* line 927, styling.sass */
+/* line 963, styling.sass */
 .kategori_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1212,7 +1266,7 @@ main .Showcase .Info h1 {
   margin-top: 7%;
   background-color: inherit;
 }
-/* line 936, styling.sass */
+/* line 972, styling.sass */
 .kategori_wrapper .k_b {
   background-color: inherit;
   width: auto;
@@ -1225,12 +1279,12 @@ main .Showcase .Info h1 {
   transition: all 0.25s ease;
 }
 @media only screen and (max-width: 890px) {
-  /* line 936, styling.sass */
+  /* line 972, styling.sass */
   .kategori_wrapper .k_b {
     margin: 3vw;
   }
 }
-/* line 951, styling.sass */
+/* line 987, styling.sass */
 .kategori_wrapper .k_b .k_b_innhold {
   display: none;
   position: relative;
@@ -1249,46 +1303,46 @@ main .Showcase .Info h1 {
   pointer-events: none;
 }
 @media only screen and (max-width: 890px) {
-  /* line 951, styling.sass */
+  /* line 987, styling.sass */
   .kategori_wrapper .k_b .k_b_innhold {
     font-size: 6em !important;
     top: 45% !important;
   }
 }
 @media only screen and (max-width: 626px) {
-  /* line 951, styling.sass */
+  /* line 987, styling.sass */
   .kategori_wrapper .k_b .k_b_innhold {
     font-size: 4em !important;
     top: 45% !important;
   }
 }
 @media only screen and (max-width: 1200px) {
-  /* line 951, styling.sass */
+  /* line 987, styling.sass */
   .kategori_wrapper .k_b .k_b_innhold {
     font-size: 4em;
     top: 40%;
   }
 }
-/* line 984, styling.sass */
+/* line 1020, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_innhold {
   display: block;
 }
-/* line 987, styling.sass */
+/* line 1023, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_wrapper {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 992, styling.sass */
+/* line 1028, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper {
   padding: 0.6em;
   z-index: 1;
 }
-/* line 997, styling.sass */
+/* line 1033, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper:hover {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 1001, styling.sass */
+/* line 1037, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1300,21 +1354,21 @@ main .Showcase .Info h1 {
   height: 19vw;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 1001, styling.sass */
+  /* line 1037, styling.sass */
   .kategori_wrapper .k_b .k_b_wrapper img {
     width: 40vw;
     height: 47vw;
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 1001, styling.sass */
+  /* line 1037, styling.sass */
   .kategori_wrapper .k_b .k_b_wrapper img {
     width: 80vw;
     height: 95vw;
   }
 }
 
-/* line 1028, styling.sass */
+/* line 1064, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -1328,7 +1382,7 @@ main .Showcase .Info h1 {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 1036, styling.sass */
+/* line 1072, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1343,7 +1397,7 @@ main .Showcase .Info h1 {
   position: absolute;
   left: 22%;
 }
-/* line 1046, styling.sass */
+/* line 1082, styling.sass */
 .produktside .venstreside .Bilder {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1360,14 +1414,14 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1054, styling.sass */
+/* line 1090, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
   width: 55%;
   border: 3px solid #707070;
   padding: 3vh 0vh 0.5vh 0vh;
   display: block;
 }
-/* line 1061, styling.sass */
+/* line 1097, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   -ms-flex-line-pack: start;
@@ -1387,7 +1441,7 @@ main .Showcase .Info h1 {
           justify-content: space-between;
   width: 55%;
 }
-/* line 1070, styling.sass */
+/* line 1106, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   width: 8vw;
   -o-object-fit: cover;
@@ -1401,7 +1455,7 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0.9em 0 0.3em 0;
 }
-/* line 1083, styling.sass */
+/* line 1119, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1416,7 +1470,7 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 1091, styling.sass */
+/* line 1127, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
@@ -1424,20 +1478,20 @@ main .Showcase .Info h1 {
   font-family: inherit;
 }
 
-/* line 1097, styling.sass */
+/* line 1133, styling.sass */
 .rate {
   float: left;
   height: 46px;
   padding: 0 10px;
 }
 
-/* line 1102, styling.sass */
+/* line 1138, styling.sass */
 .rate:not(:checked) > input {
   position: absolute;
   top: -9999px;
 }
 
-/* line 1106, styling.sass */
+/* line 1142, styling.sass */
 .rate:not(:checked) > label {
   float: right;
   width: 1em;
@@ -1448,27 +1502,27 @@ main .Showcase .Info h1 {
   color: #ccc;
 }
 
-/* line 1115, styling.sass */
+/* line 1151, styling.sass */
 .rate:not(:checked) > label:before {
   content: "★ ";
 }
 
-/* line 1118, styling.sass */
+/* line 1154, styling.sass */
 .rate > input:checked ~ label {
   color: #ffc700;
 }
 
-/* line 1121, styling.sass */
+/* line 1157, styling.sass */
 .rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label {
   color: #deb217;
 }
 
-/* line 1124, styling.sass */
+/* line 1160, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
 
-/* line 1131, styling.sass */
+/* line 1167, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1479,7 +1533,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1137, styling.sass */
+/* line 1173, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -1491,7 +1545,7 @@ main .Showcase .Info h1 {
   text-align: center;
   font-weight: bold;
 }
-/* line 1148, styling.sass */
+/* line 1184, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
