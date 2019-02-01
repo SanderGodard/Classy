@@ -787,10 +787,12 @@ main {
 main .mobsquad {
   display: none;
   color: #999999;
-  font-size: 2em;
+  font-size: 2.2em;
   border-bottom: 1px solid #999999;
   padding-bottom: 1px;
   margin-left: 2vmax;
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 890px) {
   /* line 627, styling.sass */
@@ -798,12 +800,12 @@ main .mobsquad {
     display: inline-block;
   }
 }
-/* line 639, styling.sass */
+/* line 642, styling.sass */
 main div.Showcase.New::before {
   display: none;
 }
 @media only screen and (max-width: 650px) {
-  /* line 639, styling.sass */
+  /* line 642, styling.sass */
   main div.Showcase.New::before {
     display: block;
     font-size: 2em;
@@ -813,12 +815,12 @@ main div.Showcase.New::before {
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 639, styling.sass */
+  /* line 642, styling.sass */
   main div.Showcase.New::before {
     font-size: 1.3em;
   }
 }
-/* line 651, styling.sass */
+/* line 654, styling.sass */
 main .Showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -837,25 +839,25 @@ main .Showcase {
   height: calc(100vh - (8vmax + (1.5em * 1.25) + 5vh));
 }
 @media only screen and (max-width: 890px) {
-  /* line 651, styling.sass */
+  /* line 654, styling.sass */
   main .Showcase {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: auto;
   }
 }
-/* line 664, styling.sass */
+/* line 667, styling.sass */
 main .Showcase img {
   cursor: pointer;
   bottom: 0;
   height: 100%;
 }
-/* line 671, styling.sass */
+/* line 674, styling.sass */
 main .Showcase img .New::before {
   display: none;
 }
 @media only screen and (max-width: 890px) {
-  /* line 664, styling.sass */
+  /* line 667, styling.sass */
   main .Showcase img {
     width: 60%;
     height: auto;
@@ -870,7 +872,7 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 664, styling.sass */
+  /* line 667, styling.sass */
   main .Showcase img {
     margin: auto auto;
     -webkit-box-ordinal-group: 2;
@@ -879,19 +881,19 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 664, styling.sass */
+  /* line 667, styling.sass */
   main .Showcase img {
     width: 90%;
     margin-left: 15%;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 664, styling.sass */
+  /* line 667, styling.sass */
   main .Showcase img {
     width: 100%;
   }
 }
-/* line 695, styling.sass */
+/* line 698, styling.sass */
 main .Showcase .Info {
   margin-top: calc((100vh - (8vmax + (1.5em * 1.25) + 5vh)) / 2);
   -webkit-transform: translate(0, -50%);
@@ -899,14 +901,14 @@ main .Showcase .Info {
   width: 45%;
   text-align: left;
 }
-/* line 704, styling.sass */
+/* line 707, styling.sass */
 main .Showcase .Info h1 {
   font-size: 3.75em;
   color: #000;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 650px) {
-  /* line 704, styling.sass */
+  /* line 707, styling.sass */
   main .Showcase .Info h1 {
     font-size: 3em;
     text-align: center;
@@ -914,13 +916,13 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 704, styling.sass */
+  /* line 707, styling.sass */
   main .Showcase .Info h1 {
     font-size: 2.75em;
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 695, styling.sass */
+  /* line 698, styling.sass */
   main .Showcase .Info {
     width: 90%;
     -webkit-box-ordinal-group: 2;
@@ -932,19 +934,19 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 695, styling.sass */
+  /* line 698, styling.sass */
   main .Showcase .Info {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 726, styling.sass */
+  /* line 729, styling.sass */
   main .Showcase .Info .New::before {
     display: none;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 695, styling.sass */
+  /* line 698, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -953,7 +955,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 426px) {
-  /* line 695, styling.sass */
+  /* line 698, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -961,7 +963,7 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 736, styling.sass */
+/* line 739, styling.sass */
 .img-magnifier-glass {
   position: absolute;
   border: 1px solid #999999;
@@ -972,13 +974,13 @@ main .Showcase .Info h1 {
   z-index: 5;
 }
 
-/* line 745, styling.sass */
+/* line 748, styling.sass */
 .Bilder {
   overflow: none;
   position: relative;
 }
 
-/* line 751, styling.sass */
+/* line 754, styling.sass */
 .footer {
   width: 100%;
   height: 50vh;
@@ -986,7 +988,7 @@ main .Showcase .Info h1 {
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
   border-top: 3px solid #000000;
 }
-/* line 757, styling.sass */
+/* line 760, styling.sass */
 .footer .topFooter {
   height: 30%;
   color: #C01C1C;
@@ -1008,7 +1010,7 @@ main .Showcase .Info h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-/* line 768, styling.sass */
+/* line 771, styling.sass */
 .footer .topFooter .tf_tekst {
   padding-bottom: 2px;
   border-bottom: 2px solid #C01C1C;
@@ -1017,26 +1019,26 @@ main .Showcase .Info h1 {
   margin-left: 7vw;
   font-weight: bold;
 }
-/* line 776, styling.sass */
+/* line 779, styling.sass */
 .footer .topFooter .icon_wrapper {
   float: right;
   margin-right: 2vw;
 }
-/* line 780, styling.sass */
+/* line 783, styling.sass */
 .footer .topFooter .icon_wrapper .footer_icon {
   float: right;
 }
-/* line 783, styling.sass */
+/* line 786, styling.sass */
 .footer .topFooter .icon_wrapper .footer_icon img {
   width: 5.5vw;
 }
-/* line 786, styling.sass */
+/* line 789, styling.sass */
 .footer .centerFooter {
   color: #FFFFFF;
   background: #C01C1C;
   height: 90%;
 }
-/* line 791, styling.sass */
+/* line 794, styling.sass */
 .footer .centerFooter .cf_wrapper {
   margin-left: 7vw;
   display: -webkit-box;
@@ -1052,28 +1054,28 @@ main .Showcase .Info h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 799, styling.sass */
+/* line 802, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne {
   margin-right: 0vw;
   width: 25vw;
   margin-top: 4.5vw;
   font-weight: 500;
 }
-/* line 805, styling.sass */
+/* line 808, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne h1 {
   padding-bottom: 4px;
   border-bottom: 5px solid #FFFFFF;
   display: inline;
   font-size: 2em;
 }
-/* line 812, styling.sass */
+/* line 815, styling.sass */
 .footer .bottomFooter {
   height: 10%;
   color: #C01C1C;
   text-align: center;
 }
 
-/* line 819, styling.sass */
+/* line 822, styling.sass */
 .shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1090,14 +1092,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
-/* line 834, styling.sass */
+/* line 837, styling.sass */
 .shopBtn:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 839, styling.sass */
+/* line 842, styling.sass */
 .shopBtn:active, .shopBtn:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1105,7 +1107,7 @@ main .Showcase .Info h1 {
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 819, styling.sass */
+  /* line 822, styling.sass */
   .shopBtn {
     display: block;
     font-size: 1.5em;
@@ -1113,11 +1115,11 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 851, styling.sass */
+/* line 854, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 854, styling.sass */
+/* line 857, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -1134,30 +1136,30 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 854, styling.sass */
+  /* line 857, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 854, styling.sass */
+  /* line 857, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 897, styling.sass */
+/* line 900, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 903, styling.sass */
+/* line 906, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 906, styling.sass */
+/* line 909, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
@@ -1179,7 +1181,7 @@ main .Showcase .Info h1 {
     max-width: 15vw;
   }
 }
-/* line 915, styling.sass */
+/* line 918, styling.sass */
 .Supreme::before {
   content: "Supreme";
   text-transform: capitalize;
@@ -1197,19 +1199,19 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 915, styling.sass */
+  /* line 918, styling.sass */
   .Supreme::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 915, styling.sass */
+  /* line 918, styling.sass */
   .Supreme::before {
     font-size: 16px;
   }
 }
 
-/* line 939, styling.sass */
+/* line 942, styling.sass */
 .kategori_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1226,10 +1228,10 @@ main .Showcase .Info h1 {
   margin-top: 7%;
   background-color: inherit;
 }
-/* line 948, styling.sass */
+/* line 951, styling.sass */
 .kategori_wrapper .k_b {
   background-color: inherit;
-  width: auto;
+  width: 70%;
   height: auto;
   margin: 1.3vw;
   display: block;
@@ -1239,12 +1241,12 @@ main .Showcase .Info h1 {
   transition: all 0.25s ease;
 }
 @media only screen and (max-width: 890px) {
-  /* line 948, styling.sass */
+  /* line 951, styling.sass */
   .kategori_wrapper .k_b {
     margin: 3vw;
   }
 }
-/* line 963, styling.sass */
+/* line 966, styling.sass */
 .kategori_wrapper .k_b .k_b_innhold {
   display: none;
   position: relative;
@@ -1261,48 +1263,50 @@ main .Showcase .Info h1 {
   transition: all 0.25s ease;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
   pointer-events: none;
+  height: 100%;
+  width: 100%;
 }
 @media only screen and (max-width: 890px) {
-  /* line 963, styling.sass */
+  /* line 966, styling.sass */
   .kategori_wrapper .k_b .k_b_innhold {
     font-size: 6em !important;
     top: 45% !important;
   }
 }
 @media only screen and (max-width: 626px) {
-  /* line 963, styling.sass */
+  /* line 966, styling.sass */
   .kategori_wrapper .k_b .k_b_innhold {
     font-size: 4em !important;
     top: 45% !important;
   }
 }
 @media only screen and (max-width: 1200px) {
-  /* line 963, styling.sass */
+  /* line 966, styling.sass */
   .kategori_wrapper .k_b .k_b_innhold {
     font-size: 4em;
     top: 40%;
   }
 }
-/* line 996, styling.sass */
+/* line 999, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_innhold {
   display: block;
 }
-/* line 999, styling.sass */
+/* line 1002, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_wrapper {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 1004, styling.sass */
+/* line 1007, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper {
   padding: 0.6em;
   z-index: 1;
 }
-/* line 1009, styling.sass */
+/* line 1012, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper:hover {
   -webkit-filter: blur(6px);
           filter: blur(6px);
 }
-/* line 1013, styling.sass */
+/* line 1016, styling.sass */
 .kategori_wrapper .k_b .k_b_wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1310,25 +1314,11 @@ main .Showcase .Info h1 {
   top: 0;
   left: 0;
   right: 0;
-  width: 17vw;
-  height: 19vw;
-}
-@media only screen and (max-width: 1200px) {
-  /* line 1013, styling.sass */
-  .kategori_wrapper .k_b .k_b_wrapper img {
-    width: 40vw;
-    height: 47vw;
-  }
-}
-@media only screen and (max-width: 890px) {
-  /* line 1013, styling.sass */
-  .kategori_wrapper .k_b .k_b_wrapper img {
-    width: 80vw;
-    height: 95vw;
-  }
+  width: 100%;
+  height: 100%;
 }
 
-/* line 1040, styling.sass */
+/* line 1043, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -1342,7 +1332,7 @@ main .Showcase .Info h1 {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 1048, styling.sass */
+/* line 1051, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1357,7 +1347,7 @@ main .Showcase .Info h1 {
   position: absolute;
   left: 26%;
 }
-/* line 1058, styling.sass */
+/* line 1061, styling.sass */
 .produktside .venstreside .Bilder {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1374,14 +1364,14 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1067, styling.sass */
+/* line 1070, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
   width: 50%;
   border: 3px solid #707070;
   padding: 3vh 0vh 0.5vh 0vh;
   display: block;
 }
-/* line 1074, styling.sass */
+/* line 1077, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   -ms-flex-line-pack: start;
@@ -1402,7 +1392,7 @@ main .Showcase .Info h1 {
   width: 50%;
   padding: 0 0 1px 0;
 }
-/* line 1084, styling.sass */
+/* line 1087, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   width: 7vw;
   -o-object-fit: cover;
@@ -1416,7 +1406,7 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0 0 0 0;
 }
-/* line 1097, styling.sass */
+/* line 1100, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1431,21 +1421,21 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 1105, styling.sass */
+/* line 1108, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
   text-transform: capitalize;
   font-family: inherit;
 }
-/* line 1111, styling.sass */
+/* line 1114, styling.sass */
 .produktside .hoyreside .str {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1em 0em 2em 0;
 }
-/* line 1115, styling.sass */
+/* line 1118, styling.sass */
 .produktside .hoyreside .str a {
   margin-left: 5px;
   display: block;
@@ -1463,14 +1453,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   padding: 0.25em 0 0 0;
 }
-/* line 1129, styling.sass */
+/* line 1132, styling.sass */
 .produktside .hoyreside .farge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 0 2em 0;
 }
-/* line 1133, styling.sass */
+/* line 1136, styling.sass */
 .produktside .hoyreside .farge a {
   margin-left: 5px;
   display: block;
@@ -1487,37 +1477,37 @@ main .Showcase .Info h1 {
   font-size: 2vh;
   font-weight: bold;
 }
-/* line 1146, styling.sass */
+/* line 1149, styling.sass */
 .produktside .hoyreside #farge1 {
   background-color: #E0AA1A;
 }
-/* line 1149, styling.sass */
+/* line 1152, styling.sass */
 .produktside .hoyreside #farge2 {
   background-color: #0097C8;
 }
-/* line 1152, styling.sass */
+/* line 1155, styling.sass */
 .produktside .hoyreside #farge3 {
   background-color: #992319;
 }
-/* line 1155, styling.sass */
+/* line 1158, styling.sass */
 .produktside .hoyreside #farge4 {
   background-color: #004130;
 }
-/* line 1158, styling.sass */
+/* line 1161, styling.sass */
 .produktside .hoyreside #farge5 {
   background-color: #CBCBCB;
 }
-/* line 1161, styling.sass */
+/* line 1164, styling.sass */
 .produktside .hoyreside #farge6 {
   background-color: #171717;
 }
 
-/* line 1164, styling.sass */
+/* line 1167, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
 
-/* line 1171, styling.sass */
+/* line 1174, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1528,7 +1518,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1177, styling.sass */
+/* line 1180, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -1541,14 +1531,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1177, styling.sass */
+  /* line 1180, styling.sass */
   .Kontakt h1 {
     font-size: 1.5em;
     padding-bottom: 1.5vh;
     margin-bottom: 1.5vh;
   }
 }
-/* line 1194, styling.sass */
+/* line 1197, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
@@ -1558,18 +1548,18 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 4vh;
 }
-/* line 1203, styling.sass */
+/* line 1206, styling.sass */
 .Kontakt div a {
   border-bottom: 1px dotted #000;
   padding-bottom: 0px;
   position: relative;
 }
-/* line 1208, styling.sass */
+/* line 1211, styling.sass */
 .Kontakt div a:hover {
   border-bottom: 1px solid #000;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1194, styling.sass */
+  /* line 1197, styling.sass */
   .Kontakt div {
     width: 90%;
     display: block;
@@ -1578,7 +1568,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 1171, styling.sass */
+  /* line 1174, styling.sass */
   .Kontakt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
