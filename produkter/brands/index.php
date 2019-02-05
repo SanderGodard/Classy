@@ -2,7 +2,7 @@
 <html lang="NB" dir="ltr">
 <head>
   <?php
-    $title = "HypeIT | Produkter";
+    $title = "HypeIT | Produkter - Brands";
     include "../../elements/head.php";
    ?>
 </head>
@@ -21,38 +21,30 @@
 
       <a href="#" class="k_b">
         <div class="k_b_innhold">
-          Sko
+          Louis Vuitton
         </div>
-        <div class="k_b_wrapper">
-          <img src="../../images/sko.png" alt="">
-        </div>
+        <img src="../../images/lv.jpg" alt="">
       </a>
 
       <a href="#" class="k_b">
         <div class="k_b_innhold">
-          Bukse
+          Stone Island
         </div>
-        <div class="k_b_wrapper">
-          <img src="../../images/bukse.png" alt="">
-        </div>
-      </a>
-
-      <a href="menn/gensere/placeholder.php" class="k_b">
-        <div class="k_b_innhold">
-          Gensere
-        </div>
-        <div class="k_b_wrapper">
-          <img src="../../images/Genser.png" alt="">
-        </div>
+        <img src="../../images/stoneisland.jpg" alt="">
       </a>
 
       <a href="#" class="k_b">
         <div class="k_b_innhold">
-          T-Skjorter
+          Supreme
         </div>
-        <div class="k_b_wrapper">
-          <img src="../../images/t-skjorte.png" alt="">
+        <img src="../../images/supreme.jpg" alt="">
+      </a>
+
+      <a href="#" class="k_b">
+        <div class="k_b_innhold">
+          Gucci
         </div>
+        <img src="../../images/gucci.jpg" alt="">
       </a>
 
     </div>

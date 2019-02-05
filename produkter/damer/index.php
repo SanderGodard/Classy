@@ -2,7 +2,7 @@
 <html lang="NB" dir="ltr">
 <head>
   <?php
-    $title = "HypeIT | Produkter";
+    $title = "HypeIT | Produkter - Damer";
     include "../../elements/head.php";
    ?>
 </head>

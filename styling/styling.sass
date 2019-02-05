@@ -627,10 +627,13 @@ main
   .mobsquad
     display: none
     color: $ThirdColor
-    font-size: 2em
+    font-size: 2.2em
     border-bottom: 1px solid $ThirdColor
     padding-bottom: 1px
     margin-left: 2vmax
+    font-weight: lighter
+    text-transform: uppercase
+
 
     @media #{$Mobile}
       display: inline-block
@@ -756,7 +759,7 @@ main
 
   .topFooter
     height: 30%
-    color: $MainColor
+    color: $Black
     display: flex
     flex-direction: row
     align-items: center
@@ -766,11 +769,11 @@ main
     justify-content: space-between
 
     a
-      color: $MainColor
+      color: $Black
 
     .tf_tekst
       padding-bottom: 2px
-      border-bottom: 2px solid $MainColor
+      border-bottom: 2px solid $Black
       display: inline
       margin-bottom: 1vw
       margin-left: 7vw
@@ -789,7 +792,7 @@ main
 
   .centerFooter
     color: #FFFFFF
-    background: $MainColor
+    background: $Black
     height: 90%
 
     .cf_wrapper
@@ -842,7 +845,7 @@ main
 
   .bottomFooter
     height: 10%
-    color: $MainColor
+    color: $Black
     text-align: center
     display: flex
     flex-direction: row
@@ -983,89 +986,79 @@ main
 
   .k_b
     background-color: inherit
-    width: auto
-    height: auto
+    width: 15vw
+    height: 15vw
     margin: 1.3vw
     display: block
     border: 3px solid #707070
     z-index: 0
+    position: relative
     transition: $Medium
-    //overflow: hidden
+    overflow: hidden
 
-    @media only screen and (max-width: 890px)
+    @media #{$Mobile}
       margin: 3vw
+      width: 40vw
+      height: 40vw
+
+    @media #{$MobileXXL}
+      margin: 3vw
+      width: 70vw
+      height: 70vw
 
 
     .k_b_innhold
       display: none
-      position: relative
+      position: absolute
       color: white
-      font-size: 3em
+      font-size: 3vmax
       text-transform: uppercase
       font-weight: bold
       text-align: center
       z-index: 2
-      top: 37%
-      height: 0px
+      //margin-top: 50%
+      //transform: translate(0%, -50%)
       z-index: 1
       transition: $Medium
-      text-shadow: 2px 2px rgba(0,0,0,0.4)
+      text-shadow: 2px 2px rgba(0,0,0,0.3)
       pointer-events: none
       //overflow: hidden
-      //height: 100%
-      //width: 100%
+      height: 100%
+      width: 100%
+      justify-content: center
+      align-items: center
+      align-content: center
 
-      @media only screen and (max-width: 890px)
-        font-size: 6em !important
-        top: 45% !important
-
-      @media only screen and (max-width: 626px)
-        font-size: 4em !important
-        top: 45% !important
-
-      @media only screen and (max-width: 1200px)
-        font-size: 4em
-        top: 40%
+      @media #{$Mobile}
+        font-size: 10vmax
 
 
     &:hover
       .k_b_innhold
-        display: block
+        display: flex
+        background-color: rgba(50,50,50,.2)
 
-      .k_b_wrapper
-        filter: blur(6px)
+      //.k_b img
+        filter: blur(3px)
 
 
+    img
+      filter: grayscale(1)
+      object-fit: cover
+      bottom: -3px
+      top: -3px
+      left: -3px
+      right: -3px
+      width: 100%
+      height: 100%
+      position: relative
+      display: block
 
-    .k_b_wrapper
-      padding: 0.6em
-      z-index: 1
-      //margin: 0.2em
-
-      &:hover
-        filter: blur(6px)
-        //background-color: rgba(255, 255, 255, 1)
-
+    &:hover
       img
-        object-fit: cover
-        bottom: 0
-        top: 0
-        left: 0
-        right: 0
-        width: 17vw
-        height: 19vw
-
-        @media only screen and (max-width: 1200px)
-          width: 40vw
-          height: 47vw
-
-        @media only screen and (max-width: 890px)
-          width: 80vw
-          height: 95vw
-
-
-
-
+        filter: blur(3px)
+        // eller
+        // filter: blur(3px) grayscale(1)
 
 
 
@@ -1077,17 +1070,17 @@ main
   width: 100%
   display: flex
   flex-direction: row
-  justify-content: flex-end
+  justify-content: space-around
+  align-content: center
 
-  //align-items: center
 
   .venstreside
     display: flex
     flex-direction: column
-    width: 45%
+    width: 25%
     align-content: flex-end
-    position: absolute
-    left: 26%
+    //position: absolute
+    margin-left: 20%
 
     //flex-grow: 1
 
@@ -1102,7 +1095,7 @@ main
 
       .StortBilde
         //margin: 3%
-        width: 50%
+        width: 100%
         border: 3px solid #707070
         padding: 3vh 0vh 0.5vh 0vh
         display: block
@@ -1114,17 +1107,18 @@ main
         display: flex
         flex-direction: row
         justify-content: space-between
-        width: 50%
+        width: 100%
         padding: 0 0 1px 0
 
         img
-          width: 7vw
+          cursor: pointer
+          width: 30%
           object-fit: cover
           bottom: 0
           top: 0
           left: 0
           right: 0
-          height: 8vw
+          height: 30%
           border: 3px solid #707070
           margin-top: 2%
           padding: 0 0 0 0
@@ -1133,7 +1127,7 @@ main
   .hoyreside
     display: flex
     flex-direction: column
-    width: 50%
+    width: 45%
     align-items: flex-start
     padding-top: 1.25%
     //flex-grow: 1
@@ -1149,6 +1143,7 @@ main
       padding: 1em 0em 2em 0
 
       a
+        cursor: pointer
         margin-left: 5px
         display: block
         flex-direction: row
@@ -1167,6 +1162,7 @@ main
       padding: 0 0 2em 0
 
       a
+        cursor: pointer
         margin-left: 5px
         display: block
         flex-direction: row
@@ -1353,3 +1349,8 @@ main
     text-transform: uppercase
     text-align: center
     font-size: 2.5em
+  div
+
+    img
+      margin-top: 5vh
+      width: 20%
