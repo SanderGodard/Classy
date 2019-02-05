@@ -1693,7 +1693,7 @@ main .Showcase .Info h1 {
   line-height: 1.6;
 }
 
-/* line 1296, styling.sass */
+/* line 1297, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1704,7 +1704,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1302, styling.sass */
+/* line 1303, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -1717,14 +1717,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1302, styling.sass */
+  /* line 1303, styling.sass */
   .Kontakt h1 {
     font-size: 1.5em;
     padding-bottom: 1.5vh;
     margin-bottom: 1.5vh;
   }
 }
-/* line 1319, styling.sass */
+/* line 1320, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
@@ -1734,18 +1734,18 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 4vh;
 }
-/* line 1328, styling.sass */
+/* line 1329, styling.sass */
 .Kontakt div a {
   border-bottom: 1px dotted #000;
   padding-bottom: 0px;
   position: relative;
 }
-/* line 1333, styling.sass */
+/* line 1334, styling.sass */
 .Kontakt div a:hover {
   border-bottom: 1px solid #000;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1319, styling.sass */
+  /* line 1320, styling.sass */
   .Kontakt div {
     width: 90%;
     display: block;
@@ -1754,7 +1754,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 1296, styling.sass */
+  /* line 1297, styling.sass */
   .Kontakt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1766,11 +1766,11 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 1348, styling.sass */
+/* line 1349, styling.sass */
 .anbefalte {
   margin-top: 30vh;
 }
-/* line 1351, styling.sass */
+/* line 1352, styling.sass */
 .anbefalte h1 {
   text-transform: uppercase;
   text-align: center;
