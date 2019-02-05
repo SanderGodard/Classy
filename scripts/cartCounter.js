@@ -90,9 +90,9 @@ function createEasterEgg() {
   easterEgg.appendChild(exit);
   exit.addEventListener("click", function() {
     easterEgg.style.display = "none";
-    document.getElementsByTagName("nav")[0].style.filter = "blur(0)";
-    document.getElementsByTagName("main")[0].style.filter = "blur(0)";
-    document.getElementsByTagName("footer")[0].style.filter = "blur(0)";
+    document.getElementsByTagName("nav")[0].style.filter = "";
+    document.getElementsByTagName("main")[0].style.filter = "";
+    document.getElementsByTagName("footer")[0].style.filter = "";
     blurDiv.style.display = "none";
   });
 
