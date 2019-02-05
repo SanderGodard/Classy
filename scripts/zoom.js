@@ -1,20 +1,25 @@
-var zoomImg = document.getElementById('storBilde');
 
-var bigImg = document.createElement('img');
-bigImg.src = img.src;
-bigImg.id = "bigImg";
+if(document.getElementById('storBilde') != null) {
 
-var style = bigImg.style;
+  var zoomImg = document.getElementById('storBilde');
 
-style.position = "fixed";
-style.height = "100%";
-//style.width = "30%";
-style.top = "0";
-style.bottom = "0";
-style.left = "20%";
-style.right = "20%";
+  var bigImg = document.createElement('img');
+  bigImg.src = img.src;
+  bigImg.id = "bigImg";
 
-zoomImg.addEventListener("click", zoom);
+  var style = bigImg.style;
+
+  style.position = "fixed";
+  style.height = "100%";
+  //style.width = "30%";
+  style.top = "0";
+  style.bottom = "0";
+  style.left = "20%";
+  style.right = "20%";
+
+  zoomImg.addEventListener("click", zoom);
+
+}
 
 
 function zoom() {

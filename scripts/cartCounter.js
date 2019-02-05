@@ -51,12 +51,13 @@ function cartCounter(x) {
 
 function createEasterEgg() {
   var exit = document.createElement("div");
-  var exitText = document.createTextNode("x");
+  var exitText = document.createTextNode("X");
   exit.appendChild(exitText);
   exit.style.position = "absolute";
   exit.style.top = "1%";
-  exit.style.right = "3%";
+  exit.style.right = "1%";
   exit.style.cursor = "pointer";
+  exit.style.fontWeight = "bold";
 
   var logo = document.createElement("img");
   logo.src = "/HypeIT/images/logo.png";
@@ -88,20 +89,25 @@ function createEasterEgg() {
   easterEgg.appendChild(document.createElement("br"));
   easterEgg.appendChild(document.createTextNode("Best regards the HypeIT team"));
   easterEgg.appendChild(exit);
-  exit.addEventListener("click", function() {
+  exit.addEventListener("click", closeEasterEgg);
+
+
+  function closeEasterEgg(){
+
     document.body.removeChild(easterEgg);
     document.getElementsByTagName("nav")[0].style.filter = "";
     document.getElementsByTagName("main")[0].style.filter = "";
     document.getElementsByTagName("footer")[0].style.filter = "";
     document.body.removeChild(blurDiv);
-  });
+
+  }
 
   var style = easterEgg.style;
   style.fontFamily = "Calibri";
   style.textShadow = "1px 1px 1px rgba(0,0,0,0.3)";
   style.width = "40%";
   style.height = "40%";
-  style.borderRadius = "2vw";
+  style.borderRadius = "5px";
   style.background = "white";
   style.boxShadow = "1vh 1vh 2vw rgba(0,0,0,0.4)";
   style.position = "fixed";

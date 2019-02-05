@@ -1,19 +1,23 @@
-var img = document.getElementById('frontImg');
-var text = document.getElementById('frontInfo').children[0];
-var header = document.getElementById('frontInfo');
-var btn = document.getElementById('frontBtn');
-var oTxt = text.innerHTML;
-var oSrc = img.src;
+if(document.getElementById('frontImg') != null) {
 
-img.style.transition = "all 0.7s";
-text.style.transition = "all 0.7s";
-btn.style.transition = "all 0.7s";
-header.style.transition = "all 0.7s";
+  var img = document.getElementById('frontImg');
+  var text = document.getElementById('frontInfo').children[0];
+  var header = document.getElementById('frontInfo');
+  var btn = document.getElementById('frontBtn');
+  var oTxt = text.innerHTML;
+  var oSrc = img.src;
 
-nTxt = "Stone Island LOOM WOVEN DOWN";
-nSrc = "/HypeIT/images/stoneisland.png";
+  img.style.transition = "all 0.7s";
+  text.style.transition = "all 0.7s";
+  btn.style.transition = "all 0.7s";
+  header.style.transition = "all 0.7s";
 
-interval = setInterval(animation, 11000);
+  nTxt = "Stone Island LOOM WOVEN DOWN";
+  nSrc = "/HypeIT/images/stoneisland.png";
+
+  interval = setInterval(animation, 11000);
+
+}
 
 function animation() {
   img.style.opacity = 0;
