@@ -103,14 +103,14 @@ a
 
 ::-webkit-scrollbar
   width: 5px
-  margin: 2px 2px 2px -7px
+  //margin: 2px 2px 2px -10px
   right: 0
-  border-radius: 2.5px
+
 
 
 ::-webkit-scrollbar-thumb
   transition: all 0.3s ease-in-out
-  background: $ThirdColor
+  background: $MainColor
   border-radius: 2.5px
 
   &:hover
@@ -126,32 +126,7 @@ a
 
 
 nav
-  padding: 4vmax 4vmax
-  width: 100%
-  height: calc(8vmax + (1.5em * 1.25))
-  display: flex
-  flex-wrap: nowrap
-  justify-content: space-between
-  align-content: stretch
-  text-transform: uppercase
-  margin: 0 0 5vh
-
-  .Logo
-    a
-      img
-        width: 200px
-        margin: -4px 0 0
-
-  .Material
-    text-transform: lowercase !important
-    font-size: 1.6em
-
-  .RightNav
-    align-self: flex-end
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    justify-content: flex-end
+  margin: 0 0 5vh 0
 
   a
     transition: $Fast
@@ -162,63 +137,507 @@ nav
     border-bottom: 0px solid $SecondaryColor
     position: relative
 
-    &:hover
-      transition: $Fast
-      border-bottom: 3px solid $Black
-      color: $Black
-      padding-bottom: 2px
+  .searchDiv
+    display: inline
+    position: relative
 
-  .Nav
-    display: inline-block
-
-    span
-      pointer-events: none
-      background-color: $MainColor
-      height: 1.8em
-      width: 1.8em
-      border-radius: .9em
-      color: $WhiteHover
+    .search
+      display: none
       position: relative
-      margin: 1em 0 0 calc(-1vw - 1.8em)
-      font-size: .6em
-      display: inline-block
-      text-align: center
-      padding: .28em .0em
+
+      #searchField
+        transition: $Slow
+        padding: 3px .5em 0px
+        vertical-align: middle
+        font-size: 1.5em
+        //margin-top: -2em
+        border: 0px
+        max-width: 5vw
+        animation: 0.4s ease expand forwards
+        position: relative
+        //width: 0px
+        //width: 350px
+        border-bottom: 3px solid $SecondaryColor
+        //border-radius: 1em 1em 0 0
+        box-sizing: content-box
+
+        &:focus, &:active
+          outline: none
+          transition: $Slow
+          border-color: $Black
+
+        &:hover
+          transition: $Slow
+          //transform: scale(1.07)
+          border-color: $Black
+
+      .results
+        position: absolute
+        display: flex
+        flex-direction: column
+        background: $White
+        box-shadow: $Shadow
+        color: $Black
+        font-size: 1em
+        //padding: .2em
+        //border-radius: 0 0 1em 1em
+        width: 100%
+        //top: 2.5em
+        left: 0%
+
+        .activeResult
+          background: blue
+
+        div
+          a
+            display: block
+            transition: $Fast
+            margin: .1em .5em
+            font-weight: lighter
+            //display: none
+            text-transform: capitalize
+            font-weight: 300
+
+            &:hover
+              transition: $Fast
+              border: 0px
+              font-weight: 400
 
     @media #{$Mobile}
       display: none
 
-  .MobileNav
+
+  #alertBox
     display: none
-    align-self: flex-end
+    width: 300px
+    height: 250px
+    background-color: $White
+    box-shadow: $BigShadow
+    border-radius: .2em
+    position: absolute
+    margin-left: calc(50vw - 150px)
+    font-weight: normal
+    padding: 1em
+    z-index: 5
+    right: 4vmax
+    top: 8vmax
+    font-size: 1.1em
 
     a
-      font-weight: 100
-      font-size: 3em
-      line-height: .5
-      vertical-align: text-bottom
+      transition: $Fast
+      box-shadow: $Shadow
+      display: block
+      background-color: $MainColor
+      margin: auto 3% .7em
+      width: 80%
+      height: 2em
+      padding: 10px
+      position: absolute
+      bottom: 0
+      color: $White
+      border-radius: .2em
+      text-align: center
+
+      &:hover, &:active
+        transition: $Fast
+        transform: scale(1.07)
+        border: 0px
+
+    span
+      cursor: pointer
+      position: relative
+      font-size: 1.3em
+      line-height: .6
+      //padding: 1vw 0
+      //margin: 0 1em 1em 0
+      float: right
+      color: $ThirdColor !important
+      text-transform: lowercase !important
+
+      &:hover
+        color: $Black
+
+
+  #Cookies
+    box-shadow: $BigShadow
+    z-index: 9999
+    background-color: $Black
+    position: fixed
+    bottom: 30px
+    right: 30px
+    width: 560px
+    border-radius: 10px
+    padding: 20px
+    color: $WhiteHover
+    //min-width: 500px
+
+    @media #{$Mobile}
+      width: 100%
+      bottom: 0
+      right: 0
+      left: 0
+
+      h1
+        display: none
+
+    div
+      display: flex
+      align-items: flex-end
+      justify-content: flex-end
+
+      @media #{$Mobile}
+        align-items: flex-start
+        justify-content: space-between
+
+      span
+        transition: $Medium
+        cursor: pointer
+        display: inline-block
+        color: $WhiteHover
+        background-color: $Black
+        border: 5px solid $WhiteHover
+        font-size: 1.25em
+        box-sizing: content-box
+        padding: .6em 2em
+        text-transform: uppercase
+        margin: 2vh 0
+        font-weight: bold
+        text-align: center
+        //max-width: 400px
+
+        &:hover
+          transition: $Medium
+          color: $Black
+          background-color: $WhiteHover
+
+        &:active, &:focus
+          transition: $Medium
+          transform: scale(.97)
+
+
+      a
+        margin: 0
+        display: inline-block
+        transition: $Fast
+        border-bottom: 1px dotted $WhiteHover
+        padding: 0
+        align-self: center
+        margin-right: 5%
+        color: $WhiteHover
+        font-size: 1em
+        //pointer-events: none
+
+        &::selection
+          color: $WhiteHover !important
+          background-color: rgba(0,0,0,0) !important
+          opacity: 1
+
+        &:hover
+          border-bottom: 0px
+          border-bottom: 1px solid $WhiteHover
+          color: $WhiteHover
+          transition: $Fast
+          text-decoration: none
+
+    p
+      &::selection
+        color: $WhiteHover !important
+        background-color: rgba(0,0,0,0) !important
+        opacity: 1
 
 
     @media #{$Mobile}
-      display: inline-block
-      //padding: 0 2.3vw
+      width: 100vw
+      border-radius: 5px 5px 0 0
 
-  .NavPart
+      span
+        margin: 0 5px 50px 0
+
+
+  #mobileNav
+    transition: $Slow
+    width: 100%
+    height: 0px
+    overflow: hidden
+    background-color: $White
+    //box-shadow: $Shadow
+    display: none
+    position: absolute
+    //bottom: 0
+    top: 15vh
+    left: 0
+    right: 0
+    z-index: 9999999
+    padding-top: 2vh
+
+    a
+      transition: $Medium
+      font-size: 3em !important
+      text-align: left
+      width: 100%
+      display: block
+      //height: 50px
+      padding: 10px 3vmax
+      font-weight: 200 !important
+
+      &:active, &:hover, &:focus
+        transition: $Medium
+        border: 0px !important
+        color: grey !important
+
+  #Nav
+    padding: 4vmax 4vmax
+    width: 100%
+    height: calc(8vmax + (1.5em * 1.25))
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-content: stretch
+    text-transform: uppercase
+
+    .Logo
+      a
+        img
+          width: 200px
+          margin: -4px 0 0
+
+          @media #{$MobileXXL}
+            margin: 0px 0 0
+            width: 180px
+
+          @media #{$MobileM}
+            margin: 3px 0 0
+            width: 160px
+
+    .Material
+      text-transform: lowercase !important
+      font-size: 1.6em
+
+    .RightNav
+      align-self: flex-end
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: flex-end
+
+    a
+      transition: $Fast
+      color: $Black
+      margin: 0 1vw
+      font-size: 1.5em
+      font-weight: bold
+      border-bottom: 0px solid $SecondaryColor
+      position: relative
+
+      &:hover
+        transition: $Fast
+        border-bottom: 3px solid $Black
+        color: $Black
+        padding-bottom: 2px
+
+    .Nav
+      display: inline-block
+
+      span
+        pointer-events: none
+        background-color: $MainColor
+        height: 1.8em
+        width: 1.8em
+        border-radius: .9em
+        color: $WhiteHover
+        position: relative
+        margin: 1em 0 0 calc(-1vw - 1.8em)
+        font-size: .6em
+        display: inline-block
+        text-align: center
+        padding: .28em .0em
+
+      @media #{$Mobile}
+        display: none
+
+    .MobileNav
+      display: none
+      align-self: flex-end
+
+
+      a
+        font-weight: 100
+        font-size: 3em
+        line-height: .5
+        vertical-align: text-bottom
+        position: relative
+
+        &:hover, &:focus, &:active
+          border: 0px
+
+
+      @media #{$Mobile}
+        display: inline-block
+        //padding: 0 2.3vw
+
+    .NavPart
+      display: inline-block
+
+    @media #{$MobileXXL}
+      padding: 6vmax 3vmax
+      height: calc(12vmax + (1.6em * 1.25))
+
+    @media #{$MobileXL}
+      padding: 6vmax 3vmax
+
+    @media #{$MobileM}
+      padding: 6vmax 3vmax
+
+
+  .produkterDD
     display: inline-block
 
-  @media #{$MobileXXL}
-    padding: 6vmax 3vmax
-    height: calc(12vmax + (1.6em * 1.25))
+    &:hover
+      .Hoved
+        display: flex
 
-  @media #{$MobileXL}
-    padding: 6vmax 2vmax
+    .Hoved
+      transition: $Fast
+      position: absolute
+      display: none
+      flex-direction: column
+      flex-wrap: nowrap
+      width: 200px
+      border: 3px solid $Black
+      border-bottom: 2px solid $Black
+      background-color: $White
+      z-index: 99
+      box-shadow: $Shadow
 
-  @media #{$MobileM}
-    padding: 6vmax 1vmax
+      div
+        max-height: 410px
+        overflow-y: auto
+
+
+      .NavKategori1:hover ~ .Menn
+        display: flex !important
+
+      .Menn:hover
+        display: flex !important
+
+      .NavKategori2:hover ~ .Damer
+        display: flex !important
+
+      .Damer:hover
+        display: flex !important
+
+      .NavKategori3:hover ~ .Brands
+        display: flex !important
+
+      .Brands:hover
+        display: flex !important
+
+      a
+        transition: $Medium
+        text-transform: capitalize
+        margin: 0 !important
+        background-color: $White
+        width: 100%
+        height: 80px
+        display: block
+        border-bottom: 1px solid $Black !important
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 30px 0px
+        font-size: 1em !important
+
+        &:hover
+          transition: $Medium
+          font-size: 1.1em !important
+          padding: 30px 0px !important
+          padding-bottom: 30px !important
+          text-decoration: underline
+
+          img
+            transition: $Medium
+            width: 62px
+
+        img
+          transition: $Medium
+          margin: 0 10px
+          width: 60px
+
+      .Menn
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: -3px 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+      .Damer
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: 77px 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+
+      .Brands
+        transition: $Fast
+        position: absolute
+        left: 200px
+        margin: 157px 0 0 -6px
+        flex-direction: column
+        flex-wrap: nowrap
+        width: 200px
+        border: 3px solid $Black
+        background-color: $Black
+        z-index: 99
+        box-shadow: $Shadow
+        display: none
+        border-right: 1px solid $Black
+
+        a
+          text-align: center
+          padding: 30px 20px
+
+          &:hover
+            padding: 30px 20px !important
+
+      @media #{$Laptop}
+        width: 184px
+
+      @media #{$MobileXXL}
+        width: 164px
+
 
 
 main
   padding: 0 4vw
+
+  .mobsquad
+    display: none
+    color: $ThirdColor
+    font-size: 2.2em
+    border-bottom: 1px solid $ThirdColor
+    padding-bottom: 1px
+    margin-left: 2vmax
+    font-weight: lighter
+    text-transform: uppercase
+
+
+    @media #{$Mobile}
+      display: inline-block
+
 
   div.Showcase.New::before
     display: none
@@ -317,7 +736,124 @@ main
       @media #{$MobileL}
         flex-grow: 1
 
+.img-magnifier-glass
+  position: absolute
+  border: 1px solid $ThirdColor
+  border-radius: 50%
+  cursor: none
+  width: 400px
+  height: 400px
+  z-index: 5
 
+.Bilder
+  overflow: none
+  position: relative
+
+//Anders sitt stuff
+
+.footer
+  width: 100%
+  height: 50vh
+  border-top: 3px solid #707070
+  margin-top: 15%
+
+  .topFooter
+    height: 30%
+    color: $Black
+    display: flex
+    flex-direction: row
+    align-items: center
+    font-size: 1.8em
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+
+    a
+      color: $Black
+
+    .tf_tekst
+      padding-bottom: 2px
+      border-bottom: 2px solid $Black
+      display: inline
+      margin-bottom: 1vw
+      margin-left: 7vw
+      font-weight: bold
+
+
+    .icon_wrapper
+      float: right
+      margin-right: 2vw
+
+      .footer_icon
+        float: right
+
+        img
+          width: 5.5vw
+
+  .centerFooter
+    color: #FFFFFF
+    background: $Black
+    height: 90%
+
+    .cf_wrapper
+      margin-left: 7vw
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: center
+
+
+      .cf_kolonne
+        margin-right: 0vw
+        width: 25vw
+        margin-top: 4.5vw
+        font-weight: 500
+
+        h1
+          padding-bottom: 4px
+          border-bottom: 5px solid #FFFFFF
+          display: inline
+          font-size: 2em
+
+          a
+            color: #FFFFFF
+
+        .kolonne_txt
+          margin-top: 1.5vw
+
+
+          ul
+            list-style: none
+            text-decoration: none
+            margin-left: -3vw
+            font-size: 1.5em
+
+            li
+              padding-bottom: 10px
+              display: flex
+              flex-direction: row
+              align-items: center
+
+              div
+                color: white
+
+
+          img
+            width: 2.5vw
+            margin-right: 0.5vw
+
+
+  .bottomFooter
+    height: 10%
+    color: $Black
+    text-align: center
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+
+//Slutt på Anders sitt stuff
 
 .shopBtn
   transition: $Medium
@@ -365,6 +901,7 @@ main
     padding: .25em 1em
     transform: translate(0%, -70%)
     text-transform: uppercase
+    z-index: 3
     line-height: 1
 
     @media #{$MobileXXL}
@@ -396,71 +933,6 @@ main
       font-size: 16px
 
 
-.searchDiv
-  display: inline
-  position: relative
-
-  .search
-    display: none
-    position: relative
-
-    #searchField
-      transition: $Slow
-      padding: 3px .5em 0px
-      vertical-align: middle
-      font-size: 1.5em
-      //margin-top: -2em
-      border: 0px
-      max-width: 5vw
-      animation: 0.4s ease expand forwards
-      position: relative
-      //width: 0px
-      //width: 350px
-      border-bottom: 3px solid $SecondaryColor
-      //border-radius: 1em 1em 0 0
-      box-sizing: content-box
-
-      &:focus, &:active
-        outline: none
-        transition: $Slow
-        border-color: $Black
-
-      &:hover
-        transition: $Slow
-        //transform: scale(1.07)
-        border-color: $Black
-
-    .results
-      position: absolute
-      display: flex
-      flex-direction: column
-      background: $White
-      box-shadow: $Shadow
-      color: $Black
-      font-size: 1em
-      //padding: .2em
-      //border-radius: 0 0 1em 1em
-      width: 100%
-      //top: 2.5em
-      left: 0%
-
-      .result
-        transition: $Fast
-        margin: .1em .5em
-        font-weight: lighter
-        display: none
-        text-transform: capitalize
-        font-weight: 300
-
-        &:hover
-          transition: $Fast
-          border: 0px
-          font-weight: 400
-
-  @media #{$Mobile}
-    display: none
-
-
 .LinkToHost
   text-align: center
   width: 100%
@@ -472,122 +944,6 @@ main
 
     &:hover
       color: $SecondaryColor
-
-#alertBox
-  display: none
-  width: 300px
-  height: 250px
-  background-color: $White
-  box-shadow: $BigShadow
-  border-radius: .2em
-  position: absolute
-  margin-left: calc(50vw - 150px)
-  font-weight: normal
-  padding: 1em
-  z-index: 5
-  right: 4vmax
-  top: 8vmax
-  font-size: 1.1em
-
-  a
-    transition: $Fast
-    box-shadow: $Shadow
-    display: block
-    background-color: $MainColor
-    margin: auto 3% .7em
-    width: 80%
-    height: 2em
-    padding: 10px
-    position: absolute
-    bottom: 0
-    color: $White
-    border-radius: .2em
-    text-align: center
-
-    &:hover, &:active
-      transition: $Fast
-      transform: scale(1.07)
-      border: 0px
-
-  span
-    cursor: pointer
-    position: relative
-    font-size: 1.3em
-    line-height: .6
-    //padding: 1vw 0
-    //margin: 0 1em 1em 0
-    float: right
-    color: $ThirdColor !important
-    text-transform: lowercase !important
-
-    &:hover
-      color: $Black
-
-
-#Cookies
-  box-shadow: $BigShadow
-  z-index: 9999
-  background-color: $SecondaryColor
-  position: fixed
-  bottom: 0
-  left: 0
-  width: 70%
-  border-radius: 50px 50px 0 0
-  padding: 10px 3vw 8px
-  color: $WhiteHover
-  margin: 0 50%
-  transform: translate(-50%,0)
-  //min-width: 500px
-
-
-  a
-    margin: 0
-    display: inline
-    transition: $Fast
-    border-bottom: 0px
-    padding: 0
-    color: $WhiteHover
-    font-size: 1em
-    //pointer-events: none
-
-    &::selection
-      color: $WhiteHover !important
-      background-color: rgba(0,0,0,0) !important
-      opacity: 1
-
-    &:hover
-      border-bottom: 0px
-      padding: 0
-      color: $WhiteHover
-      transition: $Fast
-      text-decoration: underline
-
-  p
-    &::selection
-      color: $WhiteHover !important
-      background-color: rgba(0,0,0,0) !important
-      opacity: 1
-
-  span
-    cursor: pointer
-    position: relative
-    font-size: 1.3em
-    //padding: 1vw 0
-    margin: 0 -1vw 1vw 0
-    text-transform: lowercase
-    float: right
-
-    &::selection
-      color: $WhiteHover !important
-      background-color: rgba(0,0,0,0) !important
-      opacity: 1
-
-  @media #{$Mobile}
-    width: 100vw
-    border-radius: 5px 5px 0 0
-
-    span
-      margin: 0 5px 50px 0
 
 @keyframes expand
   0%
@@ -604,7 +960,7 @@ main
   background-color: #DA2727
   display: block
   position: absolute
-  font-size: 20px
+  font-size: 26px
   color: $White
   padding: .25em .25em
   transform: translate(0%, -70%)
@@ -623,67 +979,86 @@ main
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  justify-content: space-around
+  justify-content: center
   margin-top: 7%
   background-color: inherit
 
-  .kategori_box
+
+  .k_b
     background-color: inherit
-    width: auto
-    height: auto
+    width: 15vw
+    height: 15vw
     margin: 1.3vw
+    display: block
     border: 3px solid #707070
     z-index: 0
+    position: relative
     transition: $Medium
-    //overflow: hidden
+    overflow: hidden
+
+    @media #{$Mobile}
+      margin: 3vw
+      width: 40vw
+      height: 40vw
+
+    @media #{$MobileXXL}
+      margin: 3vw
+      width: 70vw
+      height: 70vw
 
 
-    .kategori_box_innhold
+    .k_b_innhold
       display: none
-      position: relative
+      position: absolute
       color: white
-      font-size: 3em
+      font-size: 3vmax
       text-transform: uppercase
       font-weight: bold
       text-align: center
       z-index: 2
-      top: 37%
-      height: 0px
+      //margin-top: 50%
+      //transform: translate(0%, -50%)
       z-index: 1
       transition: $Medium
-      text-shadow: 2px 2px rgba(0,0,0,0.4)
+      text-shadow: 2px 2px rgba(0,0,0,0.3)
       pointer-events: none
       //overflow: hidden
-      //height: 100%
-      //width: 100%
+      height: 100%
+      width: 100%
+      justify-content: center
+      align-items: center
+      align-content: center
 
-      &:hover .kategori_box_wrapper
-        filter: blur(6px)
-        background-color: rgba(255, 255, 255, 1)
+      @media #{$Mobile}
+        font-size: 10vmax
 
-    &:hover .kategori_box_innhold
+
+    &:hover
+      .k_b_innhold
+        display: flex
+        background-color: rgba(50,50,50,.2)
+
+      //.k_b img
+        filter: blur(3px)
+
+
+    img
+      filter: grayscale(1)
+      object-fit: cover
+      bottom: -3px
+      top: -3px
+      left: -3px
+      right: -3px
+      width: 100%
+      height: 100%
+      position: relative
       display: block
 
-    .kategori_box_wrapper
-      padding: 0.6em
-      z-index: 1
-      margin: 0.2em
-
-      &:hover
-        filter: blur(6px)
-        background-color: rgba(255, 255, 255, 1)
-
+    &:hover
       img
-        object-fit: cover
-        bottom: 0
-        top: 0
-        left: 0
-        right: 0
-        width: 17vw
-        height: 19vw
-
-
-
+        filter: blur(3px)
+        // eller
+        // filter: blur(3px) grayscale(1)
 
 
 
@@ -696,27 +1071,65 @@ main
   display: flex
   flex-direction: row
   justify-content: space-around
-  //align-items: center
+  align-content: center
+
 
   .venstreside
     display: flex
     flex-direction: column
-    width: 45%
+    width: 25%
     align-content: flex-end
+    //position: absolute
+    margin-left: 20%
+
     //flex-grow: 1
 
-    .StortBilde
-      //margin: 3%
-      width: 55%
-      border: 3px solid #707070
-      padding: 6vh 0vh 3vh 0vh
+    .Bilder
       align-self: flex-end
+      box-sizing: content-box
+      justify-content: flex-end
+      display: flex
+      flex-direction: column
+
+
+
+      .StortBilde
+        //margin: 3%
+        width: 100%
+        border: 3px solid #707070
+        padding: 3vh 0vh 0.5vh 0vh
+        display: block
+
+      .smaBilder
+        height: auto
+        align-content: flex-start
+        align-items: flex-start
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        width: 100%
+        padding: 0 0 1px 0
+
+        img
+          cursor: pointer
+          width: 30%
+          object-fit: cover
+          bottom: 0
+          top: 0
+          left: 0
+          right: 0
+          height: 30%
+          border: 3px solid #707070
+          margin-top: 2%
+          padding: 0 0 0 0
+
 
   .hoyreside
     display: flex
     flex-direction: column
     width: 45%
     align-items: flex-start
+    padding-top: 1.25%
     //flex-grow: 1
 
     h2
@@ -724,3 +1137,220 @@ main
       color: $Black
       text-transform: capitalize
       font-family: inherit
+
+    .str
+      display: flex
+      padding: 1em 0em 2em 0
+
+      a
+        cursor: pointer
+        margin-left: 5px
+        display: block
+        flex-direction: row
+        border: 2px solid #000000
+        background: #ffffff
+        width: 4.7vh
+        height: 4.7vh
+        border-radius: 50%
+        text-align: center
+        font-size: 2.3vh
+        font-weight: bold
+        padding: 0.25em 0 0 0
+
+    .farge
+      display: flex
+      padding: 0 0 2em 0
+
+      a
+        cursor: pointer
+        margin-left: 5px
+        display: block
+        flex-direction: row
+        border: 2px solid #000000
+        background: #ffffff
+        width: 4.7vh
+        height: 4.7vh
+        border-radius: 50%
+        text-align: center
+        font-size: 2vh
+        font-weight: bold
+
+    #farge1
+      background-color: #E0AA1A
+
+    #farge2
+      background-color: #0097C8
+
+    #farge3
+      background-color: #992319
+
+    #farge4
+      background-color: #004130
+
+    #farge5
+      background-color: #CBCBCB
+
+    #farge6
+      background-color: #171717
+
+.rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label
+  color: #c59b08
+
+
+// &&&&&&&&&&&&&&&&&&&&&&&   V I D A R   S I N   D E L   &&&&&&&&&&&&&&&&&&&&&&&&
+
+.cartBigDiv
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  width: 100%
+
+  .cartMainProducts
+    margin-left: 14vw
+
+
+    .cartProducts
+      margin-bottom: 2vh
+      padding: 20px
+      width: 40vw
+      height: 35vh
+      border: 3px solid #707070
+      display: flex
+      flex-direction: row
+
+      img
+        height: 100%
+        align-self: flex-start
+
+      .cartText
+        flex-direction: column
+
+        #cartProductName
+          font-weight: bold
+          font-size: 25px
+
+        #cartProductPrice
+          font-weight: bold
+
+        #cartProductColor
+          padding-top: 30px
+          padding-bottom: 5px
+
+        #cartProductNumber
+          font-weight: bold
+          line-height: 1.6
+          font-size: 15px
+          border-top: none
+          border-left: none
+          border-right: none
+          border-bottom: 3px solid #707070
+
+  .cartConfirmation
+    display: flex
+    margin-left: 7.5vw
+    border: 3px solid #707070
+    width: 20vw
+    height: 72vh
+
+    .cartConfDiscount
+      padding-top: 5vh
+      padding-left: 1vw
+
+      .cartConfDiscountText
+        color: black
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 15px
+        margin-bottom: 1vh
+
+      .cartConfDiscountRow
+        flex-direction: row
+
+        #cartConfDiscountInput
+          border: 3px solid #707070
+          font-size: 15px
+          line-height: 1.6
+
+        button
+          text-transform: uppercase
+          border: 3px solid black
+          background-color: inherit
+          font-size: 15px
+          font-weight: bold
+          line-height: 1.6
+          width: 5vw
+
+      .cartConfDiscountSmallText
+        font-size: 0.75vw
+        line-height: 1.6
+        
+
+
+
+
+
+// ====================Eline sin del
+.Kontakt
+  display: flex
+  justify-content: space-around
+  align-items: flex-start
+
+
+  h1
+    display: inline-block
+    font-size: 2em
+    text-transform: uppercase
+    border-bottom: 1px solid #707070
+    padding: 0vh 0vw 3vh
+    width: 100%
+    margin-bottom: 4vh
+    text-align: center
+    font-weight: bold
+
+    @media #{$Mobile}
+      font-size: 1.5em
+      padding-bottom: 1.5vh
+      margin-bottom: 1.5vh
+
+
+  div
+    width: 32%
+    min-width: 215px
+    max-width: 550px
+    font-size: 1.25em
+    display: inline-block
+    font-weight: bold
+    margin-bottom: 4vh
+
+    a
+      border-bottom: 1px dotted $Black
+      padding-bottom: 0px
+      position: relative
+
+      &:hover
+        border-bottom: 1px solid $Black
+
+    @media #{$Mobile}
+      width: 90%
+      display: block
+      font-size: 1em
+      margin: 4vh auto 7vh
+
+  @media #{$Mobile}
+    flex-direction: column
+    justify-content: center
+
+
+
+.anbefalte
+  margin-top: 30vh
+
+  h1
+    text-transform: uppercase
+    text-align: center
+    font-size: 2.5em
+  div
+
+    img
+      margin-top: 5vh
+      width: 20%

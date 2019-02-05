@@ -14,39 +14,44 @@
   </nav>
   <main>
     <div class="kategori_wrapper">
-  <div class="kategori_box">
-    <div class="kategori_box_innhold">
-      sko
+
+      <a href="#" class="k_b">
+        <div class="k_b_innhold">
+          Sko
+        </div>
+        <div class="k_b_wrapper">
+          <img src="../images/sko.png" alt="">
+        </div>
+      </a>
+
+      <a href="#" class="k_b">
+        <div class="k_b_innhold">
+          Bukse
+        </div>
+        <div class="k_b_wrapper">
+          <img src="../images/bukse.png" alt="">
+        </div>
+      </a>
+
+      <a href="menn/gensere/placeholder.php" class="k_b">
+        <div class="k_b_innhold">
+          Gensere
+        </div>
+        <div class="k_b_wrapper">
+          <img src="../images/Genser.png" alt="">
+        </div>
+      </a>
+
+      <a href="#" class="k_b">
+        <div class="k_b_innhold">
+          T-Skjorter
+        </div>
+        <div class="k_b_wrapper">
+          <img src="../images/t-skjorte.png" alt="">
+        </div>
+      </a>
+
     </div>
-    <div class="kategori_box_wrapper">
-    <img src="../images/sko.png" alt="">
-    </div>
-  </div>
-  <div class="kategori_box">
-    <div class="kategori_box_innhold">
-      bukse
-    </div>
-    <div class="kategori_box_wrapper">
-    <img src="../images/bukse.png" alt="">
-  </div>
-  </div>
-  <div class="kategori_box">
-    <div class="kategori_box_innhold">
-      genser
-    </div>
-    <div class="kategori_box_wrapper">
-      <img src="../images/Genser.png" alt="">
-  </div>
-  </div>
-  <div class="kategori_box">
-    <div class="kategori_box_innhold">
-      t-skjorte
-    </div>
-    <div class="kategori_box_wrapper">
-      <img src="../images/t-skjorte.png" alt="">
-  </div>
-</div>
-</div>
   </main>
   <footer>
     <?php

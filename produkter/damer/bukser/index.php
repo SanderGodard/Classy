@@ -2,7 +2,7 @@
 <html lang="NB" dir="ltr">
 <head>
   <?php
-    $title = "HypeIT | Produkter - Menn - Gensere";
+    $title = "HypeIT | Produkter - Damer - Bukser";
     include "../../../elements/head.php";
    ?>
 </head>
@@ -14,17 +14,6 @@
   </nav>
   <main>
 
-<div class="produktside">
-
-  <div class="venstreside">
-    <img src="../../../images/SupremeCatInAHat.jpg" class="StortBilde">
-  </div>
-
-  <div class="hoyreside">
-    <h2><a class="Supreme">Cat In The Hat Hettegenser</a></h2>
-  </div>
-
-</div>
 
   </main>
   <footer>

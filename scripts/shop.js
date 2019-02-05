@@ -2,9 +2,10 @@ basket = [];
 storedArray = [];
 storedArray2 = [];
 boxHiding = false;
-lStorage = sessionStorage;
+lStorage = localStorage;
 document.getElementById('alertBox').addEventListener("mouseover", hideBoxBool);
 document.getElementById('alertBox').addEventListener("mouseout", hideBoxBool2);
+document.getElementById('alertBox').addEventListener("mouseout", alertBox);
 function hideBoxBool() {
   boxHiding = true;
 }
@@ -12,16 +13,16 @@ function hideBoxBool2() {
   boxHiding = false;
 }
 function addToBasket(x) {
-  p=0;
+  var p=0;
   storedArray = [];
   storedArray2= [];
 
   if(lStorage.getItem("basket") != undefined) {
     stored = lStorage.getItem("basket");
-    for(i=0; i<stored.length; i++) {
+    for(var i=0; i<stored.length; i++) {
       storedArray[i] = stored[i];
     }
-    for(i=0; i<storedArray.length; i++) {
+    for(var i=0; i<storedArray.length; i++) {
       switch (storedArray[i]) {
           case ",":
           p++;
@@ -51,10 +52,10 @@ function addToBasket(x) {
 
 function alertBox() {
   document.getElementById('alertBox').style.display = "block";
-  if(boxHiding == false) {
     setTimeout(hideBox, 5000);
-  }
 }
 function hideBox() {
-  document.getElementById('alertBox').style.display = "none";
+  if(boxHiding == false) {
+    document.getElementById('alertBox').style.display = "none";
+  }
 }
