@@ -1,9 +1,9 @@
-img = document.getElementById('frontImg');
-text = document.getElementById('frontInfo').children[0];
-header = document.getElementById('frontInfo');
-btn = document.getElementById('frontBtn');
-oTxt = text.innerHTML;
-oSrc = img.src;
+var img = document.getElementById('frontImg');
+var text = document.getElementById('frontInfo').children[0];
+var header = document.getElementById('frontInfo');
+var btn = document.getElementById('frontBtn');
+var oTxt = text.innerHTML;
+var oSrc = img.src;
 
 img.style.transition = "all 0.7s";
 text.style.transition = "all 0.7s";

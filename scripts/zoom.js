@@ -1,4 +1,4 @@
-var img = document.getElementById('storBilde');
+var zoomImg = document.getElementById('storBilde');
 
 var bigImg = document.createElement('img');
 bigImg.src = img.src;
@@ -14,7 +14,7 @@ style.bottom = "0";
 style.left = "20%";
 style.right = "20%";
 
-img.addEventListener("click", zoom);
+zoomImg.addEventListener("click", zoom);
 
 
 function zoom() {

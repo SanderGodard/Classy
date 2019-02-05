@@ -89,11 +89,11 @@ function createEasterEgg() {
   easterEgg.appendChild(document.createTextNode("Best regards the HypeIT team"));
   easterEgg.appendChild(exit);
   exit.addEventListener("click", function() {
-    easterEgg.style.display = "none";
+    document.body.removeChild(easterEgg);
     document.getElementsByTagName("nav")[0].style.filter = "";
     document.getElementsByTagName("main")[0].style.filter = "";
     document.getElementsByTagName("footer")[0].style.filter = "";
-    blurDiv.style.display = "none";
+    document.body.removeChild(blurDiv);
   });
 
   var style = easterEgg.style;
