@@ -1206,55 +1206,79 @@ main
   width: 100%
 
   .cartMainProducts
-    margin-left: 14vw
+    margin-left: 5vw
 
 
     .cartProducts
       margin-bottom: 2vh
-      padding: 20px
-      width: 40vw
+      padding: 1.5vw
+      width: 45vw
       height: 35vh
       border: 3px solid #707070
       display: flex
       flex-direction: row
 
       img
-        height: 100%
+        width: 20vw
         align-self: flex-start
+        vertical-align: middle
 
       .cartText
         flex-direction: column
 
         #cartProductName
           font-weight: bold
-          font-size: 25px
+          font-size: 1.55vw
 
         #cartProductPrice
           font-weight: bold
+          font-size: 1.45vw
 
-        #cartProductColor
-          padding-top: 30px
-          padding-bottom: 5px
+        .cartProductAndPriceParent
+          display: flex
+          flex-direction: row
 
-        #cartProductNumber
-          font-weight: bold
-          line-height: 1.6
-          font-size: 15px
-          border-top: none
-          border-left: none
-          border-right: none
-          border-bottom: 3px solid #707070
+          #cartProductColor
+            font-size: 1.25vw
+            padding-top: 30px
+            padding-bottom: 5px
+
+          #cartProductSize
+            font-size: 1.25vw
+
+          .cartProductAndPrice2
+            padding-left: 3vw
+
+          #cartProductColor2
+            font-size: 1.25vw
+            padding-top: 30px
+            padding-bottom: 5px
+
+          #cartProductSize2
+            font-size: 1.25vw
+
+        .cartProductNumberDiv
+          display: flex
+
+          #cartProductNumber
+            font-weight: bold
+            line-height: 1.6
+            font-size: 1vw
+            border-top: none
+            border-left: none
+            border-right: none
+            border-bottom: 3px solid #707070
+            width: 10vw
 
   .cartConfirmation
     display: flex
-    margin-left: 7.5vw
+    margin-left: 10vw
     border: 3px solid #707070
-    width: 20vw
+    width: 25vw
     height: 72vh
 
     .cartConfDiscount
-      padding-top: 5vh
-      padding-left: 1vw
+      padding: 1.5vw
 
       .cartConfDiscountText
         color: black
@@ -1270,20 +1294,39 @@ main
           border: 3px solid #707070
           font-size: 15px
           line-height: 1.6
+          width: 16vw
 
         button
           text-transform: uppercase
           border: 3px solid black
           background-color: inherit
-          font-size: 15px
+          font-size: 1vw
           font-weight: bold
           line-height: 1.6
           width: 5vw
 
       .cartConfDiscountSmallText
-        font-size: 0.75vw
+        font-size: 12px
         line-height: 1.6
-        
+
+      .cartPayment
+        display: flex
+        flex-direction: row
+
+      #videreTilKassenButton
+        border: 0
+        color: $White
+        text-transform: uppercase
+        background-color: #000
+        font-size: 1vw
+        font-weight: bold
+        line-height: 1.6
+        width: 20vw
+        height: 2vw
+
+        .cartPaymentChild2
+          padding-left: 1vw
+
 
 
 

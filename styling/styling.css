@@ -1580,13 +1580,13 @@ main .Showcase .Info h1 {
 }
 /* line 1208, styling.sass */
 .cartBigDiv .cartMainProducts {
-  margin-left: 14vw;
+  margin-left: 5vw;
 }
 /* line 1212, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts {
   margin-bottom: 2vh;
-  padding: 20px;
-  width: 40vw;
+  padding: 1.5vw;
+  width: 45vw;
   height: 35vh;
   border: 3px solid #707070;
   display: -webkit-box;
@@ -1599,57 +1599,94 @@ main .Showcase .Info h1 {
 }
 /* line 1221, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts img {
-  height: 100%;
+  width: 20vw;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  vertical-align: middle;
 }
-/* line 1225, styling.sass */
+/* line 1226, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1228, styling.sass */
+/* line 1229, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText #cartProductName {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.55vw;
 }
-/* line 1232, styling.sass */
+/* line 1233, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText #cartProductPrice {
   font-weight: bold;
+  font-size: 1.45vw;
 }
-/* line 1235, styling.sass */
-.cartBigDiv .cartMainProducts .cartProducts .cartText #cartProductColor {
+/* line 1237, styling.sass */
+.cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/* line 1241, styling.sass */
+.cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductColor {
+  font-size: 1.25vw;
   padding-top: 30px;
   padding-bottom: 5px;
 }
-/* line 1239, styling.sass */
-.cartBigDiv .cartMainProducts .cartProducts .cartText #cartProductNumber {
+/* line 1246, styling.sass */
+.cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductSize {
+  font-size: 1.25vw;
+}
+/* line 1249, styling.sass */
+.cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent .cartProductAndPrice2 {
+  padding-left: 3vw;
+}
+/* line 1252, styling.sass */
+.cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductColor2 {
+  font-size: 1.25vw;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+/* line 1257, styling.sass */
+.cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductSize2 {
+  font-size: 1.25vw;
+}
+/* line 1260, styling.sass */
+.cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 1263, styling.sass */
+.cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv #cartProductNumber {
   font-weight: bold;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 1vw;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 3px solid #707070;
+  width: 10vw;
 }
-/* line 1248, styling.sass */
+/* line 1273, styling.sass */
 .cartBigDiv .cartConfirmation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 7.5vw;
+  margin-left: 10vw;
   border: 3px solid #707070;
-  width: 20vw;
+  width: 25vw;
   height: 72vh;
 }
-/* line 1255, styling.sass */
+/* line 1280, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount {
-  padding-top: 5vh;
-  padding-left: 1vw;
+  padding: 1.5vw;
 }
-/* line 1259, styling.sass */
+/* line 1283, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountText {
   color: black;
   text-transform: uppercase;
@@ -1657,36 +1694,63 @@ main .Showcase .Info h1 {
   font-size: 15px;
   margin-bottom: 1vh;
 }
-/* line 1266, styling.sass */
+/* line 1290, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountRow {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 1269, styling.sass */
+/* line 1293, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountRow #cartConfDiscountInput {
   border: 3px solid #707070;
   font-size: 15px;
   line-height: 1.6;
+  width: 16vw;
 }
-/* line 1274, styling.sass */
+/* line 1299, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountRow button {
   text-transform: uppercase;
   border: 3px solid black;
   background-color: inherit;
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: bold;
   line-height: 1.6;
   width: 5vw;
 }
-/* line 1283, styling.sass */
+/* line 1308, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountSmallText {
-  font-size: 0.75vw;
+  font-size: 12px;
   line-height: 1.6;
 }
+/* line 1312, styling.sass */
+.cartBigDiv .cartConfirmation .cartConfDiscount .cartPayment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/* line 1316, styling.sass */
+.cartBigDiv .cartConfirmation .cartConfDiscount #videreTilKassenButton {
+  border: 0;
+  color: #FFF;
+  text-transform: uppercase;
+  background-color: #000;
+  font-size: 1vw;
+  font-weight: bold;
+  line-height: 1.6;
+  width: 20vw;
+  height: 2vw;
+}
+/* line 1327, styling.sass */
+.cartBigDiv .cartConfirmation .cartConfDiscount #videreTilKassenButton .cartPaymentChild2 {
+  padding-left: 1vw;
+}
 
-/* line 1293, styling.sass */
+/* line 1336, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1697,7 +1761,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1299, styling.sass */
+/* line 1342, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -1710,14 +1774,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1299, styling.sass */
+  /* line 1342, styling.sass */
   .Kontakt h1 {
     font-size: 1.5em;
     padding-bottom: 1.5vh;
     margin-bottom: 1.5vh;
   }
 }
-/* line 1316, styling.sass */
+/* line 1359, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
@@ -1727,18 +1791,18 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 4vh;
 }
-/* line 1325, styling.sass */
+/* line 1368, styling.sass */
 .Kontakt div a {
   border-bottom: 1px dotted #000;
   padding-bottom: 0px;
   position: relative;
 }
-/* line 1330, styling.sass */
+/* line 1373, styling.sass */
 .Kontakt div a:hover {
   border-bottom: 1px solid #000;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1316, styling.sass */
+  /* line 1359, styling.sass */
   .Kontakt div {
     width: 90%;
     display: block;
@@ -1747,7 +1811,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 1293, styling.sass */
+  /* line 1336, styling.sass */
   .Kontakt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1759,17 +1823,17 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 1345, styling.sass */
+/* line 1388, styling.sass */
 .anbefalte {
   margin-top: 30vh;
 }
-/* line 1348, styling.sass */
+/* line 1391, styling.sass */
 .anbefalte h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5em;
 }
-/* line 1354, styling.sass */
+/* line 1397, styling.sass */
 .anbefalte div img {
   margin-top: 5vh;
   width: 20%;

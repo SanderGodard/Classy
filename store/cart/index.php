@@ -22,22 +22,44 @@
       <div class="cartText">
         <p id="cartProductName">Cat in the Hat Hettegenser</p>
         <p id="cartProductPrice">3000 kr</p>
-        <p id="cartProductColor">Farge: Royal Blue<p>
-        <p id="cartProductSize">Størrelse: L</p>
-        <input type="text" name="navn" id="cartProductNumber" value="1">
+        <div class="cartProductAndPriceParent">
+          <div class="cartProductAndPrice">
+            <p id="cartProductColor">Farge:</p>
+            <p id="cartProductSize">Størrelse:</p>
+          </div>
+          <div class="cartProductAndPrice2">
+            <p id="cartProductColor2">Blå</p>
+            <p id="cartProductSize2">L</p>
+          </div>
+        </div>
+        <div class="cartProductNumberDiv">
+          <input type="text" name="navn" id="cartProductNumber" value="1">
+        </div>
       </div>
     </div>
 
     <div class="cartProducts">
-      <img src="../../images/SupremeCatInAHatMustard.jpg" alt="Produkt bilde">
+      <img src="../../images/SupremeCatInAHatBrightRoyal.jpg" alt="Produkt bilde">
       <div class="cartText">
-        <p id="cartProductName">Supreme Cat In a Hat </p>
+        <p id="cartProductName">Cat in the Hat Hettegenser</p>
         <p id="cartProductPrice">3000 kr</p>
-        <p id="cartProductColor">Farge: Royal Blue</p>
-        <p id="cartProductSize">Størrelse: L</p>
-        <input type="text" name="navn" id="cartProductNumber" value="1">
+        <div class="cartProductAndPriceParent">
+          <div class="cartProductAndPrice">
+            <p id="cartProductColor">Farge:</p>
+            <p id="cartProductSize">Størrelse:</p>
+          </div>
+          <div class="cartProductAndPrice2">
+            <p id="cartProductColor2">Blå</p>
+            <p id="cartProductSize2">L</p>
+          </div>
+        </div>
+        <div class="cartProductNumberDiv">
+          <input type="text" name="navn" id="cartProductNumber" value="1">
+        </div>
       </div>
     </div>
+
+
   </div>
 
   <div class="cartConfirmation">
@@ -56,7 +78,15 @@
           <br>
           <p>Sum</p>
         </div>
+        <div class="cartPaymentChild2">
+          <p>1000kr</p>
+          <p>1000kr</p>
+          <p>1000kr</p>
+          <br>
+          <p>20000</p>
+        </div>
       </div>
+      <button id="videreTilKassenButton" type="button">Gå videre til kassen</button
     </div>
   </div>
 </div>
