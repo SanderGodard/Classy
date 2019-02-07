@@ -50,11 +50,11 @@
       <a href="#"><p class="cartConfDiscountSmallText">*Les mer om friendkode her!</p></a>
       <div class="cartPayment">
         <div class="cartPaymentChild">
-          <p>Bestillingsverdi:</p>
-          <p>Levering:</p>
-          <p>Rabatt:</p>
+          <p>Bestillingsverdi: 6000kr</p>
+          <p>Levering: 6000kr</p>
+          <p>Rabatt: -6000kr</p>
           <br>
-          <p>Sum</p>
+          <p>Sum: 18000kr</p>
         </div>
       </div>
     </div>
