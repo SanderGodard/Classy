@@ -1309,23 +1309,34 @@ main
         font-size: 12px
         line-height: 1.6
 
-      .cartPayment
+      .cartPaymentCenter
         display: flex
-        flex-direction: row
+        flex-direction: column
+        justify-content: center
 
-      #videreTilKassenButton
-        border: 0
-        color: $White
-        text-transform: uppercase
-        background-color: #000
-        font-size: 1vw
-        font-weight: bold
-        line-height: 1.6
-        width: 20vw
-        height: 2vw
+        .cartPayment
+          display: flex
+          flex-direction: row
+          justify-content: space-between
 
-        .cartPaymentChild2
-          padding-left: 1vw
+          .cartPaymentChild2
+            text-align: right
+
+        .cartButtonCenter
+          display: flex
+          justify-content: center
+
+          #videreTilKassenButton
+            border: 0
+            color: $White
+            text-transform: uppercase
+            background-color: #000
+            font-size: 1vw
+            font-weight: bold
+            line-height: 1.6
+            width: 15vw
+            height: 2vw
+
 
 
 

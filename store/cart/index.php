@@ -70,23 +70,27 @@
         <button type="button">Bruk</button>
       </div>
       <a href="#"><p class="cartConfDiscountSmallText">*Les mer om friendkode her!</p></a>
-      <div class="cartPayment">
-        <div class="cartPaymentChild">
-          <p>Bestillingsverdi:</p>
-          <p>Levering:</p>
-          <p>Rabatt:</p>
-          <br>
-          <p>Sum</p>
+      <div class="cartPaymentCenter">
+        <div class="cartPayment">
+          <div class="cartPaymentChild">
+            <p>Bestillingsverdi:</p>
+            <p>Levering:</p>
+            <p>Rabatt:</p>
+            <br>
+            <p>Sum</p>
+          </div>
+          <div class="cartPaymentChild2">
+            <p>1000kr</p>
+            <p>1000kr</p>
+            <p>1000kr</p>
+            <br>
+            <p>20000,95kr</p>
+          </div>
         </div>
-        <div class="cartPaymentChild2">
-          <p>1000kr</p>
-          <p>1000kr</p>
-          <p>1000kr</p>
-          <br>
-          <p>20000</p>
+        <div class="cartButtonCenter">
+          <button id="videreTilKassenButton" type="button">Gå videre til kassen</button>
         </div>
       </div>
-      <button id="videreTilKassenButton" type="button">Gå videre til kassen</button
     </div>
   </div>
 </div>
