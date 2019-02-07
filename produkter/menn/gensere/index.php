@@ -19,10 +19,14 @@
       <div class="venstreside">
         <div class="Bilder">
           <img src="../../../images/racks.jpg" class="StortBilde" id="storBilde">
-          <div class="smaBilder" id="Gliscor">
-            <img src="../../../images/racks.jpg" alt="Rack" id="img1">
-            <img src="../../../images/gul.jpg" alt="Green" id="img2">
-            <img src="../../../images/grønn.jpg" alt="Mustard" id="img3">
+          <div class="piler">
+            <div class="smaBilder" id="Gliscor">
+              <a class="Material">keyboard_arrow_left</a>
+              <img src="../../../images/racks.jpg" alt="Rack" id="img1">
+              <img src="../../../images/gul.jpg" alt="Green" id="img2">
+              <img src="../../../images/grønn.jpg" alt="Mustard" id="img3">
+              <a class="Material">keyboard_arrow_right</a>
+            </div>
           </div>
         </div>
       </div>
@@ -44,6 +48,7 @@
           <a id="farge5"></a>
           <a id="farge6"></a>
         </div>
+
 
         <a href="javascript:void(0)" class="shopBtn" tabindex="2" onclick="addToBasket(this);cartCounter(this);" id="frontBtn">Legg i handlekurv</a>
 
