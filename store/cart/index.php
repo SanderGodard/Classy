@@ -29,7 +29,7 @@
             <p id="cartProductName">Cat in the Hat Hettegenser</p>
             <p id="cartProductPrice">3000</p>
           </div>
-          <div>
+          <div class="tabel">
             <table>
               <tr>
                 <td>Farge:</td>
@@ -57,7 +57,7 @@
             <p id="cartProductName">Supreme Cat In a Hat </p>
             <p id="cartProductPrice">3000</p>
           </div>
-          <div>
+          <div class="tabel">
             <table>
               <tr>
                 <td>Farge:</td>

@@ -1418,6 +1418,7 @@ main .Showcase .Info h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 400px;
 }
 .cartBigDiv .cartMainProducts .cartProducts::after {
   cursor: pointer;
@@ -1464,6 +1465,13 @@ main .Showcase .Info h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
+@media only screen and (max-width: 890px) {
+  .cartBigDiv .cartMainProducts .cartProducts .center a img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 2vh;
+  }
+}
 .cartBigDiv .cartMainProducts .cartProducts .center .cartText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1484,8 +1492,14 @@ main .Showcase .Info h1 {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.cartBigDiv .cartMainProducts .cartProducts .center .cartText table tr td {
+.cartBigDiv .cartMainProducts .cartProducts .center .cartText .tabel table tr td {
   padding-right: 3vw;
+}
+@media only screen and (max-width: 890px) {
+  .cartBigDiv .cartMainProducts .cartProducts .center .cartText .tabel {
+    width: 50%;
+    display: inline-table;
+  }
 }
 .cartBigDiv .cartMainProducts .cartProducts .center .cartText #cartProductName {
   font-weight: bold;
@@ -1515,7 +1529,43 @@ main .Showcase .Info h1 {
   border-right: none;
   border-bottom: 3px solid #707070;
 }
+@media only screen and (max-width: 890px) {
+  .cartBigDiv .cartMainProducts .cartProducts .center .cartText #cartProductNumber {
+    width: 100%;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .cartBigDiv .cartMainProducts .cartProducts .center .cartText {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .cartBigDiv .cartMainProducts .cartProducts .center {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .cartBigDiv .cartMainProducts .cartProducts {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .cartBigDiv .cartMainProducts {
+    width: 100%;
+  }
+}
 .cartBigDiv .cartConfirmation {
+  min-height: 360px;
+  margin-bottom: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1571,6 +1621,7 @@ main .Showcase .Info h1 {
   line-height: 1.6;
 }
 .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
+  min-width: 60px;
   text-transform: uppercase;
   border: 3px solid #000;
   background-color: #FFF;
@@ -1595,27 +1646,30 @@ main .Showcase .Info h1 {
 .cartBigDiv .cartConfirmation .cartConfDiscountSmallText {
   font-size: 0.7em;
 }
-
-.cartPayment .cartPaymentChild table {
+@media only screen and (max-width: 890px) {
+  .cartBigDiv .cartConfirmation {
+    width: 100%;
+  }
+}
+.cartBigDiv .cartPayment .cartPaymentChild table {
   font-size: 1.4em;
   font-weight: 300;
   width: 100%;
 }
-.cartPayment .cartPaymentChild table .Sum {
+.cartBigDiv .cartPayment .cartPaymentChild table .Sum {
   padding-top: 20px;
   font-weight: bold;
 }
-.cartPayment .cartPaymentChild table #krPrefix {
+.cartBigDiv .cartPayment .cartPaymentChild table #krPrefix {
   text-align: right;
 }
-.cartPayment .cartPaymentChild table #krPrefix::after {
+.cartBigDiv .cartPayment .cartPaymentChild table #krPrefix::after {
   cursor: text;
   content: "kr";
   position: relative;
   padding-left: 5px;
 }
-
-.kasseKnapp {
+.cartBigDiv .kasseKnapp {
   text-transform: uppercase;
   border: 3px solid #000;
   background-color: #000;
@@ -1629,17 +1683,30 @@ main .Showcase .Info h1 {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-.kasseKnapp:hover {
+.cartBigDiv .kasseKnapp:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #000;
   background-color: #FFF;
 }
-.kasseKnapp:active, .kasseKnapp:focus {
+.cartBigDiv .kasseKnapp:active, .cartBigDiv .kasseKnapp:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
+}
+@media only screen and (max-width: 890px) {
+  .cartBigDiv .kasseKnapp {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .cartBigDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .Kontakt {
