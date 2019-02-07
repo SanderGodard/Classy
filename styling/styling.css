@@ -1396,13 +1396,13 @@ main .Showcase .Info h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 100%;
-}
-.cartBigDiv .cartMainProducts {
-  margin-left: 14vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 .cartBigDiv .cartMainProducts .cartProducts {
   margin-bottom: 3vh;
@@ -1418,6 +1418,21 @@ main .Showcase .Info h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.cartBigDiv .cartMainProducts .cartProducts::after {
+  cursor: pointer;
+  font-family: "Roboto", "Calibri", sans-serif;
+  position: relative;
+  display: block;
+  text-transform: lowercase;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  line-height: 0.35;
+  top: -1.5vmax;
+  right: -1.2vmax;
+  font-size: 2.5em;
+  content: "x";
+  font-weight: 100;
 }
 .cartBigDiv .cartMainProducts .cartProducts .center {
   display: -webkit-box;
@@ -1436,19 +1451,38 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  height: auto;
+  height: calc(40vw / 100 * 30);
 }
-.cartBigDiv .cartMainProducts .cartProducts .center img {
-  width: 40%;
+.cartBigDiv .cartMainProducts .cartProducts .center a {
+  display: block;
+  height: 100%;
+}
+.cartBigDiv .cartMainProducts .cartProducts .center a img {
+  display: block;
+  height: 100%;
   margin-right: 1vmax;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 .cartBigDiv .cartMainProducts .cartProducts .center .cartText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  max-height: 100%;
+  min-height: 160px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .cartBigDiv .cartMainProducts .cartProducts .center .cartText table tr td {
   padding-right: 3vw;
@@ -1460,10 +1494,22 @@ main .Showcase .Info h1 {
 .cartBigDiv .cartMainProducts .cartProducts .center .cartText #cartProductPrice {
   font-weight: bold;
 }
+.cartBigDiv .cartMainProducts .cartProducts .center .cartText #cartProductPrice::after {
+  content: "kr";
+  position: relative;
+  margin-left: 5px;
+}
+.cartBigDiv .cartMainProducts .cartProducts .center .cartText #cartProductColor {
+  font-size: 0.85em;
+}
+.cartBigDiv .cartMainProducts .cartProducts .center .cartText #cartProductSize {
+  font-size: 0.85em;
+}
 .cartBigDiv .cartMainProducts .cartProducts .center .cartText #cartProductNumber {
+  width: 10vmax;
   font-weight: bold;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 0.75em;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -1473,47 +1519,94 @@ main .Showcase .Info h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 7.5vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 1px solid #707070;
+  padding: 2vmax 1.5vmax;
   width: 20vw;
-  height: 60vh;
+  height: calc((((40vw / 100 * 30) + 4vmax) * 2) + 3vh + 4px);
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
-.cartBigDiv .cartConfirmation .cartConfDiscount {
-  padding-top: 5vh;
-  padding-left: 1vw;
-}
-.cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountText {
+.cartBigDiv .cartConfirmation .cartConfDiscountText {
   color: black;
   text-transform: uppercase;
+  font-size: 0.95em;
   font-weight: bold;
-  font-size: 15px;
   margin-bottom: 1vh;
 }
-.cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountRow {
+.cartBigDiv .cartConfirmation .cartConfDiscountRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountRow #cartConfDiscountInput {
-  border: 3px solid #707070;
-  font-size: 15px;
+.cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
+  border: 1px solid #707070;
+  font-size: 0.9em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   line-height: 1.6;
 }
-.cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountRow button {
+.cartBigDiv .cartConfirmation .cartConfDiscountRow button {
   text-transform: uppercase;
-  border: 3px solid black;
+  border: 3px solid #000;
   background-color: inherit;
-  font-size: 15px;
+  font-size: 0.75em;
   font-weight: bold;
   line-height: 1.6;
   width: 5vw;
+  margin-left: 0.3vw;
 }
-.cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountSmallText {
-  font-size: 0.75vw;
-  line-height: 1.6;
+.cartBigDiv .cartConfirmation .cartConfDiscountRow button:hover {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #FFF;
+  background-color: #000;
+}
+.cartBigDiv .cartConfirmation .cartConfDiscountRow button:active, .cartBigDiv .cartConfirmation .cartConfDiscountRow button:focus {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.cartBigDiv .cartConfirmation .cartConfDiscountSmallText {
+  font-size: 0.7em;
+}
+
+.cartPayment .cartPaymentChild table {
+  font-size: 1.4em;
+  font-weight: 300;
+  width: 100%;
+}
+.cartPayment .cartPaymentChild table .Sum {
+  padding-top: 20px;
+  font-weight: bold;
+}
+.cartPayment .cartPaymentChild table #krPrefix {
+  text-align: right;
+}
+.cartPayment .cartPaymentChild table #krPrefix::after {
+  content: "kr";
+  position: relative;
+  margin-left: 5px;
 }
 
 .Kontakt {

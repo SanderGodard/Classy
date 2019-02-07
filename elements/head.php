@@ -7,7 +7,7 @@
 <link rel="shortcut icon" href="/HypeIT/images/favicon.png">
 <link rel="stylesheet" href="/HypeIT/styling/styling.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,700i" rel="stylesheet">
 <!-- Chrome, Firefox OS and Opera -->
 <meta name="theme-color" content="#FFFFFF">
 <!-- Windows Phone -->
