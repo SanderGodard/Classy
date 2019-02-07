@@ -1,4 +1,5 @@
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/HypeIT/styling/styling.css">
 </head>
 <footer>
@@ -22,7 +23,7 @@
     </div>
   <div class="centerFooter">
     <div class="cf_wrapper">
-      <div class="cf_kolonne">
+      <div class="cf_kolonne"  id="kolonne_1">
         <h1><a href="">HypeIT</a></h1>
         <div class="kolonne_txt">
         Lorem ipsum dolor sit amet, consectetur
@@ -33,9 +34,6 @@
          ex ea commodo consequat. Duis aute irure dolor
       </div>
     </div>
-      <div class="cf_kolonne">
-
-      </div>
       <div class="cf_kolonne">
         <h1><a href="">Kontakt oss</a></h1>
         <div class="kolonne_txt">
