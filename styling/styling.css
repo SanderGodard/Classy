@@ -1525,6 +1525,11 @@ main .Showcase .Info h1 {
           flex-direction: column;
   border: 1px solid #707070;
   padding: 2vmax 1.5vmax;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 20vw;
   height: calc((((40vw / 100 * 30) + 4vmax) * 2) + 3vh + 4px);
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
@@ -1568,7 +1573,7 @@ main .Showcase .Info h1 {
 .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
   text-transform: uppercase;
   border: 3px solid #000;
-  background-color: inherit;
+  background-color: #FFF;
   font-size: 0.75em;
   font-weight: bold;
   line-height: 1.6;
@@ -1604,9 +1609,37 @@ main .Showcase .Info h1 {
   text-align: right;
 }
 .cartPayment .cartPaymentChild table #krPrefix::after {
+  cursor: text;
   content: "kr";
   position: relative;
-  margin-left: 5px;
+  padding-left: 5px;
+}
+
+.kasseKnapp {
+  text-transform: uppercase;
+  border: 3px solid #000;
+  background-color: #000;
+  color: #FFF;
+  font-size: 1.2em;
+  padding: 0.8em auto;
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.kasseKnapp:hover {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #000;
+  background-color: #FFF;
+}
+.kasseKnapp:active, .kasseKnapp:focus {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 
 .Kontakt {

@@ -1308,6 +1308,8 @@ main
     //margin-left: 7.5vw
     border: 1px solid #707070
     padding: 2vmax 1.5vmax
+    justify-content: space-between
+    flex-wrap: nowrap
     width: 20vw
     height: calc((((40vw / 100 * 30) + 4vmax) * 2) + 3vh + 4px)
     //calc(100% - 3vh)
@@ -1339,7 +1341,7 @@ main
       button
         text-transform: uppercase
         border: 3px solid $Black
-        background-color: inherit
+        background-color: $White
         font-size: .75em
         font-weight: bold
         line-height: 1.6
@@ -1373,9 +1375,32 @@ main
         text-align: right
 
         &::after
-            content: "kr"
-            position: relative
-            margin-left: 5px
+          cursor: text
+          content: "kr"
+          position: relative
+          padding-left: 5px
+
+.kasseKnapp
+  text-transform: uppercase
+  border: 3px solid $Black
+  background-color: $Black
+  color: $White
+  font-size: 1.2em
+  padding: .8em auto
+  text-align: center
+  font-weight: bold
+  width: 80%
+  margin: auto
+  align-self: flex-end
+
+  &:hover
+    transition: $Medium
+    color: $Black
+    background-color: $White
+
+  &:active, &:focus
+    transition: $Medium
+    transform: scale(.97)
 
 
 

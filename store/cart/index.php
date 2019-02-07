@@ -69,7 +69,7 @@
               </tr>
             </table>
           </div>
-          <input type="text" name="navn" id="cartProductNumber" value="1">
+          <input type="number" name="navn" id="cartProductNumber" value="1">
         </div>
       </div>
     </div>
@@ -77,37 +77,40 @@
 
 
   <div class="cartConfirmation">
-    <p class="cartConfDiscountText">
-      Legg til en rabattkode/friendkode*
-    </p>
-    <div class="cartConfDiscountRow">
-      <input type="text" id="cartConfDiscountInput">
-      <button type="sumbit">Bruk</button>
-    </div>
-    <a href="#"><p class="cartConfDiscountSmallText">*Les mer om friendkode her!</p></a>
-    <div class="cartPayment">
-      <div class="cartPaymentChild">
-        <br><br>
-        <table>
-          <tr>
-            <td>Bestillingsverdi:</td>
-            <td id="krPrefix">20</td>
-          </tr>
-          <tr>
-            <td>Levering:</td>
-            <td id="krPrefix">0</td>
-          </tr>
-          <tr>
-            <td>Rabatt:</td>
-            <td id="krPrefix">5</td>
-          </tr>
-          <tr>
-            <td class="Sum">Sum:</td>
-            <td class="Sum" id="krPrefix">15</td>
-          </tr>
-        </table>
+    <div>
+      <p class="cartConfDiscountText">
+        Legg til en rabattkode/friendkode*
+      </p>
+      <div class="cartConfDiscountRow">
+        <input type="text" id="cartConfDiscountInput">
+        <button type="sumbit">Bruk</button>
+      </div>
+      <a href="#"><p class="cartConfDiscountSmallText">*Les mer om friendkode her!</p></a>
+      <div class="cartPayment">
+        <div class="cartPaymentChild">
+          <br><br>
+          <table>
+            <tr>
+              <td>Bestillingsverdi:</td>
+              <td id="krPrefix">20</td>
+            </tr>
+            <tr>
+              <td>Levering:</td>
+              <td id="krPrefix">0</td>
+            </tr>
+            <tr>
+              <td>Rabatt:</td>
+              <td id="krPrefix">5</td>
+            </tr>
+            <tr>
+              <td class="Sum">Sum:</td>
+              <td class="Sum" id="krPrefix">15</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
+    <a href="#" class="kasseKnapp">Gå videre til kassen</a>
   </div>
 </div>
 
