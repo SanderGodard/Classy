@@ -1283,7 +1283,7 @@ main
       .cartConfDiscountSmallText
         font-size: 0.75vw
         line-height: 1.6
-        
+
 
 
 
@@ -1349,8 +1349,40 @@ main
     text-transform: uppercase
     text-align: center
     font-size: 2.5em
-  div
 
-    img
-      margin-top: 5vh
-      width: 20%
+.anbefaltwrapper
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+
+  a
+    margin-right: 2vw
+
+    .anbefaltbox
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      justify-content: center
+      width: auto
+      height: auto
+
+
+      img
+        margin-top: 5vh
+        width: 15vw
+        box-shadow: $Shadow
+        padding: 1em
+
+      .anbefaltinfo
+        font-size: 0.75em
+        font-weight: bold
+        margin-top: 0.5vw
+        margin-bottom: 3vw
+
+        .anbefaltpris
+          display: inline-block
+          float: right
+
+        .anbefalttext
+          display: inline-block

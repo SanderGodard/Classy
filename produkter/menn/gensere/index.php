@@ -55,11 +55,39 @@
 
     <div class="anbefalte">
       <h1>Andre har også kjøpt</h1>
-      <div>
-        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
-        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
-        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
-        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
+      <div class="anbefaltwrapper">
+        <a href="#"><div class="anbefaltbox">
+          <img src="../../../images/t-skjorte.png" alt="Royal">
+        <div class="anbefaltinfo">
+          <div class="anbefalttext"> Cat in the Hat Hettegenser </div>
+          <div class="anbefaltpris"> 3000,- </div>
+        </div>
+       </div>
+      </a>
+        <a href="#"><div class="anbefaltbox">
+          <img src="../../../images/t-skjorte.png" alt="Royal">
+        <div class="anbefaltinfo">
+          <div class="anbefalttext"> Cat in the Hat Hettegenser </div>
+          <div class="anbefaltpris"> 3000,- </div>
+        </div>
+        </div>
+        </a>
+        <a href="#"> <div class="anbefaltbox">
+          <img src="../../../images/t-skjorte.png" alt="Royal">
+        <div class="anbefaltinfo">
+          <div class="anbefalttext"> Cat in the Hat Hettegenser </div>
+          <div class="anbefaltpris"> 3000,- </div>
+        </div>
+        </div>
+        </a>
+        <a href="#"><div class="anbefaltbox">
+          <img src="../../../images/t-skjorte.png" alt="Royal">
+        <div class="anbefaltinfo">
+          <div class="anbefalttext"> Cat in the Hat Hettegenser </div>
+          <div class="anbefaltpris"> 3000,- </div>
+        </div>
+        </div>
+      </a>
       </div>
 
     </div>
