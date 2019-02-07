@@ -95,7 +95,7 @@ Templaten vi bruker for nye sider:
    - &#10004; Favicon
    - &#10004; Bestemme Logo
    - Bearbeide hvordan sidene henger sammen, hva kundene forventer av sidene. Tenk gjennom alt, og hvorfor sidene henger sammen som de gjør.
-   -
+   - Alle produktbilder skal være helt square
 
 
  - Backend:
