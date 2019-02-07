@@ -33,8 +33,16 @@
       <div class="cartText">
         <p id="cartProductName">Supreme Cat In a Hat </p>
         <p id="cartProductPrice">3000 kr</p>
-        <p id="cartProductColor">Farge: Royal Blue</p>
-        <p id="cartProductSize">Størrelse: L</p>
+        <table>
+          <tr>
+            <td>Farge:</td>
+            <td id="cartProductColor">Mustard</td>
+          </tr>
+          <tr>
+            <td>Størrelse:</td>
+            <td id="cartProductSize">L</td>
+          </tr>
+        </table>
         <input type="text" name="navn" id="cartProductNumber" value="1">
       </div>
     </div>
