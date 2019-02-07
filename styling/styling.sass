@@ -1210,10 +1210,10 @@ main
 
 
     .cartProducts
-      margin-bottom: 2vh
+      margin-bottom: 1vw
       padding: 1.5vw
       width: 45vw
-      height: 35vh
+      height: 17.5vw
       border: 3px solid #707070
       display: flex
       flex-direction: row
@@ -1237,10 +1237,10 @@ main
         .cartProductAndPriceParent
           display: flex
           flex-direction: row
+          padding-top: 2.5vw
 
           #cartProductColor
             font-size: 1.25vw
-            padding-top: 30px
             padding-bottom: 5px
 
           #cartProductSize
@@ -1251,7 +1251,6 @@ main
 
           #cartProductColor2
             font-size: 1.25vw
-            padding-top: 30px
             padding-bottom: 5px
 
           #cartProductSize2
@@ -1259,6 +1258,7 @@ main
 
         .cartProductNumberDiv
           display: flex
+          align-self: flex-end
 
           #cartProductNumber
             font-weight: bold
@@ -1267,7 +1267,7 @@ main
             border-top: none
             border-left: none
             border-right: none
-            border-bottom: 3px solid #707070
+            border-bottom: 0.2vw solid #707070
             width: 10vw
 
   .cartConfirmation
@@ -1275,7 +1275,7 @@ main
     margin-left: 10vw
     border: 3px solid #707070
     width: 25vw
-    height: 72vh
+    height: 36vw
 
     .cartConfDiscount
       padding: 1.5vw
@@ -1284,26 +1284,28 @@ main
         color: black
         text-transform: uppercase
         font-weight: bold
-        font-size: 15px
+        font-size: 1.25vw
         margin-bottom: 1vh
 
       .cartConfDiscountRow
         flex-direction: row
 
         #cartConfDiscountInput
-          border: 3px solid #707070
+          border: 0.2vw solid #707070
           font-size: 15px
           line-height: 1.6
-          width: 16vw
+          width: 15vw
+          height: 2vw
 
         button
           text-transform: uppercase
-          border: 3px solid black
+          border: 0.2vw solid $Black
           background-color: inherit
           font-size: 1vw
           font-weight: bold
           line-height: 1.6
           width: 5vw
+          height: 2vw
 
       .cartConfDiscountSmallText
         font-size: 12px
@@ -1318,9 +1320,21 @@ main
           display: flex
           flex-direction: row
           justify-content: space-between
+          padding-left: 2.5vw
+          padding-right: 2.5vw
+
+          .cartPaymentChild
+            font-size: 1.25vw
+            line-height: 1.6
 
           .cartPaymentChild2
             text-align: right
+            font-size: 1.25vw
+            line-height: 1.6
+
+            p
+              font-size: 1.25vw
+              line-height: 1.6
 
         .cartButtonCenter
           display: flex
