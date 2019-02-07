@@ -1209,17 +1209,19 @@ main
     margin-left: 14vw
 
 
+
     .cartProducts
-      margin-bottom: 2vh
-      padding: 20px
+      margin-bottom: 3vh
+      padding: 1vmax
       width: 40vw
       height: 35vh
-      border: 3px solid #707070
+      border: 1px solid #707070
       display: flex
+      box-shadow: $BigShadow
       flex-direction: row
 
       img
-        height: 100%
+        width: 40%
         align-self: flex-start
 
       .cartText
@@ -1233,8 +1235,7 @@ main
           font-weight: bold
 
         #cartProductColor
-          padding-top: 30px
-          padding-bottom: 5px
+
 
         #cartProductNumber
           font-weight: bold
@@ -1248,9 +1249,10 @@ main
   .cartConfirmation
     display: flex
     margin-left: 7.5vw
-    border: 3px solid #707070
+    border: 1px solid #707070
     width: 20vw
     height: 72vh
+    box-shadow: $BigShadow
 
     .cartConfDiscount
       padding-top: 5vh
