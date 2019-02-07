@@ -3,23 +3,23 @@
 </head>
 <footer>
   <div class="footer">
-  <div class="topFooter">
-    <div class="tf_tekst">
-      <a href="#">Kom i kontakt med oss</a>
+    <div class="topFooter">
+      <div class="tf_tekst">
+        <a href="#">Kom i kontakt med oss</a>
+      </div>
+      <div class="icon_wrapper">
+        <a href="#">
+        <div class="footer_icon">
+          <img src="/HypeIT/images/facebookicon.png" alt="icon">
+        </div>
+        </a>
+        <a href="#">
+          <div class="footer_icon">
+            <img src="/HypeIT/images/instagramicon.png" alt="icon">
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="icon_wrapper">
-      <a href="#">
-    <div class="footer_icon">
-<img src="/HypeIT/images/facebookicon.png" alt="icon">
-</div>
-</a>
-<a href="#">
-<div class="footer_icon">
-<img src="/HypeIT/images/instagramicon.png" alt="icon">
-    </div>
-  </a>
-  </div>
-</div>
   <div class="centerFooter">
     <div class="cf_wrapper">
       <div class="cf_kolonne">

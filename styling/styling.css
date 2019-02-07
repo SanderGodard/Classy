@@ -1,4 +1,3 @@
-/* line 49, styling.sass */
 html {
   -webkit-transition: all 0s ease;
   transition: all 0s ease;
@@ -10,7 +9,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 59, styling.sass */
 body {
   -webkit-transition: all 0s ease;
   transition: all 0s ease;
@@ -24,19 +22,16 @@ body {
   font-size: 20px;
 }
 @media only screen and (max-width: 1023px) {
-  /* line 59, styling.sass */
   body {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 59, styling.sass */
   body {
     font-size: 16px;
   }
 }
 
-/* line 77, styling.sass */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -46,52 +41,40 @@ body {
   border-collapse: collapse;
 }
 
-/* line 87, styling.sass */
 a {
   text-decoration: none;
   color: #000;
 }
 
-/* line 92, styling.sass */
 ::-moz-selection {
   background: #383838;
   opacity: 0.7;
   color: #FFF;
 }
 
-/* line 98, styling.sass */
-::-moz-selection {
-  background: #383838;
-  color: #FFF;
-  opacity: 0.7;
-}
 ::selection {
   background: #383838;
   color: #FFF;
   opacity: 0.7;
 }
 
-/* line 104, styling.sass */
 ::-webkit-scrollbar {
   width: 5px;
   right: 0;
 }
 
-/* line 111, styling.sass */
 ::-webkit-scrollbar-thumb {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: #FF0000;
   border-radius: 2.5px;
 }
-/* line 116, styling.sass */
 ::-webkit-scrollbar-thumb:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: #000;
 }
 
-/* line 121, styling.sass */
 .Material {
   font-family: "Material Icons", sans-serif;
   font-size: 1.5em;
@@ -99,11 +82,9 @@ a {
   font-weight: 100;
 }
 
-/* line 128, styling.sass */
 nav {
   margin: 0 0 5vh 0;
 }
-/* line 131, styling.sass */
 nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -114,17 +95,14 @@ nav a {
   border-bottom: 0px solid #383838;
   position: relative;
 }
-/* line 140, styling.sass */
 nav .searchDiv {
   display: inline;
   position: relative;
 }
-/* line 144, styling.sass */
 nav .searchDiv .search {
   display: none;
   position: relative;
 }
-/* line 148, styling.sass */
 nav .searchDiv .search #searchField {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -140,20 +118,17 @@ nav .searchDiv .search #searchField {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-/* line 164, styling.sass */
 nav .searchDiv .search #searchField:focus, nav .searchDiv .search #searchField:active {
   outline: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-color: #000;
 }
-/* line 169, styling.sass */
 nav .searchDiv .search #searchField:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-color: #000;
 }
-/* line 174, styling.sass */
 nav .searchDiv .search .results {
   position: absolute;
   display: -webkit-box;
@@ -171,11 +146,9 @@ nav .searchDiv .search .results {
   width: 100%;
   left: 0%;
 }
-/* line 188, styling.sass */
 nav .searchDiv .search .results .activeResult {
   background: blue;
 }
-/* line 192, styling.sass */
 nav .searchDiv .search .results div a {
   display: block;
   -webkit-transition: all 0.1s ease;
@@ -185,7 +158,6 @@ nav .searchDiv .search .results div a {
   text-transform: capitalize;
   font-weight: 300;
 }
-/* line 201, styling.sass */
 nav .searchDiv .search .results div a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -193,12 +165,10 @@ nav .searchDiv .search .results div a:hover {
   font-weight: 400;
 }
 @media only screen and (max-width: 890px) {
-  /* line 140, styling.sass */
   nav .searchDiv {
     display: none;
   }
 }
-/* line 210, styling.sass */
 nav #alertBox {
   display: none;
   width: 300px;
@@ -216,7 +186,6 @@ nav #alertBox {
   top: 8vmax;
   font-size: 1.1em;
 }
-/* line 226, styling.sass */
 nav #alertBox a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -234,7 +203,6 @@ nav #alertBox a {
   border-radius: 0.2em;
   text-align: center;
 }
-/* line 241, styling.sass */
 nav #alertBox a:hover, nav #alertBox a:active {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -242,7 +210,6 @@ nav #alertBox a:hover, nav #alertBox a:active {
           transform: scale(1.07);
   border: 0px;
 }
-/* line 246, styling.sass */
 nav #alertBox span {
   cursor: pointer;
   position: relative;
@@ -252,11 +219,9 @@ nav #alertBox span {
   color: #999999 !important;
   text-transform: lowercase !important;
 }
-/* line 257, styling.sass */
 nav #alertBox span:hover {
   color: #000;
 }
-/* line 261, styling.sass */
 nav #Cookies {
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
@@ -271,19 +236,16 @@ nav #Cookies {
   color: #FBFBFB;
 }
 @media only screen and (max-width: 890px) {
-  /* line 261, styling.sass */
   nav #Cookies {
     width: 100%;
     bottom: 0;
     right: 0;
     left: 0;
   }
-  /* line 280, styling.sass */
   nav #Cookies h1 {
     display: none;
   }
 }
-/* line 283, styling.sass */
 nav #Cookies div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,7 +258,6 @@ nav #Cookies div {
           justify-content: flex-end;
 }
 @media only screen and (max-width: 890px) {
-  /* line 283, styling.sass */
   nav #Cookies div {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -306,7 +267,6 @@ nav #Cookies div {
             justify-content: space-between;
   }
 }
-/* line 292, styling.sass */
 nav #Cookies div span {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -324,21 +284,18 @@ nav #Cookies div span {
   font-weight: bold;
   text-align: center;
 }
-/* line 308, styling.sass */
 nav #Cookies div span:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #000;
   background-color: #FBFBFB;
 }
-/* line 313, styling.sass */
 nav #Cookies div span:active, nav #Cookies div span:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
-/* line 318, styling.sass */
 nav #Cookies div a {
   margin: 0;
   display: inline-block;
@@ -352,7 +309,6 @@ nav #Cookies div a {
   color: #FBFBFB;
   font-size: 1em;
 }
-/* line 330, styling.sass */
 nav #Cookies div a::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -363,7 +319,6 @@ nav #Cookies div a::selection {
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 335, styling.sass */
 nav #Cookies div a:hover {
   border-bottom: 0px;
   border-bottom: 1px solid #FBFBFB;
@@ -372,7 +327,6 @@ nav #Cookies div a:hover {
   transition: all 0.1s ease;
   text-decoration: none;
 }
-/* line 343, styling.sass */
 nav #Cookies p::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -384,17 +338,14 @@ nav #Cookies p::selection {
   opacity: 1;
 }
 @media only screen and (max-width: 890px) {
-  /* line 261, styling.sass */
   nav #Cookies {
     width: 100vw;
     border-radius: 5px 5px 0 0;
   }
-  /* line 353, styling.sass */
   nav #Cookies span {
     margin: 0 5px 50px 0;
   }
 }
-/* line 357, styling.sass */
 nav #mobileNav {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -410,7 +361,6 @@ nav #mobileNav {
   z-index: 9999999;
   padding-top: 2vh;
 }
-/* line 373, styling.sass */
 nav #mobileNav a {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -421,14 +371,12 @@ nav #mobileNav a {
   padding: 10px 3vmax;
   font-weight: 200 !important;
 }
-/* line 383, styling.sass */
 nav #mobileNav a:active, nav #mobileNav a:hover, nav #mobileNav a:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   border: 0px !important;
   color: grey !important;
 }
-/* line 388, styling.sass */
 nav #Nav {
   padding: 4vmax 4vmax;
   width: 100%;
@@ -445,31 +393,26 @@ nav #Nav {
       align-content: stretch;
   text-transform: uppercase;
 }
-/* line 400, styling.sass */
 nav #Nav .Logo a img {
   width: 200px;
   margin: -4px 0 0;
 }
 @media only screen and (max-width: 575px) {
-  /* line 400, styling.sass */
   nav #Nav .Logo a img {
     margin: 0px 0 0;
     width: 180px;
   }
 }
 @media only screen and (max-width: 376px) {
-  /* line 400, styling.sass */
   nav #Nav .Logo a img {
     margin: 3px 0 0;
     width: 160px;
   }
 }
-/* line 412, styling.sass */
 nav #Nav .Material {
   text-transform: lowercase !important;
   font-size: 1.6em;
 }
-/* line 416, styling.sass */
 nav #Nav .RightNav {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -486,7 +429,6 @@ nav #Nav .RightNav {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 423, styling.sass */
 nav #Nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -497,7 +439,6 @@ nav #Nav a {
   border-bottom: 0px solid #383838;
   position: relative;
 }
-/* line 432, styling.sass */
 nav #Nav a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -505,11 +446,9 @@ nav #Nav a:hover {
   color: #000;
   padding-bottom: 2px;
 }
-/* line 438, styling.sass */
 nav #Nav .Nav {
   display: inline-block;
 }
-/* line 441, styling.sass */
 nav #Nav .Nav span {
   pointer-events: none;
   background-color: #FF0000;
@@ -525,18 +464,15 @@ nav #Nav .Nav span {
   padding: 0.28em 0em;
 }
 @media only screen and (max-width: 890px) {
-  /* line 438, styling.sass */
   nav #Nav .Nav {
     display: none;
   }
 }
-/* line 458, styling.sass */
 nav #Nav .MobileNav {
   display: none;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-/* line 463, styling.sass */
 nav #Nav .MobileNav a {
   font-weight: 100;
   font-size: 3em;
@@ -544,50 +480,41 @@ nav #Nav .MobileNav a {
   vertical-align: text-bottom;
   position: relative;
 }
-/* line 470, styling.sass */
 nav #Nav .MobileNav a:hover, nav #Nav .MobileNav a:focus, nav #Nav .MobileNav a:active {
   border: 0px;
 }
 @media only screen and (max-width: 890px) {
-  /* line 458, styling.sass */
   nav #Nav .MobileNav {
     display: inline-block;
   }
 }
-/* line 478, styling.sass */
 nav #Nav .NavPart {
   display: inline-block;
 }
 @media only screen and (max-width: 575px) {
-  /* line 388, styling.sass */
   nav #Nav {
     padding: 6vmax 3vmax;
     height: calc(12vmax + (1.6em * 1.25));
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 388, styling.sass */
   nav #Nav {
     padding: 6vmax 3vmax;
   }
 }
 @media only screen and (max-width: 376px) {
-  /* line 388, styling.sass */
   nav #Nav {
     padding: 6vmax 3vmax;
   }
 }
-/* line 492, styling.sass */
 nav .produkterDD {
   display: inline-block;
 }
-/* line 496, styling.sass */
 nav .produkterDD:hover .Hoved {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 499, styling.sass */
 nav .produkterDD .Hoved {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -607,48 +534,40 @@ nav .produkterDD .Hoved {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
-/* line 512, styling.sass */
 nav .produkterDD .Hoved div {
   max-height: 410px;
   overflow-y: auto;
 }
-/* line 517, styling.sass */
 nav .produkterDD .Hoved .NavKategori1:hover ~ .Menn {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 520, styling.sass */
 nav .produkterDD .Hoved .Menn:hover {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 523, styling.sass */
 nav .produkterDD .Hoved .NavKategori2:hover ~ .Damer {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 526, styling.sass */
 nav .produkterDD .Hoved .Damer:hover {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 529, styling.sass */
 nav .produkterDD .Hoved .NavKategori3:hover ~ .Brands {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 532, styling.sass */
 nav .produkterDD .Hoved .Brands:hover {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 535, styling.sass */
 nav .produkterDD .Hoved a {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -671,7 +590,6 @@ nav .produkterDD .Hoved a {
   padding: 30px 0px;
   font-size: 1em !important;
 }
-/* line 550, styling.sass */
 nav .produkterDD .Hoved a:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -680,20 +598,17 @@ nav .produkterDD .Hoved a:hover {
   padding-bottom: 30px !important;
   text-decoration: underline;
 }
-/* line 557, styling.sass */
 nav .produkterDD .Hoved a:hover img {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   width: 62px;
 }
-/* line 561, styling.sass */
 nav .produkterDD .Hoved a img {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   margin: 0 10px;
   width: 60px;
 }
-/* line 566, styling.sass */
 nav .produkterDD .Hoved .Menn {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -714,7 +629,6 @@ nav .produkterDD .Hoved .Menn {
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   display: none;
 }
-/* line 580, styling.sass */
 nav .produkterDD .Hoved .Damer {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -735,7 +649,6 @@ nav .produkterDD .Hoved .Damer {
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   display: none;
 }
-/* line 594, styling.sass */
 nav .produkterDD .Hoved .Brands {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -757,33 +670,27 @@ nav .produkterDD .Hoved .Brands {
   display: none;
   border-right: 1px solid #000;
 }
-/* line 609, styling.sass */
 nav .produkterDD .Hoved .Brands a {
   text-align: center;
   padding: 30px 20px;
 }
-/* line 613, styling.sass */
 nav .produkterDD .Hoved .Brands a:hover {
   padding: 30px 20px !important;
 }
 @media only screen and (max-width: 1023px) {
-  /* line 499, styling.sass */
   nav .produkterDD .Hoved {
     width: 184px;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 499, styling.sass */
   nav .produkterDD .Hoved {
     width: 164px;
   }
 }
 
-/* line 624, styling.sass */
 main {
   padding: 0 4vw;
 }
-/* line 627, styling.sass */
 main .mobsquad {
   display: none;
   color: #999999;
@@ -795,17 +702,14 @@ main .mobsquad {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 890px) {
-  /* line 627, styling.sass */
   main .mobsquad {
     display: inline-block;
   }
 }
-/* line 642, styling.sass */
 main div.Showcase.New::before {
   display: none;
 }
 @media only screen and (max-width: 650px) {
-  /* line 642, styling.sass */
   main div.Showcase.New::before {
     display: block;
     font-size: 2em;
@@ -815,12 +719,10 @@ main div.Showcase.New::before {
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 642, styling.sass */
   main div.Showcase.New::before {
     font-size: 1.3em;
   }
 }
-/* line 654, styling.sass */
 main .Showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,25 +741,21 @@ main .Showcase {
   height: calc(100vh - (8vmax + (1.5em * 1.25) + 5vh));
 }
 @media only screen and (max-width: 890px) {
-  /* line 654, styling.sass */
   main .Showcase {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: auto;
   }
 }
-/* line 667, styling.sass */
 main .Showcase img {
   cursor: pointer;
   bottom: 0;
   height: 100%;
 }
-/* line 674, styling.sass */
 main .Showcase img .New::before {
   display: none;
 }
 @media only screen and (max-width: 890px) {
-  /* line 667, styling.sass */
   main .Showcase img {
     width: 60%;
     height: auto;
@@ -872,7 +770,6 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 667, styling.sass */
   main .Showcase img {
     margin: auto auto;
     -webkit-box-ordinal-group: 2;
@@ -881,19 +778,16 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 667, styling.sass */
   main .Showcase img {
     width: 90%;
     margin-left: 15%;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 667, styling.sass */
   main .Showcase img {
     width: 100%;
   }
 }
-/* line 698, styling.sass */
 main .Showcase .Info {
   margin-top: calc((100vh - (8vmax + (1.5em * 1.25) + 5vh)) / 2);
   -webkit-transform: translate(0, -50%);
@@ -901,14 +795,12 @@ main .Showcase .Info {
   width: 45%;
   text-align: left;
 }
-/* line 707, styling.sass */
 main .Showcase .Info h1 {
   font-size: 3.75em;
   color: #000;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 650px) {
-  /* line 707, styling.sass */
   main .Showcase .Info h1 {
     font-size: 3em;
     text-align: center;
@@ -916,13 +808,11 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 707, styling.sass */
   main .Showcase .Info h1 {
     font-size: 2.75em;
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 698, styling.sass */
   main .Showcase .Info {
     width: 90%;
     -webkit-box-ordinal-group: 2;
@@ -934,19 +824,16 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 698, styling.sass */
   main .Showcase .Info {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 729, styling.sass */
   main .Showcase .Info .New::before {
     display: none;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 698, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -955,7 +842,6 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 426px) {
-  /* line 698, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -963,7 +849,6 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 739, styling.sass */
 .img-magnifier-glass {
   position: absolute;
   border: 1px solid #999999;
@@ -974,20 +859,17 @@ main .Showcase .Info h1 {
   z-index: 5;
 }
 
-/* line 748, styling.sass */
 .Bilder {
   overflow: none;
   position: relative;
 }
 
-/* line 754, styling.sass */
 .footer {
   width: 100%;
   height: 50vh;
   border-top: 3px solid #707070;
   margin-top: 15%;
 }
-/* line 760, styling.sass */
 .footer .topFooter {
   height: 30%;
   color: #000;
@@ -1009,11 +891,15 @@ main .Showcase .Info h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-/* line 771, styling.sass */
+@media only screen and (max-width: 890px) {
+  .footer .topFooter {
+    display: none;
+    height: 0;
+  }
+}
 .footer .topFooter a {
   color: #000;
 }
-/* line 774, styling.sass */
 .footer .topFooter .tf_tekst {
   padding-bottom: 2px;
   border-bottom: 2px solid #000;
@@ -1022,26 +908,21 @@ main .Showcase .Info h1 {
   margin-left: 7vw;
   font-weight: bold;
 }
-/* line 783, styling.sass */
 .footer .topFooter .icon_wrapper {
   float: right;
   margin-right: 2vw;
 }
-/* line 787, styling.sass */
 .footer .topFooter .icon_wrapper .footer_icon {
   float: right;
 }
-/* line 790, styling.sass */
 .footer .topFooter .icon_wrapper .footer_icon img {
   width: 5.5vw;
 }
-/* line 793, styling.sass */
 .footer .centerFooter {
   color: #FFFFFF;
   background: #000;
   height: 90%;
 }
-/* line 798, styling.sass */
 .footer .centerFooter .cf_wrapper {
   margin-left: 7vw;
   display: -webkit-box;
@@ -1057,36 +938,30 @@ main .Showcase .Info h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 806, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne {
   margin-right: 0vw;
   width: 25vw;
   margin-top: 4.5vw;
   font-weight: 500;
 }
-/* line 812, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne h1 {
   padding-bottom: 4px;
   border-bottom: 5px solid #FFFFFF;
   display: inline;
   font-size: 2em;
 }
-/* line 818, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne h1 a {
   color: #FFFFFF;
 }
-/* line 821, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt {
   margin-top: 1.5vw;
 }
-/* line 825, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul {
   list-style: none;
   text-decoration: none;
   margin-left: -3vw;
   font-size: 1.5em;
 }
-/* line 831, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li {
   padding-bottom: 10px;
   display: -webkit-box;
@@ -1100,16 +975,13 @@ main .Showcase .Info h1 {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 837, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li div {
   color: white;
 }
-/* line 841, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt img {
   width: 2.5vw;
   margin-right: 0.5vw;
 }
-/* line 846, styling.sass */
 .footer .bottomFooter {
   height: 10%;
   color: #000;
@@ -1129,7 +1001,6 @@ main .Showcase .Info h1 {
           justify-content: center;
 }
 
-/* line 858, styling.sass */
 .shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1146,14 +1017,12 @@ main .Showcase .Info h1 {
   font-weight: bold;
   text-align: center;
 }
-/* line 873, styling.sass */
 .shopBtn:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 878, styling.sass */
 .shopBtn:active, .shopBtn:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1161,7 +1030,6 @@ main .Showcase .Info h1 {
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 858, styling.sass */
   .shopBtn {
     display: block;
     font-size: 1.5em;
@@ -1169,11 +1037,9 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 890, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 893, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -1190,30 +1056,25 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 893, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 893, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 936, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 942, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 945, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
@@ -1235,7 +1096,6 @@ main .Showcase .Info h1 {
     max-width: 15vw;
   }
 }
-/* line 954, styling.sass */
 .Supreme::before {
   content: "Supreme";
   text-transform: capitalize;
@@ -1253,19 +1113,16 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 954, styling.sass */
   .Supreme::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 954, styling.sass */
   .Supreme::before {
     font-size: 16px;
   }
 }
 
-/* line 978, styling.sass */
 .kategori_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1282,7 +1139,6 @@ main .Showcase .Info h1 {
   margin-top: 7%;
   background-color: inherit;
 }
-/* line 987, styling.sass */
 .kategori_wrapper .k_b {
   background-color: inherit;
   width: 15vw;
@@ -1297,7 +1153,6 @@ main .Showcase .Info h1 {
   overflow: hidden;
 }
 @media only screen and (max-width: 890px) {
-  /* line 987, styling.sass */
   .kategori_wrapper .k_b {
     margin: 3vw;
     width: 40vw;
@@ -1305,14 +1160,12 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 987, styling.sass */
   .kategori_wrapper .k_b {
     margin: 3vw;
     width: 70vw;
     height: 70vw;
   }
 }
-/* line 1010, styling.sass */
 .kategori_wrapper .k_b .k_b_innhold {
   display: none;
   position: absolute;
@@ -1339,19 +1192,16 @@ main .Showcase .Info h1 {
       align-content: center;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1010, styling.sass */
   .kategori_wrapper .k_b .k_b_innhold {
     font-size: 10vmax;
   }
 }
-/* line 1037, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_innhold {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: rgba(50, 50, 50, 0.2);
 }
-/* line 1045, styling.sass */
 .kategori_wrapper .k_b img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -1366,13 +1216,11 @@ main .Showcase .Info h1 {
   position: relative;
   display: block;
 }
-/* line 1058, styling.sass */
 .kategori_wrapper .k_b:hover img {
   -webkit-filter: blur(3px);
           filter: blur(3px);
 }
 
-/* line 1069, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -1387,7 +1235,6 @@ main .Showcase .Info h1 {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-/* line 1077, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1401,7 +1248,6 @@ main .Showcase .Info h1 {
       align-content: flex-end;
   margin-left: 20%;
 }
-/* line 1087, styling.sass */
 .produktside .venstreside .Bilder {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1418,14 +1264,12 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1096, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
   width: 100%;
   border: 3px solid #707070;
   padding: 3vh 0vh 0.5vh 0vh;
   display: block;
 }
-/* line 1103, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   -ms-flex-line-pack: start;
@@ -1446,7 +1290,6 @@ main .Showcase .Info h1 {
   width: 100%;
   padding: 0 0 1px 0;
 }
-/* line 1113, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   cursor: pointer;
   width: 30%;
@@ -1461,7 +1304,6 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0 0 0 0;
 }
-/* line 1127, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1476,21 +1318,18 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 1135, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
   text-transform: capitalize;
   font-family: inherit;
 }
-/* line 1141, styling.sass */
 .produktside .hoyreside .str {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1em 0em 2em 0;
 }
-/* line 1145, styling.sass */
 .produktside .hoyreside .str a {
   cursor: pointer;
   margin-left: 5px;
@@ -1509,14 +1348,12 @@ main .Showcase .Info h1 {
   font-weight: bold;
   padding: 0.25em 0 0 0;
 }
-/* line 1160, styling.sass */
 .produktside .hoyreside .farge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 0 2em 0;
 }
-/* line 1164, styling.sass */
 .produktside .hoyreside .farge a {
   cursor: pointer;
   margin-left: 5px;
@@ -1534,37 +1371,29 @@ main .Showcase .Info h1 {
   font-size: 2vh;
   font-weight: bold;
 }
-/* line 1178, styling.sass */
 .produktside .hoyreside #farge1 {
   background-color: #E0AA1A;
 }
-/* line 1181, styling.sass */
 .produktside .hoyreside #farge2 {
   background-color: #0097C8;
 }
-/* line 1184, styling.sass */
 .produktside .hoyreside #farge3 {
   background-color: #992319;
 }
-/* line 1187, styling.sass */
 .produktside .hoyreside #farge4 {
   background-color: #004130;
 }
-/* line 1190, styling.sass */
 .produktside .hoyreside #farge5 {
   background-color: #CBCBCB;
 }
-/* line 1193, styling.sass */
 .produktside .hoyreside #farge6 {
   background-color: #171717;
 }
 
-/* line 1196, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
 
-/* line 1202, styling.sass */
 .cartBigDiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1578,11 +1407,9 @@ main .Showcase .Info h1 {
           justify-content: flex-start;
   width: 100%;
 }
-/* line 1208, styling.sass */
 .cartBigDiv .cartMainProducts {
   margin-left: 14vw;
 }
-/* line 1212, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts {
   margin-bottom: 2vh;
   padding: 20px;
@@ -1597,34 +1424,28 @@ main .Showcase .Info h1 {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 1221, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts img {
   height: 100%;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-/* line 1225, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1228, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText #cartProductName {
   font-weight: bold;
   font-size: 25px;
 }
-/* line 1232, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText #cartProductPrice {
   font-weight: bold;
 }
-/* line 1235, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText #cartProductColor {
   padding-top: 30px;
   padding-bottom: 5px;
 }
-/* line 1239, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText #cartProductNumber {
   font-weight: bold;
   line-height: 1.6;
@@ -1634,7 +1455,6 @@ main .Showcase .Info h1 {
   border-right: none;
   border-bottom: 3px solid #707070;
 }
-/* line 1248, styling.sass */
 .cartBigDiv .cartConfirmation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1644,12 +1464,10 @@ main .Showcase .Info h1 {
   width: 20vw;
   height: 72vh;
 }
-/* line 1255, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount {
   padding-top: 5vh;
   padding-left: 1vw;
 }
-/* line 1259, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountText {
   color: black;
   text-transform: uppercase;
@@ -1657,20 +1475,17 @@ main .Showcase .Info h1 {
   font-size: 15px;
   margin-bottom: 1vh;
 }
-/* line 1266, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountRow {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 1269, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountRow #cartConfDiscountInput {
   border: 3px solid #707070;
   font-size: 15px;
   line-height: 1.6;
 }
-/* line 1274, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountRow button {
   text-transform: uppercase;
   border: 3px solid black;
@@ -1680,13 +1495,11 @@ main .Showcase .Info h1 {
   line-height: 1.6;
   width: 5vw;
 }
-/* line 1283, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount .cartConfDiscountSmallText {
   font-size: 0.75vw;
   line-height: 1.6;
 }
 
-/* line 1293, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1697,7 +1510,6 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1299, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -1710,14 +1522,12 @@ main .Showcase .Info h1 {
   font-weight: bold;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1299, styling.sass */
   .Kontakt h1 {
     font-size: 1.5em;
     padding-bottom: 1.5vh;
     margin-bottom: 1.5vh;
   }
 }
-/* line 1316, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
@@ -1727,18 +1537,15 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 4vh;
 }
-/* line 1325, styling.sass */
 .Kontakt div a {
   border-bottom: 1px dotted #000;
   padding-bottom: 0px;
   position: relative;
 }
-/* line 1330, styling.sass */
 .Kontakt div a:hover {
   border-bottom: 1px solid #000;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1316, styling.sass */
   .Kontakt div {
     width: 90%;
     display: block;
@@ -1747,7 +1554,6 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 1293, styling.sass */
   .Kontakt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1759,17 +1565,14 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 1345, styling.sass */
 .anbefalte {
   margin-top: 30vh;
 }
-/* line 1348, styling.sass */
 .anbefalte h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5em;
 }
-/* line 1354, styling.sass */
 .anbefalte div img {
   margin-top: 5vh;
   width: 20%;

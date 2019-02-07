@@ -768,6 +768,10 @@ main
     flex-wrap: nowrap
     justify-content: space-between
 
+    @media #{$Mobile}
+      display: none
+      height: 0
+
     a
       color: $Black
 
@@ -1283,7 +1287,7 @@ main
       .cartConfDiscountSmallText
         font-size: 0.75vw
         line-height: 1.6
-        
+
 
 
 
