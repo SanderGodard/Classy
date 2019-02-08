@@ -11,12 +11,12 @@
       <div class="icon_wrapper">
         <a href="#">
         <div class="footer_icon">
-          <img src="/HypeIT/images/facebookicon.png" alt="icon">
+          <img src="/HypeIT/images/facebook.png" alt="icon">
         </div>
         </a>
         <a href="#">
           <div class="footer_icon">
-            <img src="/HypeIT/images/instagramicon.png" alt="icon">
+            <img src="/HypeIT/images/instagram.png" alt="icon">
           </div>
         </a>
       </div>
