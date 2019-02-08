@@ -111,15 +111,15 @@ Templaten vi bruker for nye sider:
 
 
  - Frontend:
-   - Mouseover zoom på produktbilder
-   - Bygge anbefalte produkter section?
+   - &#10004; Mouseover zoom på produktbilder
+   - &#10004; Bygge anbefalte produkter section?
    - &#10004; MobileNav
-   - Handlekurv side
+   - &#10004; Handlekurv side
    - &#10004; Legg til livechat
    - &#10004; Om oss side - Eline
    - &#10004; Dropdown på "Produkter"?
    - &#10004; Jobbe på handlekurv popupen
-   - Legge til alle brandsa
+   - &#10004; Legge til alle brandsa
 
 
   - Alle
