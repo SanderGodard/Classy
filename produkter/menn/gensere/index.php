@@ -13,20 +13,95 @@
      ?>
   </nav>
   <main>
+<h1 class="gensereMenn"> Gensere menn </h1>
+<div class="gensere1">
+  
+  <a href="#">
+    <img src="../../../images/Genser.png">
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
 
+  <a href="#">
+    <img src="../../../images/Genser.png" >
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
 
+  <a href="#">
+    <img src="../../../images/Genser.png" >
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
 
+  <a href="#">
+    <img src="../../../images/Genser.png" >
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
 
+  <a href="#">
+    <img src="../../../images/Genser.png" >
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
+
+  <a href="#">
+    <img src="../../../images/Genser.png" >
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
+
+  <a href="#">
+    <img src="../../../images/Genser.png" >
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+    </div>
+  </a>
+
+  <a href="#">
+    <img src="../../../images/Genser.png" >
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
+
+  <a href="#">
+    <img src="../../../images/Genser.png" >
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
+
+  <a href="#">
+    <img src="../../../images/Genser.png" >
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
+
+</div>
   </main>
   <footer>
     <?php
       //include "../../../elements/footer.php";
      ?>
   </footer>
-  <script>
-    /* Initiate Magnify Function
-    with the id of the image, and the strength of the magnifier glass:*/
-    //magnify("storBilde", 2);
-  </script>
 </body>
 </html>

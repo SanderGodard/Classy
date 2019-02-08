@@ -1572,4 +1572,65 @@ main .Showcase .Info h1 {
   width: 20%;
 }
 
+.gensere1 {
+  width: 100%;
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.gensere1 a {
+  margin-bottom: 18vh;
+  font-weight: bold;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.gensere1 a img {
+  border: 3px solid #707070;
+  width: 300px;
+  min-width: 230px;
+  max-width: 100%;
+}
+.gensere1 a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.gensere1 a div p {
+  display: inline;
+  margin: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+.gensere1 a:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.gensereMenn {
+  margin-left: 3.2%;
+}
+
 /*# sourceMappingURL=styling.css.map */
