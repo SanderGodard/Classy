@@ -25,6 +25,7 @@
 <script async defer src="/HypeIT/scripts/frontSwitch.js"></script>
 <script async defer src="/HypeIT/scripts/zoom.js"></script>
 <script async defer src="/HypeIT/scripts/sizeButton.js"></script>
+<script async defer src="/HypeIT/scripts/colourButton.js"></script>
 <!--<script async defer src="/HypeIT/scripts/magnifyingGlass.js"></script>-->
 
 <!-- Live chat

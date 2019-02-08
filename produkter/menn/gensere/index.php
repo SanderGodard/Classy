@@ -37,12 +37,12 @@
           <a>XL</a>
         </div>
         <div class="farge">
-          <a id="farge1"></a>
-          <a id="farge2"></a>
-          <a id="farge3"></a>
-          <a id="farge4"></a>
-          <a id="farge5"></a>
-          <a id="farge6"></a>
+          <a id="farge1"><i style="color: white; margin-right: 1vh; margin-top: 0.5vh;" class="Material">check</i></a>
+          <a id="farge2"><i style="color: white; margin-right: 1vh; margin-top: 0.5vh;" class="Material">check</i></a>
+          <a id="farge3"><i style="color: white; margin-right: 1vh; margin-top: 0.5vh;" class="Material">check</i></a>
+          <a id="farge4"><i style="color: white; margin-right: 1vh; margin-top: 0.5vh;" class="Material">check</i></a>
+          <a id="farge5"><i style="color: black; margin-right: 1vh; margin-top: 0.5vh;" class="Material">check</i></a>
+          <a id="farge6"><i style="color: white; margin-right: 1vh; margin-top: 0.5vh;" class="Material">check</i></a>
         </div>
 
         <a href="javascript:void(0)" class="shopBtn" tabindex="2" onclick="addToBasket(this);cartCounter(this);" id="frontBtn">Legg i handlekurv</a>
