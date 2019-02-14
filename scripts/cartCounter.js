@@ -51,11 +51,11 @@ function cartCounter(x) {
 
 function createEasterEgg() {
   var exit = document.createElement("div");
-  var exitText = document.createTextNode("X");
+  var exitText = document.createTextNode("x");
   exit.appendChild(exitText);
   exit.style.position = "absolute";
   exit.style.top = "1%";
-  exit.style.right = "1%";
+  exit.style.right = "2%";
   exit.style.cursor = "pointer";
   exit.style.fontWeight = "bold";
 
