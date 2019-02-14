@@ -1785,62 +1785,12 @@ main .Showcase .Info h1 {
   margin-bottom: 1vh;
 }
 .cartBigDiv .cartConfirmation .cartConfDiscountRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
-  border: 1px solid #707070;
-  font-size: 0.9em;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  line-height: 1.6;
-}
-.cartBigDiv .cartConfirmation .cartConfDiscountRow button {
-  min-width: 60px;
-  text-transform: uppercase;
-  border: 3px solid #000;
-  background-color: #FFF;
-  font-size: 0.75em;
-  font-weight: bold;
-  font-size: 1.25vw;
-  margin-bottom: 1vh;
-}
-@media only screen and (max-width: 800px) {
-  .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
-    font-size: 1.7vw;
-    margin-bottom: 0;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
-    font-size: 4vw;
-    padding-bottom: 1vw;
-  }
-}
-.cartBigDiv .cartConfirmation .cartConfDiscountRow button:hover {
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  color: #FFF;
-  background-color: #000;
-}
-.cartBigDiv .cartConfirmation .cartConfDiscountRow button #cartConfDiscountInput {
   border: 1.5px solid #707070;
   font-size: 1vw;
   line-height: 1.6;
@@ -1848,20 +1798,22 @@ main .Showcase .Info h1 {
   height: 2vw;
 }
 @media only screen and (max-width: 800px) {
-  .cartBigDiv .cartConfirmation .cartConfDiscountRow button #cartConfDiscountInput {
+  .cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
     width: 19vw;
     height: 3vw;
     font-size: 1.45vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  .cartBigDiv .cartConfirmation .cartConfDiscountRow button #cartConfDiscountInput {
+  .cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
     width: 55vw;
     height: 9vw;
     padding-top: 1vw;
   }
 }
-.cartBigDiv .cartConfirmation .cartConfDiscountRow button button {
+.cartBigDiv .cartConfirmation .cartConfDiscountRow button {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   text-transform: uppercase;
   border: 2px solid #000;
   background-color: inherit;
@@ -1871,15 +1823,25 @@ main .Showcase .Info h1 {
   width: 5vw;
   height: 2vw;
 }
+.cartBigDiv .cartConfirmation .cartConfDiscountRow button:hover, .cartBigDiv .cartConfirmation .cartConfDiscountRow button:focus, .cartBigDiv .cartConfirmation .cartConfDiscountRow button:active {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #FFF;
+  background-color: #000;
+}
+.cartBigDiv .cartConfirmation .cartConfDiscountRow button:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
 @media only screen and (max-width: 800px) {
-  .cartBigDiv .cartConfirmation .cartConfDiscountRow button button {
+  .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
     width: 7vw;
     height: 3vw;
     font-size: 1.45vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  .cartBigDiv .cartConfirmation .cartConfDiscountRow button button {
+  .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
     width: 14vw;
     height: 9vw;
     font-size: 3vw;
@@ -1947,6 +1909,8 @@ main .Showcase .Info h1 {
           justify-content: center;
 }
 .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   border: 0;
   color: #FFF;
   text-transform: uppercase;
@@ -1956,6 +1920,17 @@ main .Showcase .Info h1 {
   line-height: 1.6;
   width: 15vw;
   height: 2vw;
+  border: 2px solid #000;
+}
+.cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:hover, .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:focus, .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:active {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #000;
+  background-color: #FFF;
+}
+.cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 @media only screen and (max-width: 800px) {
   .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton {

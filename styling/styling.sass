@@ -1441,75 +1441,51 @@ main
       margin-bottom: 1vh
 
     .cartConfDiscountRow
-      display: flex
       flex-direction: row
-      justify-content: space-between
-      align-items: center
-      align-content: flex-start
-      width: 100%
-      flex-wrap: wrap
 
       #cartConfDiscountInput
-        border: 1px solid #707070
-        font-size: .9em
-        flex-grow: 1
+        border: 1.5px solid #707070
+        font-size: 1vw
         line-height: 1.6
+        width: 15vw
+        height: 2vw
+        @media #{$TabletL}
+          width: 19vw
+          height: 3vw
+          font-size: 1.45vw
+        @media #{$MobileXXL}
+          width: 55vw
+          height: 9vw
+          padding-top: 1vw
 
       button
-        min-width: 60px
+        transition: $Medium
         text-transform: uppercase
-        border: 3px solid $Black
-        background-color: $White
-        font-size: .75em
+        border: 2px solid $Black
+        background-color: inherit
+        font-size: 1vw
         font-weight: bold
-        font-size: 1.25vw
-        margin-bottom: 1vh
-        @media #{$TabletL}
-          font-size: 1.70vw
-          margin-bottom: 0
-        @media #{$MobileXXL}
-          font-size: 4vw
-          padding-bottom: 1vw
+        line-height: 1.6
+        width: 5vw
+        height: 2vw
 
-
-        &:hover
+        &:hover, &:focus, &:active
           transition: $Medium
           color: $White
           background-color: $Black
 
-        #cartConfDiscountInput
-          border: 1.5px solid #707070
-          font-size: 1vw
-          line-height: 1.6
-          width: 15vw
-          height: 2vw
-          @media #{$TabletL}
-            width: 19vw
-            height: 3vw
-            font-size: 1.45vw
-          @media #{$MobileXXL}
-            width: 55vw
-            height: 9vw
-            padding-top: 1vw
+        &:active
+          transform: scale(0.97)
 
-        button
-          text-transform: uppercase
-          border: 2px solid $Black
-          background-color: inherit
-          font-size: 1vw
-          font-weight: bold
-          line-height: 1.6
-          width: 5vw
-          height: 2vw
-          @media #{$TabletL}
-            width: 7vw
-            height: 3vw
-            font-size: 1.45vw
-          @media #{$MobileXXL}
-            width: 14vw
-            height: 9vw
-            font-size: 3vw
-            border: 3px solid $Black
+        @media #{$TabletL}
+          width: 7vw
+          height: 3vw
+          font-size: 1.45vw
+        @media #{$MobileXXL}
+          width: 14vw
+          height: 9vw
+          font-size: 3vw
+          border: 3px solid $Black
 
       .cartConfDiscountSmallText
         font-size: 0.85vw
@@ -1548,15 +1524,26 @@ main
       justify-content: center
 
       #videreTilKassenButton
+        transition: $Medium
         border: 0
         color: $White
         text-transform: uppercase
-        background-color: #000
+        background-color: $Black
         font-size: 1vw
         font-weight: bold
         line-height: 1.6
         width: 15vw
         height: 2vw
+        border: 2px solid $Black
+
+        &:hover, &:focus, &:active
+          transition: $Medium
+          color: $Black
+          background-color: $White
+
+        &:active
+          transform: scale(0.97)
+
         @media #{$TabletL}
           font-size: 1.45vw
           width: 19vw
