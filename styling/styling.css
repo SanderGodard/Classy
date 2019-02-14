@@ -1463,10 +1463,24 @@ main .Showcase .Info h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   line-height: 0.35;
-  top: -15px;
-  right: -61px;
-  font-size: 2.5em;
+  top: -7.5%;
+  right: -10.5%;
+  font-size: 3.5vw;
   font-weight: 100;
+}
+@media only screen and (max-width: 800px) {
+  .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
+    top: -4%;
+    right: -6.5%;
+    font-size: 4.5vw;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
+    top: -96%;
+    right: -94%;
+    font-size: 10vw;
+  }
 }
 .cartBigDiv .cartMainProducts .cartProducts img {
   width: 20vw;
