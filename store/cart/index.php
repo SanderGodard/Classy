@@ -20,22 +20,22 @@
     <div class="cartProducts">
       <img src="../../images/SupremeCatInAHatBrightRoyal.jpg" alt="Produkt bilde">
       <div class="cartText">
-        <p id="cartProductName">Cat in the Hat Hettegenser</p>
-        <p id="cartProductPrice">3000 kr</p>
-        <p id="cartProductColor">Farge: Royal Blue<p>
-        <p id="cartProductSize">Størrelse: L</p>
-        <input type="text" name="navn" id="cartProductNumber" value="1">
+        <p class="cartProductName">Cat in the Hat Hettegenser</p>
+        <p class="cartProductPrice">3000 kr</p>
+        <p class="cartProductColor">Farge: Royal Blue<p>
+        <p class="cartProductSize">Størrelse: Stor nok</p>
+        <input type="text" name="navn" class="cartProductNumber" value="1">
       </div>
     </div>
 
     <div class="cartProducts">
       <img src="../../images/SupremeCatInAHatMustard.jpg" alt="Produkt bilde">
       <div class="cartText">
-        <p id="cartProductName">Supreme Cat In a Hat </p>
-        <p id="cartProductPrice">3000 kr</p>
-        <p id="cartProductColor">Farge: Royal Blue</p>
-        <p id="cartProductSize">Størrelse: L</p>
-        <input type="text" name="navn" id="cartProductNumber" value="1">
+        <p class="cartProductName">Supreme Cat In a Hat </p>
+        <p class="cartProductPrice">3000 kr</p>
+        <p class="cartProductColor">Farge: Royal Blue</p>
+        <p class="cartProductSize">Størrelse: Litt for liten</p>
+        <input type="text" name="navn" class="cartProductNumber" value="1">
       </div>
     </div>
   </div>
