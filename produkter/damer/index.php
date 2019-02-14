@@ -14,7 +14,7 @@
   </nav>
   <main>
     <div>
-      <h1 class="mobsquad" >Damer</h1>
+      <h1 class="mobsquad" style="display: inline-block"  >Damer</h1>
     </div>
 
     <div class="kategori_wrapper">
