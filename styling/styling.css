@@ -2104,6 +2104,10 @@ main .Showcase .Info h1 {
 .anbefaltwrapper a .anbefaltbox .anbefaltinfo .anbefalttext {
   display: inline-block;
 }
+.anbefaltwrapper a img {
+  margin-top: 5vh;
+  width: 20%;
+}
 
 .gensere1 {
   width: 100%;
