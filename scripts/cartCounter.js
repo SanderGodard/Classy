@@ -126,3 +126,16 @@ function createEasterEgg() {
 }
 
 //createEasterEgg();
+
+
+//Removing 1 from the countedItems when clicking x in basket
+exitBtn = document.getElementsByClassName('KryssUt');
+for(i=0; i<exitBtn.length; i++) {
+  exitBtn[i].addEventListener("click", removeFromCart, event);
+}
+function removeFromCart(x) {
+  x.target.parentNode.style.display = "none";
+
+  counter.innerHTML = parseInt(counter.innerHTML) - 1;
+  lStorage.setItem("counted", counter.innerHTML);
+}

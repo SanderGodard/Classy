@@ -1,5 +1,6 @@
-function deleteTing(boyyy) {
-  x = document.getElementsByClassName('cartProducts')[boyyy];
+/*
+function deleteTing(a) {
+  x = document.getElementsByClassName('cartProducts')[a];
   x.style.display = "none";
 
   counter = document.getElementById('cartCounter').innerHTML;
@@ -8,3 +9,4 @@ function deleteTing(boyyy) {
   newCount = nr - 1;
   counter = newCount;
 }
+*/
