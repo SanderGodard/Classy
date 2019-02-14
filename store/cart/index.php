@@ -76,6 +76,7 @@
       <span class="KryssUt" onclick="deleteTing(1)">x</span>
     </div>
 
+    <div class="cartProducts" style="border: 0px solid white" id="Leave empty"></div>
   </div>
 
 
