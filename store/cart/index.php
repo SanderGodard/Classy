@@ -75,7 +75,7 @@
       </div>
       <span class="KryssUt" onclick="deleteTing(1)">x</span>
     </div>
-    
+
   </div>
 
 
