@@ -1482,6 +1482,20 @@ main .Showcase .Info h1 {
     font-size: 10vw;
   }
 }
+@media only screen and (max-width: 800px) {
+  .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
+    top: -4%;
+    right: -6.5%;
+    font-size: 4.5vw;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
+    top: -96%;
+    right: -94%;
+    font-size: 10vw;
+  }
+}
 .cartBigDiv .cartMainProducts .cartProducts img {
   width: 20vw;
   -ms-flex-item-align: start;
