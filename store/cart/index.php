@@ -73,8 +73,9 @@
           <input type="text" name="navn" id="cartProductNumber" value="1">
         </div>
       </div>
+      <span class="KryssUt" onclick="deleteTing(1)">x</span>
     </div>
-    <span class="KryssUt" onclick="deleteTing(1)">x</span>
+    
   </div>
 
 
