@@ -28,7 +28,7 @@
           </div>
 
           <div class="hoyreside">
-            <h2><a class="Supreme">Zip Detail Metallic Sports Trousers</a></h2>
+            <h2><a>Zip Detail Metallic Sports Trousers</a></h2>
             <h2><a class="pris"> 12000,-</a></h2>
             <div class="str">
               <a>S</a>
