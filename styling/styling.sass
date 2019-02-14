@@ -758,7 +758,7 @@ main
   margin-top: 15%
 
   .topFooter
-    height: 30%
+    height: 13vh
     color: $Black
     display: flex
     flex-direction: row
@@ -767,6 +767,10 @@ main
     flex-direction: row
     flex-wrap: nowrap
     justify-content: space-between
+
+    @media #{$Mobile}
+      display: none
+      height: 0
 
     a
       color: $Black
@@ -793,7 +797,20 @@ main
   .centerFooter
     color: #FFFFFF
     background: $Black
-    height: 90%
+    height: 22vw
+
+    @media only screen and (max-width : 1482px)
+      height: 28vw
+
+    @media only screen and (max-width : 1158px)
+      height: 30vw
+
+    @media #{$Mobile}
+      height: 30vw
+
+    @media only screen and (max-width : 622px)
+      height: 200px
+
 
     .cf_wrapper
       margin-left: 7vw
@@ -803,11 +820,30 @@ main
       justify-content: center
 
 
+      #kolonne_1
+        @media #{$Mobile}
+          display: none
+          height: 0
+          width: 0
+
+
       .cf_kolonne
-        margin-right: 0vw
+        margin-right: 8vw
         width: 25vw
-        margin-top: 4.5vw
+        margin-top: 5%
         font-weight: 500
+
+        @media only screen and (max-width : 1482px)
+          margin-top: 3%
+
+        @media only screen and (max-width : 1070px)
+          width: 32vw
+
+        @media #{$Mobile}
+          width: 100%
+          margin-top: 0
+          margin-right: 0
+          margin-left: 5vw
 
         h1
           padding-bottom: 4px
@@ -815,11 +851,16 @@ main
           display: inline
           font-size: 2em
 
+          @media #{$Mobile}
+            margin-left: 6vw
           a
             color: #FFFFFF
 
         .kolonne_txt
           margin-top: 1.5vw
+
+          @media #{$Mobile}
+            margin-top: 4vw
 
 
           ul
@@ -828,11 +869,19 @@ main
             margin-left: -3vw
             font-size: 1.5em
 
+            @media only screen and (max-width : 1070px)
+              font-size: 1.4em
+
             li
               padding-bottom: 10px
               display: flex
               flex-direction: row
               align-items: center
+
+              img
+                @media #{$Mobile}
+                  width: 4vw
+                  margin-right: 5vw
 
               div
                 color: white
@@ -844,7 +893,7 @@ main
 
 
   .bottomFooter
-    height: 10%
+    height: 6vh
     color: $Black
     text-align: center
     display: flex
@@ -852,6 +901,9 @@ main
     align-items: center
     justify-content: center
 
+    @media #{$Mobile}
+      font-size: 1.5em
+      height: 5vw
 
 //Slutt på Anders sitt stuff
 
@@ -1504,8 +1556,6 @@ main
           width: 70vw
           height: 8vw
           font-size: 3vw
-
-@media #{$MobileXXL}
 
 
 

@@ -871,7 +871,7 @@ main .Showcase .Info h1 {
   margin-top: 15%;
 }
 .footer .topFooter {
-  height: 30%;
+  height: 13vh;
   color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,6 +890,12 @@ main .Showcase .Info h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (max-width: 890px) {
+  .footer .topFooter {
+    display: none;
+    height: 0;
+  }
 }
 .footer .topFooter a {
   color: #000;
@@ -915,7 +921,27 @@ main .Showcase .Info h1 {
 .footer .centerFooter {
   color: #FFFFFF;
   background: #000;
-  height: 90%;
+  height: 22vw;
+}
+@media only screen and (max-width: 1482px) {
+  .footer .centerFooter {
+    height: 28vw;
+  }
+}
+@media only screen and (max-width: 1158px) {
+  .footer .centerFooter {
+    height: 30vw;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .footer .centerFooter {
+    height: 30vw;
+  }
+}
+@media only screen and (max-width: 622px) {
+  .footer .centerFooter {
+    height: 200px;
+  }
 }
 .footer .centerFooter .cf_wrapper {
   margin-left: 7vw;
@@ -932,11 +958,36 @@ main .Showcase .Info h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media only screen and (max-width: 890px) {
+  .footer .centerFooter .cf_wrapper #kolonne_1 {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
 .footer .centerFooter .cf_wrapper .cf_kolonne {
-  margin-right: 0vw;
+  margin-right: 8vw;
   width: 25vw;
-  margin-top: 4.5vw;
+  margin-top: 5%;
   font-weight: 500;
+}
+@media only screen and (max-width: 1482px) {
+  .footer .centerFooter .cf_wrapper .cf_kolonne {
+    margin-top: 3%;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .footer .centerFooter .cf_wrapper .cf_kolonne {
+    width: 32vw;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .footer .centerFooter .cf_wrapper .cf_kolonne {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 5vw;
+  }
 }
 .footer .centerFooter .cf_wrapper .cf_kolonne h1 {
   padding-bottom: 4px;
@@ -944,17 +995,32 @@ main .Showcase .Info h1 {
   display: inline;
   font-size: 2em;
 }
+@media only screen and (max-width: 890px) {
+  .footer .centerFooter .cf_wrapper .cf_kolonne h1 {
+    margin-left: 6vw;
+  }
+}
 .footer .centerFooter .cf_wrapper .cf_kolonne h1 a {
   color: #FFFFFF;
 }
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt {
   margin-top: 1.5vw;
 }
+@media only screen and (max-width: 890px) {
+  .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt {
+    margin-top: 4vw;
+  }
+}
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul {
   list-style: none;
   text-decoration: none;
   margin-left: -3vw;
   font-size: 1.5em;
+}
+@media only screen and (max-width: 1070px) {
+  .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul {
+    font-size: 1.4em;
+  }
 }
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li {
   padding-bottom: 10px;
@@ -969,6 +1035,12 @@ main .Showcase .Info h1 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 890px) {
+  .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li img {
+    width: 4vw;
+    margin-right: 5vw;
+  }
+}
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li div {
   color: white;
 }
@@ -977,7 +1049,7 @@ main .Showcase .Info h1 {
   margin-right: 0.5vw;
 }
 .footer .bottomFooter {
-  height: 10%;
+  height: 6vh;
   color: #000;
   text-align: center;
   display: -webkit-box;
@@ -993,6 +1065,12 @@ main .Showcase .Info h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media only screen and (max-width: 890px) {
+  .footer .bottomFooter {
+    font-size: 1.5em;
+    height: 5vw;
+  }
 }
 
 .shopBtn {
