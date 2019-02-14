@@ -20,15 +20,13 @@
 
 
     <div class="cartProducts">
-      <div class="center">
-        <a href="#">
-          <img src="../../images/SupremeCatInAHatBrightRoyal.jpg" alt="Produkt bilde">
-        </a>
-        <div class="cartText">
-          <div>
-            <p id="cartProductName">Cat in the Hat Hettegenser</p>
-            <p id="cartProductPrice">3000</p>
-          </div>
+      <img src="../../images/SupremeCatInAHatBrightRoyal.jpg" alt="Produkt bilde">
+      <div class="cartText">
+        <div class="cartTextChild">
+          <p id="cartProductName">Cat in the Hat Hettegenser</p>
+          <p id="cartProductPrice">3000 kr</p>
+        </div>
+        <div class="cartProductAndPriceParent">
           <div class="tabel">
             <table>
               <tr>
@@ -41,6 +39,8 @@
               </tr>
             </table>
           </div>
+        </div>
+        <div class="cartProductNumberDiv">
           <input type="text" name="navn" id="cartProductNumber" value="1">
         </div>
       </div>
@@ -48,15 +48,13 @@
 
 
     <div class="cartProducts">
-      <div class="center">
-        <a href="#">
-          <img src="../../images/SupremeCatInAHatMustard.jpg" alt="Produkt bilde">
-        </a>
-        <div class="cartText">
-          <div>
-            <p id="cartProductName">Supreme Cat In a Hat </p>
-            <p id="cartProductPrice">3000</p>
-          </div>
+      <img src="../../images/SupremeCatInAHatBrightRoyal.jpg" alt="Produkt bilde">
+      <div class="cartText">
+        <div class="cartTextChild">
+          <p id="cartProductName">Cat in the Hat Hettegenser</p>
+          <p id="cartProductPrice">3000 kr</p>
+        </div>
+        <div class="cartProductAndPriceParent">
           <div class="tabel">
             <table>
               <tr>
@@ -69,7 +67,9 @@
               </tr>
             </table>
           </div>
-          <input type="number" name="navn" id="cartProductNumber" value="1">
+        </div>
+        <div class="cartProductNumberDiv">
+          <input type="text" name="navn" id="cartProductNumber" value="1">
         </div>
       </div>
     </div>
@@ -86,11 +86,12 @@
         <button type="sumbit">Bruk</button>
       </div>
       <a href="#"><p class="cartConfDiscountSmallText">*Les mer om friendkode her!</p></a>
-      <div class="cartPayment">
-        <div class="cartPaymentChild">
-          <br><br>
-          <table>
-            <tr>
+    </div>
+    <div class="cartPayment">
+      <div class="cartPaymentChild">
+        <table>
+          <tbody>
+        	  <tr>
               <td>Bestillingsverdi:</td>
               <td id="krPrefix">20</td>
             </tr>
@@ -106,11 +107,13 @@
               <td class="Sum">Sum:</td>
               <td class="Sum" id="krPrefix">15</td>
             </tr>
-          </table>
-        </div>
+          </tbody>
+        </table>
       </div>
     </div>
-    <a href="#" class="kasseKnapp">Gå videre til kassen</a>
+    <div class="cartButtonCenter">
+      <button id="videreTilKassenButton" type="button">Gå videre til kassen</button>
+    </div>
   </div>
 </div>
 
