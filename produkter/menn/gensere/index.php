@@ -7,6 +7,30 @@
    ?>
 </head>
 <body>
+  <?php
+  if(isset($_GET["p"])){
+    $item_id = $_GET["p"];
+  }
+   ?>
+  <?php
+  $host = "127.0.0.1";
+  $user = "root";
+  $password = "";
+  $database = "products";
+
+  $connection = new mysqli($host, $user, $password, $database);
+
+  if($connection->connect_error) {
+    die("Noe gikk galt..." . $connection->connect_error);
+  }
+
+  $connection->set_charset("utf8");
+
+  $sql = "SELECT product_name, brand, price FROM product WHERE product_id=$item_id";
+
+  $result = $connection->query($sql);
+
+   ?>
   <nav>
     <?php
       include "../../../elements/nav.php";
@@ -28,8 +52,10 @@
       </div>
 
       <div class="hoyreside">
-        <h2><a class="Supreme">Cat In The Hat Hettegenser</a></h2>
-        <h2><a class="pris"> 3000,-</a></h2>
+        <h2><a class="Supreme"><?php while ($rad = $result->fetch_assoc()){
+                                      echo("$rad[product_name]"); }?></a></h2>
+        <h2><a class="pris"> <?php while ($rad = $result->fetch_assoc()){
+                                      echo("$rad[price]"); }?></a></h2>
         <div class="str">
           <a>S</a>
           <a>M</a>
