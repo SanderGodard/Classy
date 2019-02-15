@@ -13,6 +13,40 @@ var g=1;
 var arrowNext = document.getElementById('arrowNext')
 var arrowPrev = document.getElementById('arrowPrev')
 
+arrowNext.addEventListener("click", nextPic);
+
+function nextPic() {
+
+      if(primary.src == document.getElementById('img' + (smabilde.childElementCount - 2)).src){
+        g=1;
+        primary.src = img1.src;
+        console.log("Bilde 1");
+      }
+      else {
+        primary.src = document.getElementById('img' + (g+1)).src;
+        console.log("Elsen kjørte");
+        g++;
+      }
+
+}
+
+arrowPrev.addEventListener("click", prevPic)
+
+function prevPic() {
+
+      if(primary.src == img1.src){
+        g=(smabilde.childElementCount - 2);
+        primary.src = document.getElementById('img' + (smabilde.childElementCount - 2)).src;
+        console.log("Bilde 1");
+      }
+      else {
+        primary.src = document.getElementById('img' + (g-1)).src;
+        console.log("Elsen kjørte");
+        g--;
+      }
+
+}
+
 img1.addEventListener("click", swapPic1);
 
 function swapPic1() {
@@ -65,38 +99,4 @@ img9.addEventListener("click", swapPic9);
 
 function swapPic9() {
   primary.src = img9.src;
-}
-
-arrowNext.addEventListener("click", nextPic);
-
-function nextPic() {
-
-      if(primary.src == document.getElementById('img' + smabilde.childElementCount).src){
-        g=1;
-        primary.src = img1.src;
-        console.log("Bilde 1");
-      }
-      else {
-        primary.src = document.getElementById('img' + (g+1)).src;
-        console.log("Elsen kjørte");
-        g++;
-      }
-
-}
-
-arrowPrev.addEventListener("click", prevPic)
-
-function prevPic() {
-
-      if(primary.src == img1.src){
-        g=smabilde.childElementCount;
-        primary.src = document.getElementById('img' + smabilde.childElementCount).src;
-        console.log("Bilde 1");
-      }
-      else {
-        primary.src = document.getElementById('img' + (g-1)).src;
-        console.log("Elsen kjørte");
-        g--;
-      }
-
 }

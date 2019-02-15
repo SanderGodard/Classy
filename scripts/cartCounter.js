@@ -135,7 +135,8 @@ for(i=0; i<exitBtn.length; i++) {
 }
 function removeFromCart(x) {
   x.target.parentNode.style.display = "none";
-
-  counter.innerHTML = parseInt(counter.innerHTML) - 1;
-  lStorage.setItem("counted", counter.innerHTML);
+  if(counter.innerHTML > 0) {
+    counter.innerHTML = parseInt(counter.innerHTML) - 1;
+    lStorage.setItem("counted", counter.innerHTML);
+  }
 }
