@@ -33,6 +33,7 @@
   $imgsql = "SELECT url FROM product_images JOIN images ON images.image_id=product_images.image_id WHERE product_id=$item_id";
 
   $result = $connection->query($sql);
+  $array = $result->fetch_assoc();
   $url = "/HypeIT/images";
    ?>
   <nav>
@@ -67,7 +68,7 @@
       </div>
 
       <div class="hoyreside">
-        <h2><a class="Supreme"><?php while ($rad = $result->fetch_assoc()){
+        <h2><a class="<?php echo($array['brand']); $result = $connection->query($sql); ?>"><?php while ($rad = $result->fetch_assoc()){
                                       echo("$rad[product_name]"); }?></a></h2>
                                       <?php $result = $connection->query($sql); ?>
         <h2><a class="pris"> <?php while ($rad = $result->fetch_assoc()){
