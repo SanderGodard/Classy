@@ -19,14 +19,12 @@
       <div class="venstreside">
         <div class="Bilder">
           <img src="../../../images/racks.jpg" class="StortBilde" id="storBilde">
-          <div class="piler">
-            <div class="smaBilder" id="Gliscor">
-              <a class="Material">keyboard_arrow_left</a>
-              <img src="../../../images/racks.jpg" alt="Rack" id="img1">
-              <img src="../../../images/gul.jpg" alt="Green" id="img2">
-              <img src="../../../images/grønn.jpg" alt="Mustard" id="img3">
-              <a class="Material">keyboard_arrow_right</a>
-            </div>
+          <div class="smaBilder" id="Gliscor">
+            <a class="Material" id="arrowPrev">keyboard_arrow_left</a>
+            <img src="../../../images/racks.jpg" alt="Rack" id="img1">
+            <img src="../../../images/gul.jpg" alt="Green" id="img2">
+            <img src="../../../images/grønn.jpg" alt="Mustard" id="img3">
+            <a class="Material" id="arrowNext">keyboard_arrow_right</a>
           </div>
         </div>
       </div>
