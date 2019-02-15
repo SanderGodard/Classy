@@ -27,9 +27,10 @@
   $connection->set_charset("utf8");
 
   $sql = "SELECT product_name, brand, price FROM product WHERE product_id=$item_id";
+  $imgsql = "SELECT url FROM product_images JOIN images ON images.image_id=product_images.image_id WHERE product_id=$item_id";
 
   $result = $connection->query($sql);
-
+  $url = "/HypeIT/images/";
    ?>
   <nav>
     <?php
@@ -37,16 +38,27 @@
      ?>
   </nav>
   <main>
-
+    <?php
+    $images = $connection->query($imgsql);
+    $imgs = $images->fetch_assoc();
+    $i = 1;
+     ?>
     <div class="produktside">
 
       <div class="venstreside">
         <div class="Bilder">
-          <img src="../../../images/racks.jpg" class="StortBilde" id="storBilde">
+          <img src="<?php echo($url . $imgs['url']) ?>" class="StortBilde" id="storBilde">
           <div class="smaBilder" id="Gliscor">
-            <img src="../../../images/racks.jpg" alt="Rack" id="img1">
-            <img src="../../../images/gul.jpg" alt="Green" id="img2">
-            <img src="../../../images/grønn.jpg" alt="Mustard" id="img3">
+            <a class="Material" id="arrowPrev">keyboard_arrow_left</a>
+            <?php
+              $images = $connection->query($imgsql);
+              while($stuff = $images->fetch_assoc()) {
+                echo("<img src=" . $url . $stuff['url'] . " alt='I don't get paid enough to code this...' id=img" . $i . ">");
+                $i = $i+1;
+              }
+             ?>
+             <a class="Material" id="arrowNext">keyboard_arrow_right</a>
+
           </div>
         </div>
       </div>
@@ -54,6 +66,7 @@
       <div class="hoyreside">
         <h2><a class="Supreme"><?php while ($rad = $result->fetch_assoc()){
                                       echo("$rad[product_name]"); }?></a></h2>
+                                      <?php $result = $connection->query($sql); ?>
         <h2><a class="pris"> <?php while ($rad = $result->fetch_assoc()){
                                       echo("$rad[price]"); }?></a></h2>
         <div class="str">
