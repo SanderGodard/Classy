@@ -22,9 +22,4 @@ $stmt->bind_result($id, $name, $brand, $price);
 $stmt->fetch();
 $stmt->close();
 
-echo "<script>";
-echo 'var name = ' . $name . ';';
-echo 'var brand = ' . $brand . ';';
-echo 'var price = ' . $price . ';';
-echo "</script>";
  ?>
