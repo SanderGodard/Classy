@@ -1304,13 +1304,12 @@ main .Showcase .Info h1 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 100%;
-  padding-left: 22.2%;
 }
 .produktside .venstreside .Bilder a {
   font-size: 5.88em;
   display: inline-block;
-  width: 100%;
+  letter-spacing: 10vh;
+  margin-left: 7%;
 }
 .produktside .hoyreside {
   display: -webkit-box;
