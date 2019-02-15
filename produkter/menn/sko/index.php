@@ -18,18 +18,18 @@
 
           <div class="venstreside">
             <div class="Bilder">
-              <img src="../../../images/yeezy-700.jpg" class="StortBilde" id="storBilde">
+              <img src="../../../images/yeezy-700/1.png" class="StortBilde" id="storBilde">
               <div class="smaBilder" id="Gliscor">
-                <img src="../../../images/yeezy-700.jpg" alt="Bukse" id="img1">
-                <img src="../../../images/yeezy-700.jpg" alt="Bukse" id="img2">
-                <img src="../../../images/yeezy-700.jpg" alt="Bukse" id="img3">
+                <img src="../../../images/yeezy-700/1.png" alt="Bukse" id="img1">
+                <img src="../../../images/yeezy-700/2.png" alt="Bukse" id="img2">
+                <img src="../../../images/yeezy-700/3.png" alt="Bukse" id="img3">
               </div>
             </div>
           </div>
 
           <div class="hoyreside">
-            <h2><a>Zip Detail Metallic Sports Trousers</a></h2>
-            <h2><a class="pris"> 12000,-</a></h2>
+            <h2><a>Yeezy Boost 700</a></h2>
+            <h2><a class="pris"> 4000,-</a></h2>
             <div class="str">
               <a>40</a>
               <a>41</a>
@@ -39,14 +39,6 @@
               <a>45</a>
               <a>46</a>
               <a>47</a>
-            </div>
-            <div class="farge">
-              <a id="farge1"></a>
-              <a id="farge2"></a>
-              <a id="farge3"></a>
-              <a id="farge4"></a>
-              <a id="farge5"></a>
-              <a id="farge6"></a>
             </div>
 
             <a href="javascript:void(0)" class="shopBtn" tabindex="2" onclick="addToBasket(this);cartCounter(this);" id="frontBtn">Legg i handlekurv</a>
