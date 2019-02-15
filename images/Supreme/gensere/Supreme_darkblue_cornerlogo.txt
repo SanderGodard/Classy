@@ -1,0 +1,9 @@
+$ 375,00
+
+Description: 
+Corner Label Hooded Sweatshirt SU3672
+Manufacturer Sku	SU3672
+Nickname	SS 18
+Gender	Mens
+Colorway	NAVY
+Materials	Cotton

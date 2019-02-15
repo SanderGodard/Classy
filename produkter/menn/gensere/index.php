@@ -11,6 +11,9 @@
   if(isset($_GET["p"])){
     $item_id = $_GET["p"];
   }
+  else{
+    die("Udefinert produkt...");
+  }
    ?>
   <?php
   $host = "127.0.0.1";
@@ -30,7 +33,7 @@
   $imgsql = "SELECT url FROM product_images JOIN images ON images.image_id=product_images.image_id WHERE product_id=$item_id";
 
   $result = $connection->query($sql);
-  $url = "/HypeIT/images/";
+  $url = "/HypeIT/images";
    ?>
   <nav>
     <?php
@@ -53,7 +56,7 @@
             <?php
               $images = $connection->query($imgsql);
               while($stuff = $images->fetch_assoc()) {
-                echo("<img src=" . $url . $stuff['url'] . " alt='I don't get paid enough to code this...' id=img" . $i . ">");
+                echo("<img src=" . "\"" . $url . $stuff['url'] . "\"" . " alt='I do not get paid enough to code this...' id=img" . $i . ">");
                 $i = $i+1;
               }
              ?>
@@ -68,7 +71,7 @@
                                       echo("$rad[product_name]"); }?></a></h2>
                                       <?php $result = $connection->query($sql); ?>
         <h2><a class="pris"> <?php while ($rad = $result->fetch_assoc()){
-                                      echo("$rad[price]"); }?></a></h2>
+                                      echo("$rad[price]" . ",-"); }?></a></h2>
         <div class="str">
           <a>S</a>
           <a>M</a>
@@ -76,12 +79,12 @@
           <a>XL</a>
         </div>
         <div class="farge">
-          <a id="farge1"></a>
-          <a id="farge2"></a>
-          <a id="farge3"></a>
-          <a id="farge4"></a>
-          <a id="farge5"></a>
-          <a id="farge6"></a>
+          <a id="farge1"><i class="Material">check</i></a>
+          <a id="farge2"><i class="Material">check</i></a>
+          <a id="farge3"><i class="Material">check</i></a>
+          <a id="farge4"><i class="Material">check</i></a>
+          <a id="farge5"><i class="Material">check</i></a>
+          <a id="farge6"><i class="Material">check</i></a>
         </div>
 
         <a href="javascript:void(0)" class="shopBtn" tabindex="2" onclick="addToBasket(this);cartCounter(this);" id="frontBtn">Legg i handlekurv</a>
