@@ -70,6 +70,7 @@
       <a href="/HypeIT/produkter/menn/">Menn</a>
       <a href="/HypeIT/produkter/damer/">Damer</a>
       <a href="/HypeIT/kontakt/">Om oss</a>
+      <a href="/HypeIT/store/cart/" class="Material">shopping_cart</a>
     </div>
   </div>
 </div>
