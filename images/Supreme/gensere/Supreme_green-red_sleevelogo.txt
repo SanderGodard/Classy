@@ -1,0 +1,9 @@
+$ 600,00
+
+Description:
+Sideline Hooded Sweatshirt SU4327
+Manufacturer Sku	SU4327
+Nickname	SS 18
+Gender	Mens
+Colorway	GREEN
+Materials	Cotton
