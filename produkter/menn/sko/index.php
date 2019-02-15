@@ -18,11 +18,11 @@
 
           <div class="venstreside">
             <div class="Bilder">
-              <img src="../../../images/zip_detail_metallic_sports_trousers.png" class="StortBilde" id="storBilde">
+              <img src="../../../images/yeezy-700.jpg" class="StortBilde" id="storBilde">
               <div class="smaBilder" id="Gliscor">
-                <img src="../../../images/zip_detail_metallic_sports_trousers-2.png" alt="Bukse" id="img1">
-                <img src="../../../images/zip_detail_metallic_sports_trousers-2.png" alt="Bukse" id="img2">
-                <img src="../../../images/zip_detail_metallic_sports_trousers-2.png" alt="Bukse" id="img3">
+                <img src="../../../images/yeezy-700.jpg" alt="Bukse" id="img1">
+                <img src="../../../images/yeezy-700.jpg" alt="Bukse" id="img2">
+                <img src="../../../images/yeezy-700.jpg" alt="Bukse" id="img3">
               </div>
             </div>
           </div>
@@ -31,10 +31,14 @@
             <h2><a>Zip Detail Metallic Sports Trousers</a></h2>
             <h2><a class="pris"> 12000,-</a></h2>
             <div class="str">
-              <a>S</a>
-              <a>M</a>
-              <a>L</a>
-              <a>XL</a>
+              <a>40</a>
+              <a>41</a>
+              <a>42</a>
+              <a>43</a>
+              <a>44</a>
+              <a>45</a>
+              <a>46</a>
+              <a>47</a>
             </div>
             <div class="farge">
               <a id="farge1"></a>
