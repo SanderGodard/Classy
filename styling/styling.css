@@ -1598,8 +1598,16 @@ main .Showcase .Info h1 {
   font-size: 5.88vw;
   display: inline-block;
   width: 5.88vw;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
-/* line 1219, styling.sass */
+/* line 1215, styling.sass */
+.produktside .venstreside .Bilder .smaBilder a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+/* line 1224, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1614,21 +1622,21 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 1227, styling.sass */
+/* line 1232, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
   text-transform: capitalize;
   font-family: inherit;
 }
-/* line 1233, styling.sass */
+/* line 1238, styling.sass */
 .produktside .hoyreside .str {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1em 0em 2em 0;
 }
-/* line 1237, styling.sass */
+/* line 1242, styling.sass */
 .produktside .hoyreside .str a {
   cursor: pointer;
   margin-left: 5px;
@@ -1647,14 +1655,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   padding: 0.25em 0 0 0;
 }
-/* line 1252, styling.sass */
+/* line 1257, styling.sass */
 .produktside .hoyreside .farge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 0 2em 0;
 }
-/* line 1256, styling.sass */
+/* line 1261, styling.sass */
 .produktside .hoyreside .farge a {
   cursor: pointer;
   margin-left: 5px;
@@ -1672,37 +1680,37 @@ main .Showcase .Info h1 {
   font-size: 2vh;
   font-weight: bold;
 }
-/* line 1270, styling.sass */
+/* line 1275, styling.sass */
 .produktside .hoyreside #farge1 {
   background-color: #E0AA1A;
 }
-/* line 1273, styling.sass */
+/* line 1278, styling.sass */
 .produktside .hoyreside #farge2 {
   background-color: #0097C8;
 }
-/* line 1276, styling.sass */
+/* line 1281, styling.sass */
 .produktside .hoyreside #farge3 {
   background-color: #992319;
 }
-/* line 1279, styling.sass */
+/* line 1284, styling.sass */
 .produktside .hoyreside #farge4 {
   background-color: #004130;
 }
-/* line 1282, styling.sass */
+/* line 1287, styling.sass */
 .produktside .hoyreside #farge5 {
   background-color: #CBCBCB;
 }
-/* line 1285, styling.sass */
+/* line 1290, styling.sass */
 .produktside .hoyreside #farge6 {
   background-color: #171717;
 }
 
-/* line 1288, styling.sass */
+/* line 1293, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
 
-/* line 1294, styling.sass */
+/* line 1299, styling.sass */
 .cartBigDiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1717,7 +1725,7 @@ main .Showcase .Info h1 {
   width: 100%;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1294, styling.sass */
+  /* line 1299, styling.sass */
   .cartBigDiv {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1725,24 +1733,24 @@ main .Showcase .Info h1 {
             flex-direction: column-reverse;
   }
 }
-/* line 1302, styling.sass */
+/* line 1307, styling.sass */
 .cartBigDiv .cartMainProducts {
   margin-left: 5vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1302, styling.sass */
+  /* line 1307, styling.sass */
   .cartBigDiv .cartMainProducts {
     margin-left: 0px;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1302, styling.sass */
+  /* line 1307, styling.sass */
   .cartBigDiv .cartMainProducts {
     -ms-flex-item-align: center;
         align-self: center;
   }
 }
-/* line 1309, styling.sass */
+/* line 1314, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts {
   margin-bottom: 1vw;
   padding: 1.5vw;
@@ -1758,14 +1766,14 @@ main .Showcase .Info h1 {
           flex-direction: row;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1309, styling.sass */
+  /* line 1314, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts {
     width: 60vw;
     height: 25vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1309, styling.sass */
+  /* line 1314, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts {
     width: 80vw;
     height: 90vw;
@@ -1776,7 +1784,7 @@ main .Showcase .Info h1 {
     margin-bottom: 5vw;
   }
 }
-/* line 1326, styling.sass */
+/* line 1331, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
   cursor: pointer;
   font-family: "Roboto", "Calibri", sans-serif;
@@ -1792,7 +1800,7 @@ main .Showcase .Info h1 {
   font-weight: 100;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1326, styling.sass */
+  /* line 1331, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
     top: -4%;
     right: -6.5%;
@@ -1800,7 +1808,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1326, styling.sass */
+  /* line 1331, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
     top: -96%;
     right: -94%;
@@ -1808,7 +1816,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 800px) {
-  /* line 1326, styling.sass */
+  /* line 1331, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
     top: -4%;
     right: -6.5%;
@@ -1816,14 +1824,14 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1326, styling.sass */
+  /* line 1331, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
     top: -96%;
     right: -94%;
     font-size: 10vw;
   }
 }
-/* line 1359, styling.sass */
+/* line 1364, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts img {
   width: 20vw;
   -ms-flex-item-align: start;
@@ -1831,13 +1839,13 @@ main .Showcase .Info h1 {
   vertical-align: middle;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1359, styling.sass */
+  /* line 1364, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts img {
     width: 30vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1359, styling.sass */
+  /* line 1364, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts img {
     padding-top: 5vw;
     width: 60vw;
@@ -1845,7 +1853,7 @@ main .Showcase .Info h1 {
         align-self: center;
   }
 }
-/* line 1370, styling.sass */
+/* line 1375, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1859,7 +1867,7 @@ main .Showcase .Info h1 {
           justify-content: space-between;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1370, styling.sass */
+  /* line 1375, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText {
     -ms-flex-item-align: center;
         align-self: center;
@@ -1869,7 +1877,7 @@ main .Showcase .Info h1 {
     height: 100%;
   }
 }
-/* line 1379, styling.sass */
+/* line 1384, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1879,42 +1887,42 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1383, styling.sass */
+/* line 1388, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #cartProductName {
   font-weight: bold;
   font-size: 1.55vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1383, styling.sass */
+  /* line 1388, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #cartProductName {
     font-size: 2vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1383, styling.sass */
+  /* line 1388, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #cartProductName {
     padding-top: 5vw;
     font-size: 5vw;
   }
 }
-/* line 1392, styling.sass */
+/* line 1397, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #cartProductPrice {
   font-weight: bold;
   font-size: 1.45vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1392, styling.sass */
+  /* line 1397, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #cartProductPrice {
     font-size: 1.9vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1392, styling.sass */
+  /* line 1397, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #cartProductPrice {
     font-size: 3.25vw;
   }
 }
-/* line 1400, styling.sass */
+/* line 1405, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1924,56 +1932,56 @@ main .Showcase .Info h1 {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 1404, styling.sass */
+/* line 1409, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent .tabel {
   font-size: 1.25vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1404, styling.sass */
+  /* line 1409, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent .tabel {
     font-size: 1.7vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1404, styling.sass */
+  /* line 1409, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent .tabel {
     font-size: 4vw;
   }
 }
-/* line 1411, styling.sass */
+/* line 1416, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductColor {
   padding-left: 4vw;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1411, styling.sass */
+  /* line 1416, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductColor {
     padding-left: 6vw;
   }
 }
-/* line 1416, styling.sass */
+/* line 1421, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductSize {
   padding-left: 4vw;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1416, styling.sass */
+  /* line 1421, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductSize {
     padding-left: 6vw;
   }
 }
-/* line 1421, styling.sass */
+/* line 1426, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1421, styling.sass */
+  /* line 1426, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv {
     -ms-flex-item-align: center;
         align-self: center;
   }
 }
-/* line 1426, styling.sass */
+/* line 1431, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv #cartProductNumber {
   font-weight: bold;
   line-height: 1.6;
@@ -1985,20 +1993,20 @@ main .Showcase .Info h1 {
   width: 10vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1426, styling.sass */
+  /* line 1431, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv #cartProductNumber {
     font-size: 1.45vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1426, styling.sass */
+  /* line 1431, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv #cartProductNumber {
     font-size: 4vw;
     border-bottom: 0.4vw solid #000;
     width: 40vw;
   }
 }
-/* line 1442, styling.sass */
+/* line 1447, styling.sass */
 .cartBigDiv .cartConfirmation {
   min-height: 360px;
   margin-bottom: 5vh;
@@ -2019,14 +2027,14 @@ main .Showcase .Info h1 {
   padding: 1.5vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1442, styling.sass */
+  /* line 1447, styling.sass */
   .cartBigDiv .cartConfirmation {
     margin-left: 1vw;
     width: 30vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1442, styling.sass */
+  /* line 1447, styling.sass */
   .cartBigDiv .cartConfirmation {
     width: 80vw;
     height: 80vw;
@@ -2037,11 +2045,11 @@ main .Showcase .Info h1 {
         align-self: center;
   }
 }
-/* line 1464, styling.sass */
+/* line 1469, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount {
   display: auto;
 }
-/* line 1467, styling.sass */
+/* line 1472, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountText {
   color: black;
   text-transform: uppercase;
@@ -2049,14 +2057,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 1vh;
 }
-/* line 1474, styling.sass */
+/* line 1479, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 1477, styling.sass */
+/* line 1482, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
   border: 1.5px solid #707070;
   font-size: 1vw;
@@ -2065,7 +2073,7 @@ main .Showcase .Info h1 {
   height: 2vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1477, styling.sass */
+  /* line 1482, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
     width: 19vw;
     height: 3vw;
@@ -2073,14 +2081,14 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1477, styling.sass */
+  /* line 1482, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
     width: 55vw;
     height: 9vw;
     padding-top: 1vw;
   }
 }
-/* line 1492, styling.sass */
+/* line 1497, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -2093,20 +2101,20 @@ main .Showcase .Info h1 {
   width: 5vw;
   height: 2vw;
 }
-/* line 1503, styling.sass */
+/* line 1508, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow button:hover, .cartBigDiv .cartConfirmation .cartConfDiscountRow button:focus, .cartBigDiv .cartConfirmation .cartConfDiscountRow button:active {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 1508, styling.sass */
+/* line 1513, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow button:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
 @media only screen and (max-width: 800px) {
-  /* line 1492, styling.sass */
+  /* line 1497, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
     width: 7vw;
     height: 3vw;
@@ -2114,7 +2122,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1492, styling.sass */
+  /* line 1497, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
     width: 14vw;
     height: 9vw;
@@ -2122,24 +2130,24 @@ main .Showcase .Info h1 {
     border: 3px solid #000;
   }
 }
-/* line 1521, styling.sass */
+/* line 1526, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow .cartConfDiscountSmallText {
   font-size: 0.85vw;
   line-height: 1.6;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1521, styling.sass */
+  /* line 1526, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow .cartConfDiscountSmallText {
     font-size: 1.25vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1521, styling.sass */
+  /* line 1526, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow .cartConfDiscountSmallText {
     font-size: 3.5vw;
   }
 }
-/* line 1529, styling.sass */
+/* line 1534, styling.sass */
 .cartBigDiv .cartConfirmation .cartPayment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2154,36 +2162,36 @@ main .Showcase .Info h1 {
   -ms-flex-item-align: center;
       align-self: center;
 }
-/* line 1535, styling.sass */
+/* line 1540, styling.sass */
 .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild {
   font-size: 1.5vw;
   line-height: 1.6;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1535, styling.sass */
+  /* line 1540, styling.sass */
   .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild {
     font-size: 1.95vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1535, styling.sass */
+  /* line 1540, styling.sass */
   .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild {
     font-size: 5vw;
   }
 }
-/* line 1543, styling.sass */
+/* line 1548, styling.sass */
 .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild #krPrefix {
   padding-left: 4vw;
   text-align: right;
 }
-/* line 1547, styling.sass */
+/* line 1552, styling.sass */
 .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild #krPrefix::after {
   cursor: text;
   content: "kr";
   position: relative;
   padding-left: 0.25vw;
 }
-/* line 1553, styling.sass */
+/* line 1558, styling.sass */
 .cartBigDiv .cartConfirmation .cartButtonCenter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2192,7 +2200,7 @@ main .Showcase .Info h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 1557, styling.sass */
+/* line 1562, styling.sass */
 .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -2207,20 +2215,20 @@ main .Showcase .Info h1 {
   height: 2vw;
   border: 2px solid #000;
 }
-/* line 1570, styling.sass */
+/* line 1575, styling.sass */
 .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:hover, .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:focus, .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:active {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #000;
   background-color: #FFF;
 }
-/* line 1575, styling.sass */
+/* line 1580, styling.sass */
 .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
 @media only screen and (max-width: 800px) {
-  /* line 1557, styling.sass */
+  /* line 1562, styling.sass */
   .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton {
     font-size: 1.45vw;
     width: 19vw;
@@ -2228,7 +2236,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1557, styling.sass */
+  /* line 1562, styling.sass */
   .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton {
     width: 70vw;
     height: 8vw;
@@ -2236,7 +2244,7 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 1595, styling.sass */
+/* line 1600, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2247,7 +2255,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1601, styling.sass */
+/* line 1606, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -2260,14 +2268,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1601, styling.sass */
+  /* line 1606, styling.sass */
   .Kontakt h1 {
     font-size: 1.5em;
     padding-bottom: 1.5vh;
     margin-bottom: 1.5vh;
   }
 }
-/* line 1618, styling.sass */
+/* line 1623, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
@@ -2277,18 +2285,18 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 4vh;
 }
-/* line 1627, styling.sass */
+/* line 1632, styling.sass */
 .Kontakt div a {
   border-bottom: 1px dotted #000;
   padding-bottom: 0px;
   position: relative;
 }
-/* line 1632, styling.sass */
+/* line 1637, styling.sass */
 .Kontakt div a:hover {
   border-bottom: 1px solid #000;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1618, styling.sass */
+  /* line 1623, styling.sass */
   .Kontakt div {
     width: 90%;
     display: block;
@@ -2297,7 +2305,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 1595, styling.sass */
+  /* line 1600, styling.sass */
   .Kontakt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2309,18 +2317,18 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 1647, styling.sass */
+/* line 1652, styling.sass */
 .anbefalte {
   margin-top: 30vh;
 }
-/* line 1650, styling.sass */
+/* line 1655, styling.sass */
 .anbefalte h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5em;
 }
 
-/* line 1655, styling.sass */
+/* line 1660, styling.sass */
 .anbefaltwrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2335,11 +2343,11 @@ main .Showcase .Info h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 1661, styling.sass */
+/* line 1666, styling.sass */
 .anbefaltwrapper a {
   margin-right: 2vw;
 }
-/* line 1664, styling.sass */
+/* line 1669, styling.sass */
 .anbefaltwrapper a .anbefaltbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2356,7 +2364,7 @@ main .Showcase .Info h1 {
   width: auto;
   height: auto;
 }
-/* line 1673, styling.sass */
+/* line 1678, styling.sass */
 .anbefaltwrapper a .anbefaltbox img {
   margin-top: 5vh;
   width: 15vw;
@@ -2365,34 +2373,34 @@ main .Showcase .Info h1 {
   padding: 1em;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1673, styling.sass */
+  /* line 1678, styling.sass */
   .anbefaltwrapper a .anbefaltbox img {
     width: 40vw;
   }
 }
-/* line 1682, styling.sass */
+/* line 1687, styling.sass */
 .anbefaltwrapper a .anbefaltbox .anbefaltinfo {
   font-size: 0.75em;
   font-weight: bold;
   margin-top: 0.5vw;
   margin-bottom: 3vw;
 }
-/* line 1688, styling.sass */
+/* line 1693, styling.sass */
 .anbefaltwrapper a .anbefaltbox .anbefaltinfo .anbefaltpris {
   display: inline-block;
   float: right;
 }
-/* line 1692, styling.sass */
+/* line 1697, styling.sass */
 .anbefaltwrapper a .anbefaltbox .anbefaltinfo .anbefalttext {
   display: inline-block;
 }
-/* line 1694, styling.sass */
+/* line 1699, styling.sass */
 .anbefaltwrapper a img {
   margin-top: 5vh;
   width: 20%;
 }
 
-/* line 1701, styling.sass */
+/* line 1706, styling.sass */
 .gensere1 {
   width: 100%;
   margin-top: 10%;
@@ -2409,21 +2417,21 @@ main .Showcase .Info h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-/* line 1709, styling.sass */
+/* line 1714, styling.sass */
 .gensere1 a {
   margin-bottom: 18vh;
   font-weight: bold;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
-/* line 1714, styling.sass */
+/* line 1719, styling.sass */
 .gensere1 a img {
   border: 3px solid #707070;
   width: 300px;
   min-width: 230px;
   max-width: 100%;
 }
-/* line 1721, styling.sass */
+/* line 1726, styling.sass */
 .gensere1 a div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2438,7 +2446,7 @@ main .Showcase .Info h1 {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 1727, styling.sass */
+/* line 1732, styling.sass */
 .gensere1 a div p {
   display: inline;
   margin: 0;
@@ -2447,7 +2455,7 @@ main .Showcase .Info h1 {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
-/* line 1733, styling.sass */
+/* line 1738, styling.sass */
 .gensere1 a:hover {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
@@ -2455,7 +2463,7 @@ main .Showcase .Info h1 {
   transition: all 0.1s ease;
 }
 
-/* line 1737, styling.sass */
+/* line 1742, styling.sass */
 .gensereMenn {
   margin-left: 3.2%;
 }
