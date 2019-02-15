@@ -17,46 +17,106 @@
 
 <div class="cartBigDiv">
   <div class="cartMainProducts">
+
+
     <div class="cartProducts">
       <img src="../../images/SupremeCatInAHatBrightRoyal.jpg" alt="Produkt bilde">
       <div class="cartText">
-        <p id="cartProductName">Cat in the Hat Hettegenser</p>
-        <p id="cartProductPrice">3000 kr</p>
-        <p id="cartProductColor">Farge: Royal Blue<p>
-        <p id="cartProductSize">Størrelse: L</p>
-        <input type="text" name="navn" id="cartProductNumber" value="1">
-      </div>
-    </div>
-
-    <div class="cartProducts">
-      <img src="../../images/SupremeCatInAHatMustard.jpg" alt="Produkt bilde">
-      <div class="cartText">
-        <p id="cartProductName">Supreme Cat In a Hat </p>
-        <p id="cartProductPrice">3000 kr</p>
-        <p id="cartProductColor">Farge: Royal Blue</p>
-        <p id="cartProductSize">Størrelse: L</p>
-        <input type="text" name="navn" id="cartProductNumber" value="1">
-      </div>
-    </div>
-  </div>
-
-  <div class="cartConfirmation">
-    <div class="cartConfDiscount">
-      <p class="cartConfDiscountText">Legg til en rabattkode/friendkode*</p>
-      <div class="cartConfDiscountRow">
-        <input type="text" name="navn" id="cartConfDiscountInput">
-        <button type="button">Bruk</button>
-      </div>
-      <a href="#"><p class="cartConfDiscountSmallText">*Les mer om friendkode her!</p></a>
-      <div class="cartPayment">
-        <div class="cartPaymentChild">
-          <p>Bestillingsverdi:</p>
-          <p>Levering:</p>
-          <p>Rabatt:</p>
-          <br>
-          <p>Sum</p>
+        <div class="cartTextChild">
+          <p id="cartProductName">Cat in the Hat Hettegenser</p>
+          <p id="cartProductPrice">3000 kr</p>
+        </div>
+        <div class="cartProductAndPriceParent">
+          <div class="tabel">
+            <table>
+              <tr>
+                <td>Farge:</td>
+                <td id="cartProductColor">Mustard</td>
+              </tr>
+              <tr>
+                <td>Størrelse:</td>
+                <td id="cartProductSize">L</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="cartProductNumberDiv">
+          <input type="text" name="navn" id="cartProductNumber" value="1">
         </div>
       </div>
+      <span class="KryssUt" onclick="deleteTing(0)">x</span>
+    </div>
+
+
+    <div class="cartProducts">
+      <img src="../../images/SupremeCatInAHatBrightRoyal.jpg" alt="Produkt bilde">
+      <div class="cartText">
+        <div class="cartTextChild">
+          <p id="cartProductName">Cat in the Hat Hettegenser</p>
+          <p id="cartProductPrice">3000 kr</p>
+        </div>
+        <div class="cartProductAndPriceParent">
+          <div class="tabel">
+            <table>
+              <tr>
+                <td>Farge:</td>
+                <td id="cartProductColor">Mustard</td>
+              </tr>
+              <tr>
+                <td>Størrelse:</td>
+                <td id="cartProductSize">L</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="cartProductNumberDiv">
+          <input type="text" name="navn" id="cartProductNumber" value="1">
+        </div>
+      </div>
+      <span class="KryssUt" onclick="deleteTing(1)">x</span>
+    </div>
+
+    <div class="cartProducts" style="border: 0px solid white" id="Leave empty"></div>
+  </div>
+
+
+  <div class="cartConfirmation">
+    <div>
+      <p class="cartConfDiscountText">
+        Legg til en rabattkode/friendkode*
+      </p>
+      <div class="cartConfDiscountRow">
+        <input type="text" id="cartConfDiscountInput">
+        <button type="sumbit">Bruk</button>
+      </div>
+      <a href="#"><p class="cartConfDiscountSmallText">*Les mer om friendkode her!</p></a>
+    </div>
+    <div class="cartPayment">
+      <div class="cartPaymentChild">
+        <table>
+          <tbody>
+        	  <tr>
+              <td>Bestillingsverdi:</td>
+              <td id="krPrefix">20</td>
+            </tr>
+            <tr>
+              <td>Levering:</td>
+              <td id="krPrefix">0</td>
+            </tr>
+            <tr>
+              <td>Rabatt:</td>
+              <td id="krPrefix">5</td>
+            </tr>
+            <tr>
+              <td class="Sum">Sum:</td>
+              <td class="Sum" id="krPrefix">15</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="cartButtonCenter">
+      <button id="videreTilKassenButton" type="button">Gå videre til kassen</button>
     </div>
   </div>
 </div>

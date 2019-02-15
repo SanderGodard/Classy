@@ -1,31 +1,50 @@
-var img = document.getElementById('storBilde');
 
-var bigImg = document.createElement('img');
-bigImg.src = img.src;
-bigImg.id = "bigImg";
+if(document.getElementById('storBilde') != null) {
 
-var style = bigImg.style;
+  zoomImg = document.getElementById('storBilde');
 
-style.position = "fixed";
-style.height = "100%";
-//style.width = "30%";
-style.top = "0";
-style.bottom = "0";
-style.left = "20%";
-style.right = "20%";
+  bigImg = document.createElement('img');
+  bigImg.src = zoomImg.src;
 
-img.addEventListener("click", zoom);
+  var style = bigImg.style;
+
+  style.position = "absolute";
+  style.zIndex = "900000000";
+  style.height = "80%";
+  //style.width = "40%";
+  style.top = "10%";
+  style.bottom = "10%";
+  style.left = "30%";
+  style.right = "30%";
+  style.border = "1px solid black";
+  style.borderRadius = "5px";
+
+  var blurDiv = document.createElement('div');
+  blurDiv.style.position = "fixed";
+  blurDiv.style.height = "100vh";
+  blurDiv.style.width = "100wh";
+  blurDiv.style.top = "0";
+  blurDiv.style.bottom = "0";
+  blurDiv.style.background = "rgba(0,0,0,1)";
+
+  zoomImg.addEventListener("click", zoom);
+}
 
 
 function zoom() {
+  bigImg.src = zoomImg.src;
+  //document.body.style.filter = "blur(2px)";
   document.body.appendChild(bigImg);
+  document.body.appendChild(blurDiv);
   document.addEventListener("click", unZoom, event);
   console.log("hello");
 }
 
 function unZoom(x) {
-  if(x.target != document.getElementById('bigImg')) {
-    bigImg.parentNode.removeChild(document.getElementById('bigImg'));
+  if(x.target != document.getElementById('storBilde')) {
+    document.body.removeChild(bigImg);
+    document.body.removeChild(blurDiv);
+    document.body.style.filter = "";
     document.removeEventListener("click", unZoom);
   }
 

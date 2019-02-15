@@ -13,6 +13,16 @@
      ?>
   </nav>
   <main>
+<h1 class="gensereMenn"> Gensere menn </h1>
+<div class="gensere1">
+
+  <a href="#">
+    <img src="../../../images/Genser.png">
+    <div>
+      <p>Supreme Box logo</p>
+      <p>3000,-</p>
+      </div>
+  </a>
 
 
 <!--
@@ -20,6 +30,7 @@
 -->
 
 
+</div>
   </main>
   <footer>
     <?php

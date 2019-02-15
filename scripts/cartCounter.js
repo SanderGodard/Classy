@@ -55,8 +55,9 @@ function createEasterEgg() {
   exit.appendChild(exitText);
   exit.style.position = "absolute";
   exit.style.top = "1%";
-  exit.style.right = "3%";
+  exit.style.right = "2%";
   exit.style.cursor = "pointer";
+  exit.style.fontWeight = "bold";
 
   var logo = document.createElement("img");
   logo.src = "/HypeIT/images/logo.png";
@@ -88,20 +89,25 @@ function createEasterEgg() {
   easterEgg.appendChild(document.createElement("br"));
   easterEgg.appendChild(document.createTextNode("Best regards the HypeIT team"));
   easterEgg.appendChild(exit);
-  exit.addEventListener("click", function() {
-    easterEgg.style.display = "none";
-    document.getElementsByTagName("nav")[0].style.filter = "blur(0)";
-    document.getElementsByTagName("main")[0].style.filter = "blur(0)";
-    document.getElementsByTagName("footer")[0].style.filter = "blur(0)";
-    blurDiv.style.display = "none";
-  });
+  exit.addEventListener("click", closeEasterEgg);
+
+
+  function closeEasterEgg(){
+
+    document.body.removeChild(easterEgg);
+    document.getElementsByTagName("nav")[0].style.filter = "";
+    document.getElementsByTagName("main")[0].style.filter = "";
+    document.getElementsByTagName("footer")[0].style.filter = "";
+    document.body.removeChild(blurDiv);
+
+  }
 
   var style = easterEgg.style;
   style.fontFamily = "Calibri";
   style.textShadow = "1px 1px 1px rgba(0,0,0,0.3)";
   style.width = "40%";
   style.height = "40%";
-  style.borderRadius = "2vw";
+  style.borderRadius = "5px";
   style.background = "white";
   style.boxShadow = "1vh 1vh 2vw rgba(0,0,0,0.4)";
   style.position = "fixed";
@@ -120,3 +126,16 @@ function createEasterEgg() {
 }
 
 //createEasterEgg();
+
+
+//Removing 1 from the countedItems when clicking x in basket
+exitBtn = document.getElementsByClassName('KryssUt');
+for(i=0; i<exitBtn.length; i++) {
+  exitBtn[i].addEventListener("click", removeFromCart, event);
+}
+function removeFromCart(x) {
+  x.target.parentNode.style.display = "none";
+
+  counter.innerHTML = parseInt(counter.innerHTML) - 1;
+  lStorage.setItem("counted", counter.innerHTML);
+}

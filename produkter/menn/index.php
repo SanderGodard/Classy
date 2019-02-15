@@ -14,7 +14,7 @@
   </nav>
   <main>
     <div>
-      <h1 class="mobsquad" >Menn</h1>
+      <h1 class="mobsquad" style="display: inline-block" >Menn</h1>
     </div>
 
     <div class="kategori_wrapper">
@@ -37,7 +37,7 @@
         </div>
       </a>
 
-      <a href="menn/gensere/placeholder.php" class="k_b">
+      <a href="gensere" class="k_b">
         <div class="k_b_innhold">
           Gensere
         </div>
