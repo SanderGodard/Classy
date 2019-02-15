@@ -20,11 +20,11 @@
         <div class="Bilder">
           <img src="../../../images/racks.jpg" class="StortBilde" id="storBilde">
           <div class="smaBilder" id="Gliscor">
-            <a class="Material" id="arrowPrev">keyboard_arrow_left</a>
+            <a class="Material" id="arrowPrev" href="javascript:void(0)">keyboard_arrow_left</a>
             <img src="../../../images/racks.jpg" alt="Rack" id="img1">
             <img src="../../../images/gul.jpg" alt="Green" id="img2">
             <img src="../../../images/grønn.jpg" alt="Mustard" id="img3">
-            <a class="Material" id="arrowNext">keyboard_arrow_right</a>
+            <a class="Material" id="arrowNext" href="javascript:void(0)">keyboard_arrow_right</a>
           </div>
         </div>
       </div>
