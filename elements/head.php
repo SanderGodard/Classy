@@ -7,7 +7,7 @@
 <link rel="shortcut icon" href="/HypeIT/images/favicon.png">
 <link rel="stylesheet" href="/HypeIT/styling/styling.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100:700i" rel="stylesheet">
 <!-- Chrome, Firefox OS and Opera -->
 <meta name="theme-color" content="#FFFFFF">
 <!-- Windows Phone -->
@@ -24,6 +24,9 @@
 <script async defer src="/HypeIT/scripts/mobileNav.js"></script>
 <script async defer src="/HypeIT/scripts/frontSwitch.js"></script>
 <script async defer src="/HypeIT/scripts/zoom.js"></script>
+<script async defer src="/HypeIT/scripts/cartDelete.js"></script>
+<script async defer src="/HypeIT/scripts/sizeButton.js"></script>
+<script async defer src="/HypeIT/scripts/colourButton.js"></script>
 <script async defer src="/HypeIT/scripts/getProduct.js"></script>
 <!--<script async defer src="/HypeIT/scripts/magnifyingGlass.js"></script>-->
 

@@ -2,8 +2,8 @@
 <html lang="NB" dir="ltr">
 <head>
   <?php
-    $title = "HypeIT | Produkter - Menn - Gensere";
-    include "../../../elements/head.php";
+    $title = "HypeIT - Hjem";
+    include "../../elements/head.php";
    ?>
 </head>
 <body>
@@ -33,7 +33,7 @@
    ?>
   <nav>
     <?php
-      include "../../../elements/nav.php";
+      include "../../elements/nav.php";
      ?>
   </nav>
   <main>
@@ -74,26 +74,19 @@
         <a href="javascript:void(0)" class="shopBtn" tabindex="2" onclick="addToBasket(this);cartCounter(this);" id="frontBtn">Legg i handlekurv</a>
 
       </div>
-    </div>
+  </a>
 
 
-    <!-- Eline koder under her -->
+<!--
+  Write code here
+-->
 
-    <div class="anbefalte">
-      <h1>Andre har også kjøpt</h1>
-      <div>
-        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
-        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
-        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
-        <img src="../../../images/SupremeCatInAHatBrightRoyal" alt="Royal">
-      </div>
 
-    </div>
-
+</div>
   </main>
   <footer>
     <?php
-      //include "../../../elements/footer.php";
+      include "../../elements/footer.php";
      ?>
   </footer>
 </body>

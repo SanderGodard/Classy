@@ -1,6 +1,7 @@
 // ======================================= Variables
 
 //Colors
+$Yeet : "zoom"
 
 $MainColor: #FF0000
 //000
@@ -115,7 +116,7 @@ a
 
   &:hover
     transition: all 0.3s ease-in-out
-    background: $Black
+    background: $ThirdColor
 
 
 .Material
@@ -448,7 +449,7 @@ nav
         position: relative
         margin: 1em 0 0 calc(-1vw - 1.8em)
         font-size: .6em
-        display: inline-block
+        display: none
         text-align: center
         padding: .28em .0em
 
@@ -758,7 +759,7 @@ main
   margin-top: 15%
 
   .topFooter
-    height: 30%
+    height: 13vh
     color: $Black
     display: flex
     flex-direction: row
@@ -767,6 +768,10 @@ main
     flex-direction: row
     flex-wrap: nowrap
     justify-content: space-between
+
+    @media #{$Mobile}
+      display: none
+      height: 0
 
     a
       color: $Black
@@ -793,7 +798,20 @@ main
   .centerFooter
     color: #FFFFFF
     background: $Black
-    height: 90%
+    height: 22vw
+
+    @media only screen and (max-width : 1482px)
+      height: 28vw
+
+    @media only screen and (max-width : 1158px)
+      height: 30vw
+
+    @media #{$Mobile}
+      height: 30vw
+
+    @media only screen and (max-width : 622px)
+      height: 200px
+
 
     .cf_wrapper
       margin-left: 7vw
@@ -803,11 +821,30 @@ main
       justify-content: center
 
 
+      #kolonne_1
+        @media #{$Mobile}
+          display: none
+          height: 0
+          width: 0
+
+
       .cf_kolonne
-        margin-right: 0vw
+        margin-right: 8vw
         width: 25vw
-        margin-top: 4.5vw
+        margin-top: 5%
         font-weight: 500
+
+        @media only screen and (max-width : 1482px)
+          margin-top: 3%
+
+        @media only screen and (max-width : 1070px)
+          width: 32vw
+
+        @media #{$Mobile}
+          width: 100%
+          margin-top: 0
+          margin-right: 0
+          margin-left: 5vw
 
         h1
           padding-bottom: 4px
@@ -815,11 +852,16 @@ main
           display: inline
           font-size: 2em
 
+          @media #{$Mobile}
+            margin-left: 6vw
           a
             color: #FFFFFF
 
         .kolonne_txt
           margin-top: 1.5vw
+
+          @media #{$Mobile}
+            margin-top: 4vw
 
 
           ul
@@ -828,11 +870,19 @@ main
             margin-left: -3vw
             font-size: 1.5em
 
+            @media only screen and (max-width : 1070px)
+              font-size: 1.4em
+
             li
               padding-bottom: 10px
               display: flex
               flex-direction: row
               align-items: center
+
+              img
+                @media #{$Mobile}
+                  width: 4vw
+                  margin-right: 5vw
 
               div
                 color: white
@@ -844,7 +894,7 @@ main
 
 
   .bottomFooter
-    height: 10%
+    height: 6vh
     color: $Black
     text-align: center
     display: flex
@@ -852,6 +902,9 @@ main
     align-items: center
     justify-content: center
 
+    @media #{$Mobile}
+      font-size: 1.5em
+      height: 5vw
 
 //Slutt på Anders sitt stuff
 
@@ -1043,7 +1096,7 @@ main
 
 
     img
-      filter: grayscale(1)
+      filter: grayscale(0)
       object-fit: cover
       bottom: -3px
       top: -3px
@@ -1059,11 +1112,6 @@ main
         filter: blur(3px)
         // eller
         // filter: blur(3px) grayscale(1)
-
-
-
-
-
 
 // ====================================Fredrik sin del
 .produktside
@@ -1091,8 +1139,6 @@ main
       display: flex
       flex-direction: column
 
-
-
       .StortBilde
         //margin: 3%
         width: 100%
@@ -1100,28 +1146,43 @@ main
         padding: 3vh 0vh 0.5vh 0vh
         display: block
 
+
       .smaBilder
         height: auto
-        align-content: flex-start
-        align-items: flex-start
-        display: flex
-        flex-direction: row
-        justify-content: space-between
         width: 100%
         padding: 0 0 1px 0
+        align-content: space-between
+        align-items: flex-end
+        display: inline-flex
+        flex-direction: row
+        justify-content: space-between
+        align-content: center
 
         img
           cursor: pointer
-          width: 30%
+          width: 33.33%
+          height: auto
           object-fit: cover
           bottom: 0
           top: 0
           left: 0
           right: 0
-          height: 30%
           border: 3px solid #707070
           margin-top: 2%
           padding: 0 0 0 0
+
+      .piler
+        display: inline-flex
+        width: 100%
+        padding-left: 22.2%
+
+      a
+        font-size: 5.88em
+        display: inline-block
+        width: 100%
+
+
+
 
 
   .hoyreside
@@ -1204,86 +1265,296 @@ main
   flex-direction: row
   justify-content: flex-start
   width: 100%
+  @media #{$MobileXXL}
+    flex-direction: column-reverse
 
   .cartMainProducts
-    margin-left: 14vw
-
+    margin-left: 5vw
+    @media #{$TabletL}
+      margin-left: 0px
+    @media #{$MobileXXL}
+      align-self: center
 
     .cartProducts
-      margin-bottom: 2vh
-      padding: 20px
-      width: 40vw
-      height: 35vh
-      border: 3px solid #707070
+      margin-bottom: 1vw
+      padding: 1.5vw
+      width: 45vw
+      height: 17.5vw
+      border: 1.5px solid #707070
       display: flex
       flex-direction: row
+      @media #{$TabletL}
+        width: 60vw
+        height: 25vw
+      @media #{$MobileXXL}
+        width: 80vw
+        height: 90vw
+        flex-direction: column
+        margin-bottom: 5vw
+
+      .KryssUt
+        cursor: pointer
+        font-family: 'Roboto', 'Calibri', sans-serif
+        position: relative
+        display: block
+        text-transform: lowercase
+        align-self: flex-start
+        line-height: .35
+        top: -7.5%
+        right: -10.5%
+        font-size: 3.5vw
+        font-weight: 100
+        @media #{$TabletL}
+          top: -4%
+          right: -6.5%
+          font-size: 4.5vw
+        @media #{$MobileXXL}
+          top: -96%
+          right: -94%
+          font-size: 10vw
+
+
+        @media #{$TabletL}
+          top: -4%
+          right: -6.5%
+          font-size: 4.5vw
+
+        @media #{$MobileXXL}
+          top: -96%
+          right: -94%
+          font-size: 10vw
+
 
       img
-        height: 100%
+        width: 20vw
         align-self: flex-start
+        vertical-align: middle
+        @media #{$TabletL}
+          width: 30vw
+        @media #{$MobileXXL}
+          padding-top: 5vw
+          width: 60vw
+          align-self: center
 
       .cartText
         flex-direction: column
+        display: flex
+        justify-content: space-between
+        @media #{$MobileXXL}
+          align-self: center
+          justify-content: space-between
+          height: 100%
 
-        #cartProductName
-          font-weight: bold
-          font-size: 25px
+        .cartTextChild
+          display: flex
+          flex-direction: column
 
-        #cartProductPrice
-          font-weight: bold
+          #cartProductName
+            font-weight: bold
+            font-size: 1.55vw
+            @media #{$TabletL}
+              font-size: 2vw
+            @media #{$MobileXXL}
+              padding-top: 5vw
+              font-size: 5vw
 
-        #cartProductColor
-          padding-top: 30px
-          padding-bottom: 5px
+          #cartProductPrice
+            font-weight: bold
+            font-size: 1.45vw
+            @media #{$TabletL}
+              font-size: 1.90vw
+            @media #{$MobileXXL}
+              font-size: 3.25vw
 
-        #cartProductNumber
-          font-weight: bold
-          line-height: 1.6
-          font-size: 15px
-          border-top: none
-          border-left: none
-          border-right: none
-          border-bottom: 3px solid #707070
+        .cartProductAndPriceParent
+          display: flex
+          flex-direction: row
+
+          .tabel
+            font-size: 1.25vw
+            @media #{$TabletL}
+              font-size: 1.70vw
+            @media #{$MobileXXL}
+              font-size: 4vw
+
+          #cartProductColor
+            padding-left: 4vw
+            @media #{$MobileXXL}
+              padding-left: 6vw
+
+          #cartProductSize
+            padding-left: 4vw
+            @media #{$MobileXXL}
+              padding-left: 6vw
+
+        .cartProductNumberDiv
+          display: flex
+          @media #{$MobileXXL}
+            align-self: center
+
+          #cartProductNumber
+            font-weight: bold
+            line-height: 1.6
+            font-size: 1vw
+            border-top: none
+            border-left: none
+            border-right: none
+            border-bottom: 0.2vw solid $Black
+            width: 10vw
+            @media #{$TabletL}
+              font-size: 1.45vw
+            @media #{$MobileXXL}
+              font-size: 4vw
+              border-bottom: 0.4vw solid $Black
+              width: 40vw
 
   .cartConfirmation
+    min-height: 360px
+    margin-bottom: 5vh
     display: flex
-    margin-left: 7.5vw
-    border: 3px solid #707070
-    width: 20vw
-    height: 72vh
+    flex-direction: column
+    justify-content: space-between
+    margin-left: 10vw
+    border: 1.5px solid #707070
+    width: 25vw
+    height: 36vw
+    padding: 1.5vw
+    @media #{$TabletL}
+      margin-left: 1vw
+      width: 30vw
+    @media #{$MobileXXL}
+      width: 80vw
+      height: 80vw
+      margin-left: 0
+      margin-bottom: 5vw
+      padding: 3vw
+      align-self: center
 
     .cartConfDiscount
-      padding-top: 5vh
-      padding-left: 1vw
+      display: auto
 
-      .cartConfDiscountText
-        color: black
+    .cartConfDiscountText
+      color: black
+      text-transform: uppercase
+      font-size: .95em
+      font-weight: bold
+      margin-bottom: 1vh
+
+    .cartConfDiscountRow
+      flex-direction: row
+
+      #cartConfDiscountInput
+        border: 1.5px solid #707070
+        font-size: 1vw
+        line-height: 1.6
+        width: 15vw
+        height: 2vw
+        @media #{$TabletL}
+          width: 19vw
+          height: 3vw
+          font-size: 1.45vw
+        @media #{$MobileXXL}
+          width: 55vw
+          height: 9vw
+          padding-top: 1vw
+
+      button
+        transition: $Medium
         text-transform: uppercase
+        border: 2px solid $Black
+        background-color: inherit
+        font-size: 1vw
         font-weight: bold
-        font-size: 15px
-        margin-bottom: 1vh
+        line-height: 1.6
+        width: 5vw
+        height: 2vw
 
-      .cartConfDiscountRow
-        flex-direction: row
+        &:hover, &:focus, &:active
+          transition: $Medium
+          color: $White
+          background-color: $Black
 
-        #cartConfDiscountInput
-          border: 3px solid #707070
-          font-size: 15px
-          line-height: 1.6
+        &:active
+          transform: scale(0.97)
 
-        button
-          text-transform: uppercase
-          border: 3px solid black
-          background-color: inherit
-          font-size: 15px
-          font-weight: bold
-          line-height: 1.6
-          width: 5vw
+        @media #{$TabletL}
+          width: 7vw
+          height: 3vw
+          font-size: 1.45vw
+        @media #{$MobileXXL}
+          width: 14vw
+          height: 9vw
+          font-size: 3vw
+          border: 3px solid $Black
 
       .cartConfDiscountSmallText
-        font-size: 0.75vw
+        font-size: 0.85vw
         line-height: 1.6
-        
+        @media #{$TabletL}
+          font-size: 1.25vw
+        @media #{$MobileXXL}
+          font-size: 3.5vw
+
+    .cartPayment
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-self: center
+
+      .cartPaymentChild
+        font-size: 1.5vw
+        line-height: 1.6
+        @media #{$TabletL}
+          font-size: 1.95vw
+        @media #{$MobileXXL}
+          font-size: 5vw
+
+        #krPrefix
+          padding-left: 4vw
+          text-align: right
+
+          &::after
+            cursor: text
+            content: "kr"
+            position: relative
+            padding-left: 0.25vw
+
+    .cartButtonCenter
+      display: flex
+      justify-content: center
+
+      #videreTilKassenButton
+        transition: $Medium
+        border: 0
+        color: $White
+        text-transform: uppercase
+        background-color: $Black
+        font-size: 1vw
+        font-weight: bold
+        line-height: 1.6
+        width: 15vw
+        height: 2vw
+        border: 2px solid $Black
+
+        &:hover, &:focus, &:active
+          transition: $Medium
+          color: $Black
+          background-color: $White
+
+        &:active
+          transform: scale(0.97)
+
+        @media #{$TabletL}
+          font-size: 1.45vw
+          width: 19vw
+          height: 3vw
+        @media #{$MobileXXL}
+          width: 70vw
+          height: 8vw
+          font-size: 3vw
+
+
+
 
 
 
@@ -1349,8 +1620,88 @@ main
     text-transform: uppercase
     text-align: center
     font-size: 2.5em
-  div
 
+.anbefaltwrapper
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+
+  a
+    margin-right: 2vw
+
+    .anbefaltbox
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      justify-content: center
+      width: auto
+      height: auto
+
+
+      img
+        margin-top: 5vh
+        width: 15vw
+        box-shadow: $Shadow
+        padding: 1em
+
+        @media #{$Mobile}
+          width: 40vw
+
+      .anbefaltinfo
+        font-size: 0.75em
+        font-weight: bold
+        margin-top: 0.5vw
+        margin-bottom: 3vw
+
+        .anbefaltpris
+          display: inline-block
+          float: right
+
+        .anbefalttext
+          display: inline-block
     img
       margin-top: 5vh
       width: 20%
+
+
+//=============================================Vegard B sin del
+
+.gensere1
+  width: 100%
+  margin-top: 10%
+  display: flex
+  justify-content: space-between
+  flex-direction: row
+  flex-wrap: wrap
+
+  a
+    margin-bottom: 18vh
+    font-weight: bold
+    transition: $Fast
+
+    img
+      border: 3px solid #707070
+      //margin-bottom: 18vh
+      width: 300px
+      min-width: 230px
+      max-width: 100%
+
+    div
+      display: flex
+      justify-content: space-between
+      flex-wrap: nowrap
+      flex-direction: row
+
+      p
+        display: inline
+        margin: 0
+        margin-block-start: 0
+        margin-block-end: 0
+
+    &:hover
+      transform: scale(1.07)
+      transition: $Fast
+
+.gensereMenn
+  margin-left: 3.2%
