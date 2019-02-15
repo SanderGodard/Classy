@@ -58,6 +58,7 @@ function createEasterEgg() {
   exit.style.right = "2%";
   exit.style.cursor = "pointer";
   exit.style.fontWeight = "bold";
+  exit.style.userSelect = "none";
 
   var logo = document.createElement("img");
   logo.src = "/HypeIT/images/logo.png";
@@ -66,6 +67,7 @@ function createEasterEgg() {
   logo.style.bottom = "6%";
   logo.style.right = "3%";
   logo.style.width = "20%";
+  logo.style.userSelect = "none";
 
   var blurDiv = document.createElement("div");
   blurDiv.style.width = "100vw";
@@ -122,6 +124,7 @@ function createEasterEgg() {
   style.flexDirection = "column";
   style.padding = "2vh";
   style.filter = "initial";
+  style.userSelect = "none";
   document.body.appendChild(easterEgg);
 }
 
