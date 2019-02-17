@@ -1,6 +1,44 @@
 counter = document.getElementById('cartCounter');
 lStorage = localStorage;
 
+if(localStorage.getItem("cart") != undefined && localStorage.getItem("cart") != null && localStorage.getItem("cart") != "[]") {
+  cartAmount = JSON.parse(localStorage.getItem("cart"));
+  counter.innerHTML = cartAmount.length;
+}
+if(counter.innerHTML < 1) {
+  counter.style.display = "none";
+}
+else{
+  counter.style.display = "inline-block";
+}
+
+
+
+function countingItems() {
+  if(localStorage.getItem("cart") != undefined && localStorage.getItem("cart") != null && localStorage.getItem("cart") != "[]") {
+    cartAmount = JSON.parse(localStorage.getItem("cart"));
+    cartCounter.innerHTML = cartAmount.length;
+  }
+  if(counter.innerHTML < 1) {
+    counter.style.display = "none";
+  }
+  else{
+    counter.style.display = "inline-block";
+  }
+  if(counter.innerHTML==100) {
+    counter.style.height = "1.9em";
+    counter.style.width = "1.9em";
+    counter.style.padding = "0.34em 0em";
+    if(countedItems>100) {
+      counter.style.height = "2em";
+      counter.style.width = "2em";
+      counter.style.padding = "0.4em 0em";
+      createEasterEgg();
+    }
+  }
+}
+interval = setInterval(countingItems, 100);
+/*
 if(lStorage.getItem("counted") != undefined) {
   countedItems = lStorage.getItem("counted");
   countedItems = parseInt(countedItems, 10);
@@ -48,7 +86,7 @@ function cartCounter(x) {
   counter.innerHTML = countedItems;
   lStorage.setItem("counted", countedItems);
 }
-
+*/
 function createEasterEgg() {
   var exit = document.createElement("div");
   var exitText = document.createTextNode("x");
@@ -132,6 +170,7 @@ function createEasterEgg() {
 
 
 //Removing 1 from the countedItems when clicking x in basket
+/*
 exitBtn = document.getElementsByClassName('KryssUt');
 for(i=0; i<exitBtn.length; i++) {
   exitBtn[i].addEventListener("click", removeFromCart, event);
@@ -142,4 +181,4 @@ function removeFromCart(x) {
     counter.innerHTML = parseInt(counter.innerHTML) - 1;
     lStorage.setItem("counted", counter.innerHTML);
   }
-}
+}*/

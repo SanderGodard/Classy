@@ -13,7 +13,7 @@ function hideBoxBool2() {
   boxHiding = false;
 }
 function addToBasket(x) {
-  var p=0;
+  /*var p=0;
   storedArray = [];
   storedArray2= [];
 
@@ -46,7 +46,7 @@ function addToBasket(x) {
   console.log(value);
   basket.push(value);
   lStorage.setItem("basket", basket);
-  console.log(lStorage.getItem("basket"));
+  console.log(lStorage.getItem("basket"));*/
   alertBox();
 }
 

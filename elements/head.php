@@ -29,6 +29,7 @@
 <script async defer src="/HypeIT/scripts/colourButton.js"></script>
 <script async defer src="/HypeIT/scripts/getProduct.js"></script>
 <script async defer src="/HypeIT/scripts/docking.js"></script>
+<script async defer src="/HypeIT/scripts/shopping.js"></script>
 <!--<script async defer src="/HypeIT/scripts/magnifyingGlass.js"></script>-->
 
 <!-- Live chat

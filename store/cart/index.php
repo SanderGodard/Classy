@@ -5,6 +5,7 @@
     $title = "HypeIT | Handlekurv";
     include "../../elements/head.php";
    ?>
+   <script async defer src="/HypeIT/scripts/cart.js"></script>
 </head>
 <body>
   <nav>
@@ -17,8 +18,8 @@
 
 <div class="cartBigDiv">
   <div class="cartMainProducts">
-
-
+<p>Ting du handler i butikken vil havne under denne teksten...</p>
+<!--
     <div class="cartProducts">
       <img src="../../images/SupremeCatInAHatBrightRoyal.jpg" alt="Produkt bilde">
       <div class="cartText">
@@ -76,7 +77,8 @@
       <span class="KryssUt" onclick="deleteTing(1)">x</span>
     </div>
 
-    <div class="cartProducts" style="border: 0px solid white" id="Leave empty"></div>
+    <div class="cartProducts" style="border: 0px solid white" id="Leave empty"></div>-->
+
   </div>
 
 
@@ -87,7 +89,7 @@
       </p>
       <div class="cartConfDiscountRow">
         <input type="text" id="cartConfDiscountInput">
-        <button type="sumbit">Bruk</button>
+        <button type="sumbit" id="useDiscount">Bruk</button>
       </div>
       <a href="#"><p class="cartConfDiscountSmallText">*Les mer om friendkode her!</p></a>
     </div>
@@ -97,19 +99,19 @@
           <tbody>
         	  <tr>
               <td>Bestillingsverdi:</td>
-              <td id="krPrefix">20</td>
+              <td id="krPrefix" class="value">0</td>
             </tr>
             <tr>
               <td>Levering:</td>
-              <td id="krPrefix">0</td>
+              <td id="krPrefix" class="shipping">0</td>
             </tr>
             <tr>
               <td>Rabatt:</td>
-              <td id="krPrefix">5</td>
+              <td id="krPrefix" class="sale">0</td>
             </tr>
             <tr>
               <td class="Sum">Sum:</td>
-              <td class="Sum" id="krPrefix">15</td>
+              <td class="Sum" id="krPrefix">0</td>
             </tr>
           </tbody>
         </table>

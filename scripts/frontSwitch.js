@@ -3,9 +3,11 @@ if(document.getElementById('frontImg') != null) {
   var img = document.getElementById('frontImg');
   var text = document.getElementById('frontInfo').children[0];
   var header = document.getElementById('frontInfo');
-  var btn = document.getElementById('frontBtn');
+  var btn = document.getElementsByClassName('shopBtn')[0];
   var oTxt = text.innerHTML;
   var oSrc = img.src;
+  var oHref = btn.href;
+  var nHref = "/HypeIT/produkter/menn/gensere/?p=50";
 
   img.style.transition = "all 0.7s";
   text.style.transition = "all 0.7s";
@@ -33,10 +35,12 @@ function changeContent() {
   if(img.src == oSrc) {
     img.src = nSrc;
     text.innerHTML = nTxt;
+    btn.href = nHref;
   }
   else{
     img.src = oSrc;
     text.innerHTML = oTxt;
+    btn.href = oHref;
   }
   setTimeout(opacity1, 200);
 

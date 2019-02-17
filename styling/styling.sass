@@ -1320,6 +1320,7 @@ main
       align-self: center
 
     .cartProducts
+      position: relative
       margin-bottom: 1vw
       padding: 1.5vw
       width: 45vw
@@ -1339,22 +1340,23 @@ main
       .KryssUt
         cursor: pointer
         font-family: 'Roboto', 'Calibri', sans-serif
-        position: relative
+        position: absolute
         display: block
         text-transform: lowercase
         align-self: flex-start
         line-height: .35
-        top: -7.5%
-        right: -10.5%
+        top: 2.5%
+        right: 1%
         font-size: 3.5vw
         font-weight: 100
+        user-select: none
         @media #{$TabletL}
-          top: -4%
-          right: -6.5%
+          top: 10%
+          right: 8%
           font-size: 4.5vw
         @media #{$MobileXXL}
-          top: -96%
-          right: -94%
+          //top: 96%
+          //right: 94%
           font-size: 10vw
 
 
@@ -1370,14 +1372,14 @@ main
 
 
       img
-        width: 20vw
+        width: 12vw
         align-self: flex-start
         vertical-align: middle
         @media #{$TabletL}
-          width: 30vw
+          width: 8vw
         @media #{$MobileXXL}
           padding-top: 5vw
-          width: 60vw
+          width: 20vw
           align-self: center
 
       .cartText
@@ -1393,6 +1395,16 @@ main
           display: flex
           flex-direction: column
 
+          #krPrefix
+            //padding-left: 4vw
+            //text-align: right
+
+            &::after
+              cursor: text
+              content: "kr"
+              position: relative
+              padding-left: 0.25vw
+
           #cartProductName
             font-weight: bold
             font-size: 1.55vw
@@ -1402,7 +1414,7 @@ main
               padding-top: 5vw
               font-size: 5vw
 
-          #cartProductPrice
+          .cartProductPrice
             font-weight: bold
             font-size: 1.45vw
             @media #{$TabletL}

@@ -18,6 +18,7 @@ if(document.getElementById('storBilde') != null) {
   style.right = "30%";
   style.border = "1px solid black";
   style.borderRadius = "5px";
+  style.background = "white";
 
   var blurDiv = document.createElement('div');
   blurDiv.style.position = "fixed";
