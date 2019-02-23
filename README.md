@@ -111,7 +111,7 @@ Templaten vi bruker for nye sider:
    - &#10004; Sexy animation på search lista
    - &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies
    - &#10004; Gjøre så når du trykker på småbildene i produkter sidene så bytter den bilde
-   - Database
+   - &#10004; Database
 
 
  - Frontend:
