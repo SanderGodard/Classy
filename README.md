@@ -104,8 +104,8 @@ Templaten vi bruker for nye sider:
 
  - Backend:
    - &#10004; Forbedre søkefunksjon
-   - Handlekurv
-   - Slidere
+   - &#10004; Handlekurv
+   - &#10004; Slidere
    - &#10004; Gjøre så #cartCounter endrer seg riktig
    - &#10004; Cookie popup
    - &#10004; Sexy animation på search lista
