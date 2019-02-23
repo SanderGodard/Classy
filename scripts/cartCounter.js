@@ -5,6 +5,8 @@ if(localStorage.getItem("cart") != undefined && localStorage.getItem("cart") != 
   cartAmount = JSON.parse(localStorage.getItem("cart"));
   counter.innerHTML = cartAmount.length;
 }
+
+
 if(counter.innerHTML < 1) {
   counter.style.display = "none";
 }
@@ -19,6 +21,10 @@ function countingItems() {
     cartAmount = JSON.parse(localStorage.getItem("cart"));
     cartCounter.innerHTML = cartAmount.length;
   }
+  else {
+    counter.innerHTML = 0;
+  }
+  
   if(counter.innerHTML < 1) {
     counter.style.display = "none";
   }

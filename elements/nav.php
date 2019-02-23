@@ -75,7 +75,7 @@
 </div>
 
 
-<div id="Cookies">
+<div id="Cookies" style="display: none;">
   <h1>Cookies & Personvern</h1>
   <p>
     Hei, vi bruker 'Cookies', også kjent som informasjonskapsler for at du skal få den beste brukeropplevelsen som mulig. Ved å fortsette godkjenner du at du er enig i bruken.

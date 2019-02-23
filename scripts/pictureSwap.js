@@ -10,8 +10,8 @@ var img8 = document.getElementById('img8');
 var img9 = document.getElementById('img9');
 var smabilde = document.getElementById('Gliscor');
 var g=1;
-var arrowNext = document.getElementById('arrowNext')
-var arrowPrev = document.getElementById('arrowPrev')
+var arrowNext = document.getElementById('arrowNext');
+var arrowPrev = document.getElementById('arrowPrev');
 
 arrowNext.addEventListener("click", nextPic);
 
