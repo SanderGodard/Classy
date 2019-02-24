@@ -174,12 +174,15 @@ nav .searchDiv .search .results {
   font-size: 1em;
   width: 100%;
   left: 0%;
+  max-height: 12em;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-/* line 190, styling.sass */
+/* line 193, styling.sass */
 nav .searchDiv .search .results .activeResult {
   background: blue;
 }
-/* line 194, styling.sass */
+/* line 197, styling.sass */
 nav .searchDiv .search .results div a {
   display: block;
   -webkit-transition: all 0.1s ease;
@@ -189,7 +192,7 @@ nav .searchDiv .search .results div a {
   text-transform: capitalize;
   font-weight: 300;
 }
-/* line 203, styling.sass */
+/* line 206, styling.sass */
 nav .searchDiv .search .results div a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -202,7 +205,7 @@ nav .searchDiv .search .results div a:hover {
     display: none;
   }
 }
-/* line 212, styling.sass */
+/* line 215, styling.sass */
 nav #alertBox {
   display: none;
   width: 300px;
@@ -220,7 +223,7 @@ nav #alertBox {
   top: 8vmax;
   font-size: 1.1em;
 }
-/* line 228, styling.sass */
+/* line 231, styling.sass */
 nav #alertBox a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -238,7 +241,7 @@ nav #alertBox a {
   border-radius: 0.2em;
   text-align: center;
 }
-/* line 243, styling.sass */
+/* line 246, styling.sass */
 nav #alertBox a:hover, nav #alertBox a:active {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -246,7 +249,7 @@ nav #alertBox a:hover, nav #alertBox a:active {
           transform: scale(1.07);
   border: 0px;
 }
-/* line 248, styling.sass */
+/* line 251, styling.sass */
 nav #alertBox span {
   cursor: pointer;
   position: relative;
@@ -256,11 +259,11 @@ nav #alertBox span {
   color: #999999 !important;
   text-transform: lowercase !important;
 }
-/* line 259, styling.sass */
+/* line 262, styling.sass */
 nav #alertBox span:hover {
   color: #000;
 }
-/* line 263, styling.sass */
+/* line 266, styling.sass */
 nav #Cookies {
   -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.1);
@@ -275,19 +278,19 @@ nav #Cookies {
   color: #FBFBFB;
 }
 @media only screen and (max-width: 890px) {
-  /* line 263, styling.sass */
+  /* line 266, styling.sass */
   nav #Cookies {
     width: 100%;
     bottom: 0;
     right: 0;
     left: 0;
   }
-  /* line 282, styling.sass */
+  /* line 285, styling.sass */
   nav #Cookies h1 {
     display: none;
   }
 }
-/* line 285, styling.sass */
+/* line 288, styling.sass */
 nav #Cookies div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,7 +303,7 @@ nav #Cookies div {
           justify-content: flex-end;
 }
 @media only screen and (max-width: 890px) {
-  /* line 285, styling.sass */
+  /* line 288, styling.sass */
   nav #Cookies div {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -310,7 +313,7 @@ nav #Cookies div {
             justify-content: space-between;
   }
 }
-/* line 294, styling.sass */
+/* line 297, styling.sass */
 nav #Cookies div span {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -328,21 +331,21 @@ nav #Cookies div span {
   font-weight: bold;
   text-align: center;
 }
-/* line 310, styling.sass */
+/* line 313, styling.sass */
 nav #Cookies div span:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #000;
   background-color: #FBFBFB;
 }
-/* line 315, styling.sass */
+/* line 318, styling.sass */
 nav #Cookies div span:active, nav #Cookies div span:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
-/* line 320, styling.sass */
+/* line 323, styling.sass */
 nav #Cookies div a {
   margin: 0;
   display: inline-block;
@@ -356,7 +359,7 @@ nav #Cookies div a {
   color: #FBFBFB;
   font-size: 1em;
 }
-/* line 332, styling.sass */
+/* line 335, styling.sass */
 nav #Cookies div a::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -367,7 +370,7 @@ nav #Cookies div a::selection {
   background-color: rgba(0, 0, 0, 0) !important;
   opacity: 1;
 }
-/* line 337, styling.sass */
+/* line 340, styling.sass */
 nav #Cookies div a:hover {
   border-bottom: 0px;
   border-bottom: 1px solid #FBFBFB;
@@ -376,7 +379,7 @@ nav #Cookies div a:hover {
   transition: all 0.1s ease;
   text-decoration: none;
 }
-/* line 345, styling.sass */
+/* line 348, styling.sass */
 nav #Cookies p::-moz-selection {
   color: #FBFBFB !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -388,17 +391,17 @@ nav #Cookies p::selection {
   opacity: 1;
 }
 @media only screen and (max-width: 890px) {
-  /* line 263, styling.sass */
+  /* line 266, styling.sass */
   nav #Cookies {
     width: 100vw;
     border-radius: 5px 5px 0 0;
   }
-  /* line 355, styling.sass */
+  /* line 358, styling.sass */
   nav #Cookies span {
     margin: 0 5px 50px 0;
   }
 }
-/* line 359, styling.sass */
+/* line 362, styling.sass */
 nav #mobileNav {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -414,7 +417,7 @@ nav #mobileNav {
   z-index: 9999999;
   padding-top: 2vh;
 }
-/* line 375, styling.sass */
+/* line 378, styling.sass */
 nav #mobileNav a {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -425,14 +428,14 @@ nav #mobileNav a {
   padding: 10px 3vmax;
   font-weight: 200 !important;
 }
-/* line 385, styling.sass */
+/* line 388, styling.sass */
 nav #mobileNav a:active, nav #mobileNav a:hover, nav #mobileNav a:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   border: 0px !important;
   color: grey !important;
 }
-/* line 390, styling.sass */
+/* line 393, styling.sass */
 nav #Nav {
   padding: 4vmax 4vmax;
   width: 100%;
@@ -449,38 +452,38 @@ nav #Nav {
       align-content: stretch;
   text-transform: uppercase;
 }
-/* line 400, styling.sass */
+/* line 403, styling.sass */
 nav #Nav .Logo {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-/* line 403, styling.sass */
+/* line 406, styling.sass */
 nav #Nav .Logo a img {
   width: 200px;
   margin: -4px 0 0;
 }
 @media only screen and (max-width: 575px) {
-  /* line 403, styling.sass */
+  /* line 406, styling.sass */
   nav #Nav .Logo a img {
     margin: 0px 0 0;
     width: 180px;
   }
 }
 @media only screen and (max-width: 376px) {
-  /* line 403, styling.sass */
+  /* line 406, styling.sass */
   nav #Nav .Logo a img {
     margin: 3px 0 0;
     width: 160px;
   }
 }
-/* line 415, styling.sass */
+/* line 418, styling.sass */
 nav #Nav .Material {
   text-transform: lowercase !important;
   font-size: 1.6em;
 }
-/* line 419, styling.sass */
+/* line 422, styling.sass */
 nav #Nav .RightNav {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -497,7 +500,7 @@ nav #Nav .RightNav {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 426, styling.sass */
+/* line 429, styling.sass */
 nav #Nav a {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -508,7 +511,7 @@ nav #Nav a {
   border-bottom: 0px solid #383838;
   position: relative;
 }
-/* line 435, styling.sass */
+/* line 438, styling.sass */
 nav #Nav a:hover {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -516,7 +519,7 @@ nav #Nav a:hover {
   color: #000;
   padding-bottom: 2px;
 }
-/* line 441, styling.sass */
+/* line 444, styling.sass */
 nav #Nav .Nav {
   display: inline-block;
   -webkit-user-select: none;
@@ -524,7 +527,7 @@ nav #Nav .Nav {
       -ms-user-select: none;
           user-select: none;
 }
-/* line 445, styling.sass */
+/* line 448, styling.sass */
 nav #Nav .Nav span {
   pointer-events: none;
   background-color: #FF0000;
@@ -540,18 +543,18 @@ nav #Nav .Nav span {
   padding: 0.28em 0em;
 }
 @media only screen and (max-width: 890px) {
-  /* line 441, styling.sass */
+  /* line 444, styling.sass */
   nav #Nav .Nav {
     display: none;
   }
 }
-/* line 462, styling.sass */
+/* line 465, styling.sass */
 nav #Nav .MobileNav {
   display: none;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-/* line 467, styling.sass */
+/* line 470, styling.sass */
 nav #Nav .MobileNav a {
   font-weight: 100;
   font-size: 3em;
@@ -559,50 +562,50 @@ nav #Nav .MobileNav a {
   vertical-align: text-bottom;
   position: relative;
 }
-/* line 474, styling.sass */
+/* line 477, styling.sass */
 nav #Nav .MobileNav a:hover, nav #Nav .MobileNav a:focus, nav #Nav .MobileNav a:active {
   border: 0px;
 }
 @media only screen and (max-width: 890px) {
-  /* line 462, styling.sass */
+  /* line 465, styling.sass */
   nav #Nav .MobileNav {
     display: inline-block;
   }
 }
-/* line 482, styling.sass */
+/* line 485, styling.sass */
 nav #Nav .NavPart {
   display: inline-block;
 }
 @media only screen and (max-width: 575px) {
-  /* line 390, styling.sass */
+  /* line 393, styling.sass */
   nav #Nav {
     padding: 6vmax 3vmax;
     height: calc(12vmax + (1.6em * 1.25));
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 390, styling.sass */
+  /* line 393, styling.sass */
   nav #Nav {
     padding: 6vmax 3vmax;
   }
 }
 @media only screen and (max-width: 376px) {
-  /* line 390, styling.sass */
+  /* line 393, styling.sass */
   nav #Nav {
     padding: 6vmax 3vmax;
   }
 }
-/* line 496, styling.sass */
+/* line 499, styling.sass */
 nav .produkterDD {
   display: inline-block;
 }
-/* line 500, styling.sass */
+/* line 503, styling.sass */
 nav .produkterDD:hover .Hoved {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 503, styling.sass */
+/* line 506, styling.sass */
 nav .produkterDD .Hoved {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -622,48 +625,48 @@ nav .produkterDD .Hoved {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
-/* line 516, styling.sass */
+/* line 519, styling.sass */
 nav .produkterDD .Hoved div {
   max-height: 410px;
   overflow-y: auto;
 }
-/* line 521, styling.sass */
+/* line 524, styling.sass */
 nav .produkterDD .Hoved .NavKategori1:hover ~ .Menn {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 524, styling.sass */
+/* line 527, styling.sass */
 nav .produkterDD .Hoved .Menn:hover {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 527, styling.sass */
+/* line 530, styling.sass */
 nav .produkterDD .Hoved .NavKategori2:hover ~ .Damer {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 530, styling.sass */
+/* line 533, styling.sass */
 nav .produkterDD .Hoved .Damer:hover {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 533, styling.sass */
+/* line 536, styling.sass */
 nav .produkterDD .Hoved .NavKategori3:hover ~ .Brands {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 536, styling.sass */
+/* line 539, styling.sass */
 nav .produkterDD .Hoved .Brands:hover {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
-/* line 539, styling.sass */
+/* line 542, styling.sass */
 nav .produkterDD .Hoved a {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -686,7 +689,7 @@ nav .produkterDD .Hoved a {
   padding: 30px 0px;
   font-size: 1em !important;
 }
-/* line 554, styling.sass */
+/* line 557, styling.sass */
 nav .produkterDD .Hoved a:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -695,20 +698,20 @@ nav .produkterDD .Hoved a:hover {
   padding-bottom: 30px !important;
   text-decoration: underline;
 }
-/* line 561, styling.sass */
+/* line 564, styling.sass */
 nav .produkterDD .Hoved a:hover img {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   width: 62px;
 }
-/* line 565, styling.sass */
+/* line 568, styling.sass */
 nav .produkterDD .Hoved a img {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   margin: 0 10px;
   width: 60px;
 }
-/* line 570, styling.sass */
+/* line 573, styling.sass */
 nav .produkterDD .Hoved .Menn {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -729,7 +732,7 @@ nav .produkterDD .Hoved .Menn {
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   display: none;
 }
-/* line 584, styling.sass */
+/* line 587, styling.sass */
 nav .produkterDD .Hoved .Damer {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -750,7 +753,7 @@ nav .produkterDD .Hoved .Damer {
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   display: none;
 }
-/* line 598, styling.sass */
+/* line 601, styling.sass */
 nav .produkterDD .Hoved .Brands {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -772,33 +775,33 @@ nav .produkterDD .Hoved .Brands {
   display: none;
   border-right: 1px solid #000;
 }
-/* line 613, styling.sass */
+/* line 616, styling.sass */
 nav .produkterDD .Hoved .Brands a {
   text-align: center;
   padding: 30px 20px;
 }
-/* line 617, styling.sass */
+/* line 620, styling.sass */
 nav .produkterDD .Hoved .Brands a:hover {
   padding: 30px 20px !important;
 }
 @media only screen and (max-width: 1023px) {
-  /* line 503, styling.sass */
+  /* line 506, styling.sass */
   nav .produkterDD .Hoved {
     width: 184px;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 503, styling.sass */
+  /* line 506, styling.sass */
   nav .produkterDD .Hoved {
     width: 164px;
   }
 }
 
-/* line 628, styling.sass */
+/* line 631, styling.sass */
 main {
   padding: 0 4vw;
 }
-/* line 631, styling.sass */
+/* line 634, styling.sass */
 main .mobsquad {
   display: none;
   color: #999999;
@@ -810,17 +813,17 @@ main .mobsquad {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 890px) {
-  /* line 631, styling.sass */
+  /* line 634, styling.sass */
   main .mobsquad {
     display: inline-block;
   }
 }
-/* line 646, styling.sass */
+/* line 649, styling.sass */
 main div.Showcase.New::before {
   display: none;
 }
 @media only screen and (max-width: 650px) {
-  /* line 646, styling.sass */
+  /* line 649, styling.sass */
   main div.Showcase.New::before {
     display: block;
     font-size: 2em;
@@ -830,12 +833,12 @@ main div.Showcase.New::before {
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 646, styling.sass */
+  /* line 649, styling.sass */
   main div.Showcase.New::before {
     font-size: 1.3em;
   }
 }
-/* line 658, styling.sass */
+/* line 661, styling.sass */
 main .Showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,25 +857,25 @@ main .Showcase {
   height: calc(100vh - (8vmax + (1.5em * 1.25) + 5vh));
 }
 @media only screen and (max-width: 890px) {
-  /* line 658, styling.sass */
+  /* line 661, styling.sass */
   main .Showcase {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: auto;
   }
 }
-/* line 671, styling.sass */
+/* line 674, styling.sass */
 main .Showcase img {
   cursor: pointer;
   bottom: 0;
   height: 100%;
 }
-/* line 678, styling.sass */
+/* line 681, styling.sass */
 main .Showcase img .New::before {
   display: none;
 }
 @media only screen and (max-width: 890px) {
-  /* line 671, styling.sass */
+  /* line 674, styling.sass */
   main .Showcase img {
     width: 60%;
     height: auto;
@@ -887,7 +890,7 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 671, styling.sass */
+  /* line 674, styling.sass */
   main .Showcase img {
     margin: auto auto;
     -webkit-box-ordinal-group: 2;
@@ -896,19 +899,19 @@ main .Showcase img .New::before {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 671, styling.sass */
+  /* line 674, styling.sass */
   main .Showcase img {
     width: 90%;
     margin-left: 15%;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 671, styling.sass */
+  /* line 674, styling.sass */
   main .Showcase img {
     width: 100%;
   }
 }
-/* line 702, styling.sass */
+/* line 705, styling.sass */
 main .Showcase .Info {
   margin-top: calc((100vh - (8vmax + (1.5em * 1.25) + 5vh)) / 2);
   -webkit-transform: translate(0, -50%);
@@ -916,14 +919,14 @@ main .Showcase .Info {
   width: 45%;
   text-align: left;
 }
-/* line 711, styling.sass */
+/* line 714, styling.sass */
 main .Showcase .Info h1 {
   font-size: 3.75em;
   color: #000;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 650px) {
-  /* line 711, styling.sass */
+  /* line 714, styling.sass */
   main .Showcase .Info h1 {
     font-size: 3em;
     text-align: center;
@@ -931,13 +934,13 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 711, styling.sass */
+  /* line 714, styling.sass */
   main .Showcase .Info h1 {
     font-size: 2.75em;
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 702, styling.sass */
+  /* line 705, styling.sass */
   main .Showcase .Info {
     width: 90%;
     -webkit-box-ordinal-group: 2;
@@ -949,19 +952,19 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 650px) {
-  /* line 702, styling.sass */
+  /* line 705, styling.sass */
   main .Showcase .Info {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 733, styling.sass */
+  /* line 736, styling.sass */
   main .Showcase .Info .New::before {
     display: none;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 702, styling.sass */
+  /* line 705, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -970,7 +973,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 426px) {
-  /* line 702, styling.sass */
+  /* line 705, styling.sass */
   main .Showcase .Info {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -978,7 +981,7 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 743, styling.sass */
+/* line 746, styling.sass */
 .img-magnifier-glass {
   position: absolute;
   border: 1px solid #999999;
@@ -989,20 +992,87 @@ main .Showcase .Info h1 {
   z-index: 5;
 }
 
-/* line 752, styling.sass */
+/* line 755, styling.sass */
 .Bilder {
   overflow: none;
   position: relative;
 }
 
-/* line 758, styling.sass */
+/* line 760, styling.sass */
+.browseWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+/* line 765, styling.sass */
+.browseWrapper .browseLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+  margin: 2.5%;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+/* line 774, styling.sass */
+.browseWrapper .browseLink img {
+  width: 70%;
+}
+/* line 777, styling.sass */
+.browseWrapper .browseLink .browseBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+/* line 783, styling.sass */
+.browseWrapper .browseLink .browseBox .browseInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* line 786, styling.sass */
+.browseWrapper .browseLink .browseBox div {
+  display: inline;
+}
+
+/* line 790, styling.sass */
 .footer {
   width: 100%;
   height: 50vh;
   border-top: 3px solid #707070;
   margin-top: 15%;
 }
-/* line 764, styling.sass */
+/* line 796, styling.sass */
 .footer .topFooter {
   height: 13vh;
   color: #000;
@@ -1025,17 +1095,17 @@ main .Showcase .Info h1 {
           justify-content: space-between;
 }
 @media only screen and (max-width: 890px) {
-  /* line 764, styling.sass */
+  /* line 796, styling.sass */
   .footer .topFooter {
     display: none;
     height: 0;
   }
 }
-/* line 779, styling.sass */
+/* line 811, styling.sass */
 .footer .topFooter a {
   color: #000;
 }
-/* line 782, styling.sass */
+/* line 814, styling.sass */
 .footer .topFooter .tf_tekst {
   padding-bottom: 2px;
   border-bottom: 2px solid #000;
@@ -1044,50 +1114,50 @@ main .Showcase .Info h1 {
   margin-left: 7vw;
   font-weight: bold;
 }
-/* line 791, styling.sass */
+/* line 823, styling.sass */
 .footer .topFooter .icon_wrapper {
   float: right;
   margin-right: 2vw;
 }
-/* line 795, styling.sass */
+/* line 827, styling.sass */
 .footer .topFooter .icon_wrapper .footer_icon {
   float: right;
 }
-/* line 798, styling.sass */
+/* line 830, styling.sass */
 .footer .topFooter .icon_wrapper .footer_icon img {
   width: 5.5vw;
 }
-/* line 801, styling.sass */
+/* line 833, styling.sass */
 .footer .centerFooter {
   color: #FFFFFF;
   background: #000;
   height: 22vw;
 }
 @media only screen and (max-width: 1482px) {
-  /* line 801, styling.sass */
+  /* line 833, styling.sass */
   .footer .centerFooter {
     height: 28vw;
   }
 }
 @media only screen and (max-width: 1158px) {
-  /* line 801, styling.sass */
+  /* line 833, styling.sass */
   .footer .centerFooter {
     height: 30vw;
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 801, styling.sass */
+  /* line 833, styling.sass */
   .footer .centerFooter {
     height: 30vw;
   }
 }
 @media only screen and (max-width: 622px) {
-  /* line 801, styling.sass */
+  /* line 833, styling.sass */
   .footer .centerFooter {
     height: 200px;
   }
 }
-/* line 819, styling.sass */
+/* line 851, styling.sass */
 .footer .centerFooter .cf_wrapper {
   margin-left: 7vw;
   display: -webkit-box;
@@ -1104,14 +1174,14 @@ main .Showcase .Info h1 {
           justify-content: center;
 }
 @media only screen and (max-width: 890px) {
-  /* line 827, styling.sass */
+  /* line 859, styling.sass */
   .footer .centerFooter .cf_wrapper #kolonne_1 {
     display: none;
     height: 0;
     width: 0;
   }
 }
-/* line 834, styling.sass */
+/* line 866, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne {
   margin-right: 8vw;
   width: 25vw;
@@ -1119,19 +1189,19 @@ main .Showcase .Info h1 {
   font-weight: 500;
 }
 @media only screen and (max-width: 1482px) {
-  /* line 834, styling.sass */
+  /* line 866, styling.sass */
   .footer .centerFooter .cf_wrapper .cf_kolonne {
     margin-top: 3%;
   }
 }
 @media only screen and (max-width: 1070px) {
-  /* line 834, styling.sass */
+  /* line 866, styling.sass */
   .footer .centerFooter .cf_wrapper .cf_kolonne {
     width: 32vw;
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 834, styling.sass */
+  /* line 866, styling.sass */
   .footer .centerFooter .cf_wrapper .cf_kolonne {
     width: 100%;
     margin-top: 0;
@@ -1139,7 +1209,7 @@ main .Showcase .Info h1 {
     margin-left: 5vw;
   }
 }
-/* line 852, styling.sass */
+/* line 884, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne h1 {
   padding-bottom: 4px;
   border-bottom: 5px solid #FFFFFF;
@@ -1147,26 +1217,26 @@ main .Showcase .Info h1 {
   font-size: 2em;
 }
 @media only screen and (max-width: 890px) {
-  /* line 852, styling.sass */
+  /* line 884, styling.sass */
   .footer .centerFooter .cf_wrapper .cf_kolonne h1 {
     margin-left: 6vw;
   }
 }
-/* line 860, styling.sass */
+/* line 892, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne h1 a {
   color: #FFFFFF;
 }
-/* line 863, styling.sass */
+/* line 895, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt {
   margin-top: 1.5vw;
 }
 @media only screen and (max-width: 890px) {
-  /* line 863, styling.sass */
+  /* line 895, styling.sass */
   .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt {
     margin-top: 4vw;
   }
 }
-/* line 870, styling.sass */
+/* line 902, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul {
   list-style: none;
   text-decoration: none;
@@ -1174,12 +1244,12 @@ main .Showcase .Info h1 {
   font-size: 1.5em;
 }
 @media only screen and (max-width: 1070px) {
-  /* line 870, styling.sass */
+  /* line 902, styling.sass */
   .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul {
     font-size: 1.4em;
   }
 }
-/* line 879, styling.sass */
+/* line 911, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li {
   padding-bottom: 10px;
   display: -webkit-box;
@@ -1194,22 +1264,22 @@ main .Showcase .Info h1 {
           align-items: center;
 }
 @media only screen and (max-width: 890px) {
-  /* line 885, styling.sass */
+  /* line 917, styling.sass */
   .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li img {
     width: 4vw;
     margin-right: 5vw;
   }
 }
-/* line 890, styling.sass */
+/* line 922, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt ul li div {
   color: white;
 }
-/* line 894, styling.sass */
+/* line 926, styling.sass */
 .footer .centerFooter .cf_wrapper .cf_kolonne .kolonne_txt img {
   width: 2.5vw;
   margin-right: 0.5vw;
 }
-/* line 899, styling.sass */
+/* line 931, styling.sass */
 .footer .bottomFooter {
   height: 6vh;
   color: #000;
@@ -1229,14 +1299,14 @@ main .Showcase .Info h1 {
           justify-content: center;
 }
 @media only screen and (max-width: 890px) {
-  /* line 899, styling.sass */
+  /* line 931, styling.sass */
   .footer .bottomFooter {
     font-size: 1.5em;
     height: 5vw;
   }
 }
 
-/* line 914, styling.sass */
+/* line 946, styling.sass */
 .shopBtn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1257,14 +1327,14 @@ main .Showcase .Info h1 {
       -ms-user-select: none;
           user-select: none;
 }
-/* line 930, styling.sass */
+/* line 962, styling.sass */
 .shopBtn:hover {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 935, styling.sass */
+/* line 967, styling.sass */
 .shopBtn:active, .shopBtn:focus {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -1272,7 +1342,7 @@ main .Showcase .Info h1 {
           transform: scale(0.97);
 }
 @media only screen and (max-width: 650px) {
-  /* line 914, styling.sass */
+  /* line 946, styling.sass */
   .shopBtn {
     display: block;
     font-size: 1.5em;
@@ -1280,11 +1350,11 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 947, styling.sass */
+/* line 979, styling.sass */
 .New {
   font-weight: bold;
 }
-/* line 950, styling.sass */
+/* line 982, styling.sass */
 .New::before {
   content: "Ny";
   display: block;
@@ -1301,30 +1371,30 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 950, styling.sass */
+  /* line 982, styling.sass */
   .New::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 950, styling.sass */
+  /* line 982, styling.sass */
   .New::before {
     font-size: 16px;
   }
 }
 
-/* line 993, styling.sass */
+/* line 1025, styling.sass */
 .LinkToHost {
   text-align: center;
   width: 100%;
   font-size: 2em;
   margin-top: 20vh;
 }
-/* line 999, styling.sass */
+/* line 1031, styling.sass */
 .LinkToHost #LinkToHost {
   text-decoration: underline;
 }
-/* line 1002, styling.sass */
+/* line 1034, styling.sass */
 .LinkToHost #LinkToHost:hover {
   color: #383838;
 }
@@ -1346,7 +1416,7 @@ main .Showcase .Info h1 {
     max-width: 15vw;
   }
 }
-/* line 1011, styling.sass */
+/* line 1043, styling.sass */
 .Supreme::before {
   content: "Supreme";
   text-transform: capitalize;
@@ -1364,7 +1434,7 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 
-/* line 1026, styling.sass */
+/* line 1058, styling.sass */
 .Gucci::before {
   content: "Gucci";
   text-transform: capitalize;
@@ -1382,7 +1452,7 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 
-/* line 1042, styling.sass */
+/* line 1074, styling.sass */
 .Louis::before {
   content: "Louis Vuitton";
   text-transform: capitalize;
@@ -1400,19 +1470,19 @@ main .Showcase .Info h1 {
   line-height: 1;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1042, styling.sass */
+  /* line 1074, styling.sass */
   .Louis::before {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 395px) {
-  /* line 1042, styling.sass */
+  /* line 1074, styling.sass */
   .Louis::before {
     font-size: 16px;
   }
 }
 
-/* line 1066, styling.sass */
+/* line 1098, styling.sass */
 .kategori_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1429,7 +1499,7 @@ main .Showcase .Info h1 {
   margin-top: 7%;
   background-color: inherit;
 }
-/* line 1075, styling.sass */
+/* line 1107, styling.sass */
 .kategori_wrapper .k_b {
   background-color: inherit;
   width: 15vw;
@@ -1444,7 +1514,7 @@ main .Showcase .Info h1 {
   overflow: hidden;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1075, styling.sass */
+  /* line 1107, styling.sass */
   .kategori_wrapper .k_b {
     margin: 3vw;
     width: 40vw;
@@ -1452,14 +1522,14 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1075, styling.sass */
+  /* line 1107, styling.sass */
   .kategori_wrapper .k_b {
     margin: 3vw;
     width: 70vw;
     height: 70vw;
   }
 }
-/* line 1098, styling.sass */
+/* line 1130, styling.sass */
 .kategori_wrapper .k_b .k_b_innhold {
   display: none;
   position: absolute;
@@ -1486,19 +1556,19 @@ main .Showcase .Info h1 {
       align-content: center;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1098, styling.sass */
+  /* line 1130, styling.sass */
   .kategori_wrapper .k_b .k_b_innhold {
     font-size: 10vmax;
   }
 }
-/* line 1125, styling.sass */
+/* line 1157, styling.sass */
 .kategori_wrapper .k_b:hover .k_b_innhold {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: rgba(50, 50, 50, 0.2);
 }
-/* line 1133, styling.sass */
+/* line 1165, styling.sass */
 .kategori_wrapper .k_b img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
@@ -1513,13 +1583,13 @@ main .Showcase .Info h1 {
   position: relative;
   display: block;
 }
-/* line 1146, styling.sass */
+/* line 1178, styling.sass */
 .kategori_wrapper .k_b:hover img {
   -webkit-filter: blur(3px);
           filter: blur(3px);
 }
 
-/* line 1152, styling.sass */
+/* line 1184, styling.sass */
 .produktside {
   width: 100%;
   display: -webkit-box;
@@ -1534,7 +1604,7 @@ main .Showcase .Info h1 {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-/* line 1160, styling.sass */
+/* line 1192, styling.sass */
 .produktside .venstreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1548,7 +1618,7 @@ main .Showcase .Info h1 {
       align-content: flex-end;
   margin-left: 20%;
 }
-/* line 1170, styling.sass */
+/* line 1202, styling.sass */
 .produktside .venstreside .Bilder {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1566,7 +1636,7 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1178, styling.sass */
+/* line 1210, styling.sass */
 .produktside .venstreside .Bilder .StortBilde {
   width: 100%;
   border: 3px solid #707070;
@@ -1577,7 +1647,7 @@ main .Showcase .Info h1 {
       -ms-user-select: none;
           user-select: none;
 }
-/* line 1187, styling.sass */
+/* line 1219, styling.sass */
 .produktside .venstreside .Bilder .smaBilder {
   height: auto;
   width: 100%;
@@ -1605,7 +1675,7 @@ main .Showcase .Info h1 {
       -ms-user-select: none;
           user-select: none;
 }
-/* line 1200, styling.sass */
+/* line 1232, styling.sass */
 .produktside .venstreside .Bilder .smaBilder img {
   cursor: pointer;
   width: 33.33%;
@@ -1620,7 +1690,7 @@ main .Showcase .Info h1 {
   margin-top: 2%;
   padding: 0 0 0 0;
 }
-/* line 1213, styling.sass */
+/* line 1245, styling.sass */
 .produktside .venstreside .Bilder .smaBilder a {
   font-size: 5.88vw;
   display: inline-block;
@@ -1633,12 +1703,12 @@ main .Showcase .Info h1 {
       -ms-user-select: none;
           user-select: none;
 }
-/* line 1222, styling.sass */
+/* line 1254, styling.sass */
 .produktside .venstreside .Bilder .smaBilder a:hover {
   background: rgba(0, 0, 0, 0.2);
   opacity: 0.9;
 }
-/* line 1231, styling.sass */
+/* line 1263, styling.sass */
 .produktside .hoyreside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1653,21 +1723,21 @@ main .Showcase .Info h1 {
           align-items: flex-start;
   padding-top: 1.25%;
 }
-/* line 1239, styling.sass */
+/* line 1271, styling.sass */
 .produktside .hoyreside h2 {
   font-size: 2.75em;
   color: #000;
   text-transform: capitalize;
   font-family: inherit;
 }
-/* line 1245, styling.sass */
+/* line 1277, styling.sass */
 .produktside .hoyreside .str {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1em 0em 2em 0;
 }
-/* line 1249, styling.sass */
+/* line 1281, styling.sass */
 .produktside .hoyreside .str a {
   cursor: pointer;
   margin-left: 5px;
@@ -1690,14 +1760,14 @@ main .Showcase .Info h1 {
       -ms-user-select: none;
           user-select: none;
 }
-/* line 1265, styling.sass */
+/* line 1297, styling.sass */
 .produktside .hoyreside .farge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 0 2em 0;
 }
-/* line 1269, styling.sass */
+/* line 1301, styling.sass */
 .produktside .hoyreside .farge a {
   cursor: pointer;
   margin-left: 5px;
@@ -1715,37 +1785,37 @@ main .Showcase .Info h1 {
   font-size: 2vh;
   font-weight: bold;
 }
-/* line 1283, styling.sass */
+/* line 1315, styling.sass */
 .produktside .hoyreside #farge1 {
   background-color: #E0AA1A;
 }
-/* line 1286, styling.sass */
+/* line 1318, styling.sass */
 .produktside .hoyreside #farge2 {
   background-color: #0097C8;
 }
-/* line 1289, styling.sass */
+/* line 1321, styling.sass */
 .produktside .hoyreside #farge3 {
   background-color: #992319;
 }
-/* line 1292, styling.sass */
+/* line 1324, styling.sass */
 .produktside .hoyreside #farge4 {
   background-color: #004130;
 }
-/* line 1295, styling.sass */
+/* line 1327, styling.sass */
 .produktside .hoyreside #farge5 {
   background-color: #CBCBCB;
 }
-/* line 1298, styling.sass */
+/* line 1330, styling.sass */
 .produktside .hoyreside #farge6 {
   background-color: #171717;
 }
 
-/* line 1301, styling.sass */
+/* line 1333, styling.sass */
 .rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
 
-/* line 1307, styling.sass */
+/* line 1339, styling.sass */
 .cartBigDiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1760,7 +1830,7 @@ main .Showcase .Info h1 {
   width: 100%;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1307, styling.sass */
+  /* line 1339, styling.sass */
   .cartBigDiv {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1768,24 +1838,24 @@ main .Showcase .Info h1 {
             flex-direction: column-reverse;
   }
 }
-/* line 1315, styling.sass */
+/* line 1347, styling.sass */
 .cartBigDiv .cartMainProducts {
   margin-left: 5vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1315, styling.sass */
+  /* line 1347, styling.sass */
   .cartBigDiv .cartMainProducts {
     margin-left: 0px;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1315, styling.sass */
+  /* line 1347, styling.sass */
   .cartBigDiv .cartMainProducts {
     -ms-flex-item-align: center;
         align-self: center;
   }
 }
-/* line 1322, styling.sass */
+/* line 1354, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts {
   position: relative;
   margin-bottom: 1vw;
@@ -1802,14 +1872,14 @@ main .Showcase .Info h1 {
           flex-direction: row;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1322, styling.sass */
+  /* line 1354, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts {
     width: 60vw;
     height: 25vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1322, styling.sass */
+  /* line 1354, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts {
     width: 80vw;
     height: 90vw;
@@ -1820,7 +1890,7 @@ main .Showcase .Info h1 {
     margin-bottom: 5vw;
   }
 }
-/* line 1340, styling.sass */
+/* line 1372, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
   cursor: pointer;
   font-family: "Roboto", "Calibri", sans-serif;
@@ -1840,7 +1910,7 @@ main .Showcase .Info h1 {
           user-select: none;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1340, styling.sass */
+  /* line 1372, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
     top: 10%;
     right: 8%;
@@ -1848,13 +1918,13 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1340, styling.sass */
+  /* line 1372, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
     font-size: 10vw;
   }
 }
 @media only screen and (max-width: 800px) {
-  /* line 1340, styling.sass */
+  /* line 1372, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
     top: -4%;
     right: -6.5%;
@@ -1862,14 +1932,14 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1340, styling.sass */
+  /* line 1372, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .KryssUt {
     top: -96%;
     right: -94%;
     font-size: 10vw;
   }
 }
-/* line 1374, styling.sass */
+/* line 1406, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts img {
   width: 12vw;
   -ms-flex-item-align: start;
@@ -1877,13 +1947,13 @@ main .Showcase .Info h1 {
   vertical-align: middle;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1374, styling.sass */
+  /* line 1406, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts img {
     width: 8vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1374, styling.sass */
+  /* line 1406, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts img {
     padding-top: 5vw;
     width: 20vw;
@@ -1891,7 +1961,7 @@ main .Showcase .Info h1 {
         align-self: center;
   }
 }
-/* line 1385, styling.sass */
+/* line 1417, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1905,7 +1975,7 @@ main .Showcase .Info h1 {
           justify-content: space-between;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1385, styling.sass */
+  /* line 1417, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText {
     -ms-flex-item-align: center;
         align-self: center;
@@ -1915,7 +1985,7 @@ main .Showcase .Info h1 {
     height: 100%;
   }
 }
-/* line 1394, styling.sass */
+/* line 1426, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1925,49 +1995,49 @@ main .Showcase .Info h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 1402, styling.sass */
+/* line 1434, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #krPrefix::after {
   cursor: text;
   content: "kr";
   position: relative;
   padding-left: 0.25vw;
 }
-/* line 1408, styling.sass */
+/* line 1441, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #cartProductName {
   font-weight: bold;
   font-size: 1.55vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1408, styling.sass */
+  /* line 1441, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #cartProductName {
     font-size: 2vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1408, styling.sass */
+  /* line 1441, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild #cartProductName {
     padding-top: 5vw;
     font-size: 5vw;
   }
 }
-/* line 1417, styling.sass */
+/* line 1450, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild .cartProductPrice {
   font-weight: bold;
   font-size: 1.45vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1417, styling.sass */
+  /* line 1450, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild .cartProductPrice {
     font-size: 1.9vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1417, styling.sass */
+  /* line 1450, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartTextChild .cartProductPrice {
     font-size: 3.25vw;
   }
 }
-/* line 1425, styling.sass */
+/* line 1458, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1977,56 +2047,56 @@ main .Showcase .Info h1 {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 1429, styling.sass */
+/* line 1462, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent .tabel {
   font-size: 1.25vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1429, styling.sass */
+  /* line 1462, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent .tabel {
     font-size: 1.7vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1429, styling.sass */
+  /* line 1462, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent .tabel {
     font-size: 4vw;
   }
 }
-/* line 1436, styling.sass */
+/* line 1469, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductColor {
   padding-left: 4vw;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1436, styling.sass */
+  /* line 1469, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductColor {
     padding-left: 6vw;
   }
 }
-/* line 1441, styling.sass */
+/* line 1474, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductSize {
   padding-left: 4vw;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1441, styling.sass */
+  /* line 1474, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductAndPriceParent #cartProductSize {
     padding-left: 6vw;
   }
 }
-/* line 1446, styling.sass */
+/* line 1479, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media only screen and (max-width: 575px) {
-  /* line 1446, styling.sass */
+  /* line 1479, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv {
     -ms-flex-item-align: center;
         align-self: center;
   }
 }
-/* line 1451, styling.sass */
+/* line 1484, styling.sass */
 .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv #cartProductNumber {
   font-weight: bold;
   line-height: 1.6;
@@ -2038,20 +2108,20 @@ main .Showcase .Info h1 {
   width: 10vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1451, styling.sass */
+  /* line 1484, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv #cartProductNumber {
     font-size: 1.45vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1451, styling.sass */
+  /* line 1484, styling.sass */
   .cartBigDiv .cartMainProducts .cartProducts .cartText .cartProductNumberDiv #cartProductNumber {
     font-size: 4vw;
     border-bottom: 0.4vw solid #000;
     width: 40vw;
   }
 }
-/* line 1467, styling.sass */
+/* line 1500, styling.sass */
 .cartBigDiv .cartConfirmation {
   min-height: 360px;
   margin-bottom: 5vh;
@@ -2072,14 +2142,14 @@ main .Showcase .Info h1 {
   padding: 1.5vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1467, styling.sass */
+  /* line 1500, styling.sass */
   .cartBigDiv .cartConfirmation {
     margin-left: 1vw;
     width: 30vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1467, styling.sass */
+  /* line 1500, styling.sass */
   .cartBigDiv .cartConfirmation {
     width: 80vw;
     height: 80vw;
@@ -2090,11 +2160,11 @@ main .Showcase .Info h1 {
         align-self: center;
   }
 }
-/* line 1489, styling.sass */
+/* line 1522, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscount {
   display: auto;
 }
-/* line 1492, styling.sass */
+/* line 1525, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountText {
   color: black;
   text-transform: uppercase;
@@ -2102,14 +2172,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 1vh;
 }
-/* line 1499, styling.sass */
+/* line 1532, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 1502, styling.sass */
+/* line 1535, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
   border: 1.5px solid #707070;
   font-size: 1vw;
@@ -2118,7 +2188,7 @@ main .Showcase .Info h1 {
   height: 2vw;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1502, styling.sass */
+  /* line 1535, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
     width: 19vw;
     height: 3vw;
@@ -2126,14 +2196,14 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1502, styling.sass */
+  /* line 1535, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow #cartConfDiscountInput {
     width: 55vw;
     height: 9vw;
     padding-top: 1vw;
   }
 }
-/* line 1517, styling.sass */
+/* line 1550, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -2146,20 +2216,20 @@ main .Showcase .Info h1 {
   width: 5vw;
   height: 2vw;
 }
-/* line 1528, styling.sass */
+/* line 1561, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow button:hover, .cartBigDiv .cartConfirmation .cartConfDiscountRow button:focus, .cartBigDiv .cartConfirmation .cartConfDiscountRow button:active {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #FFF;
   background-color: #000;
 }
-/* line 1533, styling.sass */
+/* line 1566, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow button:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
 @media only screen and (max-width: 800px) {
-  /* line 1517, styling.sass */
+  /* line 1550, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
     width: 7vw;
     height: 3vw;
@@ -2167,7 +2237,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1517, styling.sass */
+  /* line 1550, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow button {
     width: 14vw;
     height: 9vw;
@@ -2175,24 +2245,24 @@ main .Showcase .Info h1 {
     border: 3px solid #000;
   }
 }
-/* line 1546, styling.sass */
+/* line 1579, styling.sass */
 .cartBigDiv .cartConfirmation .cartConfDiscountRow .cartConfDiscountSmallText {
   font-size: 0.85vw;
   line-height: 1.6;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1546, styling.sass */
+  /* line 1579, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow .cartConfDiscountSmallText {
     font-size: 1.25vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1546, styling.sass */
+  /* line 1579, styling.sass */
   .cartBigDiv .cartConfirmation .cartConfDiscountRow .cartConfDiscountSmallText {
     font-size: 3.5vw;
   }
 }
-/* line 1554, styling.sass */
+/* line 1587, styling.sass */
 .cartBigDiv .cartConfirmation .cartPayment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2207,36 +2277,36 @@ main .Showcase .Info h1 {
   -ms-flex-item-align: center;
       align-self: center;
 }
-/* line 1560, styling.sass */
+/* line 1593, styling.sass */
 .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild {
   font-size: 1.5vw;
   line-height: 1.6;
 }
 @media only screen and (max-width: 800px) {
-  /* line 1560, styling.sass */
+  /* line 1593, styling.sass */
   .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild {
     font-size: 1.95vw;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1560, styling.sass */
+  /* line 1593, styling.sass */
   .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild {
     font-size: 5vw;
   }
 }
-/* line 1568, styling.sass */
+/* line 1601, styling.sass */
 .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild #krPrefix {
   padding-left: 4vw;
   text-align: right;
 }
-/* line 1572, styling.sass */
+/* line 1605, styling.sass */
 .cartBigDiv .cartConfirmation .cartPayment .cartPaymentChild #krPrefix::after {
   cursor: text;
   content: "kr";
   position: relative;
   padding-left: 0.25vw;
 }
-/* line 1578, styling.sass */
+/* line 1611, styling.sass */
 .cartBigDiv .cartConfirmation .cartButtonCenter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2245,7 +2315,7 @@ main .Showcase .Info h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 1582, styling.sass */
+/* line 1615, styling.sass */
 .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -2260,20 +2330,20 @@ main .Showcase .Info h1 {
   height: 2vw;
   border: 2px solid #000;
 }
-/* line 1595, styling.sass */
+/* line 1628, styling.sass */
 .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:hover, .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:focus, .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:active {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   color: #000;
   background-color: #FFF;
 }
-/* line 1600, styling.sass */
+/* line 1633, styling.sass */
 .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
 }
 @media only screen and (max-width: 800px) {
-  /* line 1582, styling.sass */
+  /* line 1615, styling.sass */
   .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton {
     font-size: 1.45vw;
     width: 19vw;
@@ -2281,7 +2351,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 1582, styling.sass */
+  /* line 1615, styling.sass */
   .cartBigDiv .cartConfirmation .cartButtonCenter #videreTilKassenButton {
     width: 70vw;
     height: 8vw;
@@ -2289,7 +2359,7 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 1620, styling.sass */
+/* line 1653, styling.sass */
 .Kontakt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2300,7 +2370,7 @@ main .Showcase .Info h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 1626, styling.sass */
+/* line 1659, styling.sass */
 .Kontakt h1 {
   display: inline-block;
   font-size: 2em;
@@ -2313,14 +2383,14 @@ main .Showcase .Info h1 {
   font-weight: bold;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1626, styling.sass */
+  /* line 1659, styling.sass */
   .Kontakt h1 {
     font-size: 1.5em;
     padding-bottom: 1.5vh;
     margin-bottom: 1.5vh;
   }
 }
-/* line 1643, styling.sass */
+/* line 1676, styling.sass */
 .Kontakt div {
   width: 32%;
   min-width: 215px;
@@ -2330,18 +2400,18 @@ main .Showcase .Info h1 {
   font-weight: bold;
   margin-bottom: 4vh;
 }
-/* line 1652, styling.sass */
+/* line 1685, styling.sass */
 .Kontakt div a {
   border-bottom: 1px dotted #000;
   padding-bottom: 0px;
   position: relative;
 }
-/* line 1657, styling.sass */
+/* line 1690, styling.sass */
 .Kontakt div a:hover {
   border-bottom: 1px solid #000;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1643, styling.sass */
+  /* line 1676, styling.sass */
   .Kontakt div {
     width: 90%;
     display: block;
@@ -2350,7 +2420,7 @@ main .Showcase .Info h1 {
   }
 }
 @media only screen and (max-width: 890px) {
-  /* line 1620, styling.sass */
+  /* line 1653, styling.sass */
   .Kontakt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2362,18 +2432,18 @@ main .Showcase .Info h1 {
   }
 }
 
-/* line 1672, styling.sass */
+/* line 1705, styling.sass */
 .anbefalte {
   margin-top: 30vh;
 }
-/* line 1675, styling.sass */
+/* line 1708, styling.sass */
 .anbefalte h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5em;
 }
 
-/* line 1680, styling.sass */
+/* line 1713, styling.sass */
 .anbefaltwrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2388,11 +2458,11 @@ main .Showcase .Info h1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 1686, styling.sass */
+/* line 1719, styling.sass */
 .anbefaltwrapper a {
   margin-right: 2vw;
 }
-/* line 1689, styling.sass */
+/* line 1722, styling.sass */
 .anbefaltwrapper a .anbefaltbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2409,7 +2479,7 @@ main .Showcase .Info h1 {
   width: auto;
   height: auto;
 }
-/* line 1698, styling.sass */
+/* line 1731, styling.sass */
 .anbefaltwrapper a .anbefaltbox img {
   margin-top: 5vh;
   width: 15vw;
@@ -2418,34 +2488,34 @@ main .Showcase .Info h1 {
   padding: 1em;
 }
 @media only screen and (max-width: 890px) {
-  /* line 1698, styling.sass */
+  /* line 1731, styling.sass */
   .anbefaltwrapper a .anbefaltbox img {
     width: 40vw;
   }
 }
-/* line 1707, styling.sass */
+/* line 1740, styling.sass */
 .anbefaltwrapper a .anbefaltbox .anbefaltinfo {
   font-size: 0.75em;
   font-weight: bold;
   margin-top: 0.5vw;
   margin-bottom: 3vw;
 }
-/* line 1713, styling.sass */
+/* line 1746, styling.sass */
 .anbefaltwrapper a .anbefaltbox .anbefaltinfo .anbefaltpris {
   display: inline-block;
   float: right;
 }
-/* line 1717, styling.sass */
+/* line 1750, styling.sass */
 .anbefaltwrapper a .anbefaltbox .anbefaltinfo .anbefalttext {
   display: inline-block;
 }
-/* line 1719, styling.sass */
+/* line 1752, styling.sass */
 .anbefaltwrapper a img {
   margin-top: 5vh;
   width: 20%;
 }
 
-/* line 1726, styling.sass */
+/* line 1759, styling.sass */
 .gensere1 {
   width: 100%;
   margin-top: 10%;
@@ -2462,21 +2532,21 @@ main .Showcase .Info h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-/* line 1734, styling.sass */
+/* line 1767, styling.sass */
 .gensere1 a {
   margin-bottom: 18vh;
   font-weight: bold;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
-/* line 1739, styling.sass */
+/* line 1772, styling.sass */
 .gensere1 a img {
   border: 3px solid #707070;
   width: 300px;
   min-width: 230px;
   max-width: 100%;
 }
-/* line 1746, styling.sass */
+/* line 1779, styling.sass */
 .gensere1 a div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2491,7 +2561,7 @@ main .Showcase .Info h1 {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* line 1752, styling.sass */
+/* line 1785, styling.sass */
 .gensere1 a div p {
   display: inline;
   margin: 0;
@@ -2500,7 +2570,7 @@ main .Showcase .Info h1 {
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
-/* line 1758, styling.sass */
+/* line 1791, styling.sass */
 .gensere1 a:hover {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
@@ -2508,7 +2578,7 @@ main .Showcase .Info h1 {
   transition: all 0.1s ease;
 }
 
-/* line 1762, styling.sass */
+/* line 1795, styling.sass */
 .gensereMenn {
   margin-left: 3.2%;
 }

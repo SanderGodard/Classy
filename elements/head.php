@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
 <script async defer src="/HypeIT/scripts/searchNavigation.js"></script>
 <script async defer src="/HypeIT/scripts/searchField.js"></script>
-<script async defer src="/HypeIT/scripts/search.js"></script>
+<!--<script async defer src="/HypeIT/scripts/search.js"></script>-->
 <script async defer src="/HypeIT/scripts/cookies.js"></script>
 <script async defer src="/HypeIT/scripts/shop.js"></script>
 <script async defer src="/HypeIT/scripts/cartCounter.js"></script>
@@ -30,6 +30,7 @@
 <script async defer src="/HypeIT/scripts/getProduct.js"></script>
 <script async defer src="/HypeIT/scripts/docking.js"></script>
 <script async defer src="/HypeIT/scripts/shopping.js"></script>
+<script defer src="/HypeIT/scripts/betterSearch.js"></script>
 <!--<script async defer src="/HypeIT/scripts/magnifyingGlass.js"></script>-->
 
 <!-- Live chat
