@@ -104,14 +104,14 @@ Templaten vi bruker for nye sider:
 
  - Backend:
    - &#10004; Forbedre søkefunksjon
-   - Handlekurv
-   - Slidere
+   - &#10004; Handlekurv
+   - &#10004; Slidere
    - &#10004; Gjøre så #cartCounter endrer seg riktig
    - &#10004; Cookie popup
    - &#10004; Sexy animation på search lista
    - &#10004; Gjøre så man ikke får markert kryss ut knappen på cookies
    - &#10004; Gjøre så når du trykker på småbildene i produkter sidene så bytter den bilde
-   - Database
+   - &#10004; Database
 
 
  - Frontend:
