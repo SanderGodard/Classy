@@ -37,7 +37,7 @@
         </div>
       </a>
 
-      <a href="gensere" class="k_b">
+      <a href="gensere/?p=1" class="k_b">
         <div class="k_b_innhold">
           Gensere
         </div>
