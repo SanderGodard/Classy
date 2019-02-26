@@ -15,7 +15,7 @@
   <main>
     <div class="kategori_wrapper">
 
-      <a href="#" class="k_b">
+      <a href="/HypeIT/produkter/menn/produkt/?p=8" class="k_b">
         <div class="k_b_innhold">
           Sko
         </div>
@@ -24,7 +24,7 @@
         </div>
       </a>
 
-      <a href="#" class="k_b">
+      <a href="/HypeIT/produkter/menn/produkt/?p=1" class="k_b">
         <div class="k_b_innhold">
           Bukse
         </div>
@@ -33,7 +33,7 @@
         </div>
       </a>
 
-      <a href="menn/gensere/" class="k_b">
+      <a href="/HypeIT/produkter/menn/produkt/?p=2" class="k_b">
         <div class="k_b_innhold">
           Gensere
         </div>
@@ -42,7 +42,7 @@
         </div>
       </a>
 
-      <a href="#" class="k_b">
+      <a href="/HypeIT/produkter/menn/produkt/?p=45" class="k_b">
         <div class="k_b_innhold">
           T-Skjorter
         </div>

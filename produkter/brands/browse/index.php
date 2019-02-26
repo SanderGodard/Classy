@@ -43,7 +43,7 @@
         $imgsql = "SELECT url FROM product_images JOIN images ON images.image_id=product_images.image_id WHERE product_id=$row[product_id]";
         $imgquery = $connection->query($imgsql);
         $array = $imgquery->fetch_assoc();
-        echo "<a href='/HypeIT/produkter/menn/gensere/?p=" . $row['product_id'] . "' class='browseLink'>
+        echo "<a href='/HypeIT/produkter/menn/produkt/?p=" . $row['product_id'] . "' class='browseLink'>
                 <div class='browseBox'>
                 <img src=" . "\"" . $url . "$array[url]" . "\"" . " alt='Royal'>
                     <div class='browseInfo'>

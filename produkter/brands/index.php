@@ -19,28 +19,28 @@
 
     <div class="kategori_wrapper">
 
-      <a href="#" class="k_b">
+      <a href="/HypeIT/produkter/brands/browse/?b=Louis%20Vuitton" class="k_b">
         <div class="k_b_innhold">
           Louis Vuitton
         </div>
         <img src="../../images/lv.jpg" alt="">
       </a>
 
-      <a href="#" class="k_b">
+      <a href="/HypeIT/produkter/brands/browse/?b=Stone%20Island" class="k_b">
         <div class="k_b_innhold">
           Stone Island
         </div>
         <img src="../../images/stoneisland.jpg" alt="">
       </a>
 
-      <a href="#" class="k_b">
+      <a href="/HypeIT/produkter/brands/browse/?b=Supreme" class="k_b">
         <div class="k_b_innhold">
           Supreme
         </div>
         <img src="../../images/supreme.jpg" alt="">
       </a>
 
-      <a href="#" class="k_b">
+      <a href="/HypeIT/produkter/brands/browse/?b=Gucci" class="k_b">
         <div class="k_b_innhold">
           Gucci
         </div>

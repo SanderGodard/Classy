@@ -14,32 +14,32 @@
           <a class="NavKategori3" href="/HypeIT/produkter/brands/"><img src="/HypeIT/images/brandsicon.png" alt="">Brands</a>
 
           <div class="Menn">
-            <a href="/HypeIT/produkter/menn/gensere/?p=7"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
-            <a href="/HypeIT/produkter/menn/bukser/"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
-            <a href="/HypeIT/produkter/menn/tskjorter/"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
-            <a href="/HypeIT/produkter/menn/sko/"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
-            <a href="/HypeIT/produkter/menn/jakker/"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=2"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=10"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=44"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=7"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=49"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
           </div>
 
           <div class="Damer">
-            <a href="/HypeIT/produkter/damer/gensere/"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
-            <a href="/HypeIT/produkter/damer/bukser/"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
-            <a href="/HypeIT/produkter/damer/tskjorter/"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
-            <a href="/HypeIT/produkter/damer/sko/"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
-            <a href="/HypeIT/produkter/damer/jakker/"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=2"><img src="/HypeIT/images/gensericon.png" alt="">gensere</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=10"><img src="/HypeIT/images/bukseicon.png" alt="">bukser</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=44"><img src="/HypeIT/images/tskjorteicon.png" alt="">t-skjorte</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=7"><img src="/HypeIT/images/skoicon.png" alt="">sko</a>
+            <a href="/HypeIT/produkter/menn/produkt/?p=49"><img src="/HypeIT/images/jakkeicon.png" alt="">jakker</a>
           </div>
 
           <div class="Brands">
-            <a href="/HypeIT/produkter/brands/supreme/">supreme</a>
-            <a href="/HypeIT/produkter/brands/loiusvuitton/">loius vuitton</a>
-            <a href="/HypeIT/produkter/brands/gucci/">gucci</a>
-            <a href="/HypeIT/produkter/brands/balenciaga/">balenciaga</a>
-            <a href="/HypeIT/produkter/brands/stoneisland/">stone island</a>
-	          <a href="/HypeIT/produkter/brands/offwhite/">off white</a>
-            <a href="/HypeIT/produkter/brands/bape/">bape</a>
-            <a href="/HypeIT/produkter/brands/kith/">kith</a>
-            <a href="/HypeIT/produkter/brands/nike/">nike</a>
-            <a href="/HypeIT/produkter/brands/adidas/">adidas</a>
+            <a href="/HypeIT/produkter/brands/browse/?b=Supreme">supreme</a>
+            <a href="/HypeIT/produkter/brands/browse/?b=Louis%20Vuitton">louis vuitton</a>
+            <a href="/HypeIT/produkter/brands/browse/?b=Gucci">gucci</a>
+            <!--<a href="/HypeIT/produkter/brands/balenciaga/">balenciaga</a>-->
+            <a href="/HypeIT/produkter/brands/browse/?b=Stone%20Island">stone island</a>
+	          <!--<a href="/HypeIT/produkter/brands/offwhite/">off white</a>-->
+            <!--<a href="/HypeIT/produkter/brands/bape/">bape</a>-->
+            <!--<a href="/HypeIT/produkter/brands/kith/">kith</a>-->
+            <!--<a href="/HypeIT/produkter/brands/nike/">nike</a>-->
+            <!--<a href="/HypeIT/produkter/brands/adidas/">adidas</a>-->
           </div>
 
         </div>
