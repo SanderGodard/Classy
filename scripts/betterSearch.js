@@ -54,8 +54,8 @@ function searchCheck(x) {
 
   if(x.keyCode !== 38 && x.keyCode !== 40 && x.keyCode !== 13) {
   
-  
-  
+    
+    
     valid = [];
     sValue = search.value.toUpperCase();
     results.innerHTML = "";
@@ -64,8 +64,8 @@ function searchCheck(x) {
       v = vS[i].toUpperCase();
       var p = 0;
       //console.log(v);
-        for(a=0; a<sValue.length; a++) {
-          if(v[a]==sValue[a]) {
+      for(a=0; a<sValue.length; a++) {
+        if(v[a]==sValue[a]) {
             p++;
           }
   
@@ -81,7 +81,7 @@ function searchCheck(x) {
             link.innerHTML = vS[i];
             if(i>3) {
               link.setAttribute('href', "/HypeIT/produkter/menn/gensere/?p=" + (parseInt(i)-3));
-              console.log(i);
+              //console.log(i);
             }
             else {
               link.setAttribute('href', "/HypeIT/produkter/brands/browse/?b=" + vS[i]);
